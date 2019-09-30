@@ -79,3 +79,6 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2019-09-30 12:30:52.473
 !MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-09-30 12:35:11.097
+!MESSAGE Indexed 'MCU_Firmware' (24 sources, 83 headers) in 2,35 sec: 4.168 declarations; 20.640 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)

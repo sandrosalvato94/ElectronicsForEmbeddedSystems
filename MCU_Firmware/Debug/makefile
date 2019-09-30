@@ -13,6 +13,7 @@ RM := rm -rf
 -include Drivers/myI2C/src/subdir.mk
 -include Drivers/myADC/src/subdir.mk
 -include Drivers/STM32F4xx_HAL_Driver/Src/subdir.mk
+-include Drivers/OV7676/src/subdir.mk
 -include subdir.mk
 -include objects.mk
 
