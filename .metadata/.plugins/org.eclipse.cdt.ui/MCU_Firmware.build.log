@@ -1,0 +1,10 @@
+12:31:00 **** Incremental Build of configuration Debug for project MCU_Firmware ****
+make -j8 all 
+arm-none-eabi-size   MCU_Firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5028	     20	   1572	   6620	   19dc	MCU_Firmware.elf
+Finished building: default.size.stdout
+ 
+
+12:31:02 Build Finished. 0 errors, 0 warnings. (took 2s.49ms)
+
