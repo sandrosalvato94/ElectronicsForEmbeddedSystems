@@ -1,0 +1,47 @@
+/*
+ * adc.h
+ *
+ *  Created on: Sep 30, 2019
+ *      Author: Alessandro
+ */
+
+#ifndef MYADC_INC_ADC_H_
+#define MYADC_INC_ADC_H_
+
+#include "main.h"
+
+#define ADC_ADDRESS 0x48
+
+#define ADC_CONV_REG 0x00
+#define ADC_CONF_REG 0x01
+#define ADC_LO_TH_REG 0x02
+#define ADC_HI_TH_REG 0x03
+
+
+#define RDY_ALERT_PIN 		ADC_LED_Pin
+#define RDY_ALERT_GPIO_PORT ADC_LED_GPIO_Port
+#define RDY_ALERT_EXTI_IRQn EXTI15_10_IRQn
+
+#define ADC_CMP_MODE_LO_TH_MSBs 0x45
+#define ADC_CMP_MODE_LO_TH_LSBs 0x00
+#define ADC_CMP_MODE_HI_TH_MSBs 0x45
+#define ADC_CMP_MODE_HI_TH_LSBs 0x01
+
+
+
+#define ADC_LOW_POW_MODE_BIT 0x1
+#define ADC_INP_MUX_CONF_BIT 0x0
+#define ADC_PRG_GAIN_AMP_BIT 0x2 //010
+#define ADC_DEV_OP_MODE_BIT 0x1 //0 continuous conversion mode, 1 one shot mode
+#define ADC_DATA_RATE_BIT 0x0 // 8 sample per second
+#define ADC_CMP_MODE_BIT 0x0 //0 traditional with histeresis, 1 window
+#define ADC_CMP_POL_BIT 0x1 //0 active low, 1 active high
+#define ADC_CMP_LAT_BIT 0x0 //0 no latching, 1 latching
+#define ADC_CMP_QUEUE_BIT 0x0 //0 assert after one conversion, 3 disable comparator
+
+
+
+void ADC_init(I2C_HandleTypeDef *p_hi2c);
+float ADC_do_conversion();
+
+#endif /* MYADC_INC_ADC_H_ */

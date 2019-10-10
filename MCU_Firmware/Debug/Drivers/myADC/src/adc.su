@@ -1,0 +1,2 @@
+adc.c:24:6:ADC_init	24	static
+adc.c:50:7:ADC_do_conversion	24	static
