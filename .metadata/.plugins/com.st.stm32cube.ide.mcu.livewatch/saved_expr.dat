@@ -2,3 +2,9 @@ reading
 voltage
 lux[0]
 lux[1]
+data
+buff[0]
+buff[1]
+buff[2]
+buff[3]
+buff[4]

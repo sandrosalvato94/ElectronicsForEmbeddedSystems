@@ -11,8 +11,14 @@
 #include "ov7670_reg.h"
 #include "ov7670_config.h"
 
-#define ResetCamera_GPIO_Port 1
-#define ResetCamera_GPIO_Pin  2
+#define OV7670_MODE_QVGA_RGB565 0
+#define OV7670_MODE_QVGA_YUV    1
+
+#define OV7670_CAP_CONTINUOUS   0
+#define OV7670_CAP_SINGLE_FRAME 1
+
+//#define ResetCamera_GPIO_Port 1
+//#define ResetCamera_GPIO_Pin  2
 
 void ov7670_init(DCMI_HandleTypeDef *p_hdcmi, DMA_HandleTypeDef *p_hdma_dcmi, I2C_HandleTypeDef *p_hi2c);
 void ov7670_config(uint32_t mode);

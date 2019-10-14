@@ -58,6 +58,8 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define ResetCamera_Pin GPIO_PIN_0
+#define ResetCamera_GPIO_Port GPIOG
 #define ADC_LED_Pin GPIO_PIN_14
 #define ADC_LED_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */

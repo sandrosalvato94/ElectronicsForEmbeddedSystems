@@ -10,7 +10,7 @@
 
 
 
-#define SLAVE_ADDR 0x42 //for reading
-#define SLAVE_ADDR_W 0x43 //for writing
+#define SLAVE_ADDR 0x21 //for reading
+//#define SLAVE_ADDR_W 0x42 //for writing
 
 #endif /* OV7676_INC_OV7670_CONFIG_H_ */
