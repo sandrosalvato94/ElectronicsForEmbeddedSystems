@@ -1,6 +1,6 @@
 [PreviousGenFiles]
 HeaderPath=C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Inc
-HeaderFiles=stm32f4xx_it.h;stm32f4xx_hal_conf.h;main.h;
+HeaderFiles=stm32f4xx_it.h;stm32f4xx_hal_conf.h;main.h;stm32_assert.h;
 SourcePath=C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Src
 SourceFiles=stm32f4xx_it.c;stm32f4xx_hal_msp.c;main.c;
 

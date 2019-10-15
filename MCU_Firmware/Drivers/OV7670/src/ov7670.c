@@ -42,7 +42,7 @@ void ov7670_init(DCMI_HandleTypeDef *p_hdcmi, DMA_HandleTypeDef *p_hdma_dcmi, I2
 
  // ov7670_write(0x12, 0x80);  // RESET
   HAL_Delay(30);
-
+  ov7670_write(0x12, 0x80);  // RESET
   uint8_t buffer[4];
   buffer[0] = 0;
   ov7670_read(0x0b, buffer);
