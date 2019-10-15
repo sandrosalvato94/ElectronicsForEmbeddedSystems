@@ -511,3 +511,17 @@ Finished building: default.size.stdout
  
 Finished building: MCU_Firmware.list
  
+16:34:22 **** Incremental Build of configuration Debug for project MCU_Firmware ****
+make -j8 all 
+arm-none-eabi-size   MCU_Firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21848	    164	   2220	  24232	   5ea8	MCU_Firmware.elf
+Finished building: default.size.stdout
+ 
+16:50:22 **** Incremental Build of configuration Debug for project MCU_Firmware ****
+make -j8 all 
+arm-none-eabi-size   MCU_Firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21848	    164	   2220	  24232	   5ea8	MCU_Firmware.elf
+Finished building: default.size.stdout
+ 

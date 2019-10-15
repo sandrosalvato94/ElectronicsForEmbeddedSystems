@@ -10118,3 +10118,7 @@
 2019-10-15 16:27:05,889 [INFO] ProjectBuilder:1461 - Time for Copy CMSIS : 1mS.
 2019-10-15 16:27:05,893 [INFO] ProjectBuilder:1461 - Time for Copy CMSIS : 0mS.
 2019-10-15 16:30:56,451 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-10-15 16:33:35,491 [INFO] Activator:176 - 
+
+
+2019-10-15 16:33:35,525 [INFO] Activator:177 - !SESSION log4j initialized
