@@ -72,3 +72,5 @@ stm32f4xx_hal_i2c.c:5352:26:I2C_WaitOnBTFFlagUntilTimeout	24	static
 stm32f4xx_hal_i2c.c:5389:26:I2C_WaitOnSTOPFlagUntilTimeout	24	static
 stm32f4xx_hal_i2c.c:5423:26:I2C_WaitOnRXNEFlagUntilTimeout	24	static
 stm32f4xx_hal_i2c.c:5465:26:I2C_IsAcknowledgeFailed	16	static
+stm32f4xx_hal_i2c.c:5488:6:myI2C_write	16	static
+stm32f4xx_hal_i2c.c:5493:6:myI2C_read	16	static

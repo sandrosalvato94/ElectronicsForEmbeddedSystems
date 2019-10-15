@@ -5484,6 +5484,17 @@ static HAL_StatusTypeDef I2C_IsAcknowledgeFailed(I2C_HandleTypeDef *hi2c)
   * @}
   */
 
+//MY FUNCTIONS
+void myI2C_write(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout)
+{
+
+}
+
+void myI2C_read(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout)
+{
+
+}
+
 #endif /* HAL_I2C_MODULE_ENABLED */
 
 /**

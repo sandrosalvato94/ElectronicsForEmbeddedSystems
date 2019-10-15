@@ -625,6 +625,10 @@ uint32_t HAL_I2C_GetError(I2C_HandleTypeDef *hi2c);
   */
 
 /* Private functions ---------------------------------------------------------*/
+void myI2C_write(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+void myI2C_read(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+
+
 /** @defgroup I2C_Private_Functions I2C Private Functions
   * @{
   */

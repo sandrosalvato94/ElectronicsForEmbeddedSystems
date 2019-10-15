@@ -1,17 +1,38 @@
-17:48:55 **** Incremental Build of configuration Debug for project MCU_Firmware ****
+11:23:56 **** Incremental Build of configuration Debug for project MCU_Firmware ****
 make -j8 all 
 arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/OV7670/src/ov7670.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/OV7670/src/ov7670.d" -MT"Drivers/OV7670/src/ov7670.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/OV7670/src/ov7670.o"
+../Drivers/OV7670/src/ov7670.c: In function 'HAL_DCMI_VsyncEventCallback':
+../Drivers/OV7670/src/ov7670.c:103:18: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+   printf("VSYNC %d\n", HAL_GetTick());
+                 ~^     ~~~~~~~~~~~~~
+                 %ld
+../Drivers/OV7670/src/ov7670.c: In function 'ov7670_write':
+../Drivers/OV7670/src/ov7670.c:116:10: warning: 'return' with a value, in function returning void
+   return ret;
+          ^~~
+../Drivers/OV7670/src/ov7670.c:110:13: note: declared here
+ static void ov7670_write(uint8_t regAddr, uint8_t data)
+             ^~~~~~~~~~~~
+../Drivers/OV7670/src/ov7670.c: In function 'ov7670_read':
+../Drivers/OV7670/src/ov7670.c:126:10: warning: 'return' with a value, in function returning void
+   return ret;
+          ^~~
+../Drivers/OV7670/src/ov7670.c:119:13: note: declared here
+ static void ov7670_read(uint8_t regAddr, uint8_t *data)
+             ^~~~~~~~~~~
 arm-none-eabi-gcc -o "MCU_Firmware.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\STM32F446ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MCU_Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: MCU_Firmware.elf
  
 arm-none-eabi-objdump -h -S  MCU_Firmware.elf  > "MCU_Firmware.list"
 arm-none-eabi-size   MCU_Firmware.elf 
    text	   data	    bss	    dec	    hex	filename
-  21740	    164	   2220	  24124	   5e3c	MCU_Firmware.elf
+  21764	    164	   2220	  24148	   5e54	MCU_Firmware.elf
 Finished building: default.size.stdout
  
 Finished building: MCU_Firmware.list
  
 
-17:48:58 Build Finished. 0 errors, 0 warnings. (took 2s.799ms)
+11:23:59 Build Finished. 0 errors, 3 warnings. (took 3s.473ms)
 
