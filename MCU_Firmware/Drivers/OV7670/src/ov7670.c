@@ -7,7 +7,8 @@
 #include <stdio.h>
 #include "main.h"
 #include "stm32f4xx_hal.h"
-#include "../inc/ov7670.h"
+#include "ov7670.h"
+#include "ov7670_reg.h"
 
 #define OV7670_QVGA_WIDTH  320
 #define OV7670_QVGA_HEIGHT 240
@@ -58,7 +59,7 @@ void ov7670_config(uint32_t mode)
   HAL_Delay(30);
   for(int i = 0; OV7670_reg[i][0] != REG_BATT; i++) {
     ov7670_write(OV7670_reg[i][0], OV7670_reg[i][1]);
-    HAL_Delay(1);
+    HAL_Delay(30);
   }
 }
 

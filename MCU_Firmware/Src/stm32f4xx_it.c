@@ -207,7 +207,7 @@ void DMA2_Stream1_IRQHandler(void)
   /* USER CODE END DMA2_Stream1_IRQn 0 */
   HAL_DMA_IRQHandler(&hdma_dcmi);
   /* USER CODE BEGIN DMA2_Stream1_IRQn 1 */
-
+  ov7670_stopCap();
   /* USER CODE END DMA2_Stream1_IRQn 1 */
 }
 

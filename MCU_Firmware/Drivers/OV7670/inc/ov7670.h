@@ -8,7 +8,7 @@
 #ifndef OV7670_INC_OV7670_H_
 #define OV7670_INC_OV7670_H_
 
-#include "ov7670_reg.h"
+//#include "ov7670_reg.h"
 #include "ov7670_config.h"
 
 #define OV7670_MODE_QVGA_RGB565 0

@@ -23,8 +23,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "../Drivers/myADC/inc/adc.h"
-
+#include "adc.h"
+#include "ov7670.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -49,109 +49,9 @@ DMA_HandleTypeDef hdma_dcmi;
 I2C_HandleTypeDef hi2c1;
 I2C_HandleTypeDef hi2c2;
 
+UART_HandleTypeDef huart3;
+
 /* USER CODE BEGIN PV */
-const uint8_t reg_file[][2] = {
-  /* Color mode related */
-  {0x12, 0x14},   // QVGA, RGB
-  {0x8C, 0x00},   // RGB444 Disable
-  {0x40, 0x10 + 0xc0},   // RGB565, 00 - FF
-  {0x3A, 0x04 + 8},   // UYVY (why?)
-  {0x3D, 0x80 + 0x00},   // gamma enable, UV auto adjust, UYVY
-  {0xB0, 0x84}, // important
-
-  /* clock related */
-  {0x0C, 0x04},  // DCW enable
-  {0x3E, 0x19},  // manual scaling, pclk/=2
-  {0x70, 0x3A},  // scaling_xsc
-  {0x71, 0x35},  // scaling_ysc
-  {0x72, 0x11}, // down sample by 2
-  {0x73, 0xf1}, // DSP clock /= 2
-
-  /* windowing (empirically decided...) */
-  {0x17, 0x16},   // HSTART
-  {0x18, 0x04},   // HSTOP
-  {0x32, 0x80},   // HREF
-  {0x19, 0x03},   // VSTART =  14 ( = 3 * 4 + 2)
-  {0x1a, 0x7b},   // VSTOP  = 494 ( = 123 * 4 + 2)
-  {0x03, 0x0a},   // VREF (VSTART_LOW = 2, VSTOP_LOW = 2)
-
-  /* color matrix coefficient */
-#if 0
-  {0x4f, 0xb3},
-  {0x50, 0xb3},
-  {0x51, 0x00},
-  {0x52, 0x3d},
-  {0x53, 0xa7},
-  {0x54, 0xe4},
-  {0x58, 0x9e},
-#else
-  {0x4f, 0x80},
-  {0x50, 0x80},
-  {0x51, 0x00},
-  {0x52, 0x22},
-  {0x53, 0x5e},
-  {0x54, 0x80},
-  {0x58, 0x9e},
-#endif
-
-  /* 3a */
-//  {0x13, 0x84},
-//  {0x14, 0x0a},   // AGC Ceiling = 2x
-//  {0x5F, 0x2f},   // AWB B Gain Range (empirically decided)
-//                  // without this bright scene becomes yellow (purple). might be because of color matrix
-//  {0x60, 0x98},   // AWB R Gain Range (empirically decided)
-//  {0x61, 0x70},   // AWB G Gain Range (empirically decided)
-  {0x41, 0x38},   // edge enhancement, de-noise, AWG gain enabled
-
-
-  /* gamma curve */
-#if 1
-  {0x7b, 16},
-  {0x7c, 30},
-  {0x7d, 53},
-  {0x7e, 90},
-  {0x7f, 105},
-  {0x80, 118},
-  {0x81, 130},
-  {0x82, 140},
-  {0x83, 150},
-  {0x84, 160},
-  {0x85, 180},
-  {0x86, 195},
-  {0x87, 215},
-  {0x88, 230},
-  {0x89, 244},
-  {0x7a, 16},
-#else
-  /* gamma = 1 */
-  {0x7b, 4},
-  {0x7c, 8},
-  {0x7d, 16},
-  {0x7e, 32},
-  {0x7f, 40},
-  {0x80, 48},
-  {0x81, 56},
-  {0x82, 64},
-  {0x83, 72},
-  {0x84, 80},
-  {0x85, 96},
-  {0x86, 112},
-  {0x87, 144},
-  {0x88, 176},
-  {0x89, 208},
-  {0x7a, 64},
-#endif
-
-  /* fps */
-//  {0x6B, 0x4a}, //PLL  x4
-  {0x11, 0x00}, // pre-scalar = 1/1
-
-  /* others */
-  {0x1E, 0x31}, //mirror flip
-//  {0x42, 0x08}, // color bar
-
-  {0xff, 0xff},
-};
 
 /* USER CODE END PV */
 
@@ -162,6 +62,7 @@ static void MX_DMA_Init(void);
 static void MX_I2C1_Init(void);
 static void MX_DCMI_Init(void);
 static void MX_I2C2_Init(void);
+static void MX_USART3_UART_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -169,7 +70,8 @@ static void MX_I2C2_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 uint8_t conf[2] = {0x12, 0x80};
-uint8_t buff[0xff];
+//uint32_t buff[38400];
+
 /* USER CODE END 0 */
 
 /**
@@ -179,7 +81,9 @@ uint8_t buff[0xff];
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-  float measure;
+  float measure=0.0;
+  uint32_t i = 0;
+  uint32_t lcdBuffer[19200];
   /* USER CODE END 1 */
   
 
@@ -205,31 +109,40 @@ int main(void)
   MX_I2C1_Init();
   MX_DCMI_Init();
   MX_I2C2_Init();
+  MX_USART3_UART_Init();
   /* USER CODE BEGIN 2 */
-  //HAL_I2C_IsDeviceReady(&hi2c2, 0x42<<1, 1000, 500);
-  //hi2c2.Instance->CR1 |= 1<<10;
-  //HAL_I2C_Master_Transmit(&hi2c2, 0x42<<1, conf, 2, 300);
-  ov7670_init(&hdcmi, &hdma_dcmi, &hi2c2);
   ADC_init(&hi2c1);
-  ov7670_config(0);
 
+  ov7670_init(&hdcmi, &hdma_dcmi, &hi2c2);
+  ov7670_config(0);
+  //HAL_DCMI_Start_DMA(&hdcmi, DCMI_MODE_CONTINUOUS, lcdBuffer, 19200);
+  //ov7670_startCap(0, (uint32_t)buff);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-//  for(int i = 0; OV7670_reg[i][0] != REG_BATT; i++) {
-//
-//      HAL_Delay(1);
-//    }
-  //ov7670_startCap(0, data);
   while (1)
   {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+
     measure = ADC_do_conversion();
+    HAL_Delay(500);
+
+    HAL_DCMI_Start_DMA(&hdcmi, DCMI_MODE_CONTINUOUS, lcdBuffer, 19200);
+
     HAL_Delay(1000);
 
+//    HAL_UART_Transmit(&huart3, &lcdBuffer[0], 19200*4, 300);
+//    HAL_UART_Transmit(&huart3, &lcdBuffer[10000], 9200, 300);
+
+   // ov7670_stopCap();
+
+    for(i=0; i<19200; i++)
+    {
+    	HAL_UART_Transmit(&huart3, &lcdBuffer[i], 4, 300);
+    }
   }
   /* USER CODE END 3 */
 }
@@ -249,16 +162,11 @@ void SystemClock_Config(void)
   __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE3);
   /** Initializes the CPU, AHB and APB busses clocks 
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI|RCC_OSCILLATORTYPE_HSE;
+  RCC_OscInitStruct.HSEState = RCC_HSE_ON;
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
   RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
-  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
-  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI;
-  RCC_OscInitStruct.PLL.PLLM = 16;
-  RCC_OscInitStruct.PLL.PLLN = 192;
-  RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
-  RCC_OscInitStruct.PLL.PLLQ = 4;
-  RCC_OscInitStruct.PLL.PLLR = 2;
+  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
     Error_Handler();
@@ -276,7 +184,7 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
-  HAL_RCC_MCOConfig(RCC_MCO1, RCC_MCO1SOURCE_PLLCLK, RCC_MCODIV_4);
+  HAL_RCC_MCOConfig(RCC_MCO1, RCC_MCO1SOURCE_HSE, RCC_MCODIV_1);
 }
 
 /**
@@ -298,7 +206,7 @@ static void MX_DCMI_Init(void)
   hdcmi.Init.SynchroMode = DCMI_SYNCHRO_HARDWARE;
   hdcmi.Init.PCKPolarity = DCMI_PCKPOLARITY_RISING;
   hdcmi.Init.VSPolarity = DCMI_VSPOLARITY_HIGH;
-  hdcmi.Init.HSPolarity = DCMI_HSPOLARITY_HIGH;
+  hdcmi.Init.HSPolarity = DCMI_HSPOLARITY_LOW;
   hdcmi.Init.CaptureRate = DCMI_CR_ALL_FRAME;
   hdcmi.Init.ExtendedDataMode = DCMI_EXTEND_DATA_8B;
   hdcmi.Init.JPEGMode = DCMI_JPEG_DISABLE;
@@ -384,6 +292,39 @@ static void MX_I2C2_Init(void)
 
 }
 
+/**
+  * @brief USART3 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_USART3_UART_Init(void)
+{
+
+  /* USER CODE BEGIN USART3_Init 0 */
+
+  /* USER CODE END USART3_Init 0 */
+
+  /* USER CODE BEGIN USART3_Init 1 */
+
+  /* USER CODE END USART3_Init 1 */
+  huart3.Instance = USART3;
+  huart3.Init.BaudRate = 115200;
+  huart3.Init.WordLength = UART_WORDLENGTH_8B;
+  huart3.Init.StopBits = UART_STOPBITS_1;
+  huart3.Init.Parity = UART_PARITY_NONE;
+  huart3.Init.Mode = UART_MODE_TX;
+  huart3.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+  huart3.Init.OverSampling = UART_OVERSAMPLING_16;
+  if (HAL_UART_Init(&huart3) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN USART3_Init 2 */
+
+  /* USER CODE END USART3_Init 2 */
+
+}
+
 /** 
   * Enable DMA controller clock
   */
@@ -412,10 +353,11 @@ static void MX_GPIO_Init(void)
   /* GPIO Ports Clock Enable */
   __HAL_RCC_GPIOE_CLK_ENABLE();
   __HAL_RCC_GPIOF_CLK_ENABLE();
+  __HAL_RCC_GPIOH_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
+  __HAL_RCC_GPIOC_CLK_ENABLE();
   __HAL_RCC_GPIOG_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
-  __HAL_RCC_GPIOC_CLK_ENABLE();
   __HAL_RCC_GPIOD_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
@@ -450,6 +392,14 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   GPIO_InitStruct.Alternate = GPIO_AF0_MCO;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : PA11 PA12 */
+  GPIO_InitStruct.Pin = GPIO_PIN_11|GPIO_PIN_12;
+  GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+  GPIO_InitStruct.Alternate = GPIO_AF10_OTG_FS;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
 }

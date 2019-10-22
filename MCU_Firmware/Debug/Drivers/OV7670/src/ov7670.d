@@ -28,9 +28,10 @@ Drivers/OV7670/src/ov7670.o: ../Drivers/OV7670/src/ov7670.c ../Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
- ../Drivers/OV7670/src/../inc/ov7670.h \
- ../Drivers/OV7670/src/../inc/ov7670_reg.h \
- ../Drivers/OV7670/src/../inc/ov7670_config.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+ C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/OV7670/inc/ov7670.h \
+ C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/OV7670/inc/ov7670_config.h \
+ C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/OV7670/inc/ov7670_reg.h
 
 ../Inc/main.h:
 
@@ -92,8 +93,10 @@ Drivers/OV7670/src/ov7670.o: ../Drivers/OV7670/src/ov7670.c ../Inc/main.h \
 
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h:
 
-../Drivers/OV7670/src/../inc/ov7670.h:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:
 
-../Drivers/OV7670/src/../inc/ov7670_reg.h:
+C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/OV7670/inc/ov7670.h:
 
-../Drivers/OV7670/src/../inc/ov7670_config.h:
+C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/OV7670/inc/ov7670_config.h:
+
+C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/OV7670/inc/ov7670_reg.h:
