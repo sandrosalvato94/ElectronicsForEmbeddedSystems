@@ -130,7 +130,7 @@ int main(void)
     measure = ADC_do_conversion();
     HAL_Delay(500);
 
-    HAL_DCMI_Start_DMA(&hdcmi, DCMI_MODE_CONTINUOUS, lcdBuffer, 19200);
+    HAL_DCMI_Start_DMA(&hdcmi, DCMI_MODE_SNAPSHOT, lcdBuffer, 19200);
 
     HAL_Delay(1000);
 
@@ -143,6 +143,7 @@ int main(void)
     {
     	HAL_UART_Transmit(&huart3, &lcdBuffer[i], 4, 300);
     }
+
   }
   /* USER CODE END 3 */
 }

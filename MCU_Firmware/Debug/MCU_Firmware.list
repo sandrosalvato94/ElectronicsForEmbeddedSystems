@@ -13042,11 +13042,11 @@ int main(void)
  80059ce:	f44f 70fa 	mov.w	r0, #500	; 0x1f4
  80059d2:	f7fb fb45 	bl	8001060 <HAL_Delay>
 
-    HAL_DCMI_Start_DMA(&hdcmi, DCMI_MODE_CONTINUOUS, lcdBuffer, 19200);
+    HAL_DCMI_Start_DMA(&hdcmi, DCMI_MODE_SNAPSHOT, lcdBuffer, 19200);
  80059d6:	f107 0208 	add.w	r2, r7, #8
  80059da:	3a08      	subs	r2, #8
  80059dc:	f44f 4396 	mov.w	r3, #19200	; 0x4b00
- 80059e0:	2100      	movs	r1, #0
+ 80059e0:	2102      	movs	r1, #2
  80059e2:	481c      	ldr	r0, [pc, #112]	; (8005a54 <main+0xe8>)
  80059e4:	f7fb fc70 	bl	80012c8 <HAL_DCMI_Start_DMA>
 

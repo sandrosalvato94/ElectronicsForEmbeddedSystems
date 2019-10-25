@@ -20738,3 +20738,576 @@ However, this IP can be configured manually.
 
 
 2019-10-22 15:55:11,273 [INFO] Activator:177 - !SESSION log4j initialized
+2019-10-24 15:02:44,821 [INFO] Activator:176 - 
+
+
+2019-10-24 15:02:44,836 [INFO] Activator:177 - !SESSION log4j initialized
+2019-10-24 15:03:57,318 [INFO] ApplicationProperties:181 - Using Application install path: D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903
+2019-10-24 15:03:57,364 [INFO] DbMcusXml:68 - Set database path to: D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/mcu/
+2019-10-24 15:03:57,364 [INFO] DbBoardsPdsc:54 - Set plugin database path to: D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/boardmanager/
+2019-10-24 15:03:57,380 [INFO] DbMcus:264 - Set plugin images path to: D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/
+2019-10-24 15:03:57,380 [INFO] DbBoards:232 - Set plugin images path to: D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/
+2019-10-24 15:03:57,381 [INFO] APIGFXSelector:72 - Set database path to: D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/mcu/
+2019-10-24 15:03:57,422 [INFO] DbMcusAds:72 - Set database path to: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder//mcu/
+2019-10-24 15:03:57,422 [INFO] DbMcusDocs:92 - Set database path to: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder//mcu/
+2019-10-24 15:03:57,422 [INFO] DbMcusJson:59 - Set database path to: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder//mcu/
+2019-10-24 15:03:57,422 [INFO] DbBoardsDocs:84 - Set database path to: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder//mcu/
+2019-10-24 15:03:57,422 [INFO] DbBoardsJson:51 - Set database path to: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder//mcu/
+2019-10-24 15:03:57,469 [INFO] CrossReferenceDbSqlite:197 - Set database path to: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder//mcu/cs/
+2019-10-24 15:03:57,658 [INFO] RulesReader:52 - Compatibility file has been processed (156 Rules)
+2019-10-24 15:03:57,850 [INFO] MicroXplorer:521 - Detected Java Version = 1.8.0_202
+2019-10-24 15:03:57,850 [INFO] DbMcusXml:68 - Set database path to: D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/mcu/
+2019-10-24 15:03:57,850 [INFO] DbBoardsPdsc:54 - Set plugin database path to: D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/boardmanager/
+2019-10-24 15:03:57,850 [INFO] DbMcus:264 - Set plugin images path to: D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/
+2019-10-24 15:03:57,850 [INFO] DbBoards:232 - Set plugin images path to: D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/
+2019-10-24 15:03:57,850 [INFO] APIGFXSelector:72 - Set database path to: D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/mcu/
+2019-10-24 15:03:57,850 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder/ => C:\Users\Alessandro\.stmcufinder\plugins\mcufinder
+2019-10-24 15:03:57,850 [INFO] DbMcusAds:72 - Set database path to: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder//mcu/
+2019-10-24 15:03:57,850 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder/ => C:\Users\Alessandro\.stmcufinder\plugins\mcufinder
+2019-10-24 15:03:57,850 [INFO] DbMcusDocs:92 - Set database path to: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder//mcu/
+2019-10-24 15:03:57,850 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder/ => C:\Users\Alessandro\.stmcufinder\plugins\mcufinder
+2019-10-24 15:03:57,850 [INFO] DbMcusJson:59 - Set database path to: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder//mcu/
+2019-10-24 15:03:57,850 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder/ => C:\Users\Alessandro\.stmcufinder\plugins\mcufinder
+2019-10-24 15:03:57,850 [INFO] DbBoardsDocs:84 - Set database path to: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder//mcu/
+2019-10-24 15:03:57,850 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder/ => C:\Users\Alessandro\.stmcufinder\plugins\mcufinder
+2019-10-24 15:03:57,850 [INFO] DbBoardsJson:51 - Set database path to: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder//mcu/
+2019-10-24 15:03:57,850 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder/ => C:\Users\Alessandro\.stmcufinder\plugins\mcufinder
+2019-10-24 15:03:57,850 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder/ => C:\Users\Alessandro\.stmcufinder\plugins\mcufinder
+2019-10-24 15:03:57,850 [INFO] CrossReferenceDbSqlite:197 - Set database path to: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder//mcu/cs/
+2019-10-24 15:03:57,975 [INFO] MainPanel:211 - HeapMemory: 307232768
+2019-10-24 15:03:58,193 [INFO] DbMcusXml:68 - Set database path to: D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/mcu/
+2019-10-24 15:03:58,193 [INFO] DbBoardsPdsc:54 - Set plugin database path to: D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/boardmanager/
+2019-10-24 15:03:58,193 [INFO] DbMcus:264 - Set plugin images path to: D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/
+2019-10-24 15:03:58,193 [INFO] DbBoards:232 - Set plugin images path to: D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/
+2019-10-24 15:03:58,193 [INFO] APIGFXSelector:72 - Set database path to: D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/mcu/
+2019-10-24 15:03:58,193 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder/ => C:\Users\Alessandro\.stmcufinder\plugins\mcufinder
+2019-10-24 15:03:58,193 [INFO] DbMcusAds:72 - Set database path to: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder//mcu/
+2019-10-24 15:03:58,193 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder/ => C:\Users\Alessandro\.stmcufinder\plugins\mcufinder
+2019-10-24 15:03:58,193 [INFO] DbMcusDocs:92 - Set database path to: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder//mcu/
+2019-10-24 15:03:58,193 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder/ => C:\Users\Alessandro\.stmcufinder\plugins\mcufinder
+2019-10-24 15:03:58,193 [INFO] DbMcusJson:59 - Set database path to: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder//mcu/
+2019-10-24 15:03:58,193 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder/ => C:\Users\Alessandro\.stmcufinder\plugins\mcufinder
+2019-10-24 15:03:58,193 [INFO] DbBoardsDocs:84 - Set database path to: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder//mcu/
+2019-10-24 15:03:58,193 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder/ => C:\Users\Alessandro\.stmcufinder\plugins\mcufinder
+2019-10-24 15:03:58,193 [INFO] DbBoardsJson:51 - Set database path to: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder//mcu/
+2019-10-24 15:03:58,193 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder/ => C:\Users\Alessandro\.stmcufinder\plugins\mcufinder
+2019-10-24 15:03:58,193 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder/ => C:\Users\Alessandro\.stmcufinder\plugins\mcufinder
+2019-10-24 15:03:58,193 [INFO] CrossReferenceDbSqlite:197 - Set database path to: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder//mcu/cs/
+2019-10-24 15:03:58,225 [INFO] ApplicationProperties:181 - Using Application install path: D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903
+2019-10-24 15:03:58,225 [INFO] PluginManage:178 - Search for loadable plugins [exclusion list=]
+2019-10-24 15:03:58,225 [INFO] PluginManage:292 - Check plugin analytics
+2019-10-24 15:03:58,256 [INFO] PluginManage:342 - Loaded plugin analytics (category:tool,tabindex:-1)
+2019-10-24 15:03:58,256 [INFO] PluginManage:292 - Check plugin clock
+2019-10-24 15:03:58,287 [INFO] PluginManage:342 - Loaded plugin clock (category:base,tabindex:2)
+2019-10-24 15:03:58,287 [INFO] PluginManage:292 - Check plugin ddr
+2019-10-24 15:03:58,303 [INFO] PluginManage:342 - Loaded plugin ddr (category:tool,tabindex:6)
+2019-10-24 15:03:58,303 [INFO] PluginManage:292 - Check plugin filemanager
+2019-10-24 15:03:58,479 [INFO] PluginManage:342 - Loaded plugin filemanager (category:base,tabindex:10)
+2019-10-24 15:03:58,479 [INFO] PluginManage:292 - Check plugin ipmanager
+2019-10-24 15:03:58,494 [INFO] PluginManage:342 - Loaded plugin ipmanager (category:base,tabindex:5)
+2019-10-24 15:03:58,494 [INFO] PluginManage:292 - Check plugin pinoutandconfiguration
+2019-10-24 15:03:58,494 [INFO] PluginManage:342 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2019-10-24 15:03:58,494 [INFO] PluginManage:292 - Check plugin pinoutconfig
+2019-10-24 15:03:58,557 [INFO] PluginManage:342 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2019-10-24 15:03:58,557 [INFO] PluginManage:292 - Check plugin power
+2019-10-24 15:03:58,604 [INFO] PluginManage:342 - Loaded plugin power (category:power,tabindex:4)
+2019-10-24 15:03:58,604 [INFO] PluginManage:292 - Check plugin projectmanager
+2019-10-24 15:03:58,619 [INFO] PluginManage:342 - Loaded plugin projectmanager (category:projectmanager,tabindex:3)
+2019-10-24 15:03:58,619 [INFO] PluginManage:292 - Check plugin thirdparty
+2019-10-24 15:03:58,666 [INFO] ThirdPartyDb:294 - Open Third Party DataBase File (C:/Users/Alessandro/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 16 ms. number of Sw pack : 14
+2019-10-24 15:03:58,697 [ERROR] BinarySerializedPackPreferences:182 - ClassNotFoundException [Ljava.lang.StackTraceElement;@7d31fb6c
+2019-10-24 15:03:58,697 [INFO] PluginManage:342 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2019-10-24 15:03:58,697 [INFO] PluginManage:292 - Check plugin tools
+2019-10-24 15:03:58,729 [INFO] PluginManage:342 - Loaded plugin tools (category:base,tabindex:7)
+2019-10-24 15:03:58,729 [INFO] PluginManage:292 - Check plugin updater
+2019-10-24 15:03:58,760 [INFO] PluginManage:342 - Loaded plugin updater (category:base,tabindex:12)
+2019-10-24 15:03:58,760 [INFO] PluginManage:265 - PluginManage : Loaded plugins [12]
+2019-10-24 15:03:59,041 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-10-24 15:03:59,166 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:03:59,166 [INFO] PluginManager:200 - loadIPPluginJar : add adc
+2019-10-24 15:03:59,182 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:03:59,182 [INFO] PluginManager:200 - loadIPPluginJar : add aes
+2019-10-24 15:03:59,197 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:03:59,197 [INFO] PluginManager:200 - loadIPPluginJar : add can
+2019-10-24 15:03:59,197 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:03:59,197 [INFO] PluginManager:200 - loadIPPluginJar : add comp
+2019-10-24 15:03:59,197 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:03:59,197 [INFO] PluginManager:200 - loadIPPluginJar : add cryp
+2019-10-24 15:03:59,213 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:03:59,213 [INFO] PluginManager:200 - loadIPPluginJar : add dfsdm
+2019-10-24 15:03:59,213 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:03:59,213 [INFO] PluginManager:200 - loadIPPluginJar : add dma
+2019-10-24 15:03:59,228 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:03:59,228 [INFO] PluginManager:200 - loadIPPluginJar : add fatfs
+2019-10-24 15:03:59,228 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:03:59,228 [INFO] PluginManager:200 - loadIPPluginJar : add fmc
+2019-10-24 15:03:59,244 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:03:59,244 [INFO] PluginManager:200 - loadIPPluginJar : add freertos
+2019-10-24 15:03:59,244 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:03:59,244 [INFO] PluginManager:200 - loadIPPluginJar : add genericplugin
+2019-10-24 15:03:59,244 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:03:59,244 [INFO] PluginManager:200 - loadIPPluginJar : add gfxmmu
+2019-10-24 15:03:59,260 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:03:59,260 [INFO] PluginManager:200 - loadIPPluginJar : add gfxsimulator
+2019-10-24 15:03:59,260 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:03:59,260 [INFO] PluginManager:200 - loadIPPluginJar : add gic
+2019-10-24 15:03:59,260 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:03:59,260 [INFO] PluginManager:200 - loadIPPluginJar : add gpio
+2019-10-24 15:03:59,260 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:03:59,275 [INFO] PluginManager:200 - loadIPPluginJar : add hash
+2019-10-24 15:03:59,291 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:03:59,291 [INFO] PluginManager:200 - loadIPPluginJar : add i2c
+2019-10-24 15:03:59,291 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:03:59,291 [INFO] PluginManager:200 - loadIPPluginJar : add i2s
+2019-10-24 15:03:59,291 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:03:59,291 [INFO] PluginManager:200 - loadIPPluginJar : add ipddr
+2019-10-24 15:03:59,323 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:03:59,323 [INFO] PluginManager:200 - loadIPPluginJar : add ltdc
+2019-10-24 15:03:59,339 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:03:59,339 [INFO] PluginManager:200 - loadIPPluginJar : add mdma
+2019-10-24 15:03:59,339 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:03:59,339 [INFO] PluginManager:200 - loadIPPluginJar : add nvic
+2019-10-24 15:03:59,339 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:03:59,339 [INFO] PluginManager:200 - loadIPPluginJar : add opamp
+2019-10-24 15:03:59,339 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:03:59,355 [INFO] PluginManager:200 - loadIPPluginJar : add pdm2pcm
+2019-10-24 15:03:59,370 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:03:59,370 [INFO] PluginManager:200 - loadIPPluginJar : add plateformsettings
+2019-10-24 15:03:59,370 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:03:59,370 [INFO] PluginManager:200 - loadIPPluginJar : add quadspi
+2019-10-24 15:03:59,386 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:03:59,386 [INFO] PluginManager:200 - loadIPPluginJar : add resmgrutility
+2019-10-24 15:03:59,386 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:03:59,386 [INFO] PluginManager:200 - loadIPPluginJar : add sai
+2019-10-24 15:03:59,386 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:03:59,386 [INFO] PluginManager:200 - loadIPPluginJar : add spi
+2019-10-24 15:03:59,417 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:03:59,417 [INFO] PluginManager:200 - loadIPPluginJar : add stm32_wpan
+2019-10-24 15:03:59,417 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:03:59,417 [INFO] PluginManager:200 - loadIPPluginJar : add tim
+2019-10-24 15:03:59,417 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:03:59,417 [INFO] PluginManager:200 - loadIPPluginJar : add touchsensing
+2019-10-24 15:03:59,417 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:03:59,417 [INFO] PluginManager:200 - loadIPPluginJar : add tracer_emb
+2019-10-24 15:03:59,433 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:03:59,433 [INFO] PluginManager:200 - loadIPPluginJar : add ts
+2019-10-24 15:03:59,433 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:03:59,433 [INFO] PluginManager:200 - loadIPPluginJar : add tsc
+2019-10-24 15:03:59,433 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:03:59,433 [INFO] PluginManager:200 - loadIPPluginJar : add ucpd
+2019-10-24 15:03:59,433 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:03:59,433 [INFO] PluginManager:200 - loadIPPluginJar : add usart
+2019-10-24 15:03:59,997 [INFO] BoardConnectionPanel:217 - [DDR PANEL] osNameString: Windows
+2019-10-24 15:04:00,395 [FATAL] Updater:277 - Updater called before beeing initialized
+2019-10-24 15:04:00,912 [FATAL] Updater:277 - Updater called before beeing initialized
+2019-10-24 15:04:00,912 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-10-24 15:04:00,912 [FATAL] Updater:277 - Updater called before beeing initialized
+2019-10-24 15:04:00,912 [INFO] MainDdrPanel:82 - [DDR PANEL] SETTER - Set cubeProgrammerPath to: D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_1.0.0.201904021149\tools\bin
+2019-10-24 15:04:00,944 [INFO] Updater:860 - Updater Version found : 5.3.0
+2019-10-24 15:04:00,965 [INFO] ApplicationProperties:181 - Using Application install path: D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903
+2019-10-24 15:04:01,359 [INFO] MainUpdater:2040 - connection check result : 10
+2019-10-24 15:04:01,359 [INFO] MainUpdater:229 - Updater Check For Update Now.
+2019-10-24 15:04:01,359 [INFO] MicroXplorer:401 - Change Database Version : DB.5.0.30
+2019-10-24 15:04:01,381 [INFO] CheckServerUpdateThread:121 - End of CheckServer Thread
+2019-10-24 15:04:01,582 [INFO] MainUpdater:2040 - connection check result : 10
+2019-10-24 15:04:01,585 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Successfull proxy connection.
+2019-10-24 15:04:01,729 [INFO] MicroXplorer:371 - Change Database Path : 
+2019-10-24 15:04:01,729 [INFO] MicroXplorer:401 - Change Database Version : DB.5.0.30
+2019-10-24 15:04:01,729 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-10-24 15:04:01,729 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 227962368 Bytes (307232768)
+2019-10-24 15:04:01,729 [INFO] MicroXplorer:371 - Change Database Path : 
+2019-10-24 15:04:01,729 [INFO] MicroXplorer:401 - Change Database Version : DB.5.0.30
+2019-10-24 15:04:01,745 [INFO] OpenFileManager:269 - Change cursor
+2019-10-24 15:04:01,814 [INFO] ThirdPartyDb:264 - Close Third Party DataBase File (C:/Users/Alessandro/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml)
+2019-10-24 15:04:01,914 [INFO] ThirdPartyDb:294 - Open Third Party DataBase File (C:/Users/Alessandro/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 0 ms. number of Sw pack : 14
+2019-10-24 15:04:01,914 [INFO] ThirdPartyDb:264 - Close Third Party DataBase File (C:/Users/Alessandro/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml)
+2019-10-24 15:04:01,929 [INFO] IntegrityCheckThread:97 - End integrity checks thread
+2019-10-24 15:04:05,427 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Instance) has Id (DCMI) currently not set
+2019-10-24 15:04:05,427 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Channel) has Id (DCMI) currently not set
+2019-10-24 15:04:05,427 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Direction) has Id (DCMI) currently not set
+2019-10-24 15:04:05,427 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphInc) has Id (DCMI) currently not set
+2019-10-24 15:04:05,427 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemInc) has Id (DCMI) currently not set
+2019-10-24 15:04:05,427 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphDataAlignment) has Id (DCMI) currently not set
+2019-10-24 15:04:05,427 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemDataAlignment) has Id (DCMI) currently not set
+2019-10-24 15:04:05,427 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Mode) has Id (DCMI) currently not set
+2019-10-24 15:04:05,433 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Priority) has Id (DCMI) currently not set
+2019-10-24 15:04:05,433 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (FIFOMode) has Id (DCMI) currently not set
+2019-10-24 15:04:05,433 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (FIFOThreshold) has Id (DCMI) currently not set
+2019-10-24 15:04:05,433 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (FIFOThreshold) has invalid value (null)
+2019-10-24 15:04:05,433 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemBurst) has Id (DCMI) currently not set
+2019-10-24 15:04:05,433 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemBurst) has invalid value (null)
+2019-10-24 15:04:05,433 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphBurst) has Id (DCMI) currently not set
+2019-10-24 15:04:05,435 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphBurst) has invalid value (null)
+2019-10-24 15:04:05,435 [WARN] IP:1918 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2019-10-24 15:04:05,435 [WARN] IP:1918 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2019-10-24 15:04:05,435 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2019-10-24 15:04:05,925 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 386419552 Bytes (584056832)
+2019-10-24 15:04:05,942 [INFO] ThirdPartyDb:294 - Open Third Party DataBase File (C:/Users/Alessandro/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 0 ms. number of Sw pack : 14
+2019-10-24 15:04:06,078 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 4.3.0
+2019-10-24 15:04:06,078 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 6.0.1
+2019-10-24 15:04:06,078 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 3.3.0
+2019-10-24 15:04:06,078 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.3.0
+2019-10-24 15:04:06,078 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 3.4.0
+2019-10-24 15:04:06,078 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 4.4.0
+2019-10-24 15:04:06,078 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 6.1.0
+2019-10-24 15:04:06,078 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.4.0
+2019-10-24 15:04:06,078 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 3.0.0
+2019-10-24 15:04:06,078 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 6.2.0
+2019-10-24 15:04:06,078 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 4.0.0
+2019-10-24 15:04:06,078 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 7.0.0
+2019-10-24 15:04:06,078 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 4.1.0
+2019-10-24 15:04:06,078 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.5.0
+2019-10-24 15:04:06,457 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-10-24 15:04:06,457 [INFO] PinOutPanel:1367 - setPackage(STM32F446ZETx,LQFP144)
+2019-10-24 15:04:07,104 [INFO] UtilMem:74 - Before build in PCC Used Memory: 291991224 Bytes (584056832)
+2019-10-24 15:04:07,480 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/Alessandro/.stm32cubemx/plugins/power
+2019-10-24 15:04:07,480 [INFO] UtilMem:74 - After build in PCC Used Memory: 307719864 Bytes (584056832)
+2019-10-24 15:04:07,490 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-10-24 15:04:07,490 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,498 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,498 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,498 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,498 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,498 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,498 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,500 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,500 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,500 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,500 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,500 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,500 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,500 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,500 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,500 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,500 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,500 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,500 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,500 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,500 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,500 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,500 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,500 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,500 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,500 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,500 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,500 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,500 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,500 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,500 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,500 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,500 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,500 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,500 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,500 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,500 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,508 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,508 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,508 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,508 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,508 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,508 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,508 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,510 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,510 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,510 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,510 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,510 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,510 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,510 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,510 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,510 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,510 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,510 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,510 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,510 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,510 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,510 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,510 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,510 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,510 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,510 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,510 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-10-24 15:04:07,520 [WARN] IP:1918 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2019-10-24 15:04:07,520 [WARN] IP:1918 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2019-10-24 15:04:07,530 [WARN] IP:1918 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2019-10-24 15:04:07,530 [WARN] IP:1918 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2019-10-24 15:04:07,530 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-10-24 15:04:07,550 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] toolchainItems.length=====1
+2019-10-24 15:04:07,550 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:07,550 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:07,641 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:07,641 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:07,641 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:07,649 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:07,649 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:07,651 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:07,662 [INFO] OpenFileManager:289 - Restore cursor
+2019-10-24 15:04:07,670 [INFO] DbMcusXml:106 - Load MCU database from D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/mcu/families.xml
+2019-10-24 15:04:07,672 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:07,672 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:07,672 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:07,680 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:07,682 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:07,682 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:07,793 [WARN] IP:1918 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2019-10-24 15:04:07,793 [WARN] IP:1918 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2019-10-24 15:04:07,793 [WARN] IP:1918 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2019-10-24 15:04:07,793 [WARN] IP:1918 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2019-10-24 15:04:07,801 [WARN] IP:1918 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2019-10-24 15:04:07,801 [WARN] IP:1918 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2019-10-24 15:04:07,801 [WARN] IP:1918 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2019-10-24 15:04:07,801 [WARN] IP:1918 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2019-10-24 15:04:07,831 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-10-24 15:04:07,844 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:07,844 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:07,852 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:07,854 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:07,854 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:07,854 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:08,013 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-10-24 15:04:08,276 [INFO] DbMcusJson:87 - JSON generation date=Mon Sep 23 11:35:45 CEST 2019 (1569231345)
+2019-10-24 15:04:09,481 [INFO] DbMcus:193 - Found 1496 MCUs (1455 are supported by CubeMX, 1455 are visible in CubeMX)
+2019-10-24 15:04:09,484 [INFO] ApiDb:158 - Load user favorites file C:\Users\Alessandro/.stm32cubemx/favorites.mcus.txt: 0 item(s)
+2019-10-24 15:04:09,484 [INFO] ApiDb:163 - User favorites MCUs=[]
+2019-10-24 15:04:09,484 [INFO] DbMcus:205 - Set 0 / 0 favorites MCUs
+2019-10-24 15:04:15,517 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-10-24 15:04:18,677 [INFO] NvicIntPanel:85 - NVIC parent = javax.swing.JTabbedPane[,0,43,483x240,layout=com.st.microxplorer.stobjectsui.STTabbedPaneUI$TabbedPaneLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=352,maximumSize=,minimumSize=,preferredSize=,haveRegistered=false,tabPlacement=TOP]
+2019-10-24 15:04:24,531 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:24,531 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:24,547 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:24,547 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:24,547 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:24,547 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:24,656 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:24,656 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:24,656 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:24,672 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:24,672 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:24,672 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:25,742 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:25,742 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:25,742 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:25,742 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:25,742 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:25,758 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:25,789 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:25,789 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:25,805 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:25,805 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:25,805 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:25,805 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:26,699 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:26,714 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:26,720 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:26,720 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:26,720 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:26,720 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:26,767 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:26,767 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:26,767 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:26,767 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:26,767 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:26,767 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:27,331 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:27,331 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:27,331 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:27,331 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:27,347 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:27,347 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:28,259 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:28,259 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:28,259 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:28,259 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:28,259 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:28,259 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:28,321 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:28,321 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:28,321 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:28,321 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:28,321 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:28,337 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:29,088 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:29,088 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:29,104 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:29,104 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:29,104 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:29,104 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:29,135 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:29,135 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:29,135 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:29,135 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:29,150 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:29,150 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:29,307 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:29,307 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:29,307 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:29,307 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:29,307 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:29,307 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:29,338 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:29,338 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:29,338 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:29,338 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:29,338 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:29,338 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:29,463 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:29,463 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:29,463 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:29,463 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:29,463 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:29,478 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:29,510 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:29,510 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:29,510 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:29,510 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:29,510 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:29,510 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:32,797 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:32,798 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:32,799 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:32,800 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:32,802 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:32,803 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:32,840 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:32,840 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:32,840 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:32,840 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:32,840 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:32,840 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:32,871 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:32,871 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:32,871 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:32,871 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:32,887 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:32,887 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:32,918 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:32,918 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:32,918 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:32,918 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:32,918 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:32,918 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:33,631 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:33,647 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:33,647 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:33,647 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:33,647 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:33,647 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:35,796 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:35,796 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:35,796 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:35,796 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:35,812 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:35,812 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:35,843 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:35,843 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:35,843 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:35,843 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:35,843 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:35,843 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:36,218 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:36,218 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:36,218 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:36,218 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:36,218 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:36,218 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:36,249 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:36,249 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:36,249 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:36,249 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:36,249 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:36,249 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:36,380 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:36,396 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:36,396 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:36,396 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:36,396 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:36,396 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:36,427 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:36,427 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:36,427 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:36,427 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:36,427 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:36,427 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:37,459 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:37,459 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:37,459 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:37,459 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:37,459 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:37,459 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:37,491 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:37,491 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:37,506 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:37,506 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:37,506 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:37,506 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:37,763 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:37,763 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:37,763 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:37,763 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:37,763 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:37,763 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:37,794 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:37,794 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:37,794 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:37,809 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:37,809 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:37,809 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:37,887 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:37,887 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:37,903 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:37,903 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:37,903 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:37,903 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:37,934 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:37,934 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:37,934 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:37,934 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:37,934 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:37,934 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:38,059 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:38,059 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:38,059 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:38,059 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:38,059 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:38,059 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:38,092 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:38,092 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:38,092 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:38,092 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:38,092 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:38,092 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:38,201 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:38,201 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:38,201 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:38,201 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:38,201 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:38,201 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:38,237 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:38,240 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:38,241 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:38,241 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:38,241 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:38,241 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:38,366 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:38,366 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:38,366 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:38,366 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:38,366 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:38,366 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:38,397 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:38,397 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:38,397 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:38,397 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:38,397 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:38,397 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:41,189 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:41,189 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:41,189 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:41,189 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:41,189 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-10-24 15:04:41,189 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-10-24 15:04:44,914 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-10-25 15:33:23,909 [INFO] Activator:176 - 
+
+
+2019-10-25 15:33:23,941 [INFO] Activator:177 - !SESSION log4j initialized

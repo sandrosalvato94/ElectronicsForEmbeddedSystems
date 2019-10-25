@@ -13,7 +13,7 @@
 
 const uint8_t OV7670_reg[][2] = {
   /* Color mode related */
-  {0x12, 0x14},   // QVGA, RGB
+  {0x12, 0x16},   // QVGA, RGB prima era 14
   {0x8C, 0x00},   // RGB444 Disable, useless??
   {0x40, 0x10 + 0xc0},   // RGB565, 00 - FF
   {0x3A, 0x04 + 8},   // UYVY (why?)
@@ -108,9 +108,9 @@ const uint8_t OV7670_reg[][2] = {
   {0x11, 0x00}, // pre-scalar = 1/1
 
   /* others */
-  {0x1E, 0x31}, //mirror flip
-//  {0x42, 0x08}, // color bar
-
+  {0x1E, 0x00}, //NO mirror flip
+  //{0x42, 0x48}, // 1/2 window
+  //{0x0D, 0x10}, // 1/2 window
   {REG_BATT, REG_BATT},
 };
 

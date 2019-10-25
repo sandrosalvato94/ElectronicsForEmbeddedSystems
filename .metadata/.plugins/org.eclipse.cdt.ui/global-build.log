@@ -294,3 +294,1026 @@ Finished building: default.size.stdout
  
 Finished building: MCU_Firmware.list
  
+15:13:21 **** Incremental Build of configuration Debug for project MCU_Firmware ****
+make -j8 all 
+arm-none-eabi-size   MCU_Firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29892	    164	   2028	  32084	   7d54	MCU_Firmware.elf
+Finished building: default.size.stdout
+ 
+15:25:54 **** Incremental Build of configuration Debug for project MCU_Firmware ****
+make -j8 all 
+arm-none-eabi-size   MCU_Firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29892	    164	   2028	  32084	   7d54	MCU_Firmware.elf
+Finished building: default.size.stdout
+ 
+15:38:50 **** Incremental Build of configuration Debug for project MCU_Firmware ****
+make -j8 all 
+arm-none-eabi-gcc "../Drivers/OV7670/src/ov7670.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/myADC/inc" -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/OV7670/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/OV7670/src/ov7670.d" -MT"Drivers/OV7670/src/ov7670.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/OV7670/src/ov7670.o"
+../Drivers/OV7670/src/ov7670.c: In function 'HAL_DCMI_VsyncEventCallback':
+../Drivers/OV7670/src/ov7670.c:104:18: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+   printf("VSYNC %d\n", HAL_GetTick());
+                 ~^     ~~~~~~~~~~~~~
+                 %ld
+../Drivers/OV7670/src/ov7670.c: In function 'ov7670_write':
+../Drivers/OV7670/src/ov7670.c:117:10: warning: 'return' with a value, in function returning void
+   return ret;
+          ^~~
+../Drivers/OV7670/src/ov7670.c:111:13: note: declared here
+ static void ov7670_write(uint8_t regAddr, uint8_t data)
+             ^~~~~~~~~~~~
+../Drivers/OV7670/src/ov7670.c: In function 'ov7670_read':
+../Drivers/OV7670/src/ov7670.c:127:10: warning: 'return' with a value, in function returning void
+   return ret;
+          ^~~
+../Drivers/OV7670/src/ov7670.c:120:13: note: declared here
+ static void ov7670_read(uint8_t regAddr, uint8_t *data)
+             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "MCU_Firmware.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\STM32F446ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MCU_Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MCU_Firmware.elf
+ 
+arm-none-eabi-objdump -h -S  MCU_Firmware.elf  > "MCU_Firmware.list"
+arm-none-eabi-size   MCU_Firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29892	    164	   2028	  32084	   7d54	MCU_Firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: MCU_Firmware.list
+ 
+15:39:16 **** Incremental Build of configuration Debug for project MCU_Firmware ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/myADC/inc" -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/OV7670/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:133:52: warning: passing argument 3 of 'HAL_DCMI_Start_DMA' makes integer from pointer without a cast [-Wint-conversion]
+     HAL_DCMI_Start_DMA(&hdcmi, DCMI_MODE_SNAPSHOT, lcdBuffer, 19200);
+                                                    ^~~~~~~~~
+In file included from ../Inc/stm32f4xx_hal_conf.h:276:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h:439:19: note: expected 'uint32_t {aka long unsigned int}' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ HAL_StatusTypeDef HAL_DCMI_Start_DMA(DCMI_HandleTypeDef* hdcmi, uint32_t DCMI_Mode, uint32_t pData, uint32_t Length);
+                   ^~~~~~~~~~~~~~~~~~
+../Src/main.c:144:33: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+      HAL_UART_Transmit(&huart3, &lcdBuffer[i], 4, 300);
+                                 ^
+In file included from ../Inc/stm32f4xx_hal_conf.h:360:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:696:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:84:9: warning: variable 'measure' set but not used [-Wunused-but-set-variable]
+   float measure=0.0;
+         ^~~~~~~
+arm-none-eabi-gcc -o "MCU_Firmware.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\STM32F446ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MCU_Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MCU_Firmware.elf
+ 
+arm-none-eabi-objdump -h -S  MCU_Firmware.elf  > "MCU_Firmware.list"
+arm-none-eabi-size   MCU_Firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29892	    164	   2028	  32084	   7d54	MCU_Firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: MCU_Firmware.list
+ 
+15:46:26 **** Incremental Build of configuration Debug for project MCU_Firmware ****
+make -j8 all 
+arm-none-eabi-gcc "../Drivers/OV7670/src/ov7670.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/myADC/inc" -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/OV7670/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/OV7670/src/ov7670.d" -MT"Drivers/OV7670/src/ov7670.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/OV7670/src/ov7670.o"
+../Drivers/OV7670/src/ov7670.c: In function 'HAL_DCMI_VsyncEventCallback':
+../Drivers/OV7670/src/ov7670.c:104:18: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+   printf("VSYNC %d\n", HAL_GetTick());
+                 ~^     ~~~~~~~~~~~~~
+                 %ld
+../Drivers/OV7670/src/ov7670.c: In function 'ov7670_write':
+../Drivers/OV7670/src/ov7670.c:117:10: warning: 'return' with a value, in function returning void
+   return ret;
+          ^~~
+../Drivers/OV7670/src/ov7670.c:111:13: note: declared here
+ static void ov7670_write(uint8_t regAddr, uint8_t data)
+             ^~~~~~~~~~~~
+../Drivers/OV7670/src/ov7670.c: In function 'ov7670_read':
+../Drivers/OV7670/src/ov7670.c:127:10: warning: 'return' with a value, in function returning void
+   return ret;
+          ^~~
+../Drivers/OV7670/src/ov7670.c:120:13: note: declared here
+ static void ov7670_read(uint8_t regAddr, uint8_t *data)
+             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "MCU_Firmware.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\STM32F446ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MCU_Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MCU_Firmware.elf
+ 
+arm-none-eabi-objdump -h -S  MCU_Firmware.elf  > "MCU_Firmware.list"
+arm-none-eabi-size   MCU_Firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29892	    164	   2028	  32084	   7d54	MCU_Firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: MCU_Firmware.list
+ 
+15:52:11 **** Incremental Build of configuration Debug for project MCU_Firmware ****
+make -j8 all 
+arm-none-eabi-gcc "../Drivers/OV7670/src/ov7670.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/myADC/inc" -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/OV7670/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/OV7670/src/ov7670.d" -MT"Drivers/OV7670/src/ov7670.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/OV7670/src/ov7670.o"
+../Drivers/OV7670/src/ov7670.c: In function 'HAL_DCMI_VsyncEventCallback':
+../Drivers/OV7670/src/ov7670.c:104:18: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+   printf("VSYNC %d\n", HAL_GetTick());
+                 ~^     ~~~~~~~~~~~~~
+                 %ld
+../Drivers/OV7670/src/ov7670.c: In function 'ov7670_write':
+../Drivers/OV7670/src/ov7670.c:117:10: warning: 'return' with a value, in function returning void
+   return ret;
+          ^~~
+../Drivers/OV7670/src/ov7670.c:111:13: note: declared here
+ static void ov7670_write(uint8_t regAddr, uint8_t data)
+             ^~~~~~~~~~~~
+../Drivers/OV7670/src/ov7670.c: In function 'ov7670_read':
+../Drivers/OV7670/src/ov7670.c:127:10: warning: 'return' with a value, in function returning void
+   return ret;
+          ^~~
+../Drivers/OV7670/src/ov7670.c:120:13: note: declared here
+ static void ov7670_read(uint8_t regAddr, uint8_t *data)
+             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "MCU_Firmware.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\STM32F446ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MCU_Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MCU_Firmware.elf
+ 
+arm-none-eabi-objdump -h -S  MCU_Firmware.elf  > "MCU_Firmware.list"
+arm-none-eabi-size   MCU_Firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29892	    164	   2028	  32084	   7d54	MCU_Firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: MCU_Firmware.list
+ 
+15:54:05 **** Incremental Build of configuration Debug for project MCU_Firmware ****
+make -j8 all 
+arm-none-eabi-gcc "../Drivers/OV7670/src/ov7670.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/myADC/inc" -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/OV7670/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/OV7670/src/ov7670.d" -MT"Drivers/OV7670/src/ov7670.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/OV7670/src/ov7670.o"
+../Drivers/OV7670/src/ov7670.c: In function 'HAL_DCMI_VsyncEventCallback':
+../Drivers/OV7670/src/ov7670.c:104:18: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+   printf("VSYNC %d\n", HAL_GetTick());
+                 ~^     ~~~~~~~~~~~~~
+                 %ld
+../Drivers/OV7670/src/ov7670.c: In function 'ov7670_write':
+../Drivers/OV7670/src/ov7670.c:117:10: warning: 'return' with a value, in function returning void
+   return ret;
+          ^~~
+../Drivers/OV7670/src/ov7670.c:111:13: note: declared here
+ static void ov7670_write(uint8_t regAddr, uint8_t data)
+             ^~~~~~~~~~~~
+../Drivers/OV7670/src/ov7670.c: In function 'ov7670_read':
+../Drivers/OV7670/src/ov7670.c:127:10: warning: 'return' with a value, in function returning void
+   return ret;
+          ^~~
+../Drivers/OV7670/src/ov7670.c:120:13: note: declared here
+ static void ov7670_read(uint8_t regAddr, uint8_t *data)
+             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "MCU_Firmware.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\STM32F446ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MCU_Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MCU_Firmware.elf
+ 
+arm-none-eabi-objdump -h -S  MCU_Firmware.elf  > "MCU_Firmware.list"
+arm-none-eabi-size   MCU_Firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29892	    164	   2028	  32084	   7d54	MCU_Firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: MCU_Firmware.list
+ 
+16:04:38 **** Incremental Build of configuration Debug for project MCU_Firmware ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/myADC/inc" -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/OV7670/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:133:52: warning: passing argument 3 of 'HAL_DCMI_Start_DMA' makes integer from pointer without a cast [-Wint-conversion]
+     HAL_DCMI_Start_DMA(&hdcmi, DCMI_MODE_SNAPSHOT, lcdBuffer, 19200);
+                                                    ^~~~~~~~~
+In file included from ../Inc/stm32f4xx_hal_conf.h:276:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h:439:19: note: expected 'uint32_t {aka long unsigned int}' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ HAL_StatusTypeDef HAL_DCMI_Start_DMA(DCMI_HandleTypeDef* hdcmi, uint32_t DCMI_Mode, uint32_t pData, uint32_t Length);
+                   ^~~~~~~~~~~~~~~~~~
+../Src/main.c:144:33: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+      HAL_UART_Transmit(&huart3, &lcdBuffer[i], 4, 300);
+                                 ^
+In file included from ../Inc/stm32f4xx_hal_conf.h:360:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:696:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:148:36: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+         HAL_UART_Transmit(&huart3, &lcdBuffer[i], 4, 300);
+                                    ^
+In file included from ../Inc/stm32f4xx_hal_conf.h:360:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:696:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:84:9: warning: variable 'measure' set but not used [-Wunused-but-set-variable]
+   float measure=0.0;
+         ^~~~~~~
+arm-none-eabi-gcc -o "MCU_Firmware.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\STM32F446ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MCU_Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MCU_Firmware.elf
+ 
+arm-none-eabi-objdump -h -S  MCU_Firmware.elf  > "MCU_Firmware.list"
+arm-none-eabi-size   MCU_Firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29976	    164	   2028	  32168	   7da8	MCU_Firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: MCU_Firmware.list
+ 
+16:20:26 **** Incremental Build of configuration Debug for project MCU_Firmware ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/myADC/inc" -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/OV7670/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:133:52: warning: passing argument 3 of 'HAL_DCMI_Start_DMA' makes integer from pointer without a cast [-Wint-conversion]
+     HAL_DCMI_Start_DMA(&hdcmi, DCMI_MODE_SNAPSHOT, lcdBuffer, 19200);
+                                                    ^~~~~~~~~
+In file included from ../Inc/stm32f4xx_hal_conf.h:276:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h:439:19: note: expected 'uint32_t {aka long unsigned int}' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ HAL_StatusTypeDef HAL_DCMI_Start_DMA(DCMI_HandleTypeDef* hdcmi, uint32_t DCMI_Mode, uint32_t pData, uint32_t Length);
+                   ^~~~~~~~~~~~~~~~~~
+../Src/main.c:144:33: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+      HAL_UART_Transmit(&huart3, &lcdBuffer[i], 4, 300);
+                                 ^
+In file included from ../Inc/stm32f4xx_hal_conf.h:360:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:696:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:84:9: warning: variable 'measure' set but not used [-Wunused-but-set-variable]
+   float measure=0.0;
+         ^~~~~~~
+arm-none-eabi-gcc -o "MCU_Firmware.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\STM32F446ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MCU_Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MCU_Firmware.elf
+ 
+arm-none-eabi-objdump -h -S  MCU_Firmware.elf  > "MCU_Firmware.list"
+arm-none-eabi-size   MCU_Firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29892	    164	   2028	  32084	   7d54	MCU_Firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: MCU_Firmware.list
+ 
+16:46:56 **** Incremental Build of configuration Debug for project MCU_Firmware ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/myADC/inc" -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/OV7670/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:133:52: warning: passing argument 3 of 'HAL_DCMI_Start_DMA' makes integer from pointer without a cast [-Wint-conversion]
+     HAL_DCMI_Start_DMA(&hdcmi, DCMI_MODE_SNAPSHOT, lcdBuffer, 19200);
+                                                    ^~~~~~~~~
+In file included from ../Inc/stm32f4xx_hal_conf.h:276:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h:439:19: note: expected 'uint32_t {aka long unsigned int}' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ HAL_StatusTypeDef HAL_DCMI_Start_DMA(DCMI_HandleTypeDef* hdcmi, uint32_t DCMI_Mode, uint32_t pData, uint32_t Length);
+                   ^~~~~~~~~~~~~~~~~~
+../Src/main.c:144:33: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+      HAL_UART_Transmit(&huart3, &lcdBuffer[i], 4, 300);
+                                 ^
+In file included from ../Inc/stm32f4xx_hal_conf.h:360:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:696:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:148:36: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+         HAL_UART_Transmit(&huart3, &lcdBuffer[i], 4, 300);
+                                    ^
+In file included from ../Inc/stm32f4xx_hal_conf.h:360:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:696:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:84:9: warning: variable 'measure' set but not used [-Wunused-but-set-variable]
+   float measure=0.0;
+         ^~~~~~~
+arm-none-eabi-gcc -o "MCU_Firmware.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\STM32F446ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MCU_Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MCU_Firmware.elf
+ 
+arm-none-eabi-objdump -h -S  MCU_Firmware.elf  > "MCU_Firmware.list"
+arm-none-eabi-size   MCU_Firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29976	    164	   2028	  32168	   7da8	MCU_Firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: MCU_Firmware.list
+ 
+17:25:39 **** Incremental Build of configuration Debug for project MCU_Firmware ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/myADC/inc" -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/OV7670/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:133:52: warning: passing argument 3 of 'HAL_DCMI_Start_DMA' makes integer from pointer without a cast [-Wint-conversion]
+     HAL_DCMI_Start_DMA(&hdcmi, DCMI_MODE_SNAPSHOT, lcdBuffer, 19200);
+                                                    ^~~~~~~~~
+In file included from ../Inc/stm32f4xx_hal_conf.h:276:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h:439:19: note: expected 'uint32_t {aka long unsigned int}' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ HAL_StatusTypeDef HAL_DCMI_Start_DMA(DCMI_HandleTypeDef* hdcmi, uint32_t DCMI_Mode, uint32_t pData, uint32_t Length);
+                   ^~~~~~~~~~~~~~~~~~
+../Src/main.c:144:33: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+      HAL_UART_Transmit(&huart3, &lcdBuffer[i], 4, 300);
+                                 ^
+In file included from ../Inc/stm32f4xx_hal_conf.h:360:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:696:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:84:9: warning: variable 'measure' set but not used [-Wunused-but-set-variable]
+   float measure=0.0;
+         ^~~~~~~
+arm-none-eabi-gcc -o "MCU_Firmware.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\STM32F446ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MCU_Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MCU_Firmware.elf
+ 
+arm-none-eabi-objdump -h -S  MCU_Firmware.elf  > "MCU_Firmware.list"
+arm-none-eabi-size   MCU_Firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29892	    164	   2028	  32084	   7d54	MCU_Firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: MCU_Firmware.list
+ 
+17:38:53 **** Incremental Build of configuration Debug for project MCU_Firmware ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/myADC/inc" -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/OV7670/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:133:52: warning: passing argument 3 of 'HAL_DCMI_Start_DMA' makes integer from pointer without a cast [-Wint-conversion]
+     HAL_DCMI_Start_DMA(&hdcmi, DCMI_MODE_SNAPSHOT, lcdBuffer, 38400);
+                                                    ^~~~~~~~~
+In file included from ../Inc/stm32f4xx_hal_conf.h:276:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h:439:19: note: expected 'uint32_t {aka long unsigned int}' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ HAL_StatusTypeDef HAL_DCMI_Start_DMA(DCMI_HandleTypeDef* hdcmi, uint32_t DCMI_Mode, uint32_t pData, uint32_t Length);
+                   ^~~~~~~~~~~~~~~~~~
+../Src/main.c:144:33: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+      HAL_UART_Transmit(&huart3, &lcdBuffer[i], 4, 300);
+                                 ^
+In file included from ../Inc/stm32f4xx_hal_conf.h:360:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:696:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:84:9: warning: variable 'measure' set but not used [-Wunused-but-set-variable]
+   float measure=0.0;
+         ^~~~~~~
+arm-none-eabi-gcc -o "MCU_Firmware.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\STM32F446ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MCU_Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MCU_Firmware.elf
+ 
+arm-none-eabi-objdump -h -S  MCU_Firmware.elf  > "MCU_Firmware.list"
+arm-none-eabi-size   MCU_Firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29892	    164	   2028	  32084	   7d54	MCU_Firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: MCU_Firmware.list
+ 
+17:40:35 **** Incremental Build of configuration Debug for project MCU_Firmware ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/myADC/inc" -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/OV7670/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:133:52: warning: passing argument 3 of 'HAL_DCMI_Start_DMA' makes integer from pointer without a cast [-Wint-conversion]
+     HAL_DCMI_Start_DMA(&hdcmi, DCMI_MODE_SNAPSHOT, lcdBuffer, 38400);
+                                                    ^~~~~~~~~
+In file included from ../Inc/stm32f4xx_hal_conf.h:276:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h:439:19: note: expected 'uint32_t {aka long unsigned int}' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ HAL_StatusTypeDef HAL_DCMI_Start_DMA(DCMI_HandleTypeDef* hdcmi, uint32_t DCMI_Mode, uint32_t pData, uint32_t Length);
+                   ^~~~~~~~~~~~~~~~~~
+../Src/main.c:144:33: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+      HAL_UART_Transmit(&huart3, &lcdBuffer[i], 4, 300);
+                                 ^
+In file included from ../Inc/stm32f4xx_hal_conf.h:360:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:696:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:84:9: warning: variable 'measure' set but not used [-Wunused-but-set-variable]
+   float measure=0.0;
+         ^~~~~~~
+arm-none-eabi-gcc -o "MCU_Firmware.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\STM32F446ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MCU_Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MCU_Firmware.elf
+ 
+arm-none-eabi-objdump -h -S  MCU_Firmware.elf  > "MCU_Firmware.list"
+arm-none-eabi-size   MCU_Firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29892	    164	   2028	  32084	   7d54	MCU_Firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: MCU_Firmware.list
+ 
+17:42:23 **** Incremental Build of configuration Debug for project MCU_Firmware ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/myADC/inc" -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/OV7670/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:133:52: warning: passing argument 3 of 'HAL_DCMI_Start_DMA' makes integer from pointer without a cast [-Wint-conversion]
+     HAL_DCMI_Start_DMA(&hdcmi, DCMI_MODE_SNAPSHOT, lcdBuffer, 38400);
+                                                    ^~~~~~~~~
+In file included from ../Inc/stm32f4xx_hal_conf.h:276:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h:439:19: note: expected 'uint32_t {aka long unsigned int}' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ HAL_StatusTypeDef HAL_DCMI_Start_DMA(DCMI_HandleTypeDef* hdcmi, uint32_t DCMI_Mode, uint32_t pData, uint32_t Length);
+                   ^~~~~~~~~~~~~~~~~~
+../Src/main.c:144:33: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+      HAL_UART_Transmit(&huart3, &lcdBuffer[i], 4, 300);
+                                 ^
+In file included from ../Inc/stm32f4xx_hal_conf.h:360:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:696:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:84:9: warning: variable 'measure' set but not used [-Wunused-but-set-variable]
+   float measure=0.0;
+         ^~~~~~~
+arm-none-eabi-gcc -o "MCU_Firmware.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\STM32F446ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MCU_Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MCU_Firmware.elf
+ 
+arm-none-eabi-objdump -h -S  MCU_Firmware.elf  > "MCU_Firmware.list"
+arm-none-eabi-size   MCU_Firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29892	    164	   2028	  32084	   7d54	MCU_Firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: MCU_Firmware.list
+ 
+17:43:00 **** Incremental Build of configuration Debug for project MCU_Firmware ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/myADC/inc" -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/OV7670/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:133:52: warning: passing argument 3 of 'HAL_DCMI_Start_DMA' makes integer from pointer without a cast [-Wint-conversion]
+     HAL_DCMI_Start_DMA(&hdcmi, DCMI_MODE_SNAPSHOT, lcdBuffer, 19200);
+                                                    ^~~~~~~~~
+In file included from ../Inc/stm32f4xx_hal_conf.h:276:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h:439:19: note: expected 'uint32_t {aka long unsigned int}' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ HAL_StatusTypeDef HAL_DCMI_Start_DMA(DCMI_HandleTypeDef* hdcmi, uint32_t DCMI_Mode, uint32_t pData, uint32_t Length);
+                   ^~~~~~~~~~~~~~~~~~
+../Src/main.c:144:33: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+      HAL_UART_Transmit(&huart3, &lcdBuffer[i], 4, 300);
+                                 ^
+In file included from ../Inc/stm32f4xx_hal_conf.h:360:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:696:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:84:9: warning: variable 'measure' set but not used [-Wunused-but-set-variable]
+   float measure=0.0;
+         ^~~~~~~
+arm-none-eabi-gcc -o "MCU_Firmware.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\STM32F446ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MCU_Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MCU_Firmware.elf
+ 
+arm-none-eabi-objdump -h -S  MCU_Firmware.elf  > "MCU_Firmware.list"
+arm-none-eabi-size   MCU_Firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29892	    164	   2028	  32084	   7d54	MCU_Firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: MCU_Firmware.list
+ 
+17:47:17 **** Incremental Build of configuration Debug for project MCU_Firmware ****
+make -j8 all 
+arm-none-eabi-size   MCU_Firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29892	    164	   2028	  32084	   7d54	MCU_Firmware.elf
+Finished building: default.size.stdout
+ 
+15:33:51 **** Incremental Build of configuration Debug for project MCU_Firmware ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/myADC/inc" -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/OV7670/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Drivers/OV7670/src/ov7670.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/myADC/inc" -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/OV7670/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/OV7670/src/ov7670.d" -MT"Drivers/OV7670/src/ov7670.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/OV7670/src/ov7670.o"
+../Src/main.c: In function 'main':
+../Src/main.c:133:52: warning: passing argument 3 of 'HAL_DCMI_Start_DMA' makes integer from pointer without a cast [-Wint-conversion]
+     HAL_DCMI_Start_DMA(&hdcmi, DCMI_MODE_SNAPSHOT, lcdBuffer, 19200);
+                                                    ^~~~~~~~~
+In file included from ../Inc/stm32f4xx_hal_conf.h:276:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h:439:19: note: expected 'uint32_t {aka long unsigned int}' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ HAL_StatusTypeDef HAL_DCMI_Start_DMA(DCMI_HandleTypeDef* hdcmi, uint32_t DCMI_Mode, uint32_t pData, uint32_t Length);
+                   ^~~~~~~~~~~~~~~~~~
+../Src/main.c:144:33: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+      HAL_UART_Transmit(&huart3, &lcdBuffer[i], 4, 300);
+                                 ^
+In file included from ../Inc/stm32f4xx_hal_conf.h:360:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:696:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:84:9: warning: variable 'measure' set but not used [-Wunused-but-set-variable]
+   float measure=0.0;
+         ^~~~~~~
+../Drivers/OV7670/src/ov7670.c: In function 'HAL_DCMI_VsyncEventCallback':
+../Drivers/OV7670/src/ov7670.c:104:18: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+   printf("VSYNC %d\n", HAL_GetTick());
+                 ~^     ~~~~~~~~~~~~~
+                 %ld
+../Drivers/OV7670/src/ov7670.c: In function 'ov7670_write':
+../Drivers/OV7670/src/ov7670.c:117:10: warning: 'return' with a value, in function returning void
+   return ret;
+          ^~~
+../Drivers/OV7670/src/ov7670.c:111:13: note: declared here
+ static void ov7670_write(uint8_t regAddr, uint8_t data)
+             ^~~~~~~~~~~~
+../Drivers/OV7670/src/ov7670.c: In function 'ov7670_read':
+../Drivers/OV7670/src/ov7670.c:127:10: warning: 'return' with a value, in function returning void
+   return ret;
+          ^~~
+../Drivers/OV7670/src/ov7670.c:120:13: note: declared here
+ static void ov7670_read(uint8_t regAddr, uint8_t *data)
+             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "MCU_Firmware.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\STM32F446ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MCU_Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MCU_Firmware.elf
+ 
+arm-none-eabi-objdump -h -S  MCU_Firmware.elf  > "MCU_Firmware.list"
+arm-none-eabi-size   MCU_Firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29892	    164	   2028	  32084	   7d54	MCU_Firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: MCU_Firmware.list
+ 
+15:34:14 **** Incremental Build of configuration Debug for project MCU_Firmware ****
+make -j8 all 
+arm-none-eabi-size   MCU_Firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29892	    164	   2028	  32084	   7d54	MCU_Firmware.elf
+Finished building: default.size.stdout
+ 
+16:02:57 **** Incremental Build of configuration Debug for project MCU_Firmware ****
+make -j8 all 
+arm-none-eabi-size   MCU_Firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29892	    164	   2028	  32084	   7d54	MCU_Firmware.elf
+Finished building: default.size.stdout
+ 
+16:18:05 **** Incremental Build of configuration Debug for project MCU_Firmware ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/myADC/inc" -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/OV7670/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:134:52: warning: passing argument 3 of 'HAL_DCMI_Start_DMA' makes integer from pointer without a cast [-Wint-conversion]
+     HAL_DCMI_Start_DMA(&hdcmi, DCMI_MODE_SNAPSHOT, lcdBuffer, 19200);
+                                                    ^~~~~~~~~
+In file included from ../Inc/stm32f4xx_hal_conf.h:276:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h:439:19: note: expected 'uint32_t {aka long unsigned int}' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ HAL_StatusTypeDef HAL_DCMI_Start_DMA(DCMI_HandleTypeDef* hdcmi, uint32_t DCMI_Mode, uint32_t pData, uint32_t Length);
+                   ^~~~~~~~~~~~~~~~~~
+../Src/main.c:145:33: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+      HAL_UART_Transmit(&huart3, &lcdBuffer[i], 4, 300);
+                                 ^
+In file included from ../Inc/stm32f4xx_hal_conf.h:360:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:696:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:87:11: warning: unused variable 'tmp' [-Wunused-variable]
+   uint8_t tmp;
+           ^~~
+../Src/main.c:84:9: warning: variable 'measure' set but not used [-Wunused-but-set-variable]
+   float measure=0.0;
+         ^~~~~~~
+arm-none-eabi-gcc -o "MCU_Firmware.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\STM32F446ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MCU_Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MCU_Firmware.elf
+ 
+arm-none-eabi-objdump -h -S  MCU_Firmware.elf  > "MCU_Firmware.list"
+arm-none-eabi-size   MCU_Firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29892	    164	   2028	  32084	   7d54	MCU_Firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: MCU_Firmware.list
+ 
+16:22:59 **** Incremental Build of configuration Debug for project MCU_Firmware ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/myADC/inc" -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/OV7670/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:134:52: warning: passing argument 3 of 'HAL_DCMI_Start_DMA' makes integer from pointer without a cast [-Wint-conversion]
+     HAL_DCMI_Start_DMA(&hdcmi, DCMI_MODE_SNAPSHOT, lcdBuffer, 19200);
+                                                    ^~~~~~~~~
+In file included from ../Inc/stm32f4xx_hal_conf.h:276:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h:439:19: note: expected 'uint32_t {aka long unsigned int}' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ HAL_StatusTypeDef HAL_DCMI_Start_DMA(DCMI_HandleTypeDef* hdcmi, uint32_t DCMI_Mode, uint32_t pData, uint32_t Length);
+                   ^~~~~~~~~~~~~~~~~~
+../Src/main.c:146:33: warning: passing argument 2 of 'HAL_UART_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+      HAL_UART_Transmit(&huart3, tmp, 1, 300);
+                                 ^~~
+In file included from ../Inc/stm32f4xx_hal_conf.h:360:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:696:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint8_t {aka unsigned char}'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:149:33: warning: passing argument 2 of 'HAL_UART_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+      HAL_UART_Transmit(&huart3, tmp, 1, 300);
+                                 ^~~
+In file included from ../Inc/stm32f4xx_hal_conf.h:360:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:696:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint8_t {aka unsigned char}'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:152:33: warning: passing argument 2 of 'HAL_UART_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+      HAL_UART_Transmit(&huart3, tmp, 1, 300);
+                                 ^~~
+In file included from ../Inc/stm32f4xx_hal_conf.h:360:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:696:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint8_t {aka unsigned char}'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:155:33: warning: passing argument 2 of 'HAL_UART_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+      HAL_UART_Transmit(&huart3, tmp, 1, 300);
+                                 ^~~
+In file included from ../Inc/stm32f4xx_hal_conf.h:360:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:696:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint8_t {aka unsigned char}'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:84:9: warning: variable 'measure' set but not used [-Wunused-but-set-variable]
+   float measure=0.0;
+         ^~~~~~~
+arm-none-eabi-gcc -o "MCU_Firmware.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\STM32F446ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MCU_Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MCU_Firmware.elf
+ 
+arm-none-eabi-objdump -h -S  MCU_Firmware.elf  > "MCU_Firmware.list"
+arm-none-eabi-size   MCU_Firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  30092	    164	   2028	  32284	   7e1c	MCU_Firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: MCU_Firmware.list
+ 
+16:24:52 **** Incremental Build of configuration Debug for project MCU_Firmware ****
+make -j8 all 
+arm-none-eabi-size   MCU_Firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  30092	    164	   2028	  32284	   7e1c	MCU_Firmware.elf
+Finished building: default.size.stdout
+ 
+16:25:45 **** Incremental Build of configuration Debug for project MCU_Firmware ****
+make -j8 all 
+arm-none-eabi-size   MCU_Firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  30092	    164	   2028	  32284	   7e1c	MCU_Firmware.elf
+Finished building: default.size.stdout
+ 
+16:28:05 **** Incremental Build of configuration Debug for project MCU_Firmware ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/myADC/inc" -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/OV7670/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:134:52: warning: passing argument 3 of 'HAL_DCMI_Start_DMA' makes integer from pointer without a cast [-Wint-conversion]
+     HAL_DCMI_Start_DMA(&hdcmi, DCMI_MODE_SNAPSHOT, lcdBuffer, 19200);
+                                                    ^~~~~~~~~
+In file included from ../Inc/stm32f4xx_hal_conf.h:276:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h:439:19: note: expected 'uint32_t {aka long unsigned int}' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ HAL_StatusTypeDef HAL_DCMI_Start_DMA(DCMI_HandleTypeDef* hdcmi, uint32_t DCMI_Mode, uint32_t pData, uint32_t Length);
+                   ^~~~~~~~~~~~~~~~~~
+../Src/main.c:145:33: error: 'lcd' undeclared (first use in this function)
+      HAL_UART_Transmit(&huart3, lcd, 1, 300);
+                                 ^~~
+../Src/main.c:145:33: note: each undeclared identifier is reported only once for each function it appears in
+../Src/main.c:87:11: warning: unused variable 'tmp' [-Wunused-variable]
+   uint8_t tmp;
+           ^~~
+../Src/main.c:84:9: warning: variable 'measure' set but not used [-Wunused-but-set-variable]
+   float measure=0.0;
+         ^~~~~~~
+make: *** [Src/subdir.mk:33: Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+16:29:39 **** Incremental Build of configuration Debug for project MCU_Firmware ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/myADC/inc" -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/OV7670/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Drivers/OV7670/src/ov7670.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/myADC/inc" -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/OV7670/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/OV7670/src/ov7670.d" -MT"Drivers/OV7670/src/ov7670.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/OV7670/src/ov7670.o"
+../Src/main.c: In function 'main':
+../Src/main.c:134:52: warning: passing argument 3 of 'HAL_DCMI_Start_DMA' makes integer from pointer without a cast [-Wint-conversion]
+     HAL_DCMI_Start_DMA(&hdcmi, DCMI_MODE_SNAPSHOT, lcdBuffer, 19200);
+                                                    ^~~~~~~~~
+In file included from ../Inc/stm32f4xx_hal_conf.h:276:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h:439:19: note: expected 'uint32_t {aka long unsigned int}' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ HAL_StatusTypeDef HAL_DCMI_Start_DMA(DCMI_HandleTypeDef* hdcmi, uint32_t DCMI_Mode, uint32_t pData, uint32_t Length);
+                   ^~~~~~~~~~~~~~~~~~
+../Src/main.c:145:33: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+      HAL_UART_Transmit(&huart3, &lcdBuffer[0], 1, 300);
+                                 ^
+In file included from ../Inc/stm32f4xx_hal_conf.h:360:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:696:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:87:11: warning: unused variable 'tmp' [-Wunused-variable]
+   uint8_t tmp;
+           ^~~
+../Src/main.c:84:9: warning: variable 'measure' set but not used [-Wunused-but-set-variable]
+   float measure=0.0;
+         ^~~~~~~
+../Drivers/OV7670/src/ov7670.c: In function 'HAL_DCMI_VsyncEventCallback':
+../Drivers/OV7670/src/ov7670.c:104:18: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+   printf("VSYNC %d\n", HAL_GetTick());
+                 ~^     ~~~~~~~~~~~~~
+                 %ld
+../Drivers/OV7670/src/ov7670.c: In function 'ov7670_write':
+../Drivers/OV7670/src/ov7670.c:117:10: warning: 'return' with a value, in function returning void
+   return ret;
+          ^~~
+../Drivers/OV7670/src/ov7670.c:111:13: note: declared here
+ static void ov7670_write(uint8_t regAddr, uint8_t data)
+             ^~~~~~~~~~~~
+../Drivers/OV7670/src/ov7670.c: In function 'ov7670_read':
+../Drivers/OV7670/src/ov7670.c:127:10: warning: 'return' with a value, in function returning void
+   return ret;
+          ^~~
+../Drivers/OV7670/src/ov7670.c:120:13: note: declared here
+ static void ov7670_read(uint8_t regAddr, uint8_t *data)
+             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "MCU_Firmware.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\STM32F446ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MCU_Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MCU_Firmware.elf
+ 
+arm-none-eabi-objdump -h -S  MCU_Firmware.elf  > "MCU_Firmware.list"
+arm-none-eabi-size   MCU_Firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29876	    164	   2028	  32068	   7d44	MCU_Firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: MCU_Firmware.list
+ 
+16:35:25 **** Incremental Build of configuration Debug for project MCU_Firmware ****
+make -j8 all 
+arm-none-eabi-gcc "../Drivers/OV7670/src/ov7670.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/myADC/inc" -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/OV7670/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/OV7670/src/ov7670.d" -MT"Drivers/OV7670/src/ov7670.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/OV7670/src/ov7670.o"
+../Drivers/OV7670/src/ov7670.c: In function 'HAL_DCMI_VsyncEventCallback':
+../Drivers/OV7670/src/ov7670.c:104:18: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+   printf("VSYNC %d\n", HAL_GetTick());
+                 ~^     ~~~~~~~~~~~~~
+                 %ld
+../Drivers/OV7670/src/ov7670.c: In function 'ov7670_write':
+../Drivers/OV7670/src/ov7670.c:117:10: warning: 'return' with a value, in function returning void
+   return ret;
+          ^~~
+../Drivers/OV7670/src/ov7670.c:111:13: note: declared here
+ static void ov7670_write(uint8_t regAddr, uint8_t data)
+             ^~~~~~~~~~~~
+../Drivers/OV7670/src/ov7670.c: In function 'ov7670_read':
+../Drivers/OV7670/src/ov7670.c:127:10: warning: 'return' with a value, in function returning void
+   return ret;
+          ^~~
+../Drivers/OV7670/src/ov7670.c:120:13: note: declared here
+ static void ov7670_read(uint8_t regAddr, uint8_t *data)
+             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "MCU_Firmware.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\STM32F446ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MCU_Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MCU_Firmware.elf
+ 
+arm-none-eabi-objdump -h -S  MCU_Firmware.elf  > "MCU_Firmware.list"
+arm-none-eabi-size   MCU_Firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29880	    164	   2028	  32072	   7d48	MCU_Firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: MCU_Firmware.list
+ 
+16:36:47 **** Incremental Build of configuration Debug for project MCU_Firmware ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/myADC/inc" -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/OV7670/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:134:52: warning: passing argument 3 of 'HAL_DCMI_Start_DMA' makes integer from pointer without a cast [-Wint-conversion]
+     HAL_DCMI_Start_DMA(&hdcmi, DCMI_MODE_SNAPSHOT, lcdBuffer, 19200);
+                                                    ^~~~~~~~~
+In file included from ../Inc/stm32f4xx_hal_conf.h:276:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h:439:19: note: expected 'uint32_t {aka long unsigned int}' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ HAL_StatusTypeDef HAL_DCMI_Start_DMA(DCMI_HandleTypeDef* hdcmi, uint32_t DCMI_Mode, uint32_t pData, uint32_t Length);
+                   ^~~~~~~~~~~~~~~~~~
+../Src/main.c:145:33: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+      HAL_UART_Transmit(&huart3, &lcdBuffer[0], 4, 300);
+                                 ^
+In file included from ../Inc/stm32f4xx_hal_conf.h:360:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:696:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:87:11: warning: unused variable 'tmp' [-Wunused-variable]
+   uint8_t tmp;
+           ^~~
+../Src/main.c:84:9: warning: variable 'measure' set but not used [-Wunused-but-set-variable]
+   float measure=0.0;
+         ^~~~~~~
+arm-none-eabi-gcc -o "MCU_Firmware.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\STM32F446ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MCU_Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MCU_Firmware.elf
+ 
+arm-none-eabi-objdump -h -S  MCU_Firmware.elf  > "MCU_Firmware.list"
+arm-none-eabi-size   MCU_Firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29880	    164	   2028	  32072	   7d48	MCU_Firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: MCU_Firmware.list
+ 
+16:37:09 **** Incremental Build of configuration Debug for project MCU_Firmware ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/myADC/inc" -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/OV7670/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:134:52: warning: passing argument 3 of 'HAL_DCMI_Start_DMA' makes integer from pointer without a cast [-Wint-conversion]
+     HAL_DCMI_Start_DMA(&hdcmi, DCMI_MODE_SNAPSHOT, lcdBuffer, 19200);
+                                                    ^~~~~~~~~
+In file included from ../Inc/stm32f4xx_hal_conf.h:276:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h:439:19: note: expected 'uint32_t {aka long unsigned int}' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ HAL_StatusTypeDef HAL_DCMI_Start_DMA(DCMI_HandleTypeDef* hdcmi, uint32_t DCMI_Mode, uint32_t pData, uint32_t Length);
+                   ^~~~~~~~~~~~~~~~~~
+../Src/main.c:145:33: warning: passing argument 2 of 'HAL_UART_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+      HAL_UART_Transmit(&huart3, lcdBuffer[i], 4, 300);
+                                 ^~~~~~~~~
+In file included from ../Inc/stm32f4xx_hal_conf.h:360:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:696:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:87:11: warning: unused variable 'tmp' [-Wunused-variable]
+   uint8_t tmp;
+           ^~~
+../Src/main.c:84:9: warning: variable 'measure' set but not used [-Wunused-but-set-variable]
+   float measure=0.0;
+         ^~~~~~~
+arm-none-eabi-gcc -o "MCU_Firmware.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\STM32F446ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MCU_Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MCU_Firmware.elf
+ 
+arm-none-eabi-objdump -h -S  MCU_Firmware.elf  > "MCU_Firmware.list"
+arm-none-eabi-size   MCU_Firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29896	    164	   2028	  32088	   7d58	MCU_Firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: MCU_Firmware.list
+ 
+16:38:27 **** Incremental Build of configuration Debug for project MCU_Firmware ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/myADC/inc" -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/OV7670/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:133:52: warning: passing argument 3 of 'HAL_DCMI_Start_DMA' makes integer from pointer without a cast [-Wint-conversion]
+     HAL_DCMI_Start_DMA(&hdcmi, DCMI_MODE_SNAPSHOT, lcdBuffer, 19200);
+                                                    ^~~~~~~~~
+In file included from ../Inc/stm32f4xx_hal_conf.h:276:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h:439:19: note: expected 'uint32_t {aka long unsigned int}' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ HAL_StatusTypeDef HAL_DCMI_Start_DMA(DCMI_HandleTypeDef* hdcmi, uint32_t DCMI_Mode, uint32_t pData, uint32_t Length);
+                   ^~~~~~~~~~~~~~~~~~
+../Src/main.c:144:33: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+      HAL_UART_Transmit(&huart3, &lcdBuffer[i], 4, 300);
+                                 ^
+In file included from ../Inc/stm32f4xx_hal_conf.h:360:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:696:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:84:9: warning: variable 'measure' set but not used [-Wunused-but-set-variable]
+   float measure=0.0;
+         ^~~~~~~
+arm-none-eabi-gcc -o "MCU_Firmware.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\STM32F446ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MCU_Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MCU_Firmware.elf
+ 
+arm-none-eabi-objdump -h -S  MCU_Firmware.elf  > "MCU_Firmware.list"
+arm-none-eabi-size   MCU_Firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29896	    164	   2028	  32088	   7d58	MCU_Firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: MCU_Firmware.list
+ 
+16:42:15 **** Incremental Build of configuration Debug for project MCU_Firmware ****
+make -j8 all 
+arm-none-eabi-gcc "../Drivers/OV7670/src/ov7670.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/myADC/inc" -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/OV7670/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/OV7670/src/ov7670.d" -MT"Drivers/OV7670/src/ov7670.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/OV7670/src/ov7670.o"
+../Drivers/OV7670/src/ov7670.c: In function 'HAL_DCMI_VsyncEventCallback':
+../Drivers/OV7670/src/ov7670.c:104:18: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+   printf("VSYNC %d\n", HAL_GetTick());
+                 ~^     ~~~~~~~~~~~~~
+                 %ld
+../Drivers/OV7670/src/ov7670.c: In function 'ov7670_write':
+../Drivers/OV7670/src/ov7670.c:117:10: warning: 'return' with a value, in function returning void
+   return ret;
+          ^~~
+../Drivers/OV7670/src/ov7670.c:111:13: note: declared here
+ static void ov7670_write(uint8_t regAddr, uint8_t data)
+             ^~~~~~~~~~~~
+../Drivers/OV7670/src/ov7670.c: In function 'ov7670_read':
+../Drivers/OV7670/src/ov7670.c:127:10: warning: 'return' with a value, in function returning void
+   return ret;
+          ^~~
+../Drivers/OV7670/src/ov7670.c:120:13: note: declared here
+ static void ov7670_read(uint8_t regAddr, uint8_t *data)
+             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "MCU_Firmware.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\STM32F446ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MCU_Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MCU_Firmware.elf
+ 
+arm-none-eabi-objdump -h -S  MCU_Firmware.elf  > "MCU_Firmware.list"
+arm-none-eabi-size   MCU_Firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29892	    164	   2028	  32084	   7d54	MCU_Firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: MCU_Firmware.list
+ 
+16:44:25 **** Incremental Build of configuration Debug for project MCU_Firmware ****
+make -j8 all 
+arm-none-eabi-gcc "../Drivers/OV7670/src/ov7670.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/myADC/inc" -I"C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/MCU_Firmware/Drivers/OV7670/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/OV7670/src/ov7670.d" -MT"Drivers/OV7670/src/ov7670.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/OV7670/src/ov7670.o"
+../Drivers/OV7670/src/ov7670.c: In function 'HAL_DCMI_VsyncEventCallback':
+../Drivers/OV7670/src/ov7670.c:104:18: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+   printf("VSYNC %d\n", HAL_GetTick());
+                 ~^     ~~~~~~~~~~~~~
+                 %ld
+../Drivers/OV7670/src/ov7670.c: In function 'ov7670_write':
+../Drivers/OV7670/src/ov7670.c:117:10: warning: 'return' with a value, in function returning void
+   return ret;
+          ^~~
+../Drivers/OV7670/src/ov7670.c:111:13: note: declared here
+ static void ov7670_write(uint8_t regAddr, uint8_t data)
+             ^~~~~~~~~~~~
+../Drivers/OV7670/src/ov7670.c: In function 'ov7670_read':
+../Drivers/OV7670/src/ov7670.c:127:10: warning: 'return' with a value, in function returning void
+   return ret;
+          ^~~
+../Drivers/OV7670/src/ov7670.c:120:13: note: declared here
+ static void ov7670_read(uint8_t regAddr, uint8_t *data)
+             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "MCU_Firmware.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\STM32F446ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MCU_Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MCU_Firmware.elf
+ 
+arm-none-eabi-objdump -h -S  MCU_Firmware.elf  > "MCU_Firmware.list"
+arm-none-eabi-size   MCU_Firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29892	    164	   2028	  32084	   7d54	MCU_Firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: MCU_Firmware.list
+ 
+17:12:26 **** Incremental Build of configuration Debug for project MCU_Firmware ****
+make -j8 all 
+arm-none-eabi-size   MCU_Firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29892	    164	   2028	  32084	   7d54	MCU_Firmware.elf
+Finished building: default.size.stdout
+ 
