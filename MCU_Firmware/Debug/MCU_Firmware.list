@@ -37,13 +37,13 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
  16 .debug_macro  0002321a  00000000  00000000  00032348  2**0
                   CONTENTS, READONLY, DEBUGGING
- 17 .debug_line   0000c835  00000000  00000000  00055562  2**0
+ 17 .debug_line   0000c837  00000000  00000000  00055562  2**0
                   CONTENTS, READONLY, DEBUGGING
- 18 .debug_str    000cc732  00000000  00000000  00061d97  2**0
+ 18 .debug_str    000cc732  00000000  00000000  00061d99  2**0
                   CONTENTS, READONLY, DEBUGGING
- 19 .comment      0000007b  00000000  00000000  0012e4c9  2**0
+ 19 .comment      0000007b  00000000  00000000  0012e4cb  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  000038c0  00000000  00000000  0012e544  2**2
+ 20 .debug_frame  000038c0  00000000  00000000  0012e548  2**2
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -12972,17 +12972,17 @@ float ADC_do_conversion()
 int main(void)
 {
  800596c:	b580      	push	{r7, lr}
- 800596e:	f5ad 3d96 	sub.w	sp, sp, #76800	; 0x12c00
+ 800596e:	f5ad 4d46 	sub.w	sp, sp, #50688	; 0xc600
  8005972:	b082      	sub	sp, #8
  8005974:	af00      	add	r7, sp, #0
   /* USER CODE BEGIN 1 */
   float measure=0.0;
  8005976:	f04f 0300 	mov.w	r3, #0
- 800597a:	f507 3296 	add.w	r2, r7, #76800	; 0x12c00
+ 800597a:	f507 4246 	add.w	r2, r7, #50688	; 0xc600
  800597e:	6013      	str	r3, [r2, #0]
   uint32_t i = 0;
  8005980:	2300      	movs	r3, #0
- 8005982:	f507 3296 	add.w	r2, r7, #76800	; 0x12c00
+ 8005982:	f507 4246 	add.w	r2, r7, #50688	; 0xc600
  8005986:	f102 0204 	add.w	r2, r2, #4
  800598a:	6013      	str	r3, [r2, #0]
   
@@ -13036,16 +13036,17 @@ int main(void)
 
     measure = ADC_do_conversion();
  80059c2:	f7ff ff6b 	bl	800589c <ADC_do_conversion>
- 80059c6:	f507 3396 	add.w	r3, r7, #76800	; 0x12c00
+ 80059c6:	f507 4346 	add.w	r3, r7, #50688	; 0xc600
  80059ca:	ed83 0a00 	vstr	s0, [r3]
     HAL_Delay(500);
  80059ce:	f44f 70fa 	mov.w	r0, #500	; 0x1f4
  80059d2:	f7fb fb45 	bl	8001060 <HAL_Delay>
 
-    HAL_DCMI_Start_DMA(&hdcmi, DCMI_MODE_SNAPSHOT, lcdBuffer, 19200);
+    //HAL_DCMI_Start_DMA(&hdcmi, DCMI_MODE_SNAPSHOT, lcdBuffer, 19200);
+    HAL_DCMI_Start_DMA(&hdcmi, DCMI_MODE_SNAPSHOT, lcdBuffer, 12672);
  80059d6:	f107 0208 	add.w	r2, r7, #8
  80059da:	3a08      	subs	r2, #8
- 80059dc:	f44f 4396 	mov.w	r3, #19200	; 0x4b00
+ 80059dc:	f44f 5346 	mov.w	r3, #12672	; 0x3180
  80059e0:	2102      	movs	r1, #2
  80059e2:	481c      	ldr	r0, [pc, #112]	; (8005a54 <main+0xe8>)
  80059e4:	f7fb fc70 	bl	80012c8 <HAL_DCMI_Start_DMA>
@@ -13053,14 +13054,14 @@ int main(void)
     HAL_Delay(1000);
  80059e8:	f44f 707a 	mov.w	r0, #1000	; 0x3e8
  80059ec:	f7fb fb38 	bl	8001060 <HAL_Delay>
-//    HAL_UART_Transmit(&huart3, &lcdBuffer[0], 19200*4, 300);
 //    HAL_UART_Transmit(&huart3, &lcdBuffer[10000], 9200, 300);
 
    // ov7670_stopCap();
 
-    for(i=0; i<19200; i++)
+    //for(i=0; i<19200; i++)
+    for(i=0; i<12672; i++)
  80059f0:	2300      	movs	r3, #0
- 80059f2:	f507 3296 	add.w	r2, r7, #76800	; 0x12c00
+ 80059f2:	f507 4246 	add.w	r2, r7, #50688	; 0xc600
  80059f6:	f102 0204 	add.w	r2, r2, #4
  80059fa:	6013      	str	r3, [r2, #0]
  80059fc:	e01a      	b.n	8005a34 <main+0xc8>
@@ -13068,7 +13069,7 @@ int main(void)
     	HAL_UART_Transmit(&huart3, &lcdBuffer[i], 4, 300);
  80059fe:	f107 0308 	add.w	r3, r7, #8
  8005a02:	3b08      	subs	r3, #8
- 8005a04:	f507 3296 	add.w	r2, r7, #76800	; 0x12c00
+ 8005a04:	f507 4246 	add.w	r2, r7, #50688	; 0xc600
  8005a08:	f102 0204 	add.w	r2, r2, #4
  8005a0c:	6812      	ldr	r2, [r2, #0]
  8005a0e:	0092      	lsls	r2, r2, #2
@@ -13077,18 +13078,18 @@ int main(void)
  8005a16:	2204      	movs	r2, #4
  8005a18:	480f      	ldr	r0, [pc, #60]	; (8005a58 <main+0xec>)
  8005a1a:	f7ff fbe4 	bl	80051e6 <HAL_UART_Transmit>
-    for(i=0; i<19200; i++)
- 8005a1e:	f507 3396 	add.w	r3, r7, #76800	; 0x12c00
+    for(i=0; i<12672; i++)
+ 8005a1e:	f507 4346 	add.w	r3, r7, #50688	; 0xc600
  8005a22:	f103 0304 	add.w	r3, r3, #4
  8005a26:	681b      	ldr	r3, [r3, #0]
  8005a28:	3301      	adds	r3, #1
- 8005a2a:	f507 3296 	add.w	r2, r7, #76800	; 0x12c00
+ 8005a2a:	f507 4246 	add.w	r2, r7, #50688	; 0xc600
  8005a2e:	f102 0204 	add.w	r2, r2, #4
  8005a32:	6013      	str	r3, [r2, #0]
- 8005a34:	f507 3396 	add.w	r3, r7, #76800	; 0x12c00
+ 8005a34:	f507 4346 	add.w	r3, r7, #50688	; 0xc600
  8005a38:	f103 0304 	add.w	r3, r3, #4
  8005a3c:	681b      	ldr	r3, [r3, #0]
- 8005a3e:	f5b3 4f96 	cmp.w	r3, #19200	; 0x4b00
+ 8005a3e:	f5b3 5f46 	cmp.w	r3, #12672	; 0x3180
  8005a42:	d3dc      	bcc.n	80059fe <main+0x92>
     measure = ADC_do_conversion();
  8005a44:	e7bd      	b.n	80059c2 <main+0x56>

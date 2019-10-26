@@ -84,6 +84,7 @@ int main(void)
   float measure=0.0;
   uint32_t i = 0;
   uint32_t lcdBuffer[19200];
+
   /* USER CODE END 1 */
   
 
