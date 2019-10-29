@@ -34,7 +34,7 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-
+#define LUX_THRESHOLD 1.5
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -48,6 +48,8 @@ DMA_HandleTypeDef hdma_dcmi;
 
 I2C_HandleTypeDef hi2c1;
 I2C_HandleTypeDef hi2c2;
+
+TIM_HandleTypeDef htim14;
 
 UART_HandleTypeDef huart3;
 
@@ -63,6 +65,7 @@ static void MX_I2C1_Init(void);
 static void MX_DCMI_Init(void);
 static void MX_I2C2_Init(void);
 static void MX_USART3_UART_Init(void);
+static void MX_TIM14_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -111,11 +114,13 @@ int main(void)
   MX_DCMI_Init();
   MX_I2C2_Init();
   MX_USART3_UART_Init();
+  MX_TIM14_Init();
   /* USER CODE BEGIN 2 */
   ADC_init(&hi2c1);
 
   ov7670_init(&hdcmi, &hdma_dcmi, &hi2c2);
   ov7670_config(0);
+  HAL_TIM_PWM_Start(&htim14, TIM_CHANNEL_1);
   //HAL_DCMI_Start_DMA(&hdcmi, DCMI_MODE_CONTINUOUS, lcdBuffer, 19200);
   //ov7670_startCap(0, (uint32_t)buff);
   /* USER CODE END 2 */
@@ -130,6 +135,17 @@ int main(void)
 
     measure = ADC_do_conversion();
     HAL_Delay(500);
+
+    if(measure <LUX_THRESHOLD)
+    {
+    	//HAL_GPIO_WritePin(Buck_Vin_GPIO_Port, Buck_Vin_Pin, GPIO_PIN_SET);
+    	HAL_TIM_PWM_Start(&htim14, TIM_CHANNEL_1);
+    }
+    else
+    {
+    //	HAL_GPIO_WritePin(Buck_Vin_GPIO_Port, Buck_Vin_Pin, GPIO_PIN_RESET);
+    	HAL_TIM_PWM_Stop(&htim14, TIM_CHANNEL_1);
+    }
 
     HAL_DCMI_Start_DMA(&hdcmi, DCMI_MODE_SNAPSHOT, lcdBuffer, 19200);
 
@@ -295,6 +311,52 @@ static void MX_I2C2_Init(void)
 }
 
 /**
+  * @brief TIM14 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_TIM14_Init(void)
+{
+
+  /* USER CODE BEGIN TIM14_Init 0 */
+
+  /* USER CODE END TIM14_Init 0 */
+
+  TIM_OC_InitTypeDef sConfigOC = {0};
+
+  /* USER CODE BEGIN TIM14_Init 1 */
+
+  /* USER CODE END TIM14_Init 1 */
+  htim14.Instance = TIM14;
+  htim14.Init.Prescaler = 160;
+  htim14.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim14.Init.Period = 100;
+  htim14.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+  htim14.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  if (HAL_TIM_Base_Init(&htim14) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  if (HAL_TIM_PWM_Init(&htim14) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sConfigOC.OCMode = TIM_OCMODE_PWM1;
+  sConfigOC.Pulse = 75;
+  sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
+  sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
+  if (HAL_TIM_PWM_ConfigChannel(&htim14, &sConfigOC, TIM_CHANNEL_1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN TIM14_Init 2 */
+
+  /* USER CODE END TIM14_Init 2 */
+  HAL_TIM_MspPostInit(&htim14);
+
+}
+
+/**
   * @brief USART3 Initialization Function
   * @param None
   * @retval None
@@ -363,7 +425,7 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOD_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(ResetCamera_GPIO_Port, ResetCamera_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOG, ResetCamera_Pin|Buck_Vin_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(ADC_LED_GPIO_Port, ADC_LED_Pin, GPIO_PIN_RESET);
@@ -374,12 +436,12 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOF, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : ResetCamera_Pin */
-  GPIO_InitStruct.Pin = ResetCamera_Pin;
+  /*Configure GPIO pins : ResetCamera_Pin Buck_Vin_Pin */
+  GPIO_InitStruct.Pin = ResetCamera_Pin|Buck_Vin_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(ResetCamera_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOG, &GPIO_InitStruct);
 
   /*Configure GPIO pin : ADC_LED_Pin */
   GPIO_InitStruct.Pin = ADC_LED_Pin;

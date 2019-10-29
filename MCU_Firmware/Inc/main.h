@@ -50,6 +50,8 @@ extern "C" {
 
 /* USER CODE END EM */
 
+void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
+
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
 
@@ -60,6 +62,8 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define ResetCamera_Pin GPIO_PIN_0
 #define ResetCamera_GPIO_Port GPIOG
+#define Buck_Vin_Pin GPIO_PIN_1
+#define Buck_Vin_GPIO_Port GPIOG
 #define ADC_LED_Pin GPIO_PIN_14
 #define ADC_LED_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
