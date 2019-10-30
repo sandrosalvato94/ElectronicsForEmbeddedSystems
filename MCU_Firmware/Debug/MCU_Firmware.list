@@ -15094,8 +15094,8 @@ static void MX_TIM14_Init(void)
   sConfigOC.OCMode = TIM_OCMODE_PWM1;
  8006544:	2360      	movs	r3, #96	; 0x60
  8006546:	607b      	str	r3, [r7, #4]
-  sConfigOC.Pulse = 75;
- 8006548:	234b      	movs	r3, #75	; 0x4b
+  sConfigOC.Pulse = 99;
+ 8006548:	2363      	movs	r3, #99	; 0x63
  800654a:	60bb      	str	r3, [r7, #8]
   sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
  800654c:	2300      	movs	r3, #0

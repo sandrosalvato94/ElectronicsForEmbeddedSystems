@@ -22374,3 +22374,7 @@ However, this IP can be configured manually.
 2019-10-29 15:56:46,636 [INFO] ProjectBuilder:1461 - Time for Copy CMSIS : 1mS.
 2019-10-29 15:56:46,650 [INFO] ProjectBuilder:1461 - Time for Copy CMSIS : 0mS.
 2019-10-29 17:03:17,493 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-10-30 16:02:08,285 [INFO] Activator:176 - 
+
+
+2019-10-30 16:02:08,300 [INFO] Activator:177 - !SESSION log4j initialized
