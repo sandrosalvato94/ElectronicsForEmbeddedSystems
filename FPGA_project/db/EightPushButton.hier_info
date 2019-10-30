@@ -1,0 +1,6 @@
+|EightPushButton
+EPB_clock => EPB_led~reg0.CLK
+EPB_button => EPB_led~reg0.DATAIN
+EPB_led <= EPB_led~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
