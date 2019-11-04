@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/TB_Clock_divider_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="constants" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="tb_clock_divider" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="5" />
+   <wvobject fp_name="/tb_clock_divider/clkdiv_clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clkdiv_clock</obj_property>
+      <obj_property name="ObjectShortName">clkdiv_clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clock_divider/clkdiv_reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clkdiv_reset</obj_property>
+      <obj_property name="ObjectShortName">clkdiv_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clock_divider/clkdiv_baudrate" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clkdiv_baudrate</obj_property>
+      <obj_property name="ObjectShortName">clkdiv_baudrate</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clock_divider/uut/UP_CNT/udc_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">udc_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">udc_out[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clock_divider/uut/s_reset_cnt" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_reset_cnt</obj_property>
+      <obj_property name="ObjectShortName">s_reset_cnt</obj_property>
+   </wvobject>
+</wave_config>

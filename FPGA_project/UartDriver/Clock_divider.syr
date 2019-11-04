@@ -1,0 +1,450 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: Clock_divider.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Clock_divider.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Clock_divider"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-pq208
+
+---- Source Options
+Top Module Name                    : Clock_divider
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/constants.vhd" in Library work.
+Architecture constants of Entity constants is up to date.
+Compiling vhdl file "C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/ComparatorWithEnable.vhd" in Library work.
+Architecture behavioral of Entity comparatorwithenable is up to date.
+Compiling vhdl file "C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/t_ff.vhd" in Library work.
+Architecture behavioral of Entity t_ff_rst0 is up to date.
+Compiling vhdl file "C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/Reg1Bit.vhd" in Library work.
+Architecture behavioral of Entity reg1bit is up to date.
+Compiling vhdl file "C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/ud_counter.vhd" in Library work.
+Architecture str of Entity ud_counter is up to date.
+Compiling vhdl file "C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/HardwiredReg.vhd" in Library work.
+Architecture behavioral of Entity hardwiredreg is up to date.
+Compiling vhdl file "C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/NComparatorWithEnable.vhd" in Library work.
+Architecture behavioral of Entity ncomparatorwithenable is up to date.
+Compiling vhdl file "C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/Clock_divider.vhd" in Library work.
+Architecture structural of Entity clock_divider is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Clock_divider> in library <work> (architecture <structural>) with generics.
+	CLKDIV_divider = 432
+
+Analyzing hierarchy for entity <Reg1Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <UD_COUNTER> in library <work> (architecture <str>) with generics.
+	UDC_NBIT = 16
+
+Analyzing hierarchy for entity <HardwiredReg> in library <work> (architecture <behavioral>) with generics.
+	HW_REG_Nbit = 16
+	HW_REG_val = 432
+
+Analyzing hierarchy for entity <NComparatorWithEnable> in library <work> (architecture <behavioral>) with generics.
+	NBIT = 16
+
+Analyzing hierarchy for entity <t_ff_rst0> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ComparatorWithEnable> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <Clock_divider> in library <work> (Architecture <structural>).
+	CLKDIV_divider = 432
+Entity <Clock_divider> analyzed. Unit <Clock_divider> generated.
+
+Analyzing Entity <Reg1Bit> in library <work> (Architecture <behavioral>).
+Entity <Reg1Bit> analyzed. Unit <Reg1Bit> generated.
+
+Analyzing generic Entity <UD_COUNTER> in library <work> (Architecture <str>).
+	UDC_NBIT = 16
+Entity <UD_COUNTER> analyzed. Unit <UD_COUNTER> generated.
+
+Analyzing Entity <t_ff_rst0> in library <work> (Architecture <behavioral>).
+Entity <t_ff_rst0> analyzed. Unit <t_ff_rst0> generated.
+
+Analyzing generic Entity <HardwiredReg> in library <work> (Architecture <behavioral>).
+	HW_REG_Nbit = 16
+	HW_REG_val = 432
+Entity <HardwiredReg> analyzed. Unit <HardwiredReg> generated.
+
+Analyzing generic Entity <NComparatorWithEnable> in library <work> (Architecture <behavioral>).
+	NBIT = 16
+Entity <NComparatorWithEnable> analyzed. Unit <NComparatorWithEnable> generated.
+
+Analyzing Entity <ComparatorWithEnable> in library <work> (Architecture <behavioral>).
+Entity <ComparatorWithEnable> analyzed. Unit <ComparatorWithEnable> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Reg1Bit>.
+    Related source file is "C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/Reg1Bit.vhd".
+    Found 1-bit register for signal <data_out>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <Reg1Bit> synthesized.
+
+
+Synthesizing Unit <HardwiredReg>.
+    Related source file is "C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/HardwiredReg.vhd".
+Unit <HardwiredReg> synthesized.
+
+
+Synthesizing Unit <t_ff_rst0>.
+    Related source file is "C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/t_ff.vhd".
+    Found 1-bit register for signal <data>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <t_ff_rst0> synthesized.
+
+
+Synthesizing Unit <ComparatorWithEnable>.
+    Related source file is "C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/ComparatorWithEnable.vhd".
+Unit <ComparatorWithEnable> synthesized.
+
+
+Synthesizing Unit <UD_COUNTER>.
+    Related source file is "C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/ud_counter.vhd".
+WARNING:Xst:646 - Signal <s_toggle<16>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <s_toggle<0>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <UD_COUNTER> synthesized.
+
+
+Synthesizing Unit <NComparatorWithEnable>.
+    Related source file is "C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/NComparatorWithEnable.vhd".
+WARNING:Xst:1780 - Signal <matrix<1><1:4>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<2><2:4>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<3><1:4>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<4><3:4>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<5><1:4>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<6><2:4>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<7><1:4>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<8><4>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<9><1:4>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<10><2:4>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<11><1:4>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<12><3:4>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<13><1:4>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<14><2:4>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<15><1:4>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <NComparatorWithEnable> synthesized.
+
+
+Synthesizing Unit <Clock_divider>.
+    Related source file is "C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/Clock_divider.vhd".
+Unit <Clock_divider> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 17
+ 1-bit register                                        : 17
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <HW_REG> is unconnected in block <Clock_divider>.
+   It will be removed from the design.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 17
+ Flip-Flops                                            : 17
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Clock_divider> ...
+
+Optimizing unit <UD_COUNTER> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Clock_divider, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 17
+ Flip-Flops                                            : 17
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Clock_divider.ngr
+Top Level Output File Name         : Clock_divider
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 3
+
+Cell Usage :
+# BELS                             : 48
+#      INV                         : 16
+#      LUT2                        : 3
+#      LUT2_D                      : 1
+#      LUT2_L                      : 1
+#      LUT3                        : 4
+#      LUT4                        : 17
+#      LUT4_D                      : 3
+#      LUT4_L                      : 2
+#      VCC                         : 1
+# FlipFlops/Latches                : 17
+#      FDC                         : 1
+#      FDCE                        : 16
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 2
+#      IBUF                        : 1
+#      OBUF                        : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500epq208-5 
+
+ Number of Slices:                       18  out of   4656     0%  
+ Number of Slice Flip Flops:             17  out of   9312     0%  
+ Number of 4 input LUTs:                 47  out of   9312     0%  
+ Number of IOs:                           3
+ Number of bonded IOBs:                   3  out of    158     1%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLKDIV_clock                       | BUFGP                  | 17    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+--------------------------------------------+-------+
+Control Signal                     | Buffer(FF name)                            | Load  |
+-----------------------------------+--------------------------------------------+-------+
+s_reset_cnt(s_reset_cnt1:O)        | NONE(UP_CNT/MAIN_GEN[0].FIRST_FF.FF_0/data)| 16    |
+CLKDIV_reset                       | IBUF                                       | 1     |
+-----------------------------------+--------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 4.868ns (Maximum Frequency: 205.432MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 6.532ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLKDIV_clock'
+  Clock period: 4.868ns (frequency: 205.432MHz)
+  Total number of paths / destination ports: 152 / 32
+-------------------------------------------------------------------------
+Delay:               4.868ns (Levels of Logic = 3)
+  Source:            UP_CNT/MAIN_GEN[4].SECOND_FF.FF_i/data (FF)
+  Destination:       UP_CNT/MAIN_GEN[15].LAST_FF.FF_N/data (FF)
+  Source Clock:      CLKDIV_clock rising
+  Destination Clock: CLKDIV_clock rising
+
+  Data Path: UP_CNT/MAIN_GEN[4].SECOND_FF.FF_i/data to UP_CNT/MAIN_GEN[15].LAST_FF.FF_N/data
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             5   0.514   0.690  UP_CNT/MAIN_GEN[4].SECOND_FF.FF_i/data (UP_CNT/MAIN_GEN[4].SECOND_FF.FF_i/data)
+     LUT4_D:I0->O          7   0.612   0.605  UP_CNT/s_en_inc_6_and00001_SW0 (N14)
+     LUT4:I3->O            2   0.612   0.383  UP_CNT/s_en_inc_6_and00001 (UP_CNT/s_en_inc<6>)
+     LUT4:I3->O            1   0.612   0.357  UP_CNT/s_en_inc_14_and00001 (UP_CNT/s_en_inc<14>)
+     FDCE:CE                   0.483          UP_CNT/MAIN_GEN[15].LAST_FF.FF_N/data
+    ----------------------------------------
+    Total                      4.868ns (2.833ns logic, 2.035ns route)
+                                       (58.2% logic, 41.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLKDIV_clock'
+  Total number of paths / destination ports: 16 / 1
+-------------------------------------------------------------------------
+Offset:              6.532ns (Levels of Logic = 3)
+  Source:            UP_CNT/MAIN_GEN[2].SECOND_FF.FF_i/data (FF)
+  Destination:       CLKDIV_baudrate (PAD)
+  Source Clock:      CLKDIV_clock rising
+
+  Data Path: UP_CNT/MAIN_GEN[2].SECOND_FF.FF_i/data to CLKDIV_baudrate
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            10   0.514   0.819  UP_CNT/MAIN_GEN[2].SECOND_FF.FF_i/data (UP_CNT/MAIN_GEN[2].SECOND_FF.FF_i/data)
+     LUT4:I1->O            1   0.612   0.426  CMP/_and001420 (CMP/_and001420)
+     LUT4:I1->O            2   0.612   0.380  CMP/_and001469 (CLKDIV_baudrate_OBUF)
+     OBUF:I->O                 3.169          CLKDIV_baudrate_OBUF (CLKDIV_baudrate)
+    ----------------------------------------
+    Total                      6.532ns (4.907ns logic, 1.625ns route)
+                                       (75.1% logic, 24.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.08 secs
+ 
+--> 
+
+Total memory usage is 4508932 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   18 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

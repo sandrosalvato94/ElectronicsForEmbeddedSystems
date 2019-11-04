@@ -1,0 +1,8 @@
+vhdl work "C:\Users\Alessandro\Desktop\EFES_Fpga\UartDriver\t_ff.vhd"
+vhdl work "C:\Users\Alessandro\Desktop\EFES_Fpga\UartDriver\constants.vhd"
+vhdl work "C:\Users\Alessandro\Desktop\EFES_Fpga\UartDriver\ComparatorWithEnable.vhd"
+vhdl work "C:\Users\Alessandro\Desktop\EFES_Fpga\UartDriver\ud_counter.vhd"
+vhdl work "C:\Users\Alessandro\Desktop\EFES_Fpga\UartDriver\Reg1Bit.vhd"
+vhdl work "C:\Users\Alessandro\Desktop\EFES_Fpga\UartDriver\NComparatorWithEnable.vhd"
+vhdl work "C:\Users\Alessandro\Desktop\EFES_Fpga\UartDriver\HardwiredReg.vhd"
+vhdl work "C:\Users\Alessandro\Desktop\EFES_Fpga\UartDriver\Clock_divider.vhd"

@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/NComparatorWithEnable.xst" -ofn "C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/NComparatorWithEnable.syr" 

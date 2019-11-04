@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/UD_COUNTER.xst" -ofn "C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/UD_COUNTER.syr" 
+xst -intstyle ise -ifn "C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/UD_COUNTER.xst" -ofn "C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/UD_COUNTER.syr" 
+xst -intstyle ise -ifn "C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/UD_COUNTER.xst" -ofn "C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/UD_COUNTER.syr" 

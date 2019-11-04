@@ -1,0 +1,370 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Reading design: UD_COUNTER.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "UD_COUNTER.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "UD_COUNTER"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-pq208
+
+---- Source Options
+Top Module Name                    : UD_COUNTER
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/t_ff.vhd" in Library work.
+Architecture behavioral of Entity t_ff_rst0 is up to date.
+Compiling vhdl file "C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/ud_counter.vhd" in Library work.
+Entity <ud_counter> compiled.
+Entity <ud_counter> (Architecture <str>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <UD_COUNTER> in library <work> (architecture <str>) with generics.
+	UDC_NBIT = 4
+
+Analyzing hierarchy for entity <t_ff_rst0> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <UD_COUNTER> in library <work> (Architecture <str>).
+	UDC_NBIT = 4
+Entity <UD_COUNTER> analyzed. Unit <UD_COUNTER> generated.
+
+Analyzing Entity <t_ff_rst0> in library <work> (Architecture <behavioral>).
+Entity <t_ff_rst0> analyzed. Unit <t_ff_rst0> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <t_ff_rst0>.
+    Related source file is "C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/t_ff.vhd".
+    Found 1-bit register for signal <data>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <t_ff_rst0> synthesized.
+
+
+Synthesizing Unit <UD_COUNTER>.
+    Related source file is "C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/ud_counter.vhd".
+WARNING:Xst:646 - Signal <s_toggle<4>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <s_toggle<0>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <UD_COUNTER> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 4
+ 1-bit register                                        : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 4
+ Flip-Flops                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <UD_COUNTER> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block UD_COUNTER, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 4
+ Flip-Flops                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : UD_COUNTER.ngr
+Top Level Output File Name         : UD_COUNTER
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 8
+
+Cell Usage :
+# BELS                             : 9
+#      INV                         : 4
+#      LUT3                        : 1
+#      LUT4                        : 3
+#      MUXF5                       : 1
+# FlipFlops/Latches                : 4
+#      FDCE                        : 4
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 7
+#      IBUF                        : 3
+#      OBUF                        : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500epq208-5 
+
+ Number of Slices:                        4  out of   4656     0%  
+ Number of Slice Flip Flops:              4  out of   9312     0%  
+ Number of 4 input LUTs:                  8  out of   9312     0%  
+ Number of IOs:                           8
+ Number of bonded IOBs:                   8  out of    158     5%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+UDC_CLK                            | BUFGP                  | 4     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+UDC_RST                            | IBUF                   | 4     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 2.934ns (Maximum Frequency: 340.826MHz)
+   Minimum input arrival time before clock: 3.404ns
+   Maximum output required time after clock: 4.252ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UDC_CLK'
+  Clock period: 2.934ns (frequency: 340.826MHz)
+  Total number of paths / destination ports: 12 / 7
+-------------------------------------------------------------------------
+Delay:               2.934ns (Levels of Logic = 2)
+  Source:            MAIN_GEN[1].SECOND_FF.FF_i/data (FF)
+  Destination:       MAIN_GEN[3].LAST_FF.FF_N/data (FF)
+  Source Clock:      UDC_CLK rising
+  Destination Clock: UDC_CLK rising
+
+  Data Path: MAIN_GEN[1].SECOND_FF.FF_i/data to MAIN_GEN[3].LAST_FF.FF_N/data
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             5   0.514   0.690  MAIN_GEN[1].SECOND_FF.FF_i/data (MAIN_GEN[1].SECOND_FF.FF_i/data)
+     LUT4:I0->O            1   0.612   0.000  s_toggle_3_and0000_F (N8)
+     MUXF5:I0->O           1   0.278   0.357  s_toggle_3_and0000 (s_toggle<3>)
+     FDCE:CE                   0.483          MAIN_GEN[3].LAST_FF.FF_N/data
+    ----------------------------------------
+    Total                      2.934ns (1.887ns logic, 1.047ns route)
+                                       (64.3% logic, 35.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'UDC_CLK'
+  Total number of paths / destination ports: 9 / 4
+-------------------------------------------------------------------------
+Offset:              3.404ns (Levels of Logic = 3)
+  Source:            UDC_UP (PAD)
+  Destination:       MAIN_GEN[3].LAST_FF.FF_N/data (FF)
+  Destination Clock: UDC_CLK rising
+
+  Data Path: UDC_UP to MAIN_GEN[3].LAST_FF.FF_N/data
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.106   0.568  UDC_UP_IBUF (UDC_UP_IBUF)
+     LUT4:I1->O            1   0.612   0.000  s_toggle_3_and0000_F (N8)
+     MUXF5:I0->O           1   0.278   0.357  s_toggle_3_and0000 (s_toggle<3>)
+     FDCE:CE                   0.483          MAIN_GEN[3].LAST_FF.FF_N/data
+    ----------------------------------------
+    Total                      3.404ns (2.479ns logic, 0.925ns route)
+                                       (72.8% logic, 27.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'UDC_CLK'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              4.252ns (Levels of Logic = 1)
+  Source:            MAIN_GEN[0].FIRST_FF.FF_0/data (FF)
+  Destination:       UDC_OUT<0> (PAD)
+  Source Clock:      UDC_CLK rising
+
+  Data Path: MAIN_GEN[0].FIRST_FF.FF_0/data to UDC_OUT<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             6   0.514   0.569  MAIN_GEN[0].FIRST_FF.FF_0/data (MAIN_GEN[0].FIRST_FF.FF_0/data)
+     OBUF:I->O                 3.169          UDC_OUT_0_OBUF (UDC_OUT<0>)
+    ----------------------------------------
+    Total                      4.252ns (3.683ns logic, 0.569ns route)
+                                       (86.6% logic, 13.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.79 secs
+ 
+--> 
+
+Total memory usage is 235948 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

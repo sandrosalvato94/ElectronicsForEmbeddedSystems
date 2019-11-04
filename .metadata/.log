@@ -14529,3 +14529,40 @@ java.net.ConnectException: Connection refused: connect
 
 !ENTRY com.st.stm32cube.ide.mcu.debug.jlink 1 0 2019-10-30 16:12:26.265
 !MESSAGE Using automatic SWV detection; base: 4500000; minDiv: 1; maxSWO: 4500000; SWO: 1500000; CPU: 48000000; div: 32
+!SESSION 2019-11-04 11:18:49.781 -----------------------------------------------
+eclipse.buildId=Version 1.0.2
+java.version=1.8.0_202
+java.vendor=AdoptOpenJdk
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=it_IT
+Framework arguments:  C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\.cproject
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\.cproject
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2019-11-04 11:19:02.834
+!MESSAGE Log4j initialized with config file C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2019-11-04 11:19:05.549
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2019-11-04 11:19:05.549
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2019-11-04 11:19:05.579
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2019-11-04 11:19:05.580
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2019-11-04 11:19:05.582
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2019-11-04 11:19:05.582
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2019-11-04 11:19:05.583
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2019-11-04 11:19:05.584
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2019-11-04 11:19:14.874
+!MESSAGE Started RMI Server, listening on port 41337

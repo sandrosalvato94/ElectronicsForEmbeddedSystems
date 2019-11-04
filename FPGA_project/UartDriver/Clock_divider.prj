@@ -1,0 +1,8 @@
+vhdl work "t_ff.vhd"
+vhdl work "constants.vhd"
+vhdl work "ComparatorWithEnable.vhd"
+vhdl work "ud_counter.vhd"
+vhdl work "Reg1Bit.vhd"
+vhdl work "NComparatorWithEnable.vhd"
+vhdl work "HardwiredReg.vhd"
+vhdl work "Clock_divider.vhd"

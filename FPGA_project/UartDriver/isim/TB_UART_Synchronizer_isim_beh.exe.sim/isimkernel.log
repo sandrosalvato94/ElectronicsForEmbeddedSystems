@@ -1,0 +1,28 @@
+Command line:
+   TB_UART_Synchronizer_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  65096
+
+Mon Nov 04 17:56:31 2019
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 828.248 Meg
+
+ Total Signals          : 153
+ Total Nets             : 311
+ Total Signal Drivers   : 190
+ Total Blocks           : 224
+ Total Primitive Blocks : 151
+ Total Processes        : 188
+ Total Traceable Variables  : 194
+ Total Scalar Nets and Variables : 975
+
+ Total Simulation Time: 0.390625 sec
+
+ Current Memory Usage: 1143.35 Meg
+
+Mon Nov 04 17:57:27 2019
+

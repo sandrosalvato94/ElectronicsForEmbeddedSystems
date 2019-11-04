@@ -1,0 +1,3 @@
+vhdl work "C:\Users\Alessandro\Desktop\EFES_Fpga\UartDriver\constants.vhd"
+vhdl work "C:\Users\Alessandro\Desktop\EFES_Fpga\UartDriver\ComparatorWithEnable.vhd"
+vhdl work "C:\Users\Alessandro\Desktop\EFES_Fpga\UartDriver\NComparatorWithEnable.vhd"

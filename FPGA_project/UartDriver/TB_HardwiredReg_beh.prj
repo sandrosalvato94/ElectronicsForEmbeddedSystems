@@ -1,0 +1,2 @@
+vhdl work "HardwiredReg.vhd"
+vhdl work "TB_HardwiredReg.vhd"

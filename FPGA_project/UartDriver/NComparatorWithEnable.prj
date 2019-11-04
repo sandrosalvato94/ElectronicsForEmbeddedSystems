@@ -1,0 +1,3 @@
+vhdl work "constants.vhd"
+vhdl work "ComparatorWithEnable.vhd"
+vhdl work "NComparatorWithEnable.vhd"
