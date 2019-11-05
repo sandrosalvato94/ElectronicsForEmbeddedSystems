@@ -34,19 +34,21 @@ entity UartDriverTX is
 	generic (
     UART_ext_clock   : natural := 500000000; --50 MHz
     UART_baud_rate   : natural := 115200;	--bit per second
-    UART_N_bits    	: natural := 8;
-    UART_parity      : boolean := true;
-    UART_parity_odd  : boolean := false; -- true even
-    UART_stop_bits	: integer := 1
+    UART_N_bits    	: natural := 11
+--    UART_parity      : boolean := true;
+--    UART_parity_odd  : boolean := false; -- true even
+--    UART_stop_bits	: integer := 1
   );
 	port(
-		UART_clock	:	in  std_logic;
-		UART_reset	:	in  std_logic;	-- active high
-		UART_load	:	in	 std_logic;	-- active high
-		UART_data	:	in	 std_logic_vector(UART_N_bits-1 downto 0);
-		UART_enable	:  in	 std_logic; -- active high
+		UART_clock		:	in  std_logic;
+		UART_reset		:	in  std_logic;	-- active high
+		UART_load		:	in	 std_logic;	-- active high
+		UART_data		:	in	 std_logic_vector(UART_N_bits-1 downto 0);
+		UART_enable		:  in	 std_logic; -- active high
+		UART_ODD_even	:	in  std_logic; -- odd high, even low
 		
-		UART_out		:	out std_logic
+		
+		UART_out			:	out std_logic
 	);
 end UartDriverTX;
 
@@ -69,6 +71,24 @@ architecture Behavioral of UartDriverTX is
 		A:	in  std_logic_vector(N-1 downto 0);
 		B:	in  std_logic_vector(N-1 downto 0);
 		Y:	out std_logic);	     
+	end component;
+	
+	component NRegister is
+	generic(N: integer:= 32);
+	port(
+		clk:	in  std_logic;
+		reset:	in  std_logic; --Active high
+		data_in:	in  std_logic_vector(N-1 downto 0);
+		enable:	in  std_logic;
+		load:	in  std_logic; --Load enable high
+		data_out: out std_logic_vector(N-1 downto 0));
+	end component;
+	
+	component Mux_1Bit_2X1 is
+    Port ( port0 : in  STD_LOGIC;
+           port1 : in  STD_LOGIC;
+           sel : in  STD_LOGIC;
+           portY : out  STD_LOGIC);
 	end component;
 
 begin

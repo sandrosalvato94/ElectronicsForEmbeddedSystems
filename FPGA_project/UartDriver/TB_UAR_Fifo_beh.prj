@@ -1,0 +1,4 @@
+vhdl work "Mux_Bit.vhd"
+vhdl work "D_FF_rst.vhd"
+vhdl work "UART_Fifo.vhd"
+vhdl work "TB_UAR_Fifo.vhd"

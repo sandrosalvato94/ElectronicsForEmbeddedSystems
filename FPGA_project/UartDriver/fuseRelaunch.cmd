@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/TB_UART_Synchronizer_isim_beh.exe" -prj "C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/TB_UART_Synchronizer_beh.prj" "work.TB_UART_Synchronizer" 
+-intstyle "ise" -incremental -o "C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/TB_UAR_Fifo_isim_beh.exe" -prj "C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/TB_UAR_Fifo_beh.prj" "work.TB_UAR_Fifo" 

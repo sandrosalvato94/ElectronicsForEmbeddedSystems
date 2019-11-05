@@ -59,9 +59,22 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TB_HardwiredReg_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="TB_HardwiredReg_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="TB_HardwiredReg_isim_beh.wdb"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TB_UART_Synchronizer_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="TB_UART_Synchronizer_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="TB_UART_Synchronizer_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TB_UAR_Fifo_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="TB_UAR_Fifo_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="TB_UAR_Fifo_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="UART_Fifo.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="UART_Fifo.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="UART_Fifo.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="UART_Fifo.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="UART_Fifo.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="UART_Fifo.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="UART_Fifo.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="UART_Fifo.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="UART_Fifo_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="UART_Fifo_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="UART_Fifo_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="UART_Fifo_xst.xrpt"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="UART_Synchronizer.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="UART_Synchronizer.lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="UART_Synchronizer.ngc"/>
@@ -109,11 +122,11 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1572886587" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1572886587">
+    <transform xil_pn:end_ts="1572948695" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1572948695">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1572886587" xil_pn:in_ck="-4582788182005417996" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1572886587">
+    <transform xil_pn:end_ts="1572948695" xil_pn:in_ck="3657925200812783014" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1572948695">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ANDGate_NX1.vhd"/>
@@ -121,16 +134,20 @@
       <outfile xil_pn:name="Clock_divider.vhd"/>
       <outfile xil_pn:name="Comparator.vhd"/>
       <outfile xil_pn:name="ComparatorWithEnable.vhd"/>
+      <outfile xil_pn:name="D_FF_rst.vhd"/>
       <outfile xil_pn:name="HardwiredReg.vhd"/>
       <outfile xil_pn:name="Mux_1Bit_2X1.vhd"/>
+      <outfile xil_pn:name="Mux_Bit.vhd"/>
       <outfile xil_pn:name="NComparatorWithEnable.vhd"/>
       <outfile xil_pn:name="NORGate_NX1.vhd"/>
+      <outfile xil_pn:name="NRegister.vhd"/>
       <outfile xil_pn:name="ORGate_NX1.vhd"/>
       <outfile xil_pn:name="Reg1Bit.vhd"/>
       <outfile xil_pn:name="SAT_Counter_BMM.vhd"/>
       <outfile xil_pn:name="TB_Clock_divider.vhd"/>
       <outfile xil_pn:name="TB_HardwiredReg.vhd"/>
       <outfile xil_pn:name="TB_UART_Synchronizer.vhd"/>
+      <outfile xil_pn:name="TB_UAR_Fifo.vhd"/>
       <outfile xil_pn:name="UART_Fifo.vhd"/>
       <outfile xil_pn:name="UART_Synchronizer.vhd"/>
       <outfile xil_pn:name="UartDriver.vhd"/>
@@ -139,19 +156,19 @@
       <outfile xil_pn:name="t_ff.vhd"/>
       <outfile xil_pn:name="ud_counter.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1572886587" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="4083517895709228660" xil_pn:start_ts="1572886587">
+    <transform xil_pn:end_ts="1572948695" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-4281070243907447338" xil_pn:start_ts="1572948695">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1572886587" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-8613862882814721674" xil_pn:start_ts="1572886587">
+    <transform xil_pn:end_ts="1572948695" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-540942566467125928" xil_pn:start_ts="1572948695">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1572886587" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-6871029900050794770" xil_pn:start_ts="1572886587">
+    <transform xil_pn:end_ts="1572948695" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="9149174877051543908" xil_pn:start_ts="1572948695">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1572886587" xil_pn:in_ck="-4582788182005417996" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1572886587">
+    <transform xil_pn:end_ts="1572948695" xil_pn:in_ck="3657925200812783014" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1572948695">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ANDGate_NX1.vhd"/>
@@ -159,16 +176,20 @@
       <outfile xil_pn:name="Clock_divider.vhd"/>
       <outfile xil_pn:name="Comparator.vhd"/>
       <outfile xil_pn:name="ComparatorWithEnable.vhd"/>
+      <outfile xil_pn:name="D_FF_rst.vhd"/>
       <outfile xil_pn:name="HardwiredReg.vhd"/>
       <outfile xil_pn:name="Mux_1Bit_2X1.vhd"/>
+      <outfile xil_pn:name="Mux_Bit.vhd"/>
       <outfile xil_pn:name="NComparatorWithEnable.vhd"/>
       <outfile xil_pn:name="NORGate_NX1.vhd"/>
+      <outfile xil_pn:name="NRegister.vhd"/>
       <outfile xil_pn:name="ORGate_NX1.vhd"/>
       <outfile xil_pn:name="Reg1Bit.vhd"/>
       <outfile xil_pn:name="SAT_Counter_BMM.vhd"/>
       <outfile xil_pn:name="TB_Clock_divider.vhd"/>
       <outfile xil_pn:name="TB_HardwiredReg.vhd"/>
       <outfile xil_pn:name="TB_UART_Synchronizer.vhd"/>
+      <outfile xil_pn:name="TB_UAR_Fifo.vhd"/>
       <outfile xil_pn:name="UART_Fifo.vhd"/>
       <outfile xil_pn:name="UART_Synchronizer.vhd"/>
       <outfile xil_pn:name="UartDriver.vhd"/>
@@ -177,70 +198,64 @@
       <outfile xil_pn:name="t_ff.vhd"/>
       <outfile xil_pn:name="ud_counter.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1572886590" xil_pn:in_ck="-4582788182005417996" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-2622912169412632502" xil_pn:start_ts="1572886587">
+    <transform xil_pn:end_ts="1572948699" xil_pn:in_ck="3657925200812783014" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="4336584468826661006" xil_pn:start_ts="1572948695">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="TB_UART_Synchronizer_beh.prj"/>
-      <outfile xil_pn:name="TB_UART_Synchronizer_isim_beh.exe"/>
+      <outfile xil_pn:name="TB_UAR_Fifo_beh.prj"/>
+      <outfile xil_pn:name="TB_UAR_Fifo_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1572886590" xil_pn:in_ck="2390994364368588191" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-6755208272728960425" xil_pn:start_ts="1572886590">
+    <transform xil_pn:end_ts="1572948699" xil_pn:in_ck="9157023918681702350" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="1791266393209702523" xil_pn:start_ts="1572948699">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="TB_UART_Synchronizer_isim_beh.wdb"/>
+      <outfile xil_pn:name="TB_UAR_Fifo_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
     </transform>
-    <transform xil_pn:end_ts="1572878808" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1572878808">
+    <transform xil_pn:end_ts="1572948678" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1572948678">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1572885399" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-6484175206021779922" xil_pn:start_ts="1572885399">
+    <transform xil_pn:end_ts="1572948678" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-1565784872527729820" xil_pn:start_ts="1572948678">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1572885399" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-6871029900050794770" xil_pn:start_ts="1572885399">
+    <transform xil_pn:end_ts="1572948678" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="9149174877051543908" xil_pn:start_ts="1572948678">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1572885399" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1572885399">
+    <transform xil_pn:end_ts="1572948678" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1572948678">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1572885399" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-1717986400880717524" xil_pn:start_ts="1572885399">
+    <transform xil_pn:end_ts="1572948678" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="3862476629786898530" xil_pn:start_ts="1572948678">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1572885399" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297145852409" xil_pn:start_ts="1572885399">
+    <transform xil_pn:end_ts="1572948678" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297145852409" xil_pn:start_ts="1572948678">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1572885399" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="7853032723839621304" xil_pn:start_ts="1572885399">
+    <transform xil_pn:end_ts="1572948678" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-5609831880251287250" xil_pn:start_ts="1572948678">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1572886582" xil_pn:in_ck="325060186357418770" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="307300097978081803" xil_pn:start_ts="1572886577">
+    <transform xil_pn:end_ts="1572948687" xil_pn:in_ck="3788272787657615668" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="3527558369542879937" xil_pn:start_ts="1572948678">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="HardwiredReg.ngr"/>
-      <outfile xil_pn:name="UART_Synchronizer.lso"/>
-      <outfile xil_pn:name="UART_Synchronizer.ngc"/>
-      <outfile xil_pn:name="UART_Synchronizer.ngr"/>
-      <outfile xil_pn:name="UART_Synchronizer.prj"/>
-      <outfile xil_pn:name="UART_Synchronizer.stx"/>
-      <outfile xil_pn:name="UART_Synchronizer.syr"/>
-      <outfile xil_pn:name="UART_Synchronizer.xst"/>
-      <outfile xil_pn:name="UART_Synchronizer_vhdl.prj"/>
-      <outfile xil_pn:name="UART_Synchronizer_xst.xrpt"/>
-      <outfile xil_pn:name="UD_COUNTER.ngr"/>
+      <outfile xil_pn:name="UART_Fifo.lso"/>
+      <outfile xil_pn:name="UART_Fifo.ngc"/>
+      <outfile xil_pn:name="UART_Fifo.ngr"/>
+      <outfile xil_pn:name="UART_Fifo.prj"/>
+      <outfile xil_pn:name="UART_Fifo.stx"/>
+      <outfile xil_pn:name="UART_Fifo.syr"/>
+      <outfile xil_pn:name="UART_Fifo.xst"/>
+      <outfile xil_pn:name="UART_Fifo_vhdl.prj"/>
+      <outfile xil_pn:name="UART_Fifo_xst.xrpt"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>

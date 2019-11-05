@@ -1,0 +1,3 @@
+vhdl work "C:\Users\Alessandro\Desktop\EFES_Fpga\UartDriver\Mux_Bit.vhd"
+vhdl work "C:\Users\Alessandro\Desktop\EFES_Fpga\UartDriver\D_FF_rst.vhd"
+vhdl work "C:\Users\Alessandro\Desktop\EFES_Fpga\UartDriver\UART_Fifo.vhd"

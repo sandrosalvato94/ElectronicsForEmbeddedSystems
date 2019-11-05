@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.26 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.27 secs
  
 --> Reading design: UART_Synchronizer.prj
 
@@ -127,8 +127,7 @@ Architecture behavioral of Entity hardwiredreg is up to date.
 Compiling vhdl file "C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/Comparator.vhd" in Library work.
 Architecture structural of Entity comparator is up to date.
 Compiling vhdl file "C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/UART_Synchronizer.vhd" in Library work.
-Entity <uart_synchronizer> compiled.
-Entity <uart_synchronizer> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity uart_synchronizer is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -552,12 +551,12 @@ Delay:               6.149ns (Levels of Logic = 3)
 =========================================================================
 
 
-Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 3.24 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.57 secs
  
 --> 
 
-Total memory usage is 238380 kilobytes
+Total memory usage is 190576 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   31 (   0 filtered)
