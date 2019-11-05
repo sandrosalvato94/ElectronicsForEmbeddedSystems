@@ -43,11 +43,12 @@ entity UartDriverTX is
 		UART_clock		:	in  std_logic;
 		UART_reset		:	in  std_logic;	-- active high
 		UART_load		:	in	 std_logic;	-- active high
-		UART_data		:	in	 std_logic_vector(UART_N_bits-1 downto 0);
+		UART_data		:	in	 std_logic_vector(UART_N_bits-4 downto 0); -- minus start, parity and stop
 		UART_enable		:  in	 std_logic; -- active high
 		UART_ODD_even	:	in  std_logic; -- odd high, even low
+		UART_event		:  in  std_logic;
 		
-		
+		UART_busy		:  out std_logic;
 		UART_out			:	out std_logic
 	);
 end UartDriverTX;
@@ -90,9 +91,140 @@ architecture Behavioral of UartDriverTX is
            sel : in  STD_LOGIC;
            portY : out  STD_LOGIC);
 	end component;
+	
+	component UART_Synchronizer is
+	generic(
+		SYNCH_steps		:	integer := 11;
+		SYNCH_NBIT		:	integer := 8 -- number of bits internal counter
+	);	
+	port(
+		SYNCH_clock		:	in  std_logic;
+		SYNCH_reset 	:	in  std_logic;
+		
+		SYNCH_UART_busy:  out std_logic
+	);
+	end component;
+	
+	component UART_Fifo is
+	generic(
+		NBIT_DATA	:	integer := 11
+		);
+	port(
+		FIFO_data	:	in  std_logic_vector(NBIT_DATA-1 downto 0); -- includes start, data, parity and stop
+		FIFO_reset	:  in  std_logic;
+		FIFO_enable	:	in  std_logic;
+		--FIFO_ext_clk:  in	 std_logic;
+		FIFO_clk:	in  std_logic;
+		FIFO_load	:  in  std_logic;
+		--FIFO_start	:	in  std_logic;
+		--FIFO_parity :  in  std_logic;
+		FIFO_bit_out:  out std_logic
+	);
+	end component;
+	
+	component Reg1Bit is
+	port(
+		clk:	in  std_logic;
+		reset:	in  std_logic; --Active high
+		data_in:	in  std_logic;
+		enable:	in  std_logic;
+		load:	in  std_logic; --Load enable high
+		data_out: out std_logic);
+	end component;
+
+	signal s_zeros				: std_logic_vector(UART_N_bits-4 downto 0) := (others => '0');
+	signal s_data_Treg		: std_logic_vector(UART_N_bits-1 downto 0);
+	signal s_is_even			: std_logic;
+	signal s_is_odd			: std_logic;
+	signal s_parity			: std_logic;
+	signal s_data_Freg_Tfifo: std_logic_vector(UART_N_bits-1 downto 0);
+	signal s_internal_clock	: std_logic;
+	signal s_uart_busy		: std_logic;
+	signal s_bit_Ffifo_Tmux	: std_logic;
+	signal s_load_Freg_Tfifo: std_logic;
 
 begin
+---------------------------------------------------------------------------
+	Parity_XNOR : XNORGate_NX1 GENERIC MAP(N => UART_N_bits-3) 
+					  PORT MAP (
+							A => UART_data,
+							B => s_zeros,
+							Y => s_is_even
+					  );
+	
+	s_is_odd <= NOT(s_is_even);
+	
+	Parity_MUX : Mux_1Bit_2X1 PORT MAP (
+										port0 => s_is_even,
+										port1 => s_is_odd,
+										sel	=> UART_ODD_even,
+										portY => s_parity
+									  );
+---------------------------------------------------------------------------  
 
+---------------------------------------------------------------------------
+	s_data_Treg	<= '0' & UART_data & s_parity & '1';
+	
+	Stream_REG : NRegister GENERIC MAP (N => UART_N_bits)
+								  PORT MAP (
+									clk 		=> UART_clock,
+									reset 	=> UART_reset,
+									data_in	=> s_data_Treg,
+									enable	=> UART_enable,
+									load		=> UART_event,
+									data_out	=> s_data_Freg_Tfifo
+								  );
+---------------------------------------------------------------------------
 
+---------------------------------------------------------------------------
+	CLK_DIV : Clock_divider GENERIC MAP (CLKDIV_divider => 432)
+									PORT MAP	(
+										CLKDIV_clock	=> UART_clock,
+										CLKDIV_reset	=> UART_event,
+										CLKDIV_baudrate => s_internal_clock
+									);
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+	SYNCH	: UART_Synchronizer GENERIC MAP (SYNCH_steps => UART_N_bits, SYNCH_NBIT => 8)
+									  PORT MAP (
+										SYNCH_clock			=> s_internal_clock,
+										SYNCH_reset 		=> UART_event,
+										SYNCH_UART_busy 	=> s_uart_busy
+									  );
+	UART_busy <= s_uart_busy;
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+	LoadReg : Reg1Bit PORT MAP (
+									clk 		=> UART_clock, --50 Mhz
+									reset 	=> UART_reset,
+									data_in	=> UART_event,
+									enable	=> UART_enable,
+									load		=> '1',
+									data_out	=> s_load_Freg_Tfifo
+								  );
+	
+	
+	FIFO :	UART_Fifo GENERIC MAP (NBIT_DATA => UART_N_bits)
+							 PORT MAP (
+								FIFO_data		=> s_data_Freg_Tfifo,
+								FIFO_reset		=> UART_reset,
+								FIFO_enable		=> s_uart_busy,
+								FIFO_clk			=> s_internal_clock,
+								FIFO_load		=> s_load_Freg_Tfifo,
+								FIFO_bit_out	=> s_bit_Ffifo_Tmux
+							 );
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+	MUX_out	: Mux_1Bit_2X1 PORT MAP (
+										 port0 => '1',
+										 port1 => s_bit_Ffifo_Tmux,
+										 sel   => s_uart_busy,
+										 portY => UART_out
+									);
+
+---------------------------------------------------------------------------
 end Behavioral;
 

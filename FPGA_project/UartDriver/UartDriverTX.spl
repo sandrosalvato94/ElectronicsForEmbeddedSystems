@@ -1,0 +1,12 @@
+[Inputs]
+UART_clock
+UART_reset
+UART_load
+UART_enable
+UART_ODD_even
+UART_event
+=UART_data[7:0]=
+[Outputs]
+UART_busy
+UART_out
+[BiDir]
