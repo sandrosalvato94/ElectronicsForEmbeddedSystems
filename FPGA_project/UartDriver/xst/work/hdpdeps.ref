@@ -1,124 +1,124 @@
 V3 89
 FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/ANDGate_NX1.vhd 2018/09/07.20:02:34 P.20131013
-EN work/ANDGate_NX1 1572952647 \
+EN work/ANDGate_NX1 1572967938 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/ANDGate_NX1.vhd \
-      PB ieee/std_logic_1164 1381692176 PB work/CONSTANTS 1572952636
-AR work/ANDGate_NX1/Behavioral 1572952648 \
+      PB ieee/std_logic_1164 1381692176 PB work/CONSTANTS 1572967927
+AR work/ANDGate_NX1/Behavioral 1572967939 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/ANDGate_NX1.vhd \
-      EN work/ANDGate_NX1 1572952647
-FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/Clock_divider.vhd 2019/11/04.16:52:06 P.20131013
-EN work/Clock_divider 1572952671 \
+      EN work/ANDGate_NX1 1572967938
+FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/Clock_divider.vhd 2019/11/05.15:41:40 P.20131013
+EN work/Clock_divider 1572967962 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/Clock_divider.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/Clock_divider/Structural 1572952672 \
+AR work/Clock_divider/Structural 1572967963 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/Clock_divider.vhd \
-      EN work/Clock_divider 1572952671 CP Reg1Bit CP UD_COUNTER CP HardwiredReg \
+      EN work/Clock_divider 1572967962 CP Reg1Bit CP UD_COUNTER CP HardwiredReg \
       CP NComparatorWithEnable
 FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/Comparator.vhd 2019/11/04.17:44:43 P.20131013
-EN work/Comparator 1572952661 \
+EN work/Comparator 1572967952 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/Comparator.vhd \
-      PB ieee/std_logic_1164 1381692176 PB work/CONSTANTS 1572952636
-AR work/Comparator/Structural 1572952662 \
+      PB ieee/std_logic_1164 1381692176 PB work/CONSTANTS 1572967927
+AR work/Comparator/Structural 1572967953 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/Comparator.vhd \
-      EN work/Comparator 1572952661 CP ORGate_NX1 CP Mux_1Bit_2X1
+      EN work/Comparator 1572967952 CP ORGate_NX1 CP Mux_1Bit_2X1
 FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/ComparatorWithEnable.vhd 2018/07/09.01:02:44 P.20131013
-EN work/ComparatorWithEnable 1572952651 \
+EN work/ComparatorWithEnable 1572967942 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/ComparatorWithEnable.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/ComparatorWithEnable/Behavioral 1572952652 \
+AR work/ComparatorWithEnable/Behavioral 1572967943 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/ComparatorWithEnable.vhd \
-      EN work/ComparatorWithEnable 1572952651
+      EN work/ComparatorWithEnable 1572967942
 FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/constants.vhd 2018/07/09.01:02:44 P.20131013
-PH work/CONSTANTS 1572952635 \
+PH work/CONSTANTS 1572967926 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/constants.vhd
-PB work/CONSTANTS 1572952636 \
+PB work/CONSTANTS 1572967927 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/constants.vhd \
-      PH work/CONSTANTS 1572952635
+      PH work/CONSTANTS 1572967926
 FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/CU_SatCounter.vhd 2018/09/06.10:52:30 P.20131013
-EN work/CU_SatCounter 1572952645 \
+EN work/CU_SatCounter 1572967936 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/CU_SatCounter.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/CU_SatCounter/Behavioral 1572952646 \
+AR work/CU_SatCounter/Behavioral 1572967937 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/CU_SatCounter.vhd \
-      EN work/CU_SatCounter 1572952645
+      EN work/CU_SatCounter 1572967936
 FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/D_FF_rst.vhd 2018/07/09.01:02:44 P.20131013
-EN work/D_FF_rst 1572952653 \
+EN work/D_FF_rst 1572967944 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/D_FF_rst.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/D_FF_rst/Behavioral 1572952654 \
+AR work/D_FF_rst/Behavioral 1572967945 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/D_FF_rst.vhd \
-      EN work/D_FF_rst 1572952653
+      EN work/D_FF_rst 1572967944
 FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/HardwiredReg.vhd 2019/11/04.12:07:14 P.20131013
-EN work/HardwiredReg 1572952659 \
+EN work/HardwiredReg 1572967950 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/HardwiredReg.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/HardwiredReg/Behavioral 1572952660 \
+AR work/HardwiredReg/Behavioral 1572967951 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/HardwiredReg.vhd \
-      EN work/HardwiredReg 1572952659
+      EN work/HardwiredReg 1572967950
 FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/Mux_1Bit_2X1.vhd 2018/07/09.01:02:44 P.20131013
-EN work/Mux_1Bit_2X1 1572952641 \
+EN work/Mux_1Bit_2X1 1572967932 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/Mux_1Bit_2X1.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/Mux_1Bit_2X1/Behavioral 1572952642 \
+AR work/Mux_1Bit_2X1/Behavioral 1572967933 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/Mux_1Bit_2X1.vhd \
-      EN work/Mux_1Bit_2X1 1572952641
+      EN work/Mux_1Bit_2X1 1572967932
 FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/Mux_Bit.vhd 2018/07/09.01:02:44 P.20131013
-EN work/Mux_Bit 1572952655 \
+EN work/Mux_Bit 1572967946 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/Mux_Bit.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/Mux_Bit/Behavioral 1572952656 \
+AR work/Mux_Bit/Behavioral 1572967947 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/Mux_Bit.vhd \
-      EN work/Mux_Bit 1572952655
+      EN work/Mux_Bit 1572967946
 FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/NComparatorWithEnable.vhd 2018/07/09.01:02:44 P.20131013
-EN work/NComparatorWithEnable 1572952665 \
+EN work/NComparatorWithEnable 1572967956 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/NComparatorWithEnable.vhd \
-      PB ieee/std_logic_1164 1381692176 PB work/CONSTANTS 1572952636
-AR work/NComparatorWithEnable/Behavioral 1572952666 \
+      PB ieee/std_logic_1164 1381692176 PB work/CONSTANTS 1572967927
+AR work/NComparatorWithEnable/Behavioral 1572967957 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/NComparatorWithEnable.vhd \
-      EN work/NComparatorWithEnable 1572952665 CP ComparatorWithEnable
+      EN work/NComparatorWithEnable 1572967956 CP ComparatorWithEnable
 FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/NORGate_NX1.vhd 2018/09/07.20:02:34 P.20131013
-EN work/NORGate_NX1 1572952649 \
+EN work/NORGate_NX1 1572967940 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/NORGate_NX1.vhd \
-      PB ieee/std_logic_1164 1381692176 PB work/CONSTANTS 1572952636
-AR work/NORGate_NX1/Behavioral 1572952650 \
+      PB ieee/std_logic_1164 1381692176 PB work/CONSTANTS 1572967927
+AR work/NORGate_NX1/Behavioral 1572967941 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/NORGate_NX1.vhd \
-      EN work/NORGate_NX1 1572952649
+      EN work/NORGate_NX1 1572967940
 FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/NRegister.vhd 2018/07/09.01:02:44 P.20131013
-EN work/NRegister 1572952669 \
+EN work/NRegister 1572967960 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/NRegister.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/NRegister/Behavioral 1572952670 \
+AR work/NRegister/Behavioral 1572967961 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/NRegister.vhd \
-      EN work/NRegister 1572952669
+      EN work/NRegister 1572967960
 FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/ORGate_NX1.vhd 2018/07/09.01:02:44 P.20131013
-EN work/ORGate_NX1 1572952639 \
+EN work/ORGate_NX1 1572967930 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/ORGate_NX1.vhd \
-      PB ieee/std_logic_1164 1381692176 PB work/CONSTANTS 1572952636
-AR work/ORGate_NX1/Behavioral 1572952640 \
+      PB ieee/std_logic_1164 1381692176 PB work/CONSTANTS 1572967927
+AR work/ORGate_NX1/Behavioral 1572967931 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/ORGate_NX1.vhd \
-      EN work/ORGate_NX1 1572952639
+      EN work/ORGate_NX1 1572967930
 FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/Reg1Bit.vhd 2018/07/09.01:02:44 P.20131013
-EN work/Reg1Bit 1572952663 \
+EN work/Reg1Bit 1572967954 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/Reg1Bit.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/Reg1Bit/Behavioral 1572952664 \
+AR work/Reg1Bit/Behavioral 1572967955 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/Reg1Bit.vhd \
-      EN work/Reg1Bit 1572952663
+      EN work/Reg1Bit 1572967954
 FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/SAT_Counter_BMM.vhd 2019/11/04.17:38:57 P.20131013
-EN work/SAT_Counter 1572952657 \
+EN work/SAT_Counter 1572967948 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/SAT_Counter_BMM.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/SAT_Counter/Structural 1572952658 \
+AR work/SAT_Counter/Structural 1572967949 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/SAT_Counter_BMM.vhd \
-      EN work/SAT_Counter 1572952657 CP UD_COUNTER CP CU_SatCounter CP ANDGate_NX1 \
+      EN work/SAT_Counter 1572967948 CP UD_COUNTER CP CU_SatCounter CP ANDGate_NX1 \
       CP NORGate_NX1
 FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/t_ff.vhd 2018/07/09.01:02:44 P.20131013
-EN work/t_ff_rst0 1572952637 \
+EN work/t_ff_rst0 1572967928 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/t_ff.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/t_ff_rst0/behavioral 1572952638 \
+AR work/t_ff_rst0/behavioral 1572967929 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/t_ff.vhd \
-      EN work/t_ff_rst0 1572952637
+      EN work/t_ff_rst0 1572967928
 FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/t_ff_rst1.vhd 2018/07/09.01:02:44 P.20131013
 EN work/t_ff_rst1 1572865292 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/t_ff_rst1.vhd \
@@ -126,40 +126,40 @@ EN work/t_ff_rst1 1572865292 \
 AR work/t_ff_rst1/Behavioral 1572865293 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/t_ff_rst1.vhd \
       EN work/t_ff_rst1 1572865292
-FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/UartDriver.vhd 2019/11/05.12:14:45 P.20131013
-EN work/UartDriverTX 1572952677 \
+FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/UartDriver.vhd 2019/11/05.16:32:04 P.20131013
+EN work/UartDriverTX 1572967968 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/UartDriver.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/UartDriverTX/Behavioral 1572952678 \
+AR work/UartDriverTX/Behavioral 1572967969 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/UartDriver.vhd \
-      EN work/UartDriverTX 1572952677 CP XNORGate_NX1 CP Mux_1Bit_2X1 CP NRegister \
+      EN work/UartDriverTX 1572967968 CP XNORGate_NX1 CP Mux_1Bit_2X1 CP NRegister \
       CP Clock_divider CP UART_Synchronizer CP Reg1Bit CP UART_Fifo
 FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/UART_Fifo.vhd 2019/11/05.11:11:04 P.20131013
-EN work/UART_Fifo 1572952675 \
+EN work/UART_Fifo 1572967966 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/UART_Fifo.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/UART_Fifo/Behavioral 1572952676 \
+AR work/UART_Fifo/Behavioral 1572967967 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/UART_Fifo.vhd \
-      EN work/UART_Fifo 1572952675 CP D_FF_rst CP Mux_Bit
-FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/UART_Synchronizer.vhd 2019/11/04.17:56:15 P.20131013
-EN work/UART_Synchronizer 1572952673 \
+      EN work/UART_Fifo 1572967966 CP D_FF_rst CP Mux_Bit
+FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/UART_Synchronizer.vhd 2019/11/05.16:01:07 P.20131013
+EN work/UART_Synchronizer 1572967964 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/UART_Synchronizer.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/UART_Synchronizer/Behavioral 1572952674 \
+AR work/UART_Synchronizer/Behavioral 1572967965 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/UART_Synchronizer.vhd \
-      EN work/UART_Synchronizer 1572952673 CP SAT_Counter CP HardwiredReg \
+      EN work/UART_Synchronizer 1572967964 CP SAT_Counter CP HardwiredReg \
       CP Comparator
 FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/ud_counter.vhd 2019/11/04.12:11:18 P.20131013
-EN work/UD_COUNTER 1572952643 \
+EN work/UD_COUNTER 1572967934 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/ud_counter.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/UD_COUNTER/STR 1572952644 \
+AR work/UD_COUNTER/STR 1572967935 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/ud_counter.vhd \
-      EN work/UD_COUNTER 1572952643 CP t_ff_rst0
+      EN work/UD_COUNTER 1572967934 CP t_ff_rst0
 FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/XNORGate_NX1.vhd 2018/07/09.01:02:44 P.20131013
-EN work/XNORGate_NX1 1572952667 \
+EN work/XNORGate_NX1 1572967958 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/XNORGate_NX1.vhd \
-      PB ieee/std_logic_1164 1381692176 PB work/CONSTANTS 1572952636
-AR work/XNORGate_NX1/Behavioral 1572952668 \
+      PB ieee/std_logic_1164 1381692176 PB work/CONSTANTS 1572967927
+AR work/XNORGate_NX1/Behavioral 1572967959 \
       FL C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/XNORGate_NX1.vhd \
-      EN work/XNORGate_NX1 1572952667
+      EN work/XNORGate_NX1 1572967958

@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2019-11-05T11:17:19</DateModified>
+  <DateModified>2019-11-05T14:17:54</DateModified>
   <ModuleName>UartDriverTX</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/iseconfig/UART_Fifo.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver</ImplementationReportsDirectory>
-  <DateInitialized>2019-11-05T11:17:18</DateInitialized>
+  <ImplementationReportsDirectory>C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver\</ImplementationReportsDirectory>
+  <DateInitialized>2019-11-05T14:17:54</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

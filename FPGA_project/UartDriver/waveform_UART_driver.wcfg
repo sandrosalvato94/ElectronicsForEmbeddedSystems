@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/TB_UartDriverTX_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="constants" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="tb_uartdrivertx" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="18" />
+   <wvobject fp_name="/tb_uartdrivertx/uart_clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">uart_clock</obj_property>
+      <obj_property name="ObjectShortName">uart_clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uartdrivertx/uart_reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">uart_reset</obj_property>
+      <obj_property name="ObjectShortName">uart_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uartdrivertx/uart_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">uart_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">uart_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uartdrivertx/uart_event" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">uart_event</obj_property>
+      <obj_property name="ObjectShortName">uart_event</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uartdrivertx/uart_enable" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">uart_enable</obj_property>
+      <obj_property name="ObjectShortName">uart_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uartdrivertx/uart_odd_even" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">uart_odd_even</obj_property>
+      <obj_property name="ObjectShortName">uart_odd_even</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uartdrivertx/uart_busy" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">uart_busy</obj_property>
+      <obj_property name="ObjectShortName">uart_busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uartdrivertx/uart_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">uart_out</obj_property>
+      <obj_property name="ObjectShortName">uart_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uartdrivertx/uut/CLK_DIV/clkdiv_clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clkdiv_clock</obj_property>
+      <obj_property name="ObjectShortName">clkdiv_clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uartdrivertx/uut/CLK_DIV/clkdiv_baudrate" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clkdiv_baudrate</obj_property>
+      <obj_property name="ObjectShortName">clkdiv_baudrate</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uartdrivertx/uut/FIFO/fifo_load" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fifo_load</obj_property>
+      <obj_property name="ObjectShortName">fifo_load</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uartdrivertx/uut/FIFO/s_control_mux" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">s_control_mux[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s_control_mux[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uartdrivertx/uut/FIFO/fifo_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">fifo_data[10:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_data[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uartdrivertx/uut/FIFO/s_d_fmux_tff" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">s_d_fmux_tff[10:0]</obj_property>
+      <obj_property name="ObjectShortName">s_d_fmux_tff[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uartdrivertx/uut/FIFO/s_q_fff_tmux" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">s_q_fff_tmux[10:0]</obj_property>
+      <obj_property name="ObjectShortName">s_q_fff_tmux[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uartdrivertx/uut/FIFO/fifo_enable" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fifo_enable</obj_property>
+      <obj_property name="ObjectShortName">fifo_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uartdrivertx/uut/FIFO/fifo_reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fifo_reset</obj_property>
+      <obj_property name="ObjectShortName">fifo_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uartdrivertx/uut/FIFO/fifo_load" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fifo_load</obj_property>
+      <obj_property name="ObjectShortName">fifo_load</obj_property>
+   </wvobject>
+</wave_config>

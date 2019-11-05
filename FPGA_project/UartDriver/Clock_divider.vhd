@@ -87,18 +87,38 @@ architecture Structural of Clock_divider is
 
 	signal s_reset_cnt				: std_logic;
 	signal s_reset_Freg_Tor			: std_logic;
-	signal s_reset_Fcmp_Tcnt		: std_logic;
+	signal s_reset_Fcmp_Tcnt		: std_logic := '0';
 	signal s_value_Fcnt_Tcmp		: std_logic_vector(15 downto 0); 
 	signal s_divider_Fhwreg_Tcmp	: std_logic_vector(15 downto 0);
+	signal s_not_reset				: std_logic;
+	signal s_tmp						: std_logic;
 	
 begin
-
-	s_reset_cnt <= CLKDIV_reset OR s_reset_Freg_Tor;
+	
+	rst_proc : process(CLKDIV_reset, s_reset_Freg_Tor)
+	begin
+		if (s_reset_Freg_Tor /= '0') AND (s_reset_Freg_Tor /= '1') then
+			s_reset_cnt <= CLKDIV_reset;
+		else
+			s_reset_cnt <= CLKDIV_reset OR s_reset_Freg_Tor;
+		end if;
+	end process;
+	
+	baud_proc : process(s_reset_Fcmp_Tcnt)
+	begin
+		if (s_reset_Fcmp_Tcnt /= '0') AND (s_reset_Fcmp_Tcnt /= '1') then
+			CLKDIV_baudrate <= '0';
+			s_tmp <= '0';
+		else
+			CLKDIV_baudrate <= s_reset_Fcmp_Tcnt;
+			s_tmp <= s_reset_Fcmp_Tcnt;
+		end if;
+	end process;
 	
 	RST_REG	: Reg1Bit	PORT MAP (
 									clk => CLKDIV_clock,
 									reset => CLKDIV_reset,
-									data_in	=> s_reset_Fcmp_Tcnt,
+									data_in	=> s_tmp,
 									enable	=> '1',
 									load		=> '1',
 									data_out	=> s_reset_Freg_Tor
@@ -117,14 +137,17 @@ begin
 									PORT MAP (
 										HW_REG_out => s_divider_Fhwreg_Tcmp
 									);
-									
+	
+
+	s_not_reset <= NOT(CLKDIV_reset);
+	
 	CMP		: NComparatorWithEnable GENERIC MAP (NBIT => 16) 
 												PORT MAP (
 													A => s_value_Fcnt_Tcmp,
 													B => s_divider_Fhwreg_Tcmp,
-													Enable => '1',
+													Enable => s_not_reset,
 													ComparatorBit => s_reset_Fcmp_Tcnt
 												);
-	CLKDIV_baudrate <= s_reset_Fcmp_Tcnt;
+	--CLKDIV_baudrate <= s_reset_Fcmp_Tcnt;
 end Structural;
 

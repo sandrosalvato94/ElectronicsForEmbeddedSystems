@@ -74,6 +74,8 @@ architecture Behavioral of UART_Fifo is
 	signal s_Q_Fff_Tmux	:	std_logic_vector(NBIT_DATA-1 downto 0);
 	signal s_control_mux	:	std_logic_vector(1 downto 0);
 	
+	signal s_internal		:	std_logic;
+	signal s_clk			:  std_logic;
 	
 	
 begin
@@ -81,10 +83,14 @@ begin
 	s_control_mux(0) <= FIFO_enable AND NOT(FIFO_reset) AND FIFO_load;
 	s_control_mux(1) <= NOT(FIFO_enable) OR FIFO_reset;
 	
+	s_internal <= NOT(s_control_mux(1)) AND s_control_mux(0);
+	s_clk	<= s_internal OR FIFO_clk;
+	
+	
 	FFcyc: for i in 0 to NBIT_DATA-1 generate
 		FF_i : D_FF_rst PORT MAP (
 						D => s_D_Fmux_Tff(i),
-						clk => FIFO_clk,
+						clk => s_clk,
 						rst => FIFO_reset,
 						Q => s_Q_Fff_Tmux(i)
 						--Not_Q => not connected

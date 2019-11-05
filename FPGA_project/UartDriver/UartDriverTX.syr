@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Reading design: UartDriverTX.prj
 
@@ -147,7 +147,8 @@ Architecture behavioral of Entity uart_synchronizer is up to date.
 Compiling vhdl file "C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/UART_Fifo.vhd" in Library work.
 Architecture behavioral of Entity uart_fifo is up to date.
 Compiling vhdl file "C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/UartDriver.vhd" in Library work.
-Architecture behavioral of Entity uartdrivertx is up to date.
+Entity <uartdrivertx> compiled.
+Entity <uartdrivertx> (Architecture <behavioral>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -529,8 +530,8 @@ Unit <UartDriverTX> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Registers                                            : 49
- 1-bit register                                        : 48
+# Registers                                            : 50
+ 1-bit register                                        : 49
  11-bit register                                       : 1
 # Multiplexers                                         : 11
  1-bit 4-to-1 multiplexer                              : 11
@@ -553,8 +554,8 @@ WARNING:Xst:1710 - FF/Latch <data_out_10> (without init value) has a constant va
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Registers                                            : 59
- Flip-Flops                                            : 59
+# Registers                                            : 60
+ Flip-Flops                                            : 60
 # Multiplexers                                         : 11
  1-bit 4-to-1 multiplexer                              : 11
 # Xors                                                 : 23
@@ -600,8 +601,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 47
- Flip-Flops                                            : 47
+# Registers                                            : 48
+ Flip-Flops                                            : 48
 
 =========================================================================
 
@@ -630,7 +631,8 @@ Design Statistics
 # IOs                              : 16
 
 Cell Usage :
-# BELS                             : 102
+# BELS                             : 107
+#      GND                         : 1
 #      INV                         : 24
 #      LUT2                        : 12
 #      LUT2_L                      : 1
@@ -639,12 +641,13 @@ Cell Usage :
 #      LUT3_L                      : 3
 #      LUT4                        : 39
 #      LUT4_D                      : 2
-#      LUT4_L                      : 3
+#      LUT4_L                      : 2
+#      MUXCY                       : 5
 #      MUXF5                       : 2
 #      VCC                         : 1
-# FlipFlops/Latches                : 47
+# FlipFlops/Latches                : 48
 #      FDC                         : 11
-#      FDCE                        : 36
+#      FDCE                        : 37
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 14
@@ -657,9 +660,9 @@ Device utilization summary:
 
 Selected Device : 3s500epq208-5 
 
- Number of Slices:                       45  out of   4656     0%  
- Number of Slice Flip Flops:             47  out of   9312     0%  
- Number of 4 input LUTs:                 99  out of   9312     1%  
+ Number of Slices:                       48  out of   4656     1%  
+ Number of Slice Flip Flops:             48  out of   9312     0%  
+ Number of 4 input LUTs:                 98  out of   9312     1%  
  Number of IOs:                          16
  Number of bonded IOBs:                  15  out of    158     9%  
  Number of GCLKs:                         1  out of     24     4%  
@@ -682,12 +685,12 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
-------------------------------------------+------------------------------+-------+
-Clock Signal                              | Clock buffer(FF name)        | Load  |
-------------------------------------------+------------------------------+-------+
-UART_clock                                | BUFGP                        | 28    |
-s_internal_clock(CLK_DIV/CMP/_and001469:O)| NONE(*)(FIFO/FFcyc[0].FF_i/Q)| 19    |
-------------------------------------------+------------------------------+-------+
+-------------------------------------------------+------------------------------+-------+
+Clock Signal                                     | Clock buffer(FF name)        | Load  |
+-------------------------------------------------+------------------------------+-------+
+UART_clock                                       | BUFGP                        | 29    |
+s_internal_clock(CLK_DIV/CMP/_and0014_wg_cy<4>:O)| NONE(*)(FIFO/FFcyc[0].FF_i/Q)| 19    |
+-------------------------------------------------+------------------------------+-------+
 (*) This 1 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
@@ -698,7 +701,7 @@ Asynchronous Control Signals Information:
 -------------------------------------------+----------------------------------------------------+-------+
 Control Signal                             | Buffer(FF name)                                    | Load  |
 -------------------------------------------+----------------------------------------------------+-------+
-UART_reset                                 | IBUF                                               | 22    |
+UART_reset                                 | IBUF                                               | 23    |
 CLK_DIV/s_reset_cnt(CLK_DIV/s_reset_cnt1:O)| NONE(CLK_DIV/UP_CNT/MAIN_GEN[0].FIRST_FF.FF_0/data)| 16    |
 UART_event                                 | IBUF                                               | 9     |
 -------------------------------------------+----------------------------------------------------+-------+
@@ -708,9 +711,9 @@ Timing Summary:
 Speed Grade: -5
 
    Minimum period: 4.870ns (Maximum Frequency: 205.324MHz)
-   Minimum input arrival time before clock: 5.692ns
+   Minimum input arrival time before clock: 5.706ns
    Maximum output required time after clock: 7.831ns
-   Maximum combinational path delay: 7.806ns
+   Maximum combinational path delay: 7.820ns
 
 Timing Detail:
 --------------
@@ -719,7 +722,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'UART_clock'
   Clock period: 4.870ns (frequency: 205.324MHz)
-  Total number of paths / destination ports: 152 / 32
+  Total number of paths / destination ports: 153 / 33
 -------------------------------------------------------------------------
 Delay:               4.870ns (Levels of Logic = 3)
   Source:            CLK_DIV/UP_CNT/MAIN_GEN[2].SECOND_FF.FF_i/data (FF)
@@ -766,7 +769,7 @@ Delay:               4.748ns (Levels of Logic = 3)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'UART_clock'
-  Total number of paths / destination ports: 55 / 21
+  Total number of paths / destination ports: 57 / 23
 -------------------------------------------------------------------------
 Offset:              4.289ns (Levels of Logic = 5)
   Source:            UART_data<0> (PAD)
@@ -791,7 +794,7 @@ Offset:              4.289ns (Levels of Logic = 5)
 Timing constraint: Default OFFSET IN BEFORE for Clock 's_internal_clock'
   Total number of paths / destination ports: 30 / 19
 -------------------------------------------------------------------------
-Offset:              5.692ns (Levels of Logic = 4)
+Offset:              5.706ns (Levels of Logic = 4)
   Source:            UART_event (PAD)
   Destination:       SYNCH/SYNCH_CNT/CNT/MAIN_GEN[7].LAST_FF.FF_N/data (FF)
   Destination Clock: s_internal_clock rising
@@ -800,14 +803,14 @@ Offset:              5.692ns (Levels of Logic = 4)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            17   1.106   1.045  UART_event_IBUF (UART_event_IBUF)
+     IBUF:I->O            18   1.106   1.060  UART_event_IBUF (UART_event_IBUF)
      LUT3_D:I0->O          3   0.612   0.481  SYNCH/SYNCH_CNT/CU/UDC_enable40_SW0 (N32)
      LUT4:I2->O            2   0.612   0.383  SYNCH/SYNCH_CNT/CNT/s_toggle_7_and000012 (SYNCH/SYNCH_CNT/CNT/s_toggle<3>)
      LUT4:I3->O            1   0.612   0.357  SYNCH/SYNCH_CNT/CNT/s_toggle_7_and00001 (SYNCH/SYNCH_CNT/CNT/s_toggle<7>)
      FDCE:CE                   0.483          SYNCH/SYNCH_CNT/CNT/MAIN_GEN[7].LAST_FF.FF_N/data
     ----------------------------------------
-    Total                      5.692ns (3.425ns logic, 2.267ns route)
-                                       (60.2% logic, 39.8% route)
+    Total                      5.706ns (3.425ns logic, 2.281ns route)
+                                       (60.0% logic, 40.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 's_internal_clock'
@@ -835,7 +838,7 @@ Offset:              7.831ns (Levels of Logic = 4)
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 2 / 2
 -------------------------------------------------------------------------
-Delay:               7.806ns (Levels of Logic = 4)
+Delay:               7.820ns (Levels of Logic = 4)
   Source:            UART_event (PAD)
   Destination:       UART_out (PAD)
 
@@ -843,23 +846,23 @@ Delay:               7.806ns (Levels of Logic = 4)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            17   1.106   1.045  UART_event_IBUF (UART_event_IBUF)
+     IBUF:I->O            18   1.106   1.060  UART_event_IBUF (UART_event_IBUF)
      LUT4:I0->O           13   0.612   0.905  SYNCH/SYNCH_UART_busy94 (UART_busy_OBUF)
      LUT2:I1->O            1   0.612   0.357  MUX_out/portY1 (UART_out_OBUF)
      OBUF:I->O                 3.169          UART_out_OBUF (UART_out)
     ----------------------------------------
-    Total                      7.806ns (5.499ns logic, 2.307ns route)
-                                       (70.4% logic, 29.6% route)
+    Total                      7.820ns (5.499ns logic, 2.321ns route)
+                                       (70.3% logic, 29.7% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 5.51 secs
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.14 secs
  
 --> 
 
-Total memory usage is 194224 kilobytes
+Total memory usage is 241900 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   82 (   0 filtered)

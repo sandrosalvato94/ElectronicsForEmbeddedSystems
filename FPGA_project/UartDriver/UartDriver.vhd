@@ -142,6 +142,7 @@ architecture Behavioral of UartDriverTX is
 	signal s_uart_busy		: std_logic;
 	signal s_bit_Ffifo_Tmux	: std_logic;
 	signal s_load_Freg_Tfifo: std_logic;
+	signal s_tmp				: std_logic;
 
 begin
 ---------------------------------------------------------------------------
@@ -163,17 +164,19 @@ begin
 ---------------------------------------------------------------------------  
 
 ---------------------------------------------------------------------------
-	s_data_Treg	<= '0' & UART_data & s_parity & '1';
+	s_data_Freg_Tfifo	<= '0' & UART_data & s_parity & '1';
 	
-	Stream_REG : NRegister GENERIC MAP (N => UART_N_bits)
-								  PORT MAP (
-									clk 		=> UART_clock,
-									reset 	=> UART_reset,
-									data_in	=> s_data_Treg,
-									enable	=> UART_enable,
-									load		=> UART_event,
-									data_out	=> s_data_Freg_Tfifo
-								  );
+--	Stream_REG : NRegister GENERIC MAP (N => UART_N_bits)
+--								  PORT MAP (
+--									clk 		=> UART_clock,
+--									reset 	=> UART_reset,
+--									data_in	=> s_data_Treg,
+--									enable	=> UART_enable,
+--									load		=> UART_event,
+--									data_out	=> s_data_Freg_Tfifo
+--								  );
+	
+
 ---------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------
@@ -196,10 +199,18 @@ begin
 ---------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------
-	LoadReg : Reg1Bit PORT MAP (
+	LoadReg1 : Reg1Bit PORT MAP (
 									clk 		=> UART_clock, --50 Mhz
 									reset 	=> UART_reset,
 									data_in	=> UART_event,
+									enable	=> UART_enable,
+									load		=> '1',
+									data_out	=> s_tmp
+								  );
+	LoadReg2 : Reg1Bit PORT MAP (
+									clk 		=> UART_clock, --50 Mhz
+									reset 	=> UART_reset,
+									data_in	=> s_tmp,
 									enable	=> UART_enable,
 									load		=> '1',
 									data_out	=> s_load_Freg_Tfifo

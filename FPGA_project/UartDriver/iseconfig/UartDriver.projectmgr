@@ -10,18 +10,18 @@
          <ClosedNode>/Clock_divider - Structural C:|Users|Alessandro|Desktop|EFES_Fpga|UartDriver|Clock_divider.vhd</ClosedNode>
          <ClosedNode>/Clock_divider - Structural C:|Users|Alessandro|Desktop|EFES_Fpga|UartDriver|Clock_divider.vhd/CMP - NComparatorWithEnable - Behavioral</ClosedNode>
          <ClosedNode>/Clock_divider - Structural C:|Users|Alessandro|Desktop|EFES_Fpga|UartDriver|Clock_divider.vhd/UP_CNT - UD_COUNTER - STR</ClosedNode>
-         <ClosedNode>/UartDriverTX - Behavioral C:|Users|Alessandro|Desktop|EFES_Fpga|UartDriver|UartDriver.vhd/CLK_DIV - Clock_divider - Structural</ClosedNode>
          <ClosedNode>/UartDriverTX - Behavioral C:|Users|Alessandro|Desktop|EFES_Fpga|UartDriver|UartDriver.vhd/FIFO - UART_Fifo - Behavioral</ClosedNode>
-         <ClosedNode>/UartDriverTX - Behavioral C:|Users|Alessandro|Desktop|EFES_Fpga|UartDriver|UartDriver.vhd/SYNCH - UART_Synchronizer - Behavioral</ClosedNode>
+         <ClosedNode>/UartDriverTX - Behavioral C:|Users|Alessandro|Desktop|EFES_Fpga|UartDriver|UartDriver.vhd/SYNCH - UART_Synchronizer - Behavioral/SYNCH_CMP - Comparator - Structural</ClosedNode>
+         <ClosedNode>/UartDriverTX - Behavioral C:|Users|Alessandro|Desktop|EFES_Fpga|UartDriver|UartDriver.vhd/SYNCH - UART_Synchronizer - Behavioral/SYNCH_CNT - SAT_Counter - Structural</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>UartDriverTX - Behavioral (C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/UartDriver.vhd)</SelectedItem>
+         <SelectedItem>FIFO - UART_Fifo - Behavioral (C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/UART_Fifo.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >10</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001ba000000020000000000000000000000000200000064ffffffff000000810000000300000002000001ba0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000208000000020000000000000000000000000200000064ffffffff000000810000000300000002000002080000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>UartDriverTX - Behavioral (C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/UartDriver.vhd)</CurrentItem>
+      <CurrentItem>FIFO - UART_Fifo - Behavioral (C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/UART_Fifo.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
@@ -31,13 +31,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>View RTL Schematic</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000e7000000010000000100000000000000000000000064ffffffff000000810000000000000001000000e70000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>View RTL Schematic</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -46,7 +46,7 @@
       <SelectedItems>
          <SelectedItem>UartDriver.vhd</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >3</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000002d2000000040101000100000000000000000000000064ffffffff0000008100000000000000040000007100000001000000000000004300000001000000000000005d0000000100000000000001c10000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
@@ -60,25 +60,26 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000109000000010001000100000000000000000000000064ffffffff000000810000000000000001000001090000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000000f8000000010001000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>work</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
-         <ClosedNode>/TB_Clock_divider - behavior C:|Users|Alessandro|Desktop|EFES_Fpga|UartDriver|TB_Clock_divider.vhd</ClosedNode>
+         <ClosedNode>/TB_Clock_divider - behavior C:|Users|Alessandro|Desktop|EFES_Fpga|UartDriver|TB_Clock_divider.vhd/uut - Clock_divider - Structural/UP_CNT - UD_COUNTER - STR</ClosedNode>
          <ClosedNode>/TB_HardwiredReg - behavior C:|Users|Alessandro|Desktop|EFES_Fpga|UartDriver|TB_HardwiredReg.vhd</ClosedNode>
+         <ClosedNode>/TB_UART_Synchronizer - behavior C:|Users|Alessandro|Desktop|EFES_Fpga|UartDriver|TB_UART_Synchronizer.vhd</ClosedNode>
          <ClosedNode>/UD_COUNTER - STR C:|Users|Alessandro|Desktop|EFES_Fpga|UartDriver|ud_counter.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>TB_UART_Synchronizer - behavior (C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/TB_UART_Synchronizer.vhd)</SelectedItem>
+         <SelectedItem>TB_UartDriverTX - behavior (C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/TB_UartDriverTX.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >9</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001cb000000020000000000000000000000000200000064ffffffff000000810000000300000002000001cb0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000021c000000020000000000000000000000000200000064ffffffff0000008100000003000000020000021c0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>TB_UART_Synchronizer - behavior (C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/TB_UART_Synchronizer.vhd)</CurrentItem>
+      <CurrentItem>TB_UartDriverTX - behavior (C:/Users/Alessandro/Desktop/EFES_Fpga/UartDriver/TB_UartDriverTX.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -116,14 +117,14 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+         <SelectedItem>ISim Simulator</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+      <CurrentItem>ISim Simulator</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
-   <CurrentView>Implementation</CurrentView>
+   <CurrentView>Behavioral Simulation</CurrentView>
 </Project>

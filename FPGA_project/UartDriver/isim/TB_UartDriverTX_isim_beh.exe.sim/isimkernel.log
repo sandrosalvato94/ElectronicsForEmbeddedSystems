@@ -1,0 +1,28 @@
+Command line:
+   TB_UartDriverTX_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  52451
+
+Tue Nov 05 17:17:31 2019
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 833.45 Meg
+
+ Total Signals          : 552
+ Total Nets             : 746
+ Total Signal Drivers   : 450
+ Total Blocks           : 496
+ Total Primitive Blocks : 307
+ Total Processes        : 433
+ Total Traceable Variables  : 374
+ Total Scalar Nets and Variables : 1590
+
+ Total Simulation Time: 0.390625 sec
+
+ Current Memory Usage: 675.901 Meg
+
+Tue Nov 05 17:26:35 2019
+

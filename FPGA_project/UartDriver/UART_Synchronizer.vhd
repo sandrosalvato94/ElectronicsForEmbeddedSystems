@@ -116,8 +116,18 @@ begin
 										CMP_A_le_B 		=> s_synch_bit,
 										CMP_A_eq_B 		=> s_not_connected(0)
 									 );
-									 
-	SYNCH_UART_busy <= NOT(SYNCH_reset) AND s_synch_bit;
+			
+
+				
+	synch_proc	: process(SYNCH_reset, s_synch_bit) 
+	begin
+		if s_synch_bit/= '1' AND s_synch_bit /= '0' then
+			SYNCH_UART_busy <= '0';
+		else
+			SYNCH_UART_busy <= NOT(SYNCH_reset) AND s_synch_bit;
+		end if;
+	end process;
+
 
 end Behavioral;
 
