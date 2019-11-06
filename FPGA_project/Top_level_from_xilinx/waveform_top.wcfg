@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Alessandro/Desktop/EFES_Fpga/Project/TB_EFES_Fpga_Top_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="constants" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="tb_efes_fpga_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="7" />
+   <wvobject fp_name="/tb_efes_fpga_top/top_buttons" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">top_buttons[7:0]</obj_property>
+      <obj_property name="ObjectShortName">top_buttons[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_efes_fpga_top/top_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">top_clk</obj_property>
+      <obj_property name="ObjectShortName">top_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_efes_fpga_top/top_reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">top_reset</obj_property>
+      <obj_property name="ObjectShortName">top_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_efes_fpga_top/top_enable" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">top_enable</obj_property>
+      <obj_property name="ObjectShortName">top_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_efes_fpga_top/top_uart_output" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">top_uart_output</obj_property>
+      <obj_property name="ObjectShortName">top_uart_output</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_efes_fpga_top/top_uart_busy" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">top_uart_busy</obj_property>
+      <obj_property name="ObjectShortName">top_uart_busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_efes_fpga_top/uut/UART_Driver/s_internal_clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_internal_clock</obj_property>
+      <obj_property name="ObjectShortName">s_internal_clock</obj_property>
+   </wvobject>
+</wave_config>

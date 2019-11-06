@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/TB_EFES_Fpga_Top_isim_beh.exe" -prj "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/TB_EFES_Fpga_Top_beh.prj" "work.TB_EFES_Fpga_Top" 

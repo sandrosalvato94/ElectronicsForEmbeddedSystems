@@ -1,0 +1,28 @@
+Command line:
+   TB_EFES_Fpga_Top_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  54209
+
+Wed Nov 06 15:31:47 2019
+
+
+ Elaboration Time: 0.125 sec
+
+ Current Memory Usage: 833.782 Meg
+
+ Total Signals          : 585
+ Total Nets             : 798
+ Total Signal Drivers   : 467
+ Total Blocks           : 543
+ Total Primitive Blocks : 341
+ Total Processes        : 451
+ Total Traceable Variables  : 412
+ Total Scalar Nets and Variables : 1680
+
+ Total Simulation Time: 0.265625 sec
+
+ Current Memory Usage: 833.782 Meg
+
+Wed Nov 06 15:47:10 2019
+

@@ -1,0 +1,70 @@
+Running: D:\XilinxISE\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Alessandro/Desktop/EFES_Fpga/Project/TB_EFES_Fpga_Top_isim_beh.exe -prj C:/Users/Alessandro/Desktop/EFES_Fpga/Project/TB_EFES_Fpga_Top_beh.prj work.TB_EFES_Fpga_Top 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/t_ff.vhd" into library work
+Parsing VHDL file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/constants.vhd" into library work
+Parsing VHDL file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/ud_counter.vhd" into library work
+Parsing VHDL file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/ORGate_NX1.vhd" into library work
+Parsing VHDL file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/NORGate_NX1.vhd" into library work
+Parsing VHDL file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/Mux_1Bit_2X1.vhd" into library work
+Parsing VHDL file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/CU_SatCounter.vhd" into library work
+Parsing VHDL file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/ComparatorWithEnable.vhd" into library work
+Parsing VHDL file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/ANDGate_NX1.vhd" into library work
+Parsing VHDL file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/SAT_Counter_BMM.vhd" into library work
+Parsing VHDL file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/Reg1Bit.vhd" into library work
+Parsing VHDL file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/NComparatorWithEnable.vhd" into library work
+Parsing VHDL file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/Mux_Bit.vhd" into library work
+Parsing VHDL file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/HardwiredReg.vhd" into library work
+Parsing VHDL file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/D_FF_rst.vhd" into library work
+Parsing VHDL file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/Comparator.vhd" into library work
+Parsing VHDL file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/XNORGate_NX1.vhd" into library work
+Parsing VHDL file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/UART_Synchronizer.vhd" into library work
+Parsing VHDL file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/UART_Fifo.vhd" into library work
+Parsing VHDL file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/NRegister.vhd" into library work
+Parsing VHDL file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/Clock_divider.vhd" into library work
+Parsing VHDL file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/UartDriver.vhd" into library work
+Parsing VHDL file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/EightButtonDriver.vhd" into library work
+Parsing VHDL file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/EFES_Fpga_Top.vhd" into library work
+Parsing VHDL file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/TB_EFES_Fpga_Top.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 161452 KB
+Fuse CPU Usage: 609 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package constants
+Compiling package numeric_std
+Compiling architecture behavioral of entity ORGate_NX1 [\ORGate_NX1(8)\]
+Compiling architecture behavioral of entity NRegister [\NRegister(8)\]
+Compiling architecture behavioral of entity Reg1Bit [reg1bit_default]
+Compiling architecture structural of entity EightButtonDriver [eightbuttondriver_default]
+Compiling architecture behavioral of entity XNORGate_NX1 [\XNORGate_NX1(8)\]
+Compiling architecture behavioral of entity Mux_1Bit_2X1 [mux_1bit_2x1_default]
+Compiling architecture behavioral of entity t_ff_rst0 [t_ff_rst0_default]
+Compiling architecture str of entity UD_COUNTER [\UD_COUNTER(16)\]
+Compiling architecture behavioral of entity HardwiredReg [\HardwiredReg(432,16)\]
+Compiling architecture behavioral of entity ComparatorWithEnable [comparatorwithenable_default]
+Compiling architecture behavioral of entity NComparatorWithEnable [\NComparatorWithEnable(16)\]
+Compiling architecture structural of entity Clock_divider [\Clock_divider(432)\]
+Compiling architecture str of entity UD_COUNTER [\UD_COUNTER(8)\]
+Compiling architecture behavioral of entity CU_SatCounter [cu_satcounter_default]
+Compiling architecture behavioral of entity ANDGate_NX1 [\ANDGate_NX1(8)\]
+Compiling architecture behavioral of entity NORGate_NX1 [\NORGate_NX1(8)\]
+Compiling architecture structural of entity SAT_Counter [\SAT_Counter(8)\]
+Compiling architecture behavioral of entity HardwiredReg [\HardwiredReg(10,8)\]
+Compiling architecture structural of entity Comparator [\Comparator(8)\]
+Compiling architecture behavioral of entity UART_Synchronizer [\UART_Synchronizer(11,8)\]
+Compiling architecture behavioral of entity D_FF_rst [d_ff_rst_default]
+Compiling architecture behavioral of entity Mux_Bit [\Mux_Bit(2)\]
+Compiling architecture behavioral of entity UART_Fifo [\UART_Fifo(11)\]
+Compiling architecture behavioral of entity UartDriverTX [\UartDriverTX(500000000,115200,1...]
+Compiling architecture structural of entity EFES_Fpga_Top [efes_fpga_top_default]
+Compiling architecture behavior of entity tb_efes_fpga_top
+Time Resolution for simulation is 1ps.
+Waiting for 4 sub-compilation(s) to finish...
+Compiled 55 VHDL Units
+Built simulation executable C:/Users/Alessandro/Desktop/EFES_Fpga/Project/TB_EFES_Fpga_Top_isim_beh.exe
+Fuse Memory Usage: 182296 KB
+Fuse CPU Usage: 1342 ms

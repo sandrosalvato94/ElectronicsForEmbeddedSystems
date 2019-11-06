@@ -1,0 +1,960 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.22 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.22 secs
+ 
+--> Reading design: EFES_Fpga_Top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "EFES_Fpga_Top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "EFES_Fpga_Top"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-pq208
+
+---- Source Options
+Top Module Name                    : EFES_Fpga_Top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/constants.vhd" in Library work.
+Architecture constants of Entity constants is up to date.
+Compiling vhdl file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/t_ff.vhd" in Library work.
+Entity <t_ff_rst0> compiled.
+Entity <t_ff_rst0> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/ORGate_NX1.vhd" in Library work.
+Architecture behavioral of Entity orgate_nx1 is up to date.
+Compiling vhdl file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/Mux_1Bit_2X1.vhd" in Library work.
+Entity <Mux_1Bit_2X1> compiled.
+Entity <Mux_1Bit_2X1> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/ud_counter.vhd" in Library work.
+Entity <UD_COUNTER> compiled.
+Entity <UD_COUNTER> (Architecture <STR>) compiled.
+Compiling vhdl file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/CU_SatCounter.vhd" in Library work.
+Entity <CU_SatCounter> compiled.
+Entity <CU_SatCounter> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/ANDGate_NX1.vhd" in Library work.
+Entity <ANDGate_NX1> compiled.
+Entity <ANDGate_NX1> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/NORGate_NX1.vhd" in Library work.
+Entity <NORGate_NX1> compiled.
+Entity <NORGate_NX1> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/ComparatorWithEnable.vhd" in Library work.
+Entity <ComparatorWithEnable> compiled.
+Entity <ComparatorWithEnable> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/D_FF_rst.vhd" in Library work.
+Entity <D_FF_rst> compiled.
+Entity <D_FF_rst> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/Mux_Bit.vhd" in Library work.
+Entity <Mux_Bit> compiled.
+Entity <Mux_Bit> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/SAT_Counter_BMM.vhd" in Library work.
+Entity <SAT_Counter> compiled.
+Entity <SAT_Counter> (Architecture <Structural>) compiled.
+Compiling vhdl file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/HardwiredReg.vhd" in Library work.
+Entity <HardwiredReg> compiled.
+Entity <HardwiredReg> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/Comparator.vhd" in Library work.
+Entity <Comparator> compiled.
+Entity <Comparator> (Architecture <Structural>) compiled.
+Compiling vhdl file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/Reg1Bit.vhd" in Library work.
+Architecture behavioral of Entity reg1bit is up to date.
+Compiling vhdl file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/NComparatorWithEnable.vhd" in Library work.
+Entity <NComparatorWithEnable> compiled.
+Entity <NComparatorWithEnable> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/XNORGate_NX1.vhd" in Library work.
+Entity <XNORGate_NX1> compiled.
+Entity <XNORGate_NX1> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/Clock_divider.vhd" in Library work.
+Entity <Clock_divider> compiled.
+Entity <Clock_divider> (Architecture <Structural>) compiled.
+Compiling vhdl file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/UART_Synchronizer.vhd" in Library work.
+Entity <UART_Synchronizer> compiled.
+Entity <UART_Synchronizer> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/UART_Fifo.vhd" in Library work.
+Entity <UART_Fifo> compiled.
+Entity <UART_Fifo> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/NRegister.vhd" in Library work.
+Architecture behavioral of Entity nregister is up to date.
+Compiling vhdl file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/EightButtonDriver.vhd" in Library work.
+Architecture structural of Entity eightbuttondriver is up to date.
+Compiling vhdl file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/UartDriver.vhd" in Library work.
+Entity <UartDriverTX> compiled.
+Entity <UartDriverTX> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/EFES_Fpga_Top.vhd" in Library work.
+Entity <efes_fpga_top> compiled.
+Entity <efes_fpga_top> (Architecture <structural>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <EFES_Fpga_Top> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <EightButtonDriver> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <UartDriverTX> in library <work> (architecture <Behavioral>) with generics.
+	UART_N_bits = 11
+	UART_baud_rate = 115200
+	UART_ext_clock = 500000000
+
+Analyzing hierarchy for entity <ORGate_NX1> in library <work> (architecture <behavioral>) with generics.
+	N = 8
+
+Analyzing hierarchy for entity <NRegister> in library <work> (architecture <behavioral>) with generics.
+	N = 8
+
+Analyzing hierarchy for entity <Reg1Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <XNORGate_NX1> in library <work> (architecture <Behavioral>) with generics.
+	N = 8
+
+Analyzing hierarchy for entity <Mux_1Bit_2X1> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <Clock_divider> in library <work> (architecture <Structural>) with generics.
+	CLKDIV_divider = 432
+
+Analyzing hierarchy for entity <UART_Synchronizer> in library <work> (architecture <Behavioral>) with generics.
+	SYNCH_NBIT = 8
+	SYNCH_steps = 11
+
+Analyzing hierarchy for entity <UART_Fifo> in library <work> (architecture <Behavioral>) with generics.
+	NBIT_DATA = 11
+
+Analyzing hierarchy for entity <Reg1Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <UD_COUNTER> in library <work> (architecture <STR>) with generics.
+	UDC_NBIT = 16
+
+Analyzing hierarchy for entity <HardwiredReg> in library <work> (architecture <Behavioral>) with generics.
+	HW_REG_Nbit = 16
+	HW_REG_val = 432
+
+Analyzing hierarchy for entity <NComparatorWithEnable> in library <work> (architecture <Behavioral>) with generics.
+	NBIT = 16
+
+Analyzing hierarchy for entity <SAT_Counter> in library <work> (architecture <Structural>) with generics.
+	N = 8
+
+Analyzing hierarchy for entity <HardwiredReg> in library <work> (architecture <Behavioral>) with generics.
+	HW_REG_Nbit = 8
+	HW_REG_val = 10
+
+Analyzing hierarchy for entity <Comparator> in library <work> (architecture <Structural>) with generics.
+	NBIT_DATA = 8
+
+Analyzing hierarchy for entity <D_FF_rst> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <Mux_Bit> in library <work> (architecture <Behavioral>) with generics.
+	NBIT_Sel = 2
+
+Analyzing hierarchy for entity <t_ff_rst0> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ComparatorWithEnable> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <UD_COUNTER> in library <work> (architecture <STR>) with generics.
+	UDC_NBIT = 8
+
+Analyzing hierarchy for entity <CU_SatCounter> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <ANDGate_NX1> in library <work> (architecture <Behavioral>) with generics.
+	N = 8
+
+Analyzing hierarchy for entity <NORGate_NX1> in library <work> (architecture <Behavioral>) with generics.
+	N = 8
+
+Analyzing hierarchy for entity <ORGate_NX1> in library <work> (architecture <behavioral>) with generics.
+	N = 8
+
+Analyzing hierarchy for entity <Mux_1Bit_2X1> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <t_ff_rst0> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <EFES_Fpga_Top> in library <work> (Architecture <structural>).
+Entity <EFES_Fpga_Top> analyzed. Unit <EFES_Fpga_Top> generated.
+
+Analyzing Entity <EightButtonDriver> in library <work> (Architecture <structural>).
+Entity <EightButtonDriver> analyzed. Unit <EightButtonDriver> generated.
+
+Analyzing generic Entity <ORGate_NX1> in library <work> (Architecture <behavioral>).
+	N = 8
+Entity <ORGate_NX1> analyzed. Unit <ORGate_NX1> generated.
+
+Analyzing generic Entity <NRegister> in library <work> (Architecture <behavioral>).
+	N = 8
+Entity <NRegister> analyzed. Unit <NRegister> generated.
+
+Analyzing Entity <Reg1Bit> in library <work> (Architecture <behavioral>).
+Entity <Reg1Bit> analyzed. Unit <Reg1Bit> generated.
+
+Analyzing generic Entity <UartDriverTX> in library <work> (Architecture <Behavioral>).
+	UART_N_bits = 11
+	UART_baud_rate = 115200
+	UART_ext_clock = 500000000
+Entity <UartDriverTX> analyzed. Unit <UartDriverTX> generated.
+
+Analyzing generic Entity <XNORGate_NX1> in library <work> (Architecture <Behavioral>).
+	N = 8
+Entity <XNORGate_NX1> analyzed. Unit <XNORGate_NX1> generated.
+
+Analyzing Entity <Mux_1Bit_2X1> in library <work> (Architecture <Behavioral>).
+Entity <Mux_1Bit_2X1> analyzed. Unit <Mux_1Bit_2X1> generated.
+
+Analyzing generic Entity <Clock_divider> in library <work> (Architecture <Structural>).
+	CLKDIV_divider = 432
+Entity <Clock_divider> analyzed. Unit <Clock_divider> generated.
+
+Analyzing generic Entity <UD_COUNTER.1> in library <work> (Architecture <STR>).
+	UDC_NBIT = 16
+Entity <UD_COUNTER.1> analyzed. Unit <UD_COUNTER.1> generated.
+
+Analyzing Entity <t_ff_rst0> in library <work> (Architecture <behavioral>).
+Entity <t_ff_rst0> analyzed. Unit <t_ff_rst0> generated.
+
+Analyzing generic Entity <HardwiredReg.1> in library <work> (Architecture <Behavioral>).
+	HW_REG_Nbit = 16
+	HW_REG_val = 432
+Entity <HardwiredReg.1> analyzed. Unit <HardwiredReg.1> generated.
+
+Analyzing generic Entity <NComparatorWithEnable> in library <work> (Architecture <Behavioral>).
+	NBIT = 16
+Entity <NComparatorWithEnable> analyzed. Unit <NComparatorWithEnable> generated.
+
+Analyzing Entity <ComparatorWithEnable> in library <work> (Architecture <Behavioral>).
+Entity <ComparatorWithEnable> analyzed. Unit <ComparatorWithEnable> generated.
+
+Analyzing generic Entity <UART_Synchronizer> in library <work> (Architecture <Behavioral>).
+	SYNCH_NBIT = 8
+	SYNCH_steps = 11
+Entity <UART_Synchronizer> analyzed. Unit <UART_Synchronizer> generated.
+
+Analyzing generic Entity <SAT_Counter> in library <work> (Architecture <Structural>).
+	N = 8
+Entity <SAT_Counter> analyzed. Unit <SAT_Counter> generated.
+
+Analyzing generic Entity <UD_COUNTER.2> in library <work> (Architecture <STR>).
+	UDC_NBIT = 8
+Entity <UD_COUNTER.2> analyzed. Unit <UD_COUNTER.2> generated.
+
+Analyzing Entity <CU_SatCounter> in library <work> (Architecture <Behavioral>).
+Entity <CU_SatCounter> analyzed. Unit <CU_SatCounter> generated.
+
+Analyzing generic Entity <ANDGate_NX1> in library <work> (Architecture <Behavioral>).
+	N = 8
+Entity <ANDGate_NX1> analyzed. Unit <ANDGate_NX1> generated.
+
+Analyzing generic Entity <NORGate_NX1> in library <work> (Architecture <Behavioral>).
+	N = 8
+Entity <NORGate_NX1> analyzed. Unit <NORGate_NX1> generated.
+
+Analyzing generic Entity <HardwiredReg.2> in library <work> (Architecture <Behavioral>).
+	HW_REG_Nbit = 8
+	HW_REG_val = 10
+Entity <HardwiredReg.2> analyzed. Unit <HardwiredReg.2> generated.
+
+Analyzing generic Entity <Comparator> in library <work> (Architecture <Structural>).
+	NBIT_DATA = 8
+Entity <Comparator> analyzed. Unit <Comparator> generated.
+
+Analyzing generic Entity <UART_Fifo> in library <work> (Architecture <Behavioral>).
+	NBIT_DATA = 11
+WARNING:Xst:753 - "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/UART_Fifo.vhd" line 91: Unconnected output port 'Not_Q' of component 'D_FF_rst'.
+WARNING:Xst:753 - "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/UART_Fifo.vhd" line 91: Unconnected output port 'Not_Q' of component 'D_FF_rst'.
+WARNING:Xst:753 - "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/UART_Fifo.vhd" line 91: Unconnected output port 'Not_Q' of component 'D_FF_rst'.
+WARNING:Xst:753 - "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/UART_Fifo.vhd" line 91: Unconnected output port 'Not_Q' of component 'D_FF_rst'.
+WARNING:Xst:753 - "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/UART_Fifo.vhd" line 91: Unconnected output port 'Not_Q' of component 'D_FF_rst'.
+WARNING:Xst:753 - "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/UART_Fifo.vhd" line 91: Unconnected output port 'Not_Q' of component 'D_FF_rst'.
+WARNING:Xst:753 - "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/UART_Fifo.vhd" line 91: Unconnected output port 'Not_Q' of component 'D_FF_rst'.
+WARNING:Xst:753 - "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/UART_Fifo.vhd" line 91: Unconnected output port 'Not_Q' of component 'D_FF_rst'.
+WARNING:Xst:753 - "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/UART_Fifo.vhd" line 91: Unconnected output port 'Not_Q' of component 'D_FF_rst'.
+WARNING:Xst:753 - "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/UART_Fifo.vhd" line 91: Unconnected output port 'Not_Q' of component 'D_FF_rst'.
+WARNING:Xst:753 - "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/UART_Fifo.vhd" line 91: Unconnected output port 'Not_Q' of component 'D_FF_rst'.
+Entity <UART_Fifo> analyzed. Unit <UART_Fifo> generated.
+
+Analyzing Entity <D_FF_rst> in library <work> (Architecture <Behavioral>).
+Entity <D_FF_rst> analyzed. Unit <D_FF_rst> generated.
+
+Analyzing generic Entity <Mux_Bit> in library <work> (Architecture <Behavioral>).
+	NBIT_Sel = 2
+Entity <Mux_Bit> analyzed. Unit <Mux_Bit> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <ORGate_NX1>.
+    Related source file is "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/ORGate_NX1.vhd".
+WARNING:Xst:1780 - Signal <matrix<1><1:3>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<2><2:3>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<3><1:3>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<4><3>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<5><1:3>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<6><2:3>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<7><1:3>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <ORGate_NX1> synthesized.
+
+
+Synthesizing Unit <NRegister>.
+    Related source file is "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/NRegister.vhd".
+    Found 8-bit register for signal <data_out>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <NRegister> synthesized.
+
+
+Synthesizing Unit <Reg1Bit>.
+    Related source file is "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/Reg1Bit.vhd".
+    Found 1-bit register for signal <data_out>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <Reg1Bit> synthesized.
+
+
+Synthesizing Unit <XNORGate_NX1>.
+    Related source file is "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/XNORGate_NX1.vhd".
+WARNING:Xst:1780 - Signal <matrix<1><1:3>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<2><2:3>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<3><1:3>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<4><3>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<5><1:3>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<6><2:3>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<7><1:3>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <XNORGate_NX1> synthesized.
+
+
+Synthesizing Unit <Mux_1Bit_2X1>.
+    Related source file is "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/Mux_1Bit_2X1.vhd".
+Unit <Mux_1Bit_2X1> synthesized.
+
+
+Synthesizing Unit <HardwiredReg_1>.
+    Related source file is "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/HardwiredReg.vhd".
+Unit <HardwiredReg_1> synthesized.
+
+
+Synthesizing Unit <t_ff_rst0>.
+    Related source file is "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/t_ff.vhd".
+    Found 1-bit register for signal <data>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <t_ff_rst0> synthesized.
+
+
+Synthesizing Unit <ComparatorWithEnable>.
+    Related source file is "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/ComparatorWithEnable.vhd".
+Unit <ComparatorWithEnable> synthesized.
+
+
+Synthesizing Unit <HardwiredReg_2>.
+    Related source file is "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/HardwiredReg.vhd".
+Unit <HardwiredReg_2> synthesized.
+
+
+Synthesizing Unit <CU_SatCounter>.
+    Related source file is "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/CU_SatCounter.vhd".
+Unit <CU_SatCounter> synthesized.
+
+
+Synthesizing Unit <ANDGate_NX1>.
+    Related source file is "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/ANDGate_NX1.vhd".
+WARNING:Xst:1780 - Signal <matrix<1><1:3>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<2><2:3>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<3><1:3>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<4><3>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<5><1:3>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<6><2:3>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<7><1:3>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <ANDGate_NX1> synthesized.
+
+
+Synthesizing Unit <NORGate_NX1>.
+    Related source file is "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/NORGate_NX1.vhd".
+WARNING:Xst:1780 - Signal <matrix<1><1:3>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<2><2:3>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<3><1:3>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<4><3>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<5><1:3>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<6><2:3>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<7><1:3>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <NORGate_NX1> synthesized.
+
+
+Synthesizing Unit <D_FF_rst>.
+    Related source file is "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/D_FF_rst.vhd".
+    Found 1-bit register for signal <Q>.
+    Found 1-bit register for signal <Not_Q>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <D_FF_rst> synthesized.
+
+
+Synthesizing Unit <Mux_Bit>.
+    Related source file is "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/Mux_Bit.vhd".
+    Found 1-bit 4-to-1 multiplexer for signal <output>.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Mux_Bit> synthesized.
+
+
+Synthesizing Unit <EightButtonDriver>.
+    Related source file is "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/EightButtonDriver.vhd".
+Unit <EightButtonDriver> synthesized.
+
+
+Synthesizing Unit <UART_Fifo>.
+    Related source file is "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/UART_Fifo.vhd".
+Unit <UART_Fifo> synthesized.
+
+
+Synthesizing Unit <UD_COUNTER_1>.
+    Related source file is "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/ud_counter.vhd".
+WARNING:Xst:646 - Signal <s_toggle<16>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <s_toggle<0>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <UD_COUNTER_1> synthesized.
+
+
+Synthesizing Unit <NComparatorWithEnable>.
+    Related source file is "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/NComparatorWithEnable.vhd".
+WARNING:Xst:1780 - Signal <matrix<1><1:4>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<2><2:4>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<3><1:4>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<4><3:4>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<5><1:4>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<6><2:4>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<7><1:4>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<8><4>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<9><1:4>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<10><2:4>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<11><1:4>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<12><3:4>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<13><1:4>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<14><2:4>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <matrix<15><1:4>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <NComparatorWithEnable> synthesized.
+
+
+Synthesizing Unit <Comparator>.
+    Related source file is "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/Comparator.vhd".
+WARNING:Xst:653 - Signal <s_zeros> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+WARNING:Xst:1780 - Signal <s_tmp_neq_eq> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <s_not_neq_eq<7>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <s_enable_next_step<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 8-bit xor2 for signal <s_neq_eq>.
+Unit <Comparator> synthesized.
+
+
+Synthesizing Unit <UD_COUNTER_2>.
+    Related source file is "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/ud_counter.vhd".
+WARNING:Xst:646 - Signal <s_toggle<8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <s_toggle<0>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <UD_COUNTER_2> synthesized.
+
+
+Synthesizing Unit <Clock_divider>.
+    Related source file is "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/Clock_divider.vhd".
+Unit <Clock_divider> synthesized.
+
+
+Synthesizing Unit <SAT_Counter>.
+    Related source file is "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/SAT_Counter_BMM.vhd".
+WARNING:Xst:653 - Signal <s_zeros> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+WARNING:Xst:653 - Signal <s_ones> is used but never assigned. This sourceless signal will be automatically connected to value 11111111.
+Unit <SAT_Counter> synthesized.
+
+
+Synthesizing Unit <UART_Synchronizer>.
+    Related source file is "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/UART_Synchronizer.vhd".
+WARNING:Xst:646 - Signal <s_not_connected> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <UART_Synchronizer> synthesized.
+
+
+Synthesizing Unit <UartDriverTX>.
+    Related source file is "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/UartDriver.vhd".
+WARNING:Xst:647 - Input <UART_load> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <s_zeros> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+WARNING:Xst:1780 - Signal <s_data_Treg> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <UartDriverTX> synthesized.
+
+
+Synthesizing Unit <EFES_Fpga_Top>.
+    Related source file is "C:/Users/Alessandro/Desktop/EFES_Fpga/Project/EFES_Fpga_Top.vhd".
+Unit <EFES_Fpga_Top> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 51
+ 1-bit register                                        : 50
+ 8-bit register                                        : 1
+# Multiplexers                                         : 11
+ 1-bit 4-to-1 multiplexer                              : 11
+# Xors                                                 : 23
+ 1-bit xor2                                            : 23
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <HW_REG> is unconnected in block <CLK_DIV>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <SYNCH_HW_REG> is unconnected in block <SYNCH>.
+   It will be removed from the design.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 58
+ Flip-Flops                                            : 58
+# Multiplexers                                         : 11
+ 1-bit 4-to-1 multiplexer                              : 11
+# Xors                                                 : 23
+ 1-bit xor2                                            : 23
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <FFcyc[10].FF_i/Not_Q> of sequential type is unconnected in block <UART_Fifo>.
+WARNING:Xst:2677 - Node <FFcyc[9].FF_i/Not_Q> of sequential type is unconnected in block <UART_Fifo>.
+WARNING:Xst:2677 - Node <FFcyc[8].FF_i/Not_Q> of sequential type is unconnected in block <UART_Fifo>.
+WARNING:Xst:2677 - Node <FFcyc[7].FF_i/Not_Q> of sequential type is unconnected in block <UART_Fifo>.
+WARNING:Xst:2677 - Node <FFcyc[6].FF_i/Not_Q> of sequential type is unconnected in block <UART_Fifo>.
+WARNING:Xst:2677 - Node <FFcyc[5].FF_i/Not_Q> of sequential type is unconnected in block <UART_Fifo>.
+WARNING:Xst:2677 - Node <FFcyc[4].FF_i/Not_Q> of sequential type is unconnected in block <UART_Fifo>.
+WARNING:Xst:2677 - Node <FFcyc[3].FF_i/Not_Q> of sequential type is unconnected in block <UART_Fifo>.
+WARNING:Xst:2677 - Node <FFcyc[2].FF_i/Not_Q> of sequential type is unconnected in block <UART_Fifo>.
+WARNING:Xst:2677 - Node <FFcyc[1].FF_i/Not_Q> of sequential type is unconnected in block <UART_Fifo>.
+WARNING:Xst:2677 - Node <FFcyc[0].FF_i/Not_Q> of sequential type is unconnected in block <UART_Fifo>.
+
+Optimizing unit <EFES_Fpga_Top> ...
+
+Optimizing unit <NRegister> ...
+
+Optimizing unit <Comparator> ...
+
+Optimizing unit <UART_Fifo> ...
+
+Optimizing unit <UD_COUNTER_1> ...
+
+Optimizing unit <UD_COUNTER_2> ...
+
+Optimizing unit <UartDriverTX> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block EFES_Fpga_Top, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 47
+ Flip-Flops                                            : 47
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : EFES_Fpga_Top.ngr
+Top Level Output File Name         : EFES_Fpga_Top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 13
+
+Cell Usage :
+# BELS                             : 106
+#      GND                         : 1
+#      INV                         : 24
+#      LUT2                        : 8
+#      LUT2_L                      : 1
+#      LUT3                        : 14
+#      LUT3_D                      : 2
+#      LUT3_L                      : 1
+#      LUT4                        : 42
+#      LUT4_D                      : 2
+#      LUT4_L                      : 4
+#      MUXCY                       : 5
+#      MUXF5                       : 1
+#      VCC                         : 1
+# FlipFlops/Latches                : 47
+#      FDC                         : 11
+#      FDCE                        : 36
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 12
+#      IBUF                        : 10
+#      OBUF                        : 2
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500epq208-5 
+
+ Number of Slices:                       44  out of   4656     0%  
+ Number of Slice Flip Flops:             47  out of   9312     0%  
+ Number of 4 input LUTs:                 98  out of   9312     1%  
+ Number of IOs:                          13
+ Number of bonded IOBs:                  13  out of    158     8%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+--------------------------------------------------------------------------------------+-----------------------------------------------------------------------+-------+
+Clock Signal                                                                          | Clock buffer(FF name)                                                 | Load  |
+--------------------------------------------------------------------------------------+-----------------------------------------------------------------------+-------+
+TOP_clk                                                                               | BUFGP                                                                 | 28    |
+UART_Driver/CLK_DIV/CMP/_and0014_wg_cy<4>(UART_Driver/CLK_DIV/CMP/_and0014_wg_cy<4>:O)| NONE(*)(UART_Driver/SYNCH/SYNCH_CNT/CNT/MAIN_GEN[7].LAST_FF.FF_N/data)| 8     |
+UART_Driver/FIFO/s_clk(UART_Driver/FIFO/s_clk1:O)                                     | NONE(*)(UART_Driver/FIFO/FFcyc[10].FF_i/Q)                            | 11    |
+--------------------------------------------------------------------------------------+-----------------------------------------------------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-------------------------------------------------------------------+----------------------------------------------------------------+-------+
+Control Signal                                                     | Buffer(FF name)                                                | Load  |
+-------------------------------------------------------------------+----------------------------------------------------------------+-------+
+TOP_reset                                                          | IBUF                                                           | 22    |
+UART_Driver/CLK_DIV/s_reset_cnt(UART_Driver/CLK_DIV/s_reset_cnt1:O)| NONE(UART_Driver/CLK_DIV/UP_CNT/MAIN_GEN[0].FIRST_FF.FF_0/data)| 16    |
+Buttons_Driver/Eve_Reg/data_out(Buttons_Driver/Eve_Reg/data_out:Q) | NONE(UART_Driver/CLK_DIV/RST_REG/data_out)                     | 9     |
+-------------------------------------------------------------------+----------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 4.865ns (Maximum Frequency: 205.539MHz)
+   Minimum input arrival time before clock: 4.551ns
+   Maximum output required time after clock: 8.045ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UART_Driver/CLK_DIV/CMP/_and0014_wg_cy<4>'
+  Clock period: 4.748ns (frequency: 210.617MHz)
+  Total number of paths / destination ports: 94 / 16
+-------------------------------------------------------------------------
+Delay:               4.748ns (Levels of Logic = 3)
+  Source:            UART_Driver/SYNCH/SYNCH_CNT/CNT/MAIN_GEN[7].LAST_FF.FF_N/data (FF)
+  Destination:       UART_Driver/SYNCH/SYNCH_CNT/CNT/MAIN_GEN[7].LAST_FF.FF_N/data (FF)
+  Source Clock:      UART_Driver/CLK_DIV/CMP/_and0014_wg_cy<4> rising
+  Destination Clock: UART_Driver/CLK_DIV/CMP/_and0014_wg_cy<4> rising
+
+  Data Path: UART_Driver/SYNCH/SYNCH_CNT/CNT/MAIN_GEN[7].LAST_FF.FF_N/data to UART_Driver/SYNCH/SYNCH_CNT/CNT/MAIN_GEN[7].LAST_FF.FF_N/data
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.514   0.603  UART_Driver/SYNCH/SYNCH_CNT/CNT/MAIN_GEN[7].LAST_FF.FF_N/data (UART_Driver/SYNCH/SYNCH_CNT/CNT/MAIN_GEN[7].LAST_FF.FF_N/data)
+     LUT4_D:I0->O          6   0.612   0.572  UART_Driver/SYNCH/SYNCH_CNT/CU/UDC_enable25 (UART_Driver/SYNCH/SYNCH_CNT/CU/UDC_enable25)
+     LUT4:I3->O            2   0.612   0.383  UART_Driver/SYNCH/SYNCH_CNT/CNT/s_toggle_7_and000012 (UART_Driver/SYNCH/SYNCH_CNT/CNT/s_toggle<3>)
+     LUT4:I3->O            1   0.612   0.357  UART_Driver/SYNCH/SYNCH_CNT/CNT/s_toggle_7_and00001 (UART_Driver/SYNCH/SYNCH_CNT/CNT/s_toggle<7>)
+     FDCE:CE                   0.483          UART_Driver/SYNCH/SYNCH_CNT/CNT/MAIN_GEN[7].LAST_FF.FF_N/data
+    ----------------------------------------
+    Total                      4.748ns (2.833ns logic, 1.915ns route)
+                                       (59.7% logic, 40.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'TOP_clk'
+  Clock period: 4.865ns (frequency: 205.539MHz)
+  Total number of paths / destination ports: 155 / 34
+-------------------------------------------------------------------------
+Delay:               4.865ns (Levels of Logic = 3)
+  Source:            UART_Driver/CLK_DIV/UP_CNT/MAIN_GEN[2].SECOND_FF.FF_i/data (FF)
+  Destination:       UART_Driver/CLK_DIV/UP_CNT/MAIN_GEN[15].LAST_FF.FF_N/data (FF)
+  Source Clock:      TOP_clk rising
+  Destination Clock: TOP_clk rising
+
+  Data Path: UART_Driver/CLK_DIV/UP_CNT/MAIN_GEN[2].SECOND_FF.FF_i/data to UART_Driver/CLK_DIV/UP_CNT/MAIN_GEN[15].LAST_FF.FF_N/data
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             6   0.514   0.721  UART_Driver/CLK_DIV/UP_CNT/MAIN_GEN[2].SECOND_FF.FF_i/data (UART_Driver/CLK_DIV/UP_CNT/MAIN_GEN[2].SECOND_FF.FF_i/data)
+     LUT3:I0->O            6   0.612   0.572  UART_Driver/CLK_DIV/UP_CNT/s_en_inc_14_and0000111 (UART_Driver/CLK_DIV/UP_CNT/s_en_inc<2>)
+     LUT4:I3->O            2   0.612   0.383  UART_Driver/CLK_DIV/UP_CNT/s_en_inc_14_and000022 (UART_Driver/CLK_DIV/UP_CNT/s_en_inc<10>)
+     LUT4:I3->O            1   0.612   0.357  UART_Driver/CLK_DIV/UP_CNT/s_en_inc_14_and00002 (UART_Driver/CLK_DIV/UP_CNT/s_en_inc<14>)
+     FDCE:CE                   0.483          UART_Driver/CLK_DIV/UP_CNT/MAIN_GEN[15].LAST_FF.FF_N/data
+    ----------------------------------------
+    Total                      4.865ns (2.833ns logic, 2.032ns route)
+                                       (58.2% logic, 41.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UART_Driver/FIFO/s_clk'
+  Clock period: 2.776ns (frequency: 360.237MHz)
+  Total number of paths / destination ports: 22 / 11
+-------------------------------------------------------------------------
+Delay:               2.776ns (Levels of Logic = 2)
+  Source:            UART_Driver/FIFO/FFcyc[8].FF_i/Q (FF)
+  Destination:       UART_Driver/FIFO/FFcyc[9].FF_i/Q (FF)
+  Source Clock:      UART_Driver/FIFO/s_clk rising
+  Destination Clock: UART_Driver/FIFO/s_clk rising
+
+  Data Path: UART_Driver/FIFO/FFcyc[8].FF_i/Q to UART_Driver/FIFO/FFcyc[9].FF_i/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.514   0.410  UART_Driver/FIFO/FFcyc[8].FF_i/Q (UART_Driver/FIFO/FFcyc[8].FF_i/Q)
+     LUT3:I2->O            1   0.612   0.360  UART_Driver/FIFO/MUX_cyc[9].IF_MUXi.MUXi/Mmux_output2_SW0 (N01)
+     LUT4:I3->O            1   0.612   0.000  UART_Driver/FIFO/MUX_cyc[9].IF_MUXi.MUXi/Mmux_output2 (UART_Driver/FIFO/s_D_Fmux_Tff<9>)
+     FDC:D                     0.268          UART_Driver/FIFO/FFcyc[9].FF_i/Q
+    ----------------------------------------
+    Total                      2.776ns (2.006ns logic, 0.770ns route)
+                                       (72.3% logic, 27.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'TOP_clk'
+  Total number of paths / destination ports: 82 / 19
+-------------------------------------------------------------------------
+Offset:              4.551ns (Levels of Logic = 3)
+  Source:            TOP_Buttons<2> (PAD)
+  Destination:       Buttons_Driver/But_Reg/data_out_7 (FF)
+  Destination Clock: TOP_clk rising
+
+  Data Path: TOP_Buttons<2> to Buttons_Driver/But_Reg/data_out_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.106   0.532  TOP_Buttons_2_IBUF (Buttons_Driver/OR8x1/matrix<2><0>)
+     LUT4:I0->O            1   0.612   0.509  Buttons_Driver/OR8x1/_or00144 (Buttons_Driver/OR8x1/_or00144)
+     LUT2:I0->O            9   0.612   0.697  Buttons_Driver/OR8x1/_or001410 (Buttons_Driver/s_event)
+     FDCE:CE                   0.483          Buttons_Driver/But_Reg/data_out_0
+    ----------------------------------------
+    Total                      4.551ns (2.813ns logic, 1.738ns route)
+                                       (61.8% logic, 38.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'UART_Driver/FIFO/s_clk'
+  Total number of paths / destination ports: 12 / 11
+-------------------------------------------------------------------------
+Offset:              3.368ns (Levels of Logic = 3)
+  Source:            TOP_reset (PAD)
+  Destination:       UART_Driver/FIFO/FFcyc[10].FF_i/Q (FF)
+  Destination Clock: UART_Driver/FIFO/s_clk rising
+
+  Data Path: TOP_reset to UART_Driver/FIFO/FFcyc[10].FF_i/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            35   1.106   1.104  TOP_reset_IBUF (TOP_reset_IBUF)
+     LUT3:I2->O            1   0.612   0.000  UART_Driver/FIFO/MUX_cyc[10].IF_MUXi.MUXi/Mmux_output111 (UART_Driver/FIFO/MUX_cyc[10].IF_MUXi.MUXi/Mmux_output11)
+     MUXF5:I1->O           1   0.278   0.000  UART_Driver/FIFO/MUX_cyc[10].IF_MUXi.MUXi/Mmux_output11_f5 (UART_Driver/FIFO/s_D_Fmux_Tff<10>)
+     FDC:D                     0.268          UART_Driver/FIFO/FFcyc[10].FF_i/Q
+    ----------------------------------------
+    Total                      3.368ns (2.264ns logic, 1.104ns route)
+                                       (67.2% logic, 32.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'UART_Driver/CLK_DIV/CMP/_and0014_wg_cy<4>'
+  Total number of paths / destination ports: 18 / 2
+-------------------------------------------------------------------------
+Offset:              8.045ns (Levels of Logic = 4)
+  Source:            UART_Driver/SYNCH/SYNCH_CNT/CNT/MAIN_GEN[3].SECOND_FF.FF_i/data (FF)
+  Destination:       TOP_uart_output (PAD)
+  Source Clock:      UART_Driver/CLK_DIV/CMP/_and0014_wg_cy<4> rising
+
+  Data Path: UART_Driver/SYNCH/SYNCH_CNT/CNT/MAIN_GEN[3].SECOND_FF.FF_i/data to TOP_uart_output
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             9   0.514   0.727  UART_Driver/SYNCH/SYNCH_CNT/CNT/MAIN_GEN[3].SECOND_FF.FF_i/data (UART_Driver/SYNCH/SYNCH_CNT/CNT/MAIN_GEN[3].SECOND_FF.FF_i/data)
+     LUT4:I2->O            1   0.612   0.509  UART_Driver/SYNCH/SYNCH_UART_busy94_SW0 (N50)
+     LUT4:I0->O           15   0.612   0.933  UART_Driver/SYNCH/SYNCH_UART_busy94 (TOP_uart_busy_OBUF)
+     LUT2:I1->O            1   0.612   0.357  UART_Driver/MUX_out/portY1 (TOP_uart_output_OBUF)
+     OBUF:I->O                 3.169          TOP_uart_output_OBUF (TOP_uart_output)
+    ----------------------------------------
+    Total                      8.045ns (5.519ns logic, 2.526ns route)
+                                       (68.6% logic, 31.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'TOP_clk'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              7.121ns (Levels of Logic = 3)
+  Source:            Buttons_Driver/Eve_Reg/data_out (FF)
+  Destination:       TOP_uart_output (PAD)
+  Source Clock:      TOP_clk rising
+
+  Data Path: Buttons_Driver/Eve_Reg/data_out to TOP_uart_output
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            17   0.514   0.923  Buttons_Driver/Eve_Reg/data_out (Buttons_Driver/Eve_Reg/data_out)
+     LUT4:I2->O           15   0.612   0.933  UART_Driver/SYNCH/SYNCH_UART_busy94 (TOP_uart_busy_OBUF)
+     LUT2:I1->O            1   0.612   0.357  UART_Driver/MUX_out/portY1 (TOP_uart_output_OBUF)
+     OBUF:I->O                 3.169          TOP_uart_output_OBUF (TOP_uart_output)
+    ----------------------------------------
+    Total                      7.121ns (4.907ns logic, 2.214ns route)
+                                       (68.9% logic, 31.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'UART_Driver/FIFO/s_clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.255ns (Levels of Logic = 2)
+  Source:            UART_Driver/FIFO/FFcyc[10].FF_i/Q (FF)
+  Destination:       TOP_uart_output (PAD)
+  Source Clock:      UART_Driver/FIFO/s_clk rising
+
+  Data Path: UART_Driver/FIFO/FFcyc[10].FF_i/Q to TOP_uart_output
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.514   0.603  UART_Driver/FIFO/FFcyc[10].FF_i/Q (UART_Driver/FIFO/FFcyc[10].FF_i/Q)
+     LUT2:I0->O            1   0.612   0.357  UART_Driver/MUX_out/portY1 (TOP_uart_output_OBUF)
+     OBUF:I->O                 3.169          TOP_uart_output_OBUF (TOP_uart_output)
+    ----------------------------------------
+    Total                      5.255ns (4.295ns logic, 0.960ns route)
+                                       (81.7% logic, 18.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.93 secs
+ 
+--> 
+
+Total memory usage is 243052 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   81 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

@@ -1,0 +1,58 @@
+ISim log file
+Running: C:\Users\Alessandro\Desktop\EFES_Fpga\Project\TB_EFES_Fpga_Top_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Alessandro/Desktop/EFES_Fpga/Project/TB_EFES_Fpga_Top_isim_beh.wdb 
+ISim P.20131013 (signature 0x8ef4fb42)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(0)\/if_mux0/MUX0/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(1)\/if_muxi/MUXi/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(2)\/if_muxi/MUXi/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(3)\/if_muxi/MUXi/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(4)\/if_muxi/MUXi/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(5)\/if_muxi/MUXi/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(6)\/if_muxi/MUXi/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(7)\/if_muxi/MUXi/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(8)\/if_muxi/MUXi/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(9)\/if_muxi/MUXi/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(10)\/if_muxi/MUXi/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Finished circuit initialization process.
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(0)\/if_mux0/MUX0/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(1)\/if_muxi/MUXi/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(2)\/if_muxi/MUXi/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(3)\/if_muxi/MUXi/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(4)\/if_muxi/MUXi/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(5)\/if_muxi/MUXi/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(6)\/if_muxi/MUXi/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(7)\/if_muxi/MUXi/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(8)\/if_muxi/MUXi/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(9)\/if_muxi/MUXi/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(10)\/if_muxi/MUXi/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# restart
+# run 120 us
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(0)\/if_mux0/MUX0/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(1)\/if_muxi/MUXi/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(2)\/if_muxi/MUXi/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(3)\/if_muxi/MUXi/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(4)\/if_muxi/MUXi/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(5)\/if_muxi/MUXi/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(6)\/if_muxi/MUXi/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(7)\/if_muxi/MUXi/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(8)\/if_muxi/MUXi/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(9)\/if_muxi/MUXi/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(10)\/if_muxi/MUXi/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Finished circuit initialization process.
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(0)\/if_mux0/MUX0/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(1)\/if_muxi/MUXi/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(2)\/if_muxi/MUXi/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(3)\/if_muxi/MUXi/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(4)\/if_muxi/MUXi/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(5)\/if_muxi/MUXi/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(6)\/if_muxi/MUXi/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(7)\/if_muxi/MUXi/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(8)\/if_muxi/MUXi/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(9)\/if_muxi/MUXi/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_efes_fpga_top/uut/UART_Driver/FIFO/\mux_cyc(10)\/if_muxi/MUXi/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0

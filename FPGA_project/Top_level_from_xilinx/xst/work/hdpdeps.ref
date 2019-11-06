@@ -1,0 +1,171 @@
+V3 94
+FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/ANDGate_NX1.vhd 2018/09/07.20:02:34 P.20131013
+EN work/ANDGate_NX1 1573049952 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/ANDGate_NX1.vhd \
+      PB ieee/std_logic_1164 1381692176 PB work/CONSTANTS 1573049941
+AR work/ANDGate_NX1/Behavioral 1573049953 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/ANDGate_NX1.vhd \
+      EN work/ANDGate_NX1 1573049952
+FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/Clock_divider.vhd 2019/11/05.15:41:40 P.20131013
+EN work/Clock_divider 1573049974 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/Clock_divider.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/Clock_divider/Structural 1573049975 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/Clock_divider.vhd \
+      EN work/Clock_divider 1573049974 CP Reg1Bit CP UD_COUNTER CP HardwiredReg \
+      CP NComparatorWithEnable
+FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/Comparator.vhd 2019/11/04.17:44:43 P.20131013
+EN work/Comparator 1573049966 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/Comparator.vhd \
+      PB ieee/std_logic_1164 1381692176 PB work/CONSTANTS 1573049941
+AR work/Comparator/Structural 1573049967 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/Comparator.vhd \
+      EN work/Comparator 1573049966 CP ORGate_NX1 CP Mux_1Bit_2X1
+FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/ComparatorWithEnable.vhd 2018/07/09.01:02:44 P.20131013
+EN work/ComparatorWithEnable 1573049956 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/ComparatorWithEnable.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/ComparatorWithEnable/Behavioral 1573049957 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/ComparatorWithEnable.vhd \
+      EN work/ComparatorWithEnable 1573049956
+FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/constants.vhd 2018/07/09.01:02:44 P.20131013
+PH work/CONSTANTS 1573049940 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/constants.vhd
+PB work/CONSTANTS 1573049941 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/constants.vhd \
+      PH work/CONSTANTS 1573049940
+FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/CU_SatCounter.vhd 2018/09/06.10:52:30 P.20131013
+EN work/CU_SatCounter 1573049950 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/CU_SatCounter.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/CU_SatCounter/Behavioral 1573049951 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/CU_SatCounter.vhd \
+      EN work/CU_SatCounter 1573049950
+FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/D_FF_rst.vhd 2018/07/09.01:02:44 P.20131013
+EN work/D_FF_rst 1573049958 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/D_FF_rst.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/D_FF_rst/Behavioral 1573049959 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/D_FF_rst.vhd \
+      EN work/D_FF_rst 1573049958
+FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/EFES_Fpga_Top.vhd 2019/11/06.15:18:57 P.20131013
+EN work/EFES_Fpga_Top 1573049986 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/EFES_Fpga_Top.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/EFES_Fpga_Top/Structural 1573049987 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/EFES_Fpga_Top.vhd \
+      EN work/EFES_Fpga_Top 1573049986 CP EightButtonDriver CP UartDriverTX
+FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/EightButtonDriver.vhd 2019/10/31.15:49:46 P.20131013
+EN work/EightButtonDriver 1573049982 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/EightButtonDriver.vhd \
+      PB ieee/std_logic_1164 1381692176 PB work/CONSTANTS 1573049941
+AR work/EightButtonDriver/Structural 1573049983 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/EightButtonDriver.vhd \
+      EN work/EightButtonDriver 1573049982 CP ORGate_NX1 CP NRegister CP Reg1Bit
+FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/HardwiredReg.vhd 2019/11/04.12:07:14 P.20131013
+EN work/HardwiredReg 1573049964 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/HardwiredReg.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/HardwiredReg/Behavioral 1573049965 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/HardwiredReg.vhd \
+      EN work/HardwiredReg 1573049964
+FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/Mux_1Bit_2X1.vhd 2018/07/09.01:02:44 P.20131013
+EN work/Mux_1Bit_2X1 1573049946 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/Mux_1Bit_2X1.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/Mux_1Bit_2X1/Behavioral 1573049947 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/Mux_1Bit_2X1.vhd \
+      EN work/Mux_1Bit_2X1 1573049946
+FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/Mux_Bit.vhd 2018/07/09.01:02:44 P.20131013
+EN work/Mux_Bit 1573049960 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/Mux_Bit.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/Mux_Bit/Behavioral 1573049961 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/Mux_Bit.vhd \
+      EN work/Mux_Bit 1573049960
+FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/NComparatorWithEnable.vhd 2018/07/09.01:02:44 P.20131013
+EN work/NComparatorWithEnable 1573049970 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/NComparatorWithEnable.vhd \
+      PB ieee/std_logic_1164 1381692176 PB work/CONSTANTS 1573049941
+AR work/NComparatorWithEnable/Behavioral 1573049971 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/NComparatorWithEnable.vhd \
+      EN work/NComparatorWithEnable 1573049970 CP ComparatorWithEnable
+FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/NORGate_NX1.vhd 2018/09/07.20:02:34 P.20131013
+EN work/NORGate_NX1 1573049954 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/NORGate_NX1.vhd \
+      PB ieee/std_logic_1164 1381692176 PB work/CONSTANTS 1573049941
+AR work/NORGate_NX1/Behavioral 1573049955 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/NORGate_NX1.vhd \
+      EN work/NORGate_NX1 1573049954
+FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/NRegister.vhd 2018/07/09.01:02:44 P.20131013
+EN work/NRegister 1573049980 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/NRegister.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/NRegister/Behavioral 1573049981 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/NRegister.vhd \
+      EN work/NRegister 1573049980
+FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/ORGate_NX1.vhd 2018/07/09.01:02:44 P.20131013
+EN work/ORGate_NX1 1573049944 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/ORGate_NX1.vhd \
+      PB ieee/std_logic_1164 1381692176 PB work/CONSTANTS 1573049941
+AR work/ORGate_NX1/Behavioral 1573049945 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/ORGate_NX1.vhd \
+      EN work/ORGate_NX1 1573049944
+FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/Reg1Bit.vhd 2018/07/09.01:02:44 P.20131013
+EN work/Reg1Bit 1573049968 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/Reg1Bit.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/Reg1Bit/Behavioral 1573049969 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/Reg1Bit.vhd \
+      EN work/Reg1Bit 1573049968
+FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/SAT_Counter_BMM.vhd 2019/11/04.17:38:57 P.20131013
+EN work/SAT_Counter 1573049962 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/SAT_Counter_BMM.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/SAT_Counter/Structural 1573049963 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/SAT_Counter_BMM.vhd \
+      EN work/SAT_Counter 1573049962 CP UD_COUNTER CP CU_SatCounter CP ANDGate_NX1 \
+      CP NORGate_NX1
+FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/t_ff.vhd 2018/07/09.01:02:44 P.20131013
+EN work/t_ff_rst0 1573049942 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/t_ff.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/t_ff_rst0/behavioral 1573049943 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/t_ff.vhd EN work/t_ff_rst0 1573049942
+FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/UartDriver.vhd 2019/11/05.16:59:56 P.20131013
+EN work/UartDriverTX 1573049984 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/UartDriver.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/UartDriverTX/Behavioral 1573049985 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/UartDriver.vhd \
+      EN work/UartDriverTX 1573049984 CP XNORGate_NX1 CP Mux_1Bit_2X1 \
+      CP Clock_divider CP UART_Synchronizer CP Reg1Bit CP UART_Fifo
+FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/UART_Fifo.vhd 2019/11/05.17:17:26 P.20131013
+EN work/UART_Fifo 1573049978 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/UART_Fifo.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/UART_Fifo/Behavioral 1573049979 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/UART_Fifo.vhd \
+      EN work/UART_Fifo 1573049978 CP D_FF_rst CP Mux_Bit
+FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/UART_Synchronizer.vhd 2019/11/05.16:01:07 P.20131013
+EN work/UART_Synchronizer 1573049976 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/UART_Synchronizer.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/UART_Synchronizer/Behavioral 1573049977 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/UART_Synchronizer.vhd \
+      EN work/UART_Synchronizer 1573049976 CP SAT_Counter CP HardwiredReg \
+      CP Comparator
+FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/ud_counter.vhd 2019/11/04.12:11:18 P.20131013
+EN work/UD_COUNTER 1573049948 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/ud_counter.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/UD_COUNTER/STR 1573049949 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/ud_counter.vhd \
+      EN work/UD_COUNTER 1573049948 CP t_ff_rst0
+FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/XNORGate_NX1.vhd 2018/07/09.01:02:44 P.20131013
+EN work/XNORGate_NX1 1573049972 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/XNORGate_NX1.vhd \
+      PB ieee/std_logic_1164 1381692176 PB work/CONSTANTS 1573049941
+AR work/XNORGate_NX1/Behavioral 1573049973 \
+      FL C:/Users/Alessandro/Desktop/EFES_Fpga/Project/XNORGate_NX1.vhd \
+      EN work/XNORGate_NX1 1573049972

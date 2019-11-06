@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Project.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="EFES_Fpga_Top.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="EFES_Fpga_Top.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="EFES_Fpga_Top.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="EFES_Fpga_Top.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="EFES_Fpga_Top.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="EFES_Fpga_Top.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="EFES_Fpga_Top.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="EFES_Fpga_Top.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="EFES_Fpga_Top_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="EFES_Fpga_Top_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="EFES_Fpga_Top_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="EFES_Fpga_Top_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TB_EFES_Fpga_Top_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="TB_EFES_Fpga_Top_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="TB_EFES_Fpga_Top_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1573050198" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1573050198">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1573050627" xil_pn:in_ck="-2258540500410659986" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1573050627">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ANDGate_NX1.vhd"/>
+      <outfile xil_pn:name="CU_SatCounter.vhd"/>
+      <outfile xil_pn:name="Clock_divider.vhd"/>
+      <outfile xil_pn:name="Comparator.vhd"/>
+      <outfile xil_pn:name="ComparatorWithEnable.vhd"/>
+      <outfile xil_pn:name="D_FF_rst.vhd"/>
+      <outfile xil_pn:name="EFES_Fpga_Top.vhd"/>
+      <outfile xil_pn:name="EightButtonDriver.vhd"/>
+      <outfile xil_pn:name="HardwiredReg.vhd"/>
+      <outfile xil_pn:name="Mux_1Bit_2X1.vhd"/>
+      <outfile xil_pn:name="Mux_Bit.vhd"/>
+      <outfile xil_pn:name="NComparatorWithEnable.vhd"/>
+      <outfile xil_pn:name="NORGate_NX1.vhd"/>
+      <outfile xil_pn:name="NRegister.vhd"/>
+      <outfile xil_pn:name="ORGate_NX1.vhd"/>
+      <outfile xil_pn:name="Reg1Bit.vhd"/>
+      <outfile xil_pn:name="SAT_Counter_BMM.vhd"/>
+      <outfile xil_pn:name="TB_EFES_Fpga_Top.vhd"/>
+      <outfile xil_pn:name="UART_Fifo.vhd"/>
+      <outfile xil_pn:name="UART_Synchronizer.vhd"/>
+      <outfile xil_pn:name="UartDriver.vhd"/>
+      <outfile xil_pn:name="XNORGate_NX1.vhd"/>
+      <outfile xil_pn:name="constants.vhd"/>
+      <outfile xil_pn:name="t_ff.vhd"/>
+      <outfile xil_pn:name="t_ff_rst1.vhd"/>
+      <outfile xil_pn:name="ud_counter.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1573050198" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-4458049859501699651" xil_pn:start_ts="1573050198">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1573050198" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-2924488001904592641" xil_pn:start_ts="1573050198">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1573050198" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="3256425691795431379" xil_pn:start_ts="1573050198">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1573050627" xil_pn:in_ck="-2258540500410659986" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1573050627">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ANDGate_NX1.vhd"/>
+      <outfile xil_pn:name="CU_SatCounter.vhd"/>
+      <outfile xil_pn:name="Clock_divider.vhd"/>
+      <outfile xil_pn:name="Comparator.vhd"/>
+      <outfile xil_pn:name="ComparatorWithEnable.vhd"/>
+      <outfile xil_pn:name="D_FF_rst.vhd"/>
+      <outfile xil_pn:name="EFES_Fpga_Top.vhd"/>
+      <outfile xil_pn:name="EightButtonDriver.vhd"/>
+      <outfile xil_pn:name="HardwiredReg.vhd"/>
+      <outfile xil_pn:name="Mux_1Bit_2X1.vhd"/>
+      <outfile xil_pn:name="Mux_Bit.vhd"/>
+      <outfile xil_pn:name="NComparatorWithEnable.vhd"/>
+      <outfile xil_pn:name="NORGate_NX1.vhd"/>
+      <outfile xil_pn:name="NRegister.vhd"/>
+      <outfile xil_pn:name="ORGate_NX1.vhd"/>
+      <outfile xil_pn:name="Reg1Bit.vhd"/>
+      <outfile xil_pn:name="SAT_Counter_BMM.vhd"/>
+      <outfile xil_pn:name="TB_EFES_Fpga_Top.vhd"/>
+      <outfile xil_pn:name="UART_Fifo.vhd"/>
+      <outfile xil_pn:name="UART_Synchronizer.vhd"/>
+      <outfile xil_pn:name="UartDriver.vhd"/>
+      <outfile xil_pn:name="XNORGate_NX1.vhd"/>
+      <outfile xil_pn:name="constants.vhd"/>
+      <outfile xil_pn:name="t_ff.vhd"/>
+      <outfile xil_pn:name="t_ff_rst1.vhd"/>
+      <outfile xil_pn:name="ud_counter.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1573050632" xil_pn:in_ck="-2258540500410659986" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="2820545602045729276" xil_pn:start_ts="1573050627">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="TB_EFES_Fpga_Top_beh.prj"/>
+      <outfile xil_pn:name="TB_EFES_Fpga_Top_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1573050705" xil_pn:in_ck="-7259111874070512810" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="7228023521085316329" xil_pn:start_ts="1573050705">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="TB_EFES_Fpga_Top_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1572530854" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1572530853">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1573049267" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="4823416456237059763" xil_pn:start_ts="1573049267">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1573049267" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="3256425691795431379" xil_pn:start_ts="1573049267">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1573049267" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1573049267">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1573049267" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="4725891984410223281" xil_pn:start_ts="1573049267">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1573049267" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297145852409" xil_pn:start_ts="1573049267">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1573049267" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-4149303068078969699" xil_pn:start_ts="1573049267">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1573049946" xil_pn:in_ck="-6956828736074972073" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-7637697216243667504" xil_pn:start_ts="1573049937">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="EFES_Fpga_Top.lso"/>
+      <outfile xil_pn:name="EFES_Fpga_Top.ngc"/>
+      <outfile xil_pn:name="EFES_Fpga_Top.ngr"/>
+      <outfile xil_pn:name="EFES_Fpga_Top.prj"/>
+      <outfile xil_pn:name="EFES_Fpga_Top.stx"/>
+      <outfile xil_pn:name="EFES_Fpga_Top.syr"/>
+      <outfile xil_pn:name="EFES_Fpga_Top.xst"/>
+      <outfile xil_pn:name="EFES_Fpga_Top_vhdl.prj"/>
+      <outfile xil_pn:name="EFES_Fpga_Top_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+  </transforms>
+
+</generated_project>
