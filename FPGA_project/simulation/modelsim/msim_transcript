@@ -1,0 +1,9 @@
+# vsim +altera -do EFES_Fpga_Top_run_msim_rtl_vhdl.do -l msim_transcript -gui -t ns work.TB_EFES_Fpga_Top (behavior) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_efes_fpga_top(behavior)
+# ** Error: (vsim-3170) Could not find 'C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/simulation/modelsim/work.(behavior)'.
+# 
+# Error loading design
+# Load canceled

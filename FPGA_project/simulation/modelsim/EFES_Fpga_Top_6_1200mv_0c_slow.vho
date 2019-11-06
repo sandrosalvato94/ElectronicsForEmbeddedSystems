@@ -16,112 +16,56 @@
 -- PROGRAM "Quartus II 64-Bit"
 -- VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
--- DATE "10/30/2019 18:04:18"
+-- DATE "11/06/2019 18:06:52"
 
 -- 
 -- Device: Altera EP4CE22F17C6 Package FBGA256
 -- 
 
 -- 
--- This VHDL file should be used for ModelSim (VHDL) only
+-- This VHDL file should be used for ModelSim-Altera (VHDL) only
 -- 
 
+LIBRARY ALTERA;
 LIBRARY CYCLONEIVE;
 LIBRARY IEEE;
+USE ALTERA.ALTERA_PRIMITIVES_COMPONENTS.ALL;
 USE CYCLONEIVE.CYCLONEIVE_COMPONENTS.ALL;
 USE IEEE.STD_LOGIC_1164.ALL;
 
-ENTITY 	EFES_Fpga_Top IS
+ENTITY 	EightButtonDriver IS
     PORT (
-	TOP_Buttons : IN std_logic_vector(7 DOWNTO 0);
-	TOP_clk : IN std_logic;
-	TOP_uart_output : OUT std_logic;
-	TOP_7_dig_A : OUT std_logic;
-	TOP_7_dig_B : OUT std_logic;
-	TOP_7_dig_C : OUT std_logic;
-	TOP_7_dig_D : OUT std_logic;
-	TOP_7_dig_E : OUT std_logic;
-	TOP_7_dig_F : OUT std_logic;
-	TOP_7_dig_G : OUT std_logic;
-	TOP_7_dig_cntr : OUT std_logic_vector(3 DOWNTO 0);
-	TOP_mem_address : OUT std_logic_vector(12 DOWNTO 0);
-	TOP_mem_bank : OUT std_logic_vector(1 DOWNTO 0);
-	TOP_mem_data : INOUT std_logic_vector(15 DOWNTO 0);
-	TOP_mem_ras_n : OUT std_logic;
-	TOP_mem_cas_n : OUT std_logic;
-	TOP_mem_we_n : OUT std_logic;
-	TOP_mem_clk_enable : OUT std_logic;
-	TOP_mem_clk : OUT std_logic;
-	TOP_mem_cs_n : OUT std_logic;
-	TOP_mem_dqml : OUT std_logic;
-	TOP_mem_dqmh : OUT std_logic
+	EBD_buttons : IN std_logic_vector(7 DOWNTO 0);
+	EBD_clock : IN std_logic;
+	EBD_reset : IN std_logic;
+	EBD_event : OUT std_logic;
+	EBD_buttons_save : OUT std_logic_vector(7 DOWNTO 0)
 	);
-END EFES_Fpga_Top;
+END EightButtonDriver;
 
 -- Design Ports Information
--- TOP_Buttons[0]	=>  Location: PIN_B3,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_Buttons[1]	=>  Location: PIN_N16,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_Buttons[2]	=>  Location: PIN_D1,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_Buttons[3]	=>  Location: PIN_T11,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_Buttons[4]	=>  Location: PIN_A11,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_Buttons[5]	=>  Location: PIN_K5,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_Buttons[6]	=>  Location: PIN_R13,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_Buttons[7]	=>  Location: PIN_F2,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_clk	=>  Location: PIN_E1,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_uart_output	=>  Location: PIN_A2,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_7_dig_A	=>  Location: PIN_N11,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_7_dig_B	=>  Location: PIN_A3,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_7_dig_C	=>  Location: PIN_T4,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_7_dig_D	=>  Location: PIN_A14,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_7_dig_E	=>  Location: PIN_T15,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_7_dig_F	=>  Location: PIN_T12,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_7_dig_G	=>  Location: PIN_B6,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_7_dig_cntr[0]	=>  Location: PIN_G2,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_7_dig_cntr[1]	=>  Location: PIN_E9,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_7_dig_cntr[2]	=>  Location: PIN_M10,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_7_dig_cntr[3]	=>  Location: PIN_R12,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_mem_address[0]	=>  Location: PIN_B13,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_mem_address[1]	=>  Location: PIN_D11,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_mem_address[2]	=>  Location: PIN_A7,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_mem_address[3]	=>  Location: PIN_L14,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_mem_address[4]	=>  Location: PIN_P3,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_mem_address[5]	=>  Location: PIN_E6,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_mem_address[6]	=>  Location: PIN_N9,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_mem_address[7]	=>  Location: PIN_P15,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_mem_address[8]	=>  Location: PIN_M6,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_mem_address[9]	=>  Location: PIN_R16,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_mem_address[10]	=>  Location: PIN_C2,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_mem_address[11]	=>  Location: PIN_N15,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_mem_address[12]	=>  Location: PIN_T10,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_mem_bank[0]	=>  Location: PIN_N6,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_mem_bank[1]	=>  Location: PIN_A15,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_mem_ras_n	=>  Location: PIN_K16,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_mem_cas_n	=>  Location: PIN_K15,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_mem_we_n	=>  Location: PIN_F1,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_mem_clk_enable	=>  Location: PIN_T2,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_mem_clk	=>  Location: PIN_N12,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_mem_cs_n	=>  Location: PIN_T14,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_mem_dqml	=>  Location: PIN_D12,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_mem_dqmh	=>  Location: PIN_B4,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_mem_data[0]	=>  Location: PIN_B5,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_mem_data[1]	=>  Location: PIN_L7,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_mem_data[2]	=>  Location: PIN_T3,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_mem_data[3]	=>  Location: PIN_F9,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_mem_data[4]	=>  Location: PIN_R4,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_mem_data[5]	=>  Location: PIN_C16,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_mem_data[6]	=>  Location: PIN_N5,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_mem_data[7]	=>  Location: PIN_L16,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_mem_data[8]	=>  Location: PIN_C6,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_mem_data[9]	=>  Location: PIN_R11,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_mem_data[10]	=>  Location: PIN_L13,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_mem_data[11]	=>  Location: PIN_T5,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_mem_data[12]	=>  Location: PIN_B7,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_mem_data[13]	=>  Location: PIN_R6,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_mem_data[14]	=>  Location: PIN_R3,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- TOP_mem_data[15]	=>  Location: PIN_P16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- EBD_event	=>  Location: PIN_R3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- EBD_buttons_save[0]	=>  Location: PIN_N2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- EBD_buttons_save[1]	=>  Location: PIN_N1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- EBD_buttons_save[2]	=>  Location: PIN_T2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- EBD_buttons_save[3]	=>  Location: PIN_K1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- EBD_buttons_save[4]	=>  Location: PIN_P2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- EBD_buttons_save[5]	=>  Location: PIN_J1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- EBD_buttons_save[6]	=>  Location: PIN_P3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- EBD_buttons_save[7]	=>  Location: PIN_L4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- EBD_buttons[0]	=>  Location: PIN_K2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- EBD_buttons[1]	=>  Location: PIN_J2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- EBD_buttons[2]	=>  Location: PIN_K5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- EBD_buttons[3]	=>  Location: PIN_L3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- EBD_buttons[4]	=>  Location: PIN_R1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- EBD_buttons[5]	=>  Location: PIN_L1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- EBD_buttons[6]	=>  Location: PIN_L2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- EBD_buttons[7]	=>  Location: PIN_R4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- EBD_clock	=>  Location: PIN_E1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- EBD_reset	=>  Location: PIN_M2,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
-ARCHITECTURE structure OF EFES_Fpga_Top IS
+ARCHITECTURE structure OF EightButtonDriver IS
 SIGNAL gnd : std_logic := '0';
 SIGNAL vcc : std_logic := '1';
 SIGNAL unknown : std_logic := 'X';
@@ -131,1119 +75,574 @@ SIGNAL devpor : std_logic := '1';
 SIGNAL ww_devoe : std_logic;
 SIGNAL ww_devclrn : std_logic;
 SIGNAL ww_devpor : std_logic;
-SIGNAL ww_TOP_Buttons : std_logic_vector(7 DOWNTO 0);
-SIGNAL ww_TOP_clk : std_logic;
-SIGNAL ww_TOP_uart_output : std_logic;
-SIGNAL ww_TOP_7_dig_A : std_logic;
-SIGNAL ww_TOP_7_dig_B : std_logic;
-SIGNAL ww_TOP_7_dig_C : std_logic;
-SIGNAL ww_TOP_7_dig_D : std_logic;
-SIGNAL ww_TOP_7_dig_E : std_logic;
-SIGNAL ww_TOP_7_dig_F : std_logic;
-SIGNAL ww_TOP_7_dig_G : std_logic;
-SIGNAL ww_TOP_7_dig_cntr : std_logic_vector(3 DOWNTO 0);
-SIGNAL ww_TOP_mem_address : std_logic_vector(12 DOWNTO 0);
-SIGNAL ww_TOP_mem_bank : std_logic_vector(1 DOWNTO 0);
-SIGNAL ww_TOP_mem_ras_n : std_logic;
-SIGNAL ww_TOP_mem_cas_n : std_logic;
-SIGNAL ww_TOP_mem_we_n : std_logic;
-SIGNAL ww_TOP_mem_clk_enable : std_logic;
-SIGNAL ww_TOP_mem_clk : std_logic;
-SIGNAL ww_TOP_mem_cs_n : std_logic;
-SIGNAL ww_TOP_mem_dqml : std_logic;
-SIGNAL ww_TOP_mem_dqmh : std_logic;
-SIGNAL \TOP_Buttons[0]~input_o\ : std_logic;
-SIGNAL \TOP_Buttons[1]~input_o\ : std_logic;
-SIGNAL \TOP_Buttons[2]~input_o\ : std_logic;
-SIGNAL \TOP_Buttons[3]~input_o\ : std_logic;
-SIGNAL \TOP_Buttons[4]~input_o\ : std_logic;
-SIGNAL \TOP_Buttons[5]~input_o\ : std_logic;
-SIGNAL \TOP_Buttons[6]~input_o\ : std_logic;
-SIGNAL \TOP_Buttons[7]~input_o\ : std_logic;
-SIGNAL \TOP_clk~input_o\ : std_logic;
-SIGNAL \TOP_mem_data[0]~input_o\ : std_logic;
-SIGNAL \TOP_mem_data[1]~input_o\ : std_logic;
-SIGNAL \TOP_mem_data[2]~input_o\ : std_logic;
-SIGNAL \TOP_mem_data[3]~input_o\ : std_logic;
-SIGNAL \TOP_mem_data[4]~input_o\ : std_logic;
-SIGNAL \TOP_mem_data[5]~input_o\ : std_logic;
-SIGNAL \TOP_mem_data[6]~input_o\ : std_logic;
-SIGNAL \TOP_mem_data[7]~input_o\ : std_logic;
-SIGNAL \TOP_mem_data[8]~input_o\ : std_logic;
-SIGNAL \TOP_mem_data[9]~input_o\ : std_logic;
-SIGNAL \TOP_mem_data[10]~input_o\ : std_logic;
-SIGNAL \TOP_mem_data[11]~input_o\ : std_logic;
-SIGNAL \TOP_mem_data[12]~input_o\ : std_logic;
-SIGNAL \TOP_mem_data[13]~input_o\ : std_logic;
-SIGNAL \TOP_mem_data[14]~input_o\ : std_logic;
-SIGNAL \TOP_mem_data[15]~input_o\ : std_logic;
-SIGNAL \TOP_mem_data[0]~output_o\ : std_logic;
-SIGNAL \TOP_mem_data[1]~output_o\ : std_logic;
-SIGNAL \TOP_mem_data[2]~output_o\ : std_logic;
-SIGNAL \TOP_mem_data[3]~output_o\ : std_logic;
-SIGNAL \TOP_mem_data[4]~output_o\ : std_logic;
-SIGNAL \TOP_mem_data[5]~output_o\ : std_logic;
-SIGNAL \TOP_mem_data[6]~output_o\ : std_logic;
-SIGNAL \TOP_mem_data[7]~output_o\ : std_logic;
-SIGNAL \TOP_mem_data[8]~output_o\ : std_logic;
-SIGNAL \TOP_mem_data[9]~output_o\ : std_logic;
-SIGNAL \TOP_mem_data[10]~output_o\ : std_logic;
-SIGNAL \TOP_mem_data[11]~output_o\ : std_logic;
-SIGNAL \TOP_mem_data[12]~output_o\ : std_logic;
-SIGNAL \TOP_mem_data[13]~output_o\ : std_logic;
-SIGNAL \TOP_mem_data[14]~output_o\ : std_logic;
-SIGNAL \TOP_mem_data[15]~output_o\ : std_logic;
-SIGNAL \TOP_uart_output~output_o\ : std_logic;
-SIGNAL \TOP_7_dig_A~output_o\ : std_logic;
-SIGNAL \TOP_7_dig_B~output_o\ : std_logic;
-SIGNAL \TOP_7_dig_C~output_o\ : std_logic;
-SIGNAL \TOP_7_dig_D~output_o\ : std_logic;
-SIGNAL \TOP_7_dig_E~output_o\ : std_logic;
-SIGNAL \TOP_7_dig_F~output_o\ : std_logic;
-SIGNAL \TOP_7_dig_G~output_o\ : std_logic;
-SIGNAL \TOP_7_dig_cntr[0]~output_o\ : std_logic;
-SIGNAL \TOP_7_dig_cntr[1]~output_o\ : std_logic;
-SIGNAL \TOP_7_dig_cntr[2]~output_o\ : std_logic;
-SIGNAL \TOP_7_dig_cntr[3]~output_o\ : std_logic;
-SIGNAL \TOP_mem_address[0]~output_o\ : std_logic;
-SIGNAL \TOP_mem_address[1]~output_o\ : std_logic;
-SIGNAL \TOP_mem_address[2]~output_o\ : std_logic;
-SIGNAL \TOP_mem_address[3]~output_o\ : std_logic;
-SIGNAL \TOP_mem_address[4]~output_o\ : std_logic;
-SIGNAL \TOP_mem_address[5]~output_o\ : std_logic;
-SIGNAL \TOP_mem_address[6]~output_o\ : std_logic;
-SIGNAL \TOP_mem_address[7]~output_o\ : std_logic;
-SIGNAL \TOP_mem_address[8]~output_o\ : std_logic;
-SIGNAL \TOP_mem_address[9]~output_o\ : std_logic;
-SIGNAL \TOP_mem_address[10]~output_o\ : std_logic;
-SIGNAL \TOP_mem_address[11]~output_o\ : std_logic;
-SIGNAL \TOP_mem_address[12]~output_o\ : std_logic;
-SIGNAL \TOP_mem_bank[0]~output_o\ : std_logic;
-SIGNAL \TOP_mem_bank[1]~output_o\ : std_logic;
-SIGNAL \TOP_mem_ras_n~output_o\ : std_logic;
-SIGNAL \TOP_mem_cas_n~output_o\ : std_logic;
-SIGNAL \TOP_mem_we_n~output_o\ : std_logic;
-SIGNAL \TOP_mem_clk_enable~output_o\ : std_logic;
-SIGNAL \TOP_mem_clk~output_o\ : std_logic;
-SIGNAL \TOP_mem_cs_n~output_o\ : std_logic;
-SIGNAL \TOP_mem_dqml~output_o\ : std_logic;
-SIGNAL \TOP_mem_dqmh~output_o\ : std_logic;
+SIGNAL ww_EBD_buttons : std_logic_vector(7 DOWNTO 0);
+SIGNAL ww_EBD_clock : std_logic;
+SIGNAL ww_EBD_reset : std_logic;
+SIGNAL ww_EBD_event : std_logic;
+SIGNAL ww_EBD_buttons_save : std_logic_vector(7 DOWNTO 0);
+SIGNAL \EBD_reset~inputclkctrl_INCLK_bus\ : std_logic_vector(3 DOWNTO 0);
+SIGNAL \EBD_clock~inputclkctrl_INCLK_bus\ : std_logic_vector(3 DOWNTO 0);
+SIGNAL \OR8x1|Y~0_combout\ : std_logic;
+SIGNAL \EBD_event~output_o\ : std_logic;
+SIGNAL \EBD_buttons_save[0]~output_o\ : std_logic;
+SIGNAL \EBD_buttons_save[1]~output_o\ : std_logic;
+SIGNAL \EBD_buttons_save[2]~output_o\ : std_logic;
+SIGNAL \EBD_buttons_save[3]~output_o\ : std_logic;
+SIGNAL \EBD_buttons_save[4]~output_o\ : std_logic;
+SIGNAL \EBD_buttons_save[5]~output_o\ : std_logic;
+SIGNAL \EBD_buttons_save[6]~output_o\ : std_logic;
+SIGNAL \EBD_buttons_save[7]~output_o\ : std_logic;
+SIGNAL \EBD_clock~input_o\ : std_logic;
+SIGNAL \EBD_clock~inputclkctrl_outclk\ : std_logic;
+SIGNAL \EBD_buttons[5]~input_o\ : std_logic;
+SIGNAL \EBD_buttons[4]~input_o\ : std_logic;
+SIGNAL \EBD_buttons[7]~input_o\ : std_logic;
+SIGNAL \OR8x1|Y~1_combout\ : std_logic;
+SIGNAL \OR8x1|Y~combout\ : std_logic;
+SIGNAL \EBD_reset~input_o\ : std_logic;
+SIGNAL \EBD_reset~inputclkctrl_outclk\ : std_logic;
+SIGNAL \Eve_Reg|data_out~q\ : std_logic;
+SIGNAL \EBD_buttons[0]~input_o\ : std_logic;
+SIGNAL \But_Reg|data_out[0]~feeder_combout\ : std_logic;
+SIGNAL \EBD_buttons[1]~input_o\ : std_logic;
+SIGNAL \But_Reg|data_out[1]~feeder_combout\ : std_logic;
+SIGNAL \EBD_buttons[2]~input_o\ : std_logic;
+SIGNAL \EBD_buttons[3]~input_o\ : std_logic;
+SIGNAL \But_Reg|data_out[5]~feeder_combout\ : std_logic;
+SIGNAL \EBD_buttons[6]~input_o\ : std_logic;
+SIGNAL \But_Reg|data_out[7]~feeder_combout\ : std_logic;
+SIGNAL \But_Reg|data_out\ : std_logic_vector(7 DOWNTO 0);
+SIGNAL \ALT_INV_EBD_reset~inputclkctrl_outclk\ : std_logic;
 
 BEGIN
 
-ww_TOP_Buttons <= TOP_Buttons;
-ww_TOP_clk <= TOP_clk;
-TOP_uart_output <= ww_TOP_uart_output;
-TOP_7_dig_A <= ww_TOP_7_dig_A;
-TOP_7_dig_B <= ww_TOP_7_dig_B;
-TOP_7_dig_C <= ww_TOP_7_dig_C;
-TOP_7_dig_D <= ww_TOP_7_dig_D;
-TOP_7_dig_E <= ww_TOP_7_dig_E;
-TOP_7_dig_F <= ww_TOP_7_dig_F;
-TOP_7_dig_G <= ww_TOP_7_dig_G;
-TOP_7_dig_cntr <= ww_TOP_7_dig_cntr;
-TOP_mem_address <= ww_TOP_mem_address;
-TOP_mem_bank <= ww_TOP_mem_bank;
-TOP_mem_ras_n <= ww_TOP_mem_ras_n;
-TOP_mem_cas_n <= ww_TOP_mem_cas_n;
-TOP_mem_we_n <= ww_TOP_mem_we_n;
-TOP_mem_clk_enable <= ww_TOP_mem_clk_enable;
-TOP_mem_clk <= ww_TOP_mem_clk;
-TOP_mem_cs_n <= ww_TOP_mem_cs_n;
-TOP_mem_dqml <= ww_TOP_mem_dqml;
-TOP_mem_dqmh <= ww_TOP_mem_dqmh;
+ww_EBD_buttons <= EBD_buttons;
+ww_EBD_clock <= EBD_clock;
+ww_EBD_reset <= EBD_reset;
+EBD_event <= ww_EBD_event;
+EBD_buttons_save <= ww_EBD_buttons_save;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
 
--- Location: IOOBUF_X11_Y34_N2
-\TOP_mem_data[0]~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "true")
--- pragma translate_on
-PORT MAP (
-	i => VCC,
-	devoe => ww_devoe,
-	o => \TOP_mem_data[0]~output_o\);
+\EBD_reset~inputclkctrl_INCLK_bus\ <= (vcc & vcc & vcc & \EBD_reset~input_o\);
 
--- Location: IOOBUF_X16_Y0_N23
-\TOP_mem_data[1]~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "true")
--- pragma translate_on
-PORT MAP (
-	i => VCC,
-	devoe => ww_devoe,
-	o => \TOP_mem_data[1]~output_o\);
+\EBD_clock~inputclkctrl_INCLK_bus\ <= (vcc & vcc & vcc & \EBD_clock~input_o\);
+\ALT_INV_EBD_reset~inputclkctrl_outclk\ <= NOT \EBD_reset~inputclkctrl_outclk\;
 
--- Location: IOOBUF_X1_Y0_N2
-\TOP_mem_data[2]~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "true")
--- pragma translate_on
-PORT MAP (
-	i => VCC,
-	devoe => ww_devoe,
-	o => \TOP_mem_data[2]~output_o\);
+-- Location: LCCOMB_X1_Y9_N10
+\OR8x1|Y~0\ : cycloneive_lcell_comb
+-- Equation(s):
+-- \OR8x1|Y~0_combout\ = (\EBD_buttons[0]~input_o\) # ((\EBD_buttons[3]~input_o\) # ((\EBD_buttons[2]~input_o\) # (\EBD_buttons[1]~input_o\)))
 
--- Location: IOOBUF_X34_Y34_N2
-\TOP_mem_data[3]~output\ : cycloneive_io_obuf
 -- pragma translate_off
 GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "true")
+	lut_mask => "1111111111111110",
+	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	i => VCC,
-	devoe => ww_devoe,
-	o => \TOP_mem_data[3]~output_o\);
-
--- Location: IOOBUF_X5_Y0_N23
-\TOP_mem_data[4]~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "true")
--- pragma translate_on
-PORT MAP (
-	i => VCC,
-	devoe => ww_devoe,
-	o => \TOP_mem_data[4]~output_o\);
-
--- Location: IOOBUF_X53_Y30_N9
-\TOP_mem_data[5]~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "true")
--- pragma translate_on
-PORT MAP (
-	i => VCC,
-	devoe => ww_devoe,
-	o => \TOP_mem_data[5]~output_o\);
-
--- Location: IOOBUF_X5_Y0_N9
-\TOP_mem_data[6]~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "true")
--- pragma translate_on
-PORT MAP (
-	i => VCC,
-	devoe => ww_devoe,
-	o => \TOP_mem_data[6]~output_o\);
-
--- Location: IOOBUF_X53_Y11_N9
-\TOP_mem_data[7]~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "true")
--- pragma translate_on
-PORT MAP (
-	i => VCC,
-	devoe => ww_devoe,
-	o => \TOP_mem_data[7]~output_o\);
-
--- Location: IOOBUF_X18_Y34_N23
-\TOP_mem_data[8]~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "true")
--- pragma translate_on
-PORT MAP (
-	i => VCC,
-	devoe => ww_devoe,
-	o => \TOP_mem_data[8]~output_o\);
-
--- Location: IOOBUF_X34_Y0_N2
-\TOP_mem_data[9]~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "true")
--- pragma translate_on
-PORT MAP (
-	i => VCC,
-	devoe => ww_devoe,
-	o => \TOP_mem_data[9]~output_o\);
-
--- Location: IOOBUF_X53_Y10_N16
-\TOP_mem_data[10]~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "true")
--- pragma translate_on
-PORT MAP (
-	i => VCC,
-	devoe => ww_devoe,
-	o => \TOP_mem_data[10]~output_o\);
-
--- Location: IOOBUF_X14_Y0_N16
-\TOP_mem_data[11]~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "true")
--- pragma translate_on
-PORT MAP (
-	i => VCC,
-	devoe => ww_devoe,
-	o => \TOP_mem_data[11]~output_o\);
-
--- Location: IOOBUF_X18_Y34_N2
-\TOP_mem_data[12]~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "true")
--- pragma translate_on
-PORT MAP (
-	i => VCC,
-	devoe => ww_devoe,
-	o => \TOP_mem_data[12]~output_o\);
-
--- Location: IOOBUF_X14_Y0_N9
-\TOP_mem_data[13]~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "true")
--- pragma translate_on
-PORT MAP (
-	i => VCC,
-	devoe => ww_devoe,
-	o => \TOP_mem_data[13]~output_o\);
+	dataa => \EBD_buttons[0]~input_o\,
+	datab => \EBD_buttons[3]~input_o\,
+	datac => \EBD_buttons[2]~input_o\,
+	datad => \EBD_buttons[1]~input_o\,
+	combout => \OR8x1|Y~0_combout\);
 
 -- Location: IOOBUF_X1_Y0_N9
-\TOP_mem_data[14]~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "true")
--- pragma translate_on
-PORT MAP (
-	i => VCC,
-	devoe => ww_devoe,
-	o => \TOP_mem_data[14]~output_o\);
-
--- Location: IOOBUF_X53_Y7_N9
-\TOP_mem_data[15]~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "true")
--- pragma translate_on
-PORT MAP (
-	i => VCC,
-	devoe => ww_devoe,
-	o => \TOP_mem_data[15]~output_o\);
-
--- Location: IOOBUF_X7_Y34_N9
-\TOP_uart_output~output\ : cycloneive_io_obuf
+\EBD_event~output\ : cycloneive_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => GND,
+	i => \Eve_Reg|data_out~q\,
 	devoe => ww_devoe,
-	o => \TOP_uart_output~output_o\);
+	o => \EBD_event~output_o\);
 
--- Location: IOOBUF_X43_Y0_N16
-\TOP_7_dig_A~output\ : cycloneive_io_obuf
+-- Location: IOOBUF_X0_Y8_N23
+\EBD_buttons_save[0]~output\ : cycloneive_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => GND,
+	i => \But_Reg|data_out\(0),
 	devoe => ww_devoe,
-	o => \TOP_7_dig_A~output_o\);
+	o => \EBD_buttons_save[0]~output_o\);
 
--- Location: IOOBUF_X7_Y34_N16
-\TOP_7_dig_B~output\ : cycloneive_io_obuf
+-- Location: IOOBUF_X0_Y7_N2
+\EBD_buttons_save[1]~output\ : cycloneive_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => GND,
+	i => \But_Reg|data_out\(1),
 	devoe => ww_devoe,
-	o => \TOP_7_dig_B~output_o\);
-
--- Location: IOOBUF_X5_Y0_N16
-\TOP_7_dig_C~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "false")
--- pragma translate_on
-PORT MAP (
-	i => GND,
-	devoe => ww_devoe,
-	o => \TOP_7_dig_C~output_o\);
-
--- Location: IOOBUF_X47_Y34_N23
-\TOP_7_dig_D~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "false")
--- pragma translate_on
-PORT MAP (
-	i => GND,
-	devoe => ww_devoe,
-	o => \TOP_7_dig_D~output_o\);
-
--- Location: IOOBUF_X45_Y0_N16
-\TOP_7_dig_E~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "false")
--- pragma translate_on
-PORT MAP (
-	i => GND,
-	devoe => ww_devoe,
-	o => \TOP_7_dig_E~output_o\);
-
--- Location: IOOBUF_X36_Y0_N9
-\TOP_7_dig_F~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "false")
--- pragma translate_on
-PORT MAP (
-	i => GND,
-	devoe => ww_devoe,
-	o => \TOP_7_dig_F~output_o\);
-
--- Location: IOOBUF_X16_Y34_N9
-\TOP_7_dig_G~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "false")
--- pragma translate_on
-PORT MAP (
-	i => GND,
-	devoe => ww_devoe,
-	o => \TOP_7_dig_G~output_o\);
-
--- Location: IOOBUF_X0_Y23_N16
-\TOP_7_dig_cntr[0]~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "false")
--- pragma translate_on
-PORT MAP (
-	i => GND,
-	devoe => ww_devoe,
-	o => \TOP_7_dig_cntr[0]~output_o\);
-
--- Location: IOOBUF_X29_Y34_N16
-\TOP_7_dig_cntr[1]~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "false")
--- pragma translate_on
-PORT MAP (
-	i => GND,
-	devoe => ww_devoe,
-	o => \TOP_7_dig_cntr[1]~output_o\);
-
--- Location: IOOBUF_X43_Y0_N23
-\TOP_7_dig_cntr[2]~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "false")
--- pragma translate_on
-PORT MAP (
-	i => GND,
-	devoe => ww_devoe,
-	o => \TOP_7_dig_cntr[2]~output_o\);
-
--- Location: IOOBUF_X36_Y0_N16
-\TOP_7_dig_cntr[3]~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "false")
--- pragma translate_on
-PORT MAP (
-	i => GND,
-	devoe => ww_devoe,
-	o => \TOP_7_dig_cntr[3]~output_o\);
-
--- Location: IOOBUF_X49_Y34_N9
-\TOP_mem_address[0]~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "false")
--- pragma translate_on
-PORT MAP (
-	i => GND,
-	devoe => ww_devoe,
-	o => \TOP_mem_address[0]~output_o\);
-
--- Location: IOOBUF_X51_Y34_N16
-\TOP_mem_address[1]~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "false")
--- pragma translate_on
-PORT MAP (
-	i => GND,
-	devoe => ww_devoe,
-	o => \TOP_mem_address[1]~output_o\);
-
--- Location: IOOBUF_X20_Y34_N23
-\TOP_mem_address[2]~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "false")
--- pragma translate_on
-PORT MAP (
-	i => GND,
-	devoe => ww_devoe,
-	o => \TOP_mem_address[2]~output_o\);
-
--- Location: IOOBUF_X53_Y9_N9
-\TOP_mem_address[3]~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "false")
--- pragma translate_on
-PORT MAP (
-	i => GND,
-	devoe => ww_devoe,
-	o => \TOP_mem_address[3]~output_o\);
-
--- Location: IOOBUF_X1_Y0_N16
-\TOP_mem_address[4]~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "false")
--- pragma translate_on
-PORT MAP (
-	i => GND,
-	devoe => ww_devoe,
-	o => \TOP_mem_address[4]~output_o\);
-
--- Location: IOOBUF_X14_Y34_N16
-\TOP_mem_address[5]~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "false")
--- pragma translate_on
-PORT MAP (
-	i => GND,
-	devoe => ww_devoe,
-	o => \TOP_mem_address[5]~output_o\);
-
--- Location: IOOBUF_X29_Y0_N2
-\TOP_mem_address[6]~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "false")
--- pragma translate_on
-PORT MAP (
-	i => GND,
-	devoe => ww_devoe,
-	o => \TOP_mem_address[6]~output_o\);
-
--- Location: IOOBUF_X53_Y6_N16
-\TOP_mem_address[7]~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "false")
--- pragma translate_on
-PORT MAP (
-	i => GND,
-	devoe => ww_devoe,
-	o => \TOP_mem_address[7]~output_o\);
-
--- Location: IOOBUF_X7_Y0_N9
-\TOP_mem_address[8]~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "false")
--- pragma translate_on
-PORT MAP (
-	i => GND,
-	devoe => ww_devoe,
-	o => \TOP_mem_address[8]~output_o\);
-
--- Location: IOOBUF_X53_Y8_N23
-\TOP_mem_address[9]~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "false")
--- pragma translate_on
-PORT MAP (
-	i => GND,
-	devoe => ww_devoe,
-	o => \TOP_mem_address[9]~output_o\);
-
--- Location: IOOBUF_X0_Y27_N2
-\TOP_mem_address[10]~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "false")
--- pragma translate_on
-PORT MAP (
-	i => GND,
-	devoe => ww_devoe,
-	o => \TOP_mem_address[10]~output_o\);
-
--- Location: IOOBUF_X53_Y9_N16
-\TOP_mem_address[11]~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "false")
--- pragma translate_on
-PORT MAP (
-	i => GND,
-	devoe => ww_devoe,
-	o => \TOP_mem_address[11]~output_o\);
-
--- Location: IOOBUF_X34_Y0_N16
-\TOP_mem_address[12]~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "false")
--- pragma translate_on
-PORT MAP (
-	i => GND,
-	devoe => ww_devoe,
-	o => \TOP_mem_address[12]~output_o\);
-
--- Location: IOOBUF_X5_Y0_N2
-\TOP_mem_bank[0]~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "false")
--- pragma translate_on
-PORT MAP (
-	i => GND,
-	devoe => ww_devoe,
-	o => \TOP_mem_bank[0]~output_o\);
-
--- Location: IOOBUF_X38_Y34_N16
-\TOP_mem_bank[1]~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "false")
--- pragma translate_on
-PORT MAP (
-	i => GND,
-	devoe => ww_devoe,
-	o => \TOP_mem_bank[1]~output_o\);
-
--- Location: IOOBUF_X53_Y12_N2
-\TOP_mem_ras_n~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "false")
--- pragma translate_on
-PORT MAP (
-	i => GND,
-	devoe => ww_devoe,
-	o => \TOP_mem_ras_n~output_o\);
-
--- Location: IOOBUF_X53_Y13_N9
-\TOP_mem_cas_n~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "false")
--- pragma translate_on
-PORT MAP (
-	i => GND,
-	devoe => ww_devoe,
-	o => \TOP_mem_cas_n~output_o\);
-
--- Location: IOOBUF_X0_Y23_N2
-\TOP_mem_we_n~output\ : cycloneive_io_obuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	open_drain_output => "false")
--- pragma translate_on
-PORT MAP (
-	i => GND,
-	devoe => ww_devoe,
-	o => \TOP_mem_we_n~output_o\);
+	o => \EBD_buttons_save[1]~output_o\);
 
 -- Location: IOOBUF_X3_Y0_N2
-\TOP_mem_clk_enable~output\ : cycloneive_io_obuf
+\EBD_buttons_save[2]~output\ : cycloneive_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => GND,
+	i => \But_Reg|data_out\(2),
 	devoe => ww_devoe,
-	o => \TOP_mem_clk_enable~output_o\);
+	o => \EBD_buttons_save[2]~output_o\);
 
--- Location: IOOBUF_X47_Y0_N23
-\TOP_mem_clk~output\ : cycloneive_io_obuf
+-- Location: IOOBUF_X0_Y12_N9
+\EBD_buttons_save[3]~output\ : cycloneive_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => GND,
+	i => \But_Reg|data_out\(3),
 	devoe => ww_devoe,
-	o => \TOP_mem_clk~output_o\);
+	o => \EBD_buttons_save[3]~output_o\);
 
--- Location: IOOBUF_X45_Y0_N23
-\TOP_mem_cs_n~output\ : cycloneive_io_obuf
+-- Location: IOOBUF_X0_Y4_N16
+\EBD_buttons_save[4]~output\ : cycloneive_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => GND,
+	i => \But_Reg|data_out\(4),
 	devoe => ww_devoe,
-	o => \TOP_mem_cs_n~output_o\);
+	o => \EBD_buttons_save[4]~output_o\);
 
--- Location: IOOBUF_X51_Y34_N23
-\TOP_mem_dqml~output\ : cycloneive_io_obuf
+-- Location: IOOBUF_X0_Y15_N9
+\EBD_buttons_save[5]~output\ : cycloneive_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => GND,
+	i => \But_Reg|data_out\(5),
 	devoe => ww_devoe,
-	o => \TOP_mem_dqml~output_o\);
+	o => \EBD_buttons_save[5]~output_o\);
 
--- Location: IOOBUF_X7_Y34_N2
-\TOP_mem_dqmh~output\ : cycloneive_io_obuf
+-- Location: IOOBUF_X1_Y0_N16
+\EBD_buttons_save[6]~output\ : cycloneive_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => GND,
+	i => \But_Reg|data_out\(6),
 	devoe => ww_devoe,
-	o => \TOP_mem_dqmh~output_o\);
+	o => \EBD_buttons_save[6]~output_o\);
 
--- Location: IOIBUF_X3_Y34_N1
-\TOP_Buttons[0]~input\ : cycloneive_io_ibuf
+-- Location: IOOBUF_X0_Y6_N16
+\EBD_buttons_save[7]~output\ : cycloneive_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
-	simulate_z_as => "z")
+	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => ww_TOP_Buttons(0),
-	o => \TOP_Buttons[0]~input_o\);
-
--- Location: IOIBUF_X53_Y9_N22
-\TOP_Buttons[1]~input\ : cycloneive_io_ibuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	simulate_z_as => "z")
--- pragma translate_on
-PORT MAP (
-	i => ww_TOP_Buttons(1),
-	o => \TOP_Buttons[1]~input_o\);
-
--- Location: IOIBUF_X0_Y25_N8
-\TOP_Buttons[2]~input\ : cycloneive_io_ibuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	simulate_z_as => "z")
--- pragma translate_on
-PORT MAP (
-	i => ww_TOP_Buttons(2),
-	o => \TOP_Buttons[2]~input_o\);
-
--- Location: IOIBUF_X36_Y0_N22
-\TOP_Buttons[3]~input\ : cycloneive_io_ibuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	simulate_z_as => "z")
--- pragma translate_on
-PORT MAP (
-	i => ww_TOP_Buttons(3),
-	o => \TOP_Buttons[3]~input_o\);
-
--- Location: IOIBUF_X40_Y34_N1
-\TOP_Buttons[4]~input\ : cycloneive_io_ibuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	simulate_z_as => "z")
--- pragma translate_on
-PORT MAP (
-	i => ww_TOP_Buttons(4),
-	o => \TOP_Buttons[4]~input_o\);
-
--- Location: IOIBUF_X0_Y7_N8
-\TOP_Buttons[5]~input\ : cycloneive_io_ibuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	simulate_z_as => "z")
--- pragma translate_on
-PORT MAP (
-	i => ww_TOP_Buttons(5),
-	o => \TOP_Buttons[5]~input_o\);
-
--- Location: IOIBUF_X40_Y0_N22
-\TOP_Buttons[6]~input\ : cycloneive_io_ibuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	simulate_z_as => "z")
--- pragma translate_on
-PORT MAP (
-	i => ww_TOP_Buttons(6),
-	o => \TOP_Buttons[6]~input_o\);
-
--- Location: IOIBUF_X0_Y24_N22
-\TOP_Buttons[7]~input\ : cycloneive_io_ibuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	simulate_z_as => "z")
--- pragma translate_on
-PORT MAP (
-	i => ww_TOP_Buttons(7),
-	o => \TOP_Buttons[7]~input_o\);
+	i => \But_Reg|data_out\(7),
+	devoe => ww_devoe,
+	o => \EBD_buttons_save[7]~output_o\);
 
 -- Location: IOIBUF_X0_Y16_N8
-\TOP_clk~input\ : cycloneive_io_ibuf
+\EBD_clock~input\ : cycloneive_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => ww_TOP_clk,
-	o => \TOP_clk~input_o\);
+	i => ww_EBD_clock,
+	o => \EBD_clock~input_o\);
 
--- Location: IOIBUF_X11_Y34_N1
-\TOP_mem_data[0]~input\ : cycloneive_io_ibuf
+-- Location: CLKCTRL_G2
+\EBD_clock~inputclkctrl\ : cycloneive_clkctrl
 -- pragma translate_off
 GENERIC MAP (
-	bus_hold => "false",
-	simulate_z_as => "z")
+	clock_type => "global clock",
+	ena_register_mode => "none")
 -- pragma translate_on
 PORT MAP (
-	i => TOP_mem_data(0),
-	o => \TOP_mem_data[0]~input_o\);
+	inclk => \EBD_clock~inputclkctrl_INCLK_bus\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	outclk => \EBD_clock~inputclkctrl_outclk\);
 
--- Location: IOIBUF_X16_Y0_N22
-\TOP_mem_data[1]~input\ : cycloneive_io_ibuf
+-- Location: IOIBUF_X0_Y11_N8
+\EBD_buttons[5]~input\ : cycloneive_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => TOP_mem_data(1),
-	o => \TOP_mem_data[1]~input_o\);
+	i => ww_EBD_buttons(5),
+	o => \EBD_buttons[5]~input_o\);
 
--- Location: IOIBUF_X1_Y0_N1
-\TOP_mem_data[2]~input\ : cycloneive_io_ibuf
+-- Location: IOIBUF_X0_Y5_N22
+\EBD_buttons[4]~input\ : cycloneive_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => TOP_mem_data(2),
-	o => \TOP_mem_data[2]~input_o\);
-
--- Location: IOIBUF_X34_Y34_N1
-\TOP_mem_data[3]~input\ : cycloneive_io_ibuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	simulate_z_as => "z")
--- pragma translate_on
-PORT MAP (
-	i => TOP_mem_data(3),
-	o => \TOP_mem_data[3]~input_o\);
+	i => ww_EBD_buttons(4),
+	o => \EBD_buttons[4]~input_o\);
 
 -- Location: IOIBUF_X5_Y0_N22
-\TOP_mem_data[4]~input\ : cycloneive_io_ibuf
+\EBD_buttons[7]~input\ : cycloneive_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => TOP_mem_data(4),
-	o => \TOP_mem_data[4]~input_o\);
+	i => ww_EBD_buttons(7),
+	o => \EBD_buttons[7]~input_o\);
 
--- Location: IOIBUF_X53_Y30_N8
-\TOP_mem_data[5]~input\ : cycloneive_io_ibuf
+-- Location: LCCOMB_X1_Y9_N12
+\OR8x1|Y~1\ : cycloneive_lcell_comb
+-- Equation(s):
+-- \OR8x1|Y~1_combout\ = (\EBD_buttons[6]~input_o\) # ((\EBD_buttons[5]~input_o\) # ((\EBD_buttons[4]~input_o\) # (\EBD_buttons[7]~input_o\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111111111111110",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \EBD_buttons[6]~input_o\,
+	datab => \EBD_buttons[5]~input_o\,
+	datac => \EBD_buttons[4]~input_o\,
+	datad => \EBD_buttons[7]~input_o\,
+	combout => \OR8x1|Y~1_combout\);
+
+-- Location: LCCOMB_X1_Y9_N0
+\OR8x1|Y\ : cycloneive_lcell_comb
+-- Equation(s):
+-- \OR8x1|Y~combout\ = (\OR8x1|Y~0_combout\) # (\OR8x1|Y~1_combout\)
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111111110101010",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \OR8x1|Y~0_combout\,
+	datad => \OR8x1|Y~1_combout\,
+	combout => \OR8x1|Y~combout\);
+
+-- Location: IOIBUF_X0_Y16_N15
+\EBD_reset~input\ : cycloneive_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => TOP_mem_data(5),
-	o => \TOP_mem_data[5]~input_o\);
+	i => ww_EBD_reset,
+	o => \EBD_reset~input_o\);
 
--- Location: IOIBUF_X5_Y0_N8
-\TOP_mem_data[6]~input\ : cycloneive_io_ibuf
+-- Location: CLKCTRL_G4
+\EBD_reset~inputclkctrl\ : cycloneive_clkctrl
+-- pragma translate_off
+GENERIC MAP (
+	clock_type => "global clock",
+	ena_register_mode => "none")
+-- pragma translate_on
+PORT MAP (
+	inclk => \EBD_reset~inputclkctrl_INCLK_bus\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	outclk => \EBD_reset~inputclkctrl_outclk\);
+
+-- Location: FF_X1_Y9_N1
+\Eve_Reg|data_out\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \EBD_clock~inputclkctrl_outclk\,
+	d => \OR8x1|Y~combout\,
+	clrn => \ALT_INV_EBD_reset~inputclkctrl_outclk\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \Eve_Reg|data_out~q\);
+
+-- Location: IOIBUF_X0_Y12_N1
+\EBD_buttons[0]~input\ : cycloneive_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => TOP_mem_data(6),
-	o => \TOP_mem_data[6]~input_o\);
+	i => ww_EBD_buttons(0),
+	o => \EBD_buttons[0]~input_o\);
 
--- Location: IOIBUF_X53_Y11_N8
-\TOP_mem_data[7]~input\ : cycloneive_io_ibuf
+-- Location: LCCOMB_X1_Y9_N26
+\But_Reg|data_out[0]~feeder\ : cycloneive_lcell_comb
+-- Equation(s):
+-- \But_Reg|data_out[0]~feeder_combout\ = \EBD_buttons[0]~input_o\
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111111100000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datad => \EBD_buttons[0]~input_o\,
+	combout => \But_Reg|data_out[0]~feeder_combout\);
+
+-- Location: FF_X1_Y9_N27
+\But_Reg|data_out[0]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \EBD_clock~inputclkctrl_outclk\,
+	d => \But_Reg|data_out[0]~feeder_combout\,
+	clrn => \ALT_INV_EBD_reset~inputclkctrl_outclk\,
+	ena => \OR8x1|Y~combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \But_Reg|data_out\(0));
+
+-- Location: IOIBUF_X0_Y15_N1
+\EBD_buttons[1]~input\ : cycloneive_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => TOP_mem_data(7),
-	o => \TOP_mem_data[7]~input_o\);
+	i => ww_EBD_buttons(1),
+	o => \EBD_buttons[1]~input_o\);
 
--- Location: IOIBUF_X18_Y34_N22
-\TOP_mem_data[8]~input\ : cycloneive_io_ibuf
+-- Location: LCCOMB_X1_Y9_N28
+\But_Reg|data_out[1]~feeder\ : cycloneive_lcell_comb
+-- Equation(s):
+-- \But_Reg|data_out[1]~feeder_combout\ = \EBD_buttons[1]~input_o\
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111111100000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datad => \EBD_buttons[1]~input_o\,
+	combout => \But_Reg|data_out[1]~feeder_combout\);
+
+-- Location: FF_X1_Y9_N29
+\But_Reg|data_out[1]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \EBD_clock~inputclkctrl_outclk\,
+	d => \But_Reg|data_out[1]~feeder_combout\,
+	clrn => \ALT_INV_EBD_reset~inputclkctrl_outclk\,
+	ena => \OR8x1|Y~combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \But_Reg|data_out\(1));
+
+-- Location: IOIBUF_X0_Y7_N8
+\EBD_buttons[2]~input\ : cycloneive_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => TOP_mem_data(8),
-	o => \TOP_mem_data[8]~input_o\);
+	i => ww_EBD_buttons(2),
+	o => \EBD_buttons[2]~input_o\);
 
--- Location: IOIBUF_X34_Y0_N1
-\TOP_mem_data[9]~input\ : cycloneive_io_ibuf
+-- Location: FF_X1_Y9_N31
+\But_Reg|data_out[2]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \EBD_clock~inputclkctrl_outclk\,
+	asdata => \EBD_buttons[2]~input_o\,
+	clrn => \ALT_INV_EBD_reset~inputclkctrl_outclk\,
+	sload => VCC,
+	ena => \OR8x1|Y~combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \But_Reg|data_out\(2));
+
+-- Location: IOIBUF_X0_Y10_N22
+\EBD_buttons[3]~input\ : cycloneive_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => TOP_mem_data(9),
-	o => \TOP_mem_data[9]~input_o\);
+	i => ww_EBD_buttons(3),
+	o => \EBD_buttons[3]~input_o\);
 
--- Location: IOIBUF_X53_Y10_N15
-\TOP_mem_data[10]~input\ : cycloneive_io_ibuf
+-- Location: FF_X1_Y9_N17
+\But_Reg|data_out[3]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \EBD_clock~inputclkctrl_outclk\,
+	asdata => \EBD_buttons[3]~input_o\,
+	clrn => \ALT_INV_EBD_reset~inputclkctrl_outclk\,
+	sload => VCC,
+	ena => \OR8x1|Y~combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \But_Reg|data_out\(3));
+
+-- Location: FF_X1_Y9_N3
+\But_Reg|data_out[4]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \EBD_clock~inputclkctrl_outclk\,
+	asdata => \EBD_buttons[4]~input_o\,
+	clrn => \ALT_INV_EBD_reset~inputclkctrl_outclk\,
+	sload => VCC,
+	ena => \OR8x1|Y~combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \But_Reg|data_out\(4));
+
+-- Location: LCCOMB_X1_Y9_N20
+\But_Reg|data_out[5]~feeder\ : cycloneive_lcell_comb
+-- Equation(s):
+-- \But_Reg|data_out[5]~feeder_combout\ = \EBD_buttons[5]~input_o\
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111111100000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datad => \EBD_buttons[5]~input_o\,
+	combout => \But_Reg|data_out[5]~feeder_combout\);
+
+-- Location: FF_X1_Y9_N21
+\But_Reg|data_out[5]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \EBD_clock~inputclkctrl_outclk\,
+	d => \But_Reg|data_out[5]~feeder_combout\,
+	clrn => \ALT_INV_EBD_reset~inputclkctrl_outclk\,
+	ena => \OR8x1|Y~combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \But_Reg|data_out\(5));
+
+-- Location: IOIBUF_X0_Y11_N1
+\EBD_buttons[6]~input\ : cycloneive_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => TOP_mem_data(10),
-	o => \TOP_mem_data[10]~input_o\);
+	i => ww_EBD_buttons(6),
+	o => \EBD_buttons[6]~input_o\);
 
--- Location: IOIBUF_X14_Y0_N15
-\TOP_mem_data[11]~input\ : cycloneive_io_ibuf
+-- Location: FF_X1_Y9_N23
+\But_Reg|data_out[6]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
-	bus_hold => "false",
-	simulate_z_as => "z")
+	is_wysiwyg => "true",
+	power_up => "low")
 -- pragma translate_on
 PORT MAP (
-	i => TOP_mem_data(11),
-	o => \TOP_mem_data[11]~input_o\);
+	clk => \EBD_clock~inputclkctrl_outclk\,
+	asdata => \EBD_buttons[6]~input_o\,
+	clrn => \ALT_INV_EBD_reset~inputclkctrl_outclk\,
+	sload => VCC,
+	ena => \OR8x1|Y~combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \But_Reg|data_out\(6));
 
--- Location: IOIBUF_X18_Y34_N1
-\TOP_mem_data[12]~input\ : cycloneive_io_ibuf
+-- Location: LCCOMB_X1_Y9_N24
+\But_Reg|data_out[7]~feeder\ : cycloneive_lcell_comb
+-- Equation(s):
+-- \But_Reg|data_out[7]~feeder_combout\ = \EBD_buttons[7]~input_o\
+
 -- pragma translate_off
 GENERIC MAP (
-	bus_hold => "false",
-	simulate_z_as => "z")
+	lut_mask => "1111111100000000",
+	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	i => TOP_mem_data(12),
-	o => \TOP_mem_data[12]~input_o\);
+	datad => \EBD_buttons[7]~input_o\,
+	combout => \But_Reg|data_out[7]~feeder_combout\);
 
--- Location: IOIBUF_X14_Y0_N8
-\TOP_mem_data[13]~input\ : cycloneive_io_ibuf
+-- Location: FF_X1_Y9_N25
+\But_Reg|data_out[7]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
-	bus_hold => "false",
-	simulate_z_as => "z")
+	is_wysiwyg => "true",
+	power_up => "low")
 -- pragma translate_on
 PORT MAP (
-	i => TOP_mem_data(13),
-	o => \TOP_mem_data[13]~input_o\);
+	clk => \EBD_clock~inputclkctrl_outclk\,
+	d => \But_Reg|data_out[7]~feeder_combout\,
+	clrn => \ALT_INV_EBD_reset~inputclkctrl_outclk\,
+	ena => \OR8x1|Y~combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \But_Reg|data_out\(7));
 
--- Location: IOIBUF_X1_Y0_N8
-\TOP_mem_data[14]~input\ : cycloneive_io_ibuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	simulate_z_as => "z")
--- pragma translate_on
-PORT MAP (
-	i => TOP_mem_data(14),
-	o => \TOP_mem_data[14]~input_o\);
+ww_EBD_event <= \EBD_event~output_o\;
 
--- Location: IOIBUF_X53_Y7_N8
-\TOP_mem_data[15]~input\ : cycloneive_io_ibuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	simulate_z_as => "z")
--- pragma translate_on
-PORT MAP (
-	i => TOP_mem_data(15),
-	o => \TOP_mem_data[15]~input_o\);
+ww_EBD_buttons_save(0) <= \EBD_buttons_save[0]~output_o\;
 
-ww_TOP_uart_output <= \TOP_uart_output~output_o\;
+ww_EBD_buttons_save(1) <= \EBD_buttons_save[1]~output_o\;
 
-ww_TOP_7_dig_A <= \TOP_7_dig_A~output_o\;
+ww_EBD_buttons_save(2) <= \EBD_buttons_save[2]~output_o\;
 
-ww_TOP_7_dig_B <= \TOP_7_dig_B~output_o\;
+ww_EBD_buttons_save(3) <= \EBD_buttons_save[3]~output_o\;
 
-ww_TOP_7_dig_C <= \TOP_7_dig_C~output_o\;
+ww_EBD_buttons_save(4) <= \EBD_buttons_save[4]~output_o\;
 
-ww_TOP_7_dig_D <= \TOP_7_dig_D~output_o\;
+ww_EBD_buttons_save(5) <= \EBD_buttons_save[5]~output_o\;
 
-ww_TOP_7_dig_E <= \TOP_7_dig_E~output_o\;
+ww_EBD_buttons_save(6) <= \EBD_buttons_save[6]~output_o\;
 
-ww_TOP_7_dig_F <= \TOP_7_dig_F~output_o\;
-
-ww_TOP_7_dig_G <= \TOP_7_dig_G~output_o\;
-
-ww_TOP_7_dig_cntr(0) <= \TOP_7_dig_cntr[0]~output_o\;
-
-ww_TOP_7_dig_cntr(1) <= \TOP_7_dig_cntr[1]~output_o\;
-
-ww_TOP_7_dig_cntr(2) <= \TOP_7_dig_cntr[2]~output_o\;
-
-ww_TOP_7_dig_cntr(3) <= \TOP_7_dig_cntr[3]~output_o\;
-
-ww_TOP_mem_address(0) <= \TOP_mem_address[0]~output_o\;
-
-ww_TOP_mem_address(1) <= \TOP_mem_address[1]~output_o\;
-
-ww_TOP_mem_address(2) <= \TOP_mem_address[2]~output_o\;
-
-ww_TOP_mem_address(3) <= \TOP_mem_address[3]~output_o\;
-
-ww_TOP_mem_address(4) <= \TOP_mem_address[4]~output_o\;
-
-ww_TOP_mem_address(5) <= \TOP_mem_address[5]~output_o\;
-
-ww_TOP_mem_address(6) <= \TOP_mem_address[6]~output_o\;
-
-ww_TOP_mem_address(7) <= \TOP_mem_address[7]~output_o\;
-
-ww_TOP_mem_address(8) <= \TOP_mem_address[8]~output_o\;
-
-ww_TOP_mem_address(9) <= \TOP_mem_address[9]~output_o\;
-
-ww_TOP_mem_address(10) <= \TOP_mem_address[10]~output_o\;
-
-ww_TOP_mem_address(11) <= \TOP_mem_address[11]~output_o\;
-
-ww_TOP_mem_address(12) <= \TOP_mem_address[12]~output_o\;
-
-ww_TOP_mem_bank(0) <= \TOP_mem_bank[0]~output_o\;
-
-ww_TOP_mem_bank(1) <= \TOP_mem_bank[1]~output_o\;
-
-ww_TOP_mem_ras_n <= \TOP_mem_ras_n~output_o\;
-
-ww_TOP_mem_cas_n <= \TOP_mem_cas_n~output_o\;
-
-ww_TOP_mem_we_n <= \TOP_mem_we_n~output_o\;
-
-ww_TOP_mem_clk_enable <= \TOP_mem_clk_enable~output_o\;
-
-ww_TOP_mem_clk <= \TOP_mem_clk~output_o\;
-
-ww_TOP_mem_cs_n <= \TOP_mem_cs_n~output_o\;
-
-ww_TOP_mem_dqml <= \TOP_mem_dqml~output_o\;
-
-ww_TOP_mem_dqmh <= \TOP_mem_dqmh~output_o\;
-
-TOP_mem_data(0) <= \TOP_mem_data[0]~output_o\;
-
-TOP_mem_data(1) <= \TOP_mem_data[1]~output_o\;
-
-TOP_mem_data(2) <= \TOP_mem_data[2]~output_o\;
-
-TOP_mem_data(3) <= \TOP_mem_data[3]~output_o\;
-
-TOP_mem_data(4) <= \TOP_mem_data[4]~output_o\;
-
-TOP_mem_data(5) <= \TOP_mem_data[5]~output_o\;
-
-TOP_mem_data(6) <= \TOP_mem_data[6]~output_o\;
-
-TOP_mem_data(7) <= \TOP_mem_data[7]~output_o\;
-
-TOP_mem_data(8) <= \TOP_mem_data[8]~output_o\;
-
-TOP_mem_data(9) <= \TOP_mem_data[9]~output_o\;
-
-TOP_mem_data(10) <= \TOP_mem_data[10]~output_o\;
-
-TOP_mem_data(11) <= \TOP_mem_data[11]~output_o\;
-
-TOP_mem_data(12) <= \TOP_mem_data[12]~output_o\;
-
-TOP_mem_data(13) <= \TOP_mem_data[13]~output_o\;
-
-TOP_mem_data(14) <= \TOP_mem_data[14]~output_o\;
-
-TOP_mem_data(15) <= \TOP_mem_data[15]~output_o\;
+ww_EBD_buttons_save(7) <= \EBD_buttons_save[7]~output_o\;
 END structure;
 
 

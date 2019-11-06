@@ -1,0 +1,939 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\FPGA_project\simulation\modelsim
+Eandgate_nx1
+Z1 w1536343354
+Z2 DPx4 work 9 constants 0 22 TgXJH2_2F5mL>dzm6dA>i1
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\FPGA_project\simulation\modelsim
+Z6 8C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\FPGA_project\ANDGate_NX1.vhd
+Z7 FC:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\FPGA_project\ANDGate_NX1.vhd
+l0
+L24
+V5a[L6d^j05iG_=Geg[GmM0
+Z8 OV;C;10.1d;51
+32
+Z9 !s108 1573058132.140000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\FPGA_project\ANDGate_NX1.vhd|
+Z11 !s107 C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\FPGA_project\ANDGate_NX1.vhd|
+Z12 o-work work -2002 -explicit -O0
+Z13 tExplicit 1
+!s100 j<<9e@SQC_2o6Hek^1YJb3
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+DEx4 work 11 andgate_nx1 0 22 5a[L6d^j05iG_=Geg[GmM0
+l39
+L33
+VjTcB0TG?6cM398FLI]UO32
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!s100 :><TFIO7PeJFj6AZW@Y@f1
+!i10b 1
+Eclock_divider
+Z14 w1572964900
+Z15 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R3
+R4
+R5
+Z16 8C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/Clock_divider.vhd
+Z17 FC:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/Clock_divider.vhd
+l0
+L32
+VeBfOJFIdLRXICKjZ74SC40
+R8
+32
+Z18 !s108 1573058063.882000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/Clock_divider.vhd|
+Z20 !s107 C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/Clock_divider.vhd|
+R12
+R13
+!s100 Q1Z1<L?5EM5:KB?0W414k2
+!i10b 1
+Astructural
+R15
+R3
+R4
+DEx4 work 13 clock_divider 0 22 eBfOJFIdLRXICKjZ74SC40
+l96
+L43
+VIH7^TTY[b;dIDC1GKEX3?0
+R8
+32
+R18
+R19
+R20
+R12
+R13
+!s100 e7MLTI5HJS3Rbab@]jk^42
+!i10b 1
+Ecomparator
+Z21 w1572885883
+R2
+R3
+R4
+R5
+Z22 8C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\FPGA_project\Comparator.vhd
+Z23 FC:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\FPGA_project\Comparator.vhd
+l0
+L67
+VPk6]67l]KQ?LAb^R<_6Bg0
+R8
+32
+Z24 !s108 1573058136.802000
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\FPGA_project\Comparator.vhd|
+Z26 !s107 C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\FPGA_project\Comparator.vhd|
+R12
+R13
+!s100 ie>m6^Lbj[AdU8@bP]GQl3
+!i10b 1
+Astructural
+R2
+R3
+R4
+DEx4 work 10 comparator 0 22 Pk6]67l]KQ?LAb^R<_6Bg0
+l113
+L82
+V3I4YSllICTkHzEcbYHeA`3
+R8
+32
+R24
+R25
+R26
+R12
+R13
+!s100 fcKWdf5gNXPIgZnTZG@_Q0
+!i10b 1
+Ecomparatorwithenable
+Z27 w1531090964
+R3
+R4
+R5
+Z28 8C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/ComparatorWithEnable.vhd
+Z29 FC:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/ComparatorWithEnable.vhd
+l0
+L36
+VQ1?PN46h^mdULNaZ;mh3H0
+R8
+32
+Z30 !s108 1573058064.192000
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/ComparatorWithEnable.vhd|
+Z32 !s107 C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/ComparatorWithEnable.vhd|
+R12
+R13
+!s100 jf9B4[1[_k32DT815TMG>2
+!i10b 1
+Abehavioral
+R3
+R4
+DEx4 work 20 comparatorwithenable 0 22 Q1?PN46h^mdULNaZ;mh3H0
+l47
+L43
+V[zLCh:ieVeQbhc;><[`TZ0
+R8
+32
+R30
+R31
+R32
+R12
+R13
+!s100 ?MZ_N?9_h:VbE7`VliJXS1
+!i10b 1
+Pconstants
+R27
+R5
+Z33 8C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/constants.vhd
+Z34 FC:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/constants.vhd
+l0
+L1
+VTgXJH2_2F5mL>dzm6dA>i1
+R8
+32
+b1
+Z35 !s108 1573058064.311000
+Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/constants.vhd|
+Z37 !s107 C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/constants.vhd|
+R12
+R13
+!s100 `n?j[Zg?`@?2=oV_i>GdE0
+!i10b 1
+Bbody
+R2
+l0
+L26
+V9]o7<^I;A5Sb<Sfg:2c>61
+R8
+32
+R35
+R36
+R37
+R12
+R13
+nbody
+!s100 o8dMMA]aWIO8_VX<o87Z72
+!i10b 1
+Ecu_satcounter
+Z38 w1536223950
+R3
+R4
+R5
+Z39 8C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/CU_SatCounter.vhd
+Z40 FC:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/CU_SatCounter.vhd
+l0
+L32
+VfTM[C]:Q[LHTE;9;i:[^B2
+R8
+32
+Z41 !s108 1573058064.433000
+Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/CU_SatCounter.vhd|
+Z43 !s107 C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/CU_SatCounter.vhd|
+R12
+R13
+!s100 `1na2UmnRA`PBPhM5OHK@2
+!i10b 1
+Abehavioral
+R3
+R4
+DEx4 work 13 cu_satcounter 0 22 fTM[C]:Q[LHTE;9;i:[^B2
+l49
+L47
+VnBKoakaH@5llMgM^kNfdO1
+R8
+32
+R41
+R42
+R43
+R12
+R13
+!s100 YBJ3g:1lG6_N?0R?J^[?_2
+!i10b 1
+Ed_ff_rst
+R27
+R3
+R4
+R5
+Z44 8C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/D_FF_rst.vhd
+Z45 FC:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/D_FF_rst.vhd
+l0
+L32
+V1Lb9L5kHDJ=JZXiCb22la1
+R8
+32
+Z46 !s108 1573058064.565000
+Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/D_FF_rst.vhd|
+Z48 !s107 C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/D_FF_rst.vhd|
+R12
+R13
+!s100 5lBGa?jcECG]=E0mkDkNi2
+!i10b 1
+Abehavioral
+R3
+R4
+DEx4 work 8 d_ff_rst 0 22 1Lb9L5kHDJ=JZXiCb22la1
+l42
+L40
+VZH[<Wh12XbXFoJKaG7>QV3
+R8
+32
+R46
+R47
+R48
+R12
+R13
+!s100 :nc?i>aKYP3gmWi^k`6EY0
+!i10b 1
+Eefes_fpga_top
+Z49 w1573057373
+R3
+R4
+R5
+Z50 8C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/EFES_Fpga_Top.vhd
+Z51 FC:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/EFES_Fpga_Top.vhd
+l0
+L4
+Vk5_`;8RjOcC[fX=46jRPB1
+R8
+32
+Z52 !s108 1573058064.735000
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/EFES_Fpga_Top.vhd|
+Z54 !s107 C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/EFES_Fpga_Top.vhd|
+R12
+R13
+!s100 2]Ze>bleGg>bRcMUbVf@D3
+!i10b 1
+Astructural
+R3
+R4
+DEx4 work 13 efes_fpga_top 0 22 k5_`;8RjOcC[fX=46jRPB1
+l82
+L42
+VX=l4faf<@MQGFEcM[T37O1
+R8
+32
+R52
+R53
+R54
+R12
+R13
+!s100 m^TQ`O]:??Kd0;UgVnO=K0
+!i10b 1
+Eeightbuttondriver
+Z55 w1572533386
+R2
+R3
+R4
+R5
+Z56 8C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/EightButtonDriver.vhd
+Z57 FC:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/EightButtonDriver.vhd
+l0
+L5
+V46PghLnda4Xh;B?Gnh0770
+R8
+32
+Z58 !s108 1573058064.917000
+Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/EightButtonDriver.vhd|
+Z60 !s107 C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/EightButtonDriver.vhd|
+R12
+R13
+!s100 EjAiGd?7=I1e1C9m96aSg3
+!i10b 1
+Astructural
+R2
+R3
+R4
+DEx4 work 17 eightbuttondriver 0 22 46PghLnda4Xh;B?Gnh0770
+l48
+L15
+V]@RBTSYGeg5CDn^7L3QlI0
+R8
+32
+R58
+R59
+R60
+R12
+R13
+!s100 BF5kURalV<G945X6VhTE;2
+!i10b 1
+Ehardwiredreg
+Z61 w1572865634
+R15
+R3
+R4
+R5
+Z62 8C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/HardwiredReg.vhd
+Z63 FC:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/HardwiredReg.vhd
+l0
+L32
+VlCRFGk@:J`KQPGI^ETbiD2
+R8
+32
+Z64 !s108 1573058065.123000
+Z65 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/HardwiredReg.vhd|
+Z66 !s107 C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/HardwiredReg.vhd|
+R12
+R13
+!s100 ieKV3F8I0>]^jYAo_C`>g0
+!i10b 1
+Abehavioral
+R15
+R3
+R4
+DEx4 work 12 hardwiredreg 0 22 lCRFGk@:J`KQPGI^ETbiD2
+l44
+L42
+VW5kB1:iKVlLHcNb=V@obl0
+R8
+32
+R64
+R65
+R66
+R12
+R13
+!s100 JO<Igc<EVUlS@c47J5i[30
+!i10b 1
+Emux_1bit_2x1
+R27
+R3
+R4
+R5
+Z67 8C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/Mux_1Bit_2X1.vhd
+Z68 FC:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/Mux_1Bit_2X1.vhd
+l0
+L32
+V0S=k@eNk@[2Xki?05M6>D0
+R8
+32
+Z69 !s108 1573058065.346000
+Z70 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/Mux_1Bit_2X1.vhd|
+Z71 !s107 C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/Mux_1Bit_2X1.vhd|
+R12
+R13
+!s100 inf6Z7]8g90WWmo_76akA2
+!i10b 1
+Abehavioral
+R3
+R4
+DEx4 work 12 mux_1bit_2x1 0 22 0S=k@eNk@[2Xki?05M6>D0
+l41
+L39
+Vm7<mMf2fF4Y?hej?E_on=0
+R8
+32
+R69
+R70
+R71
+R12
+R13
+!s100 HPBIP@nAa<M=OC6[2MMCP1
+!i10b 1
+Emux_bit
+R27
+R15
+R3
+R4
+R5
+Z72 8C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/Mux_Bit.vhd
+Z73 FC:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/Mux_Bit.vhd
+l0
+L33
+VoFHH7kWbUTHd3QQ4acEFO0
+R8
+32
+Z74 !s108 1573058065.571000
+Z75 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/Mux_Bit.vhd|
+Z76 !s107 C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/Mux_Bit.vhd|
+R12
+R13
+!s100 l[_CI<1W@<I?f?<8V:mVI2
+!i10b 1
+Abehavioral
+R15
+R3
+R4
+DEx4 work 7 mux_bit 0 22 oFHH7kWbUTHd3QQ4acEFO0
+l44
+L42
+VHV^9klf`gz7VY3a0YGz153
+R8
+32
+R74
+R75
+R76
+R12
+R13
+!s100 Q:ZJzf=9SOhoOLIY@d?2l0
+!i10b 1
+Encomparatorwithenable
+R27
+R2
+R3
+R4
+R5
+Z77 8C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/NComparatorWithEnable.vhd
+Z78 FC:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/NComparatorWithEnable.vhd
+l0
+L24
+V8Qj]<j]9LN`bf2^ed4A<41
+R8
+32
+Z79 !s108 1573058065.751000
+Z80 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/NComparatorWithEnable.vhd|
+Z81 !s107 C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/NComparatorWithEnable.vhd|
+R12
+R13
+!s100 ?kaKYM7TAzWRERiP8;dBd3
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+DEx4 work 21 ncomparatorwithenable 0 22 8Qj]<j]9LN`bf2^ed4A<41
+l46
+L34
+V9D9`VWSknbWLdS<dZ0NND2
+R8
+32
+R79
+R80
+R81
+R12
+R13
+!s100 Nk8`z0OlV<>l^7j?0S>070
+!i10b 1
+Enorgate_nx1
+R1
+R2
+R3
+R4
+R5
+Z82 8C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/NORGate_NX1.vhd
+Z83 FC:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/NORGate_NX1.vhd
+l0
+L24
+Vd<nSd3hd_TREOO4L9MzoZ1
+R8
+32
+Z84 !s108 1573058065.885000
+Z85 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/NORGate_NX1.vhd|
+Z86 !s107 C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/NORGate_NX1.vhd|
+R12
+R13
+!s100 dC9OfEIbfH7SLn>>cRSmB3
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+DEx4 work 11 norgate_nx1 0 22 d<nSd3hd_TREOO4L9MzoZ1
+l39
+L33
+VTfoYf?L^2MO=1AY@35Q8f1
+R8
+32
+R84
+R85
+R86
+R12
+R13
+!s100 0RC=i8hDM2iPjnzCFRFza0
+!i10b 1
+Enregister
+R27
+R3
+R4
+R5
+Z87 8C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/NRegister.vhd
+Z88 FC:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/NRegister.vhd
+l0
+L35
+V?ALdhC7liNgYS[=T^_Ba30
+R8
+32
+Z89 !s108 1573058066.058000
+Z90 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/NRegister.vhd|
+Z91 !s107 C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/NRegister.vhd|
+R12
+R13
+!s100 =Ec@6Rf9XEWYN16^>kj[X3
+!i10b 1
+Abehavioral
+R3
+R4
+DEx4 work 9 nregister 0 22 ?ALdhC7liNgYS[=T^_Ba30
+l48
+L46
+VikaMZDeXzdOc_:0Lcf^<T3
+R8
+32
+R89
+R90
+R91
+R12
+R13
+!s100 H@YEn?0O7RHB_XB05H7=80
+!i10b 1
+Eorgate_nx1
+R27
+R2
+R3
+R4
+R5
+Z92 8C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/ORGate_NX1.vhd
+Z93 FC:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/ORGate_NX1.vhd
+l0
+L25
+V5oa8if742`:L_bDYI=Ea^2
+R8
+32
+Z94 !s108 1573058066.241000
+Z95 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/ORGate_NX1.vhd|
+Z96 !s107 C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/ORGate_NX1.vhd|
+R12
+R13
+!s100 PSRG4LUO5fM3iUJCjET7T0
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+DEx4 work 10 orgate_nx1 0 22 5oa8if742`:L_bDYI=Ea^2
+l40
+L34
+VD@UD_j=4;BzX0h2Zc7QAS0
+R8
+32
+R94
+R95
+R96
+R12
+R13
+!s100 XnSHO;TORz]2hIC_BaO=h1
+!i10b 1
+Ereg1bit
+R27
+R3
+R4
+R5
+Z97 8C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/Reg1Bit.vhd
+Z98 FC:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/Reg1Bit.vhd
+l0
+L32
+VhV<S0CV<cSb6gUE3k?;aH1
+R8
+32
+Z99 !s108 1573058066.446000
+Z100 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/Reg1Bit.vhd|
+Z101 !s107 C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/Reg1Bit.vhd|
+R12
+R13
+!s100 eUh2L`5le8a_?Uh71Uh?l0
+!i10b 1
+Abehavioral
+R3
+R4
+DEx4 work 7 reg1bit 0 22 hV<S0CV<cSb6gUE3k?;aH1
+l44
+L42
+VW][ck9=2Ohl>Xoli`P>lK0
+R8
+32
+R99
+R100
+R101
+R12
+R13
+!s100 AF28@4GfR<LkUYTlB0DkH3
+!i10b 1
+Esat_counter
+Z102 w1572885537
+R3
+R4
+R5
+Z103 8C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/SAT_Counter_BMM.vhd
+Z104 FC:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/SAT_Counter_BMM.vhd
+l0
+L38
+VXF[B8cbDmIne=Bj2n5iNW3
+R8
+32
+Z105 !s108 1573058067.213000
+Z106 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/SAT_Counter_BMM.vhd|
+Z107 !s107 C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/SAT_Counter_BMM.vhd|
+R12
+R13
+!s100 8ebTO3K0Km5>bJ=dHl57T2
+!i10b 1
+Astructural
+R3
+R4
+DEx4 work 11 sat_counter 0 22 XF[B8cbDmIne=Bj2n5iNW3
+l115
+L52
+Vmme>8Q>ROW@0?@Y9>1dPg1
+R8
+32
+R105
+R106
+R107
+R12
+R13
+!s100 k>n>DadZCK3:b1EeNme_^2
+!i10b 1
+Et_ff_rst0
+R27
+R15
+R3
+R4
+R5
+Z108 8C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/t_ff.vhd
+Z109 FC:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/t_ff.vhd
+l0
+L5
+V`7=b09KJO`ZM47Z9Ae[:m0
+R8
+32
+Z110 !s108 1573058067.344000
+Z111 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/t_ff.vhd|
+Z112 !s107 C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/t_ff.vhd|
+R12
+R13
+!s100 n[_W3U3YV4aSUX:UDLVod1
+!i10b 1
+Abehavioral
+R15
+R3
+R4
+DEx4 work 9 t_ff_rst0 0 22 `7=b09KJO`ZM47Z9Ae[:m0
+l16
+L14
+VT]]ol81QZ@N3RbE1;bDbD0
+R8
+32
+R110
+R111
+R112
+R12
+R13
+!s100 0IVB9n<TAm:QNflQ6Tod52
+!i10b 1
+Et_ff_rst1
+R27
+R15
+R3
+R4
+R5
+Z113 8C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/t_ff_rst1.vhd
+Z114 FC:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/t_ff_rst1.vhd
+l0
+L5
+Vgh1Il]P;bMz^cWYQkR]N<3
+R8
+32
+Z115 !s108 1573058067.513000
+Z116 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/t_ff_rst1.vhd|
+Z117 !s107 C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/t_ff_rst1.vhd|
+R12
+R13
+!s100 ndVk2WSj1Yj9Vn5S0=8b41
+!i10b 1
+Abehavioral
+R15
+R3
+R4
+DEx4 work 9 t_ff_rst1 0 22 gh1Il]P;bMz^cWYQkR]N<3
+l35
+L33
+VL]l>L:[Jg5PeUYmdGN1BT2
+R8
+32
+R115
+R116
+R117
+R12
+R13
+!s100 4@mdeOSVPXoVD5bk49I]h1
+!i10b 1
+Etb_efes_fpga_top
+Z118 w1573050627
+R3
+R4
+R5
+Z119 8C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\FPGA_project\TB_EFES_Fpga_Top.vhd
+Z120 FC:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\FPGA_project\TB_EFES_Fpga_Top.vhd
+l0
+L35
+VT?D:czFGcAfbYG<A@;@aT2
+!s100 QHIVGF9HSo[;H72bAFPS83
+R8
+32
+!i10b 1
+Z121 !s108 1573058319.734000
+Z122 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\FPGA_project\TB_EFES_Fpga_Top.vhd|
+Z123 !s107 C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\FPGA_project\TB_EFES_Fpga_Top.vhd|
+R12
+R13
+Abehavior
+R3
+R4
+Z124 DEx4 work 16 tb_efes_fpga_top 0 22 T?D:czFGcAfbYG<A@;@aT2
+l67
+L38
+Z125 Vl<BOdiaobH=K0@;FC8lfB1
+Z126 !s100 4o]i3cAZAk^5BXzcO3fU=0
+R8
+32
+!i10b 1
+R121
+R122
+R123
+R12
+R13
+Euart_fifo
+Z127 w1572970646
+R3
+R4
+R5
+Z128 8C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/UART_Fifo.vhd
+Z129 FC:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/UART_Fifo.vhd
+l0
+L32
+V3gBKRCz[d2^b0?RVlK:4D1
+R8
+32
+Z130 !s108 1573058067.809000
+Z131 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/UART_Fifo.vhd|
+Z132 !s107 C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/UART_Fifo.vhd|
+R12
+R13
+!s100 6Pe1zD3ZL3LD]KlaDE44n1
+!i10b 1
+Abehavioral
+R3
+R4
+DEx4 work 9 uart_fifo 0 22 3gBKRCz[d2^b0?RVlK:4D1
+l81
+L51
+Vl:IHQoz:JhI?<ab;Yh2B92
+R8
+32
+R130
+R131
+R132
+R12
+R13
+!s100 cgTK_2[]m?BJVFf]mJbNd3
+!i10b 1
+Euart_synchronizer
+Z133 w1572966067
+R3
+R4
+R5
+Z134 8C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/UART_Synchronizer.vhd
+Z135 FC:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/UART_Synchronizer.vhd
+l0
+L32
+V4oXA=cTh31TaLjT8TDQV]2
+R8
+32
+Z136 !s108 1573058067.984000
+Z137 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/UART_Synchronizer.vhd|
+Z138 !s107 C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/UART_Synchronizer.vhd|
+R12
+R13
+!s100 ZAk6M@UJGn`=mjA[ELo6c2
+!i10b 1
+Abehavioral
+R3
+R4
+DEx4 work 17 uart_synchronizer 0 22 4oXA=cTh31TaLjT8TDQV]2
+l92
+L46
+VcObDO^C1A<gCS1aLUO0BU2
+R8
+32
+R136
+R137
+R138
+R12
+R13
+!s100 zDPIIzgf_kjbVHKoTA49@1
+!i10b 1
+Euartdrivertx
+Z139 w1572969596
+R15
+R3
+R4
+R5
+Z140 8C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/UartDriver.vhd
+Z141 FC:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/UartDriver.vhd
+l0
+L33
+Vo_h5cYJU81;`6MzIQRWdl3
+R8
+32
+Z142 !s108 1573058068.249000
+Z143 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/UartDriver.vhd|
+Z144 !s107 C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/UartDriver.vhd|
+R12
+R13
+!s100 G@9WahI0A0VzWPLL9[AO:0
+!i10b 1
+Abehavioral
+R15
+R3
+R4
+DEx4 work 12 uartdrivertx 0 22 o_h5cYJU81;`6MzIQRWdl3
+l147
+L56
+VgmG8VG?22G?1J42V><fIm1
+R8
+32
+R142
+R143
+R144
+R12
+R13
+!s100 @XJgG6id^m6JRK0[cG70@3
+!i10b 1
+Eud_counter
+Z145 w1572865878
+R3
+R4
+R5
+Z146 8C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/ud_counter.vhd
+Z147 FC:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/ud_counter.vhd
+l0
+L5
+VfP?k`7FXX?03RQ=Yh2kWf0
+R8
+32
+Z148 !s108 1573058069.146000
+Z149 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/ud_counter.vhd|
+Z150 !s107 C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/ud_counter.vhd|
+R12
+R13
+!s100 2IPfFo2Idmk[Rg2cKFALe0
+!i10b 1
+Astr
+R3
+R4
+DEx4 work 10 ud_counter 0 22 fP?k`7FXX?03RQ=Yh2kWf0
+l51
+L19
+VfNBj:b=ijMI=6eM6dG:5_2
+R8
+32
+R148
+R149
+R150
+R12
+R13
+!s100 C=fR3lC=Vhj6W^b162f^o3
+!i10b 1
+Exnorgate_nx1
+R27
+R2
+R3
+R4
+R5
+Z151 8C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/XNORGate_NX1.vhd
+Z152 FC:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/XNORGate_NX1.vhd
+l0
+L5
+V;nO?ihA]RVUc9m9[3iN:F3
+R8
+32
+Z153 !s108 1573058069.381000
+Z154 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/XNORGate_NX1.vhd|
+Z155 !s107 C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/XNORGate_NX1.vhd|
+R12
+R13
+!s100 ^ZKTS6=5I?`UngB_;Y97L2
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+DEx4 work 12 xnorgate_nx1 0 22 ;nO?ihA]RVUc9m9[3iN:F3
+l20
+L14
+V3RQ_TS9gei7;J?Li]zTZS0
+R8
+32
+R153
+R154
+R155
+R12
+R13
+!s100 O?me4i0;]c[j]X1S@75dO2
+!i10b 1

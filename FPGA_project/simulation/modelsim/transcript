@@ -1,0 +1,35 @@
+# Compile of 1bitRegister.vhd was successful.
+# Compile of ANDGate_NX1.vhd failed with 3 errors.
+# Compile of Clock_divider.vhd was successful.
+# Compile of Comparator.vhd failed with 3 errors.
+# Compile of ComparatorWithEnable.vhd was successful.
+# Compile of constants.vhd was successful.
+# Compile of CU_SatCounter.vhd was successful.
+# Compile of D_FF_rst.vhd was successful.
+# Compile of EFES_Fpga_Top.vhd was successful.
+# Compile of EightButtonDriver.vhd was successful.
+# Compile of HardwiredReg.vhd was successful.
+# Compile of Mux_1Bit_2X1.vhd was successful.
+# Compile of Mux_Bit.vhd was successful.
+# Compile of NComparatorWithEnable.vhd was successful.
+# Compile of NORGate_NX1.vhd was successful.
+# Compile of NRegister.vhd was successful.
+# Compile of ORGate_NX1.vhd was successful.
+# Compile of Reg1Bit.vhd was successful.
+# Compile of SAT_Counter_BMM.vhd was successful.
+# Compile of t_ff.vhd was successful.
+# Compile of t_ff_rst1.vhd was successful.
+# Compile of TB_EFES_Fpga_Top.vhd was successful.
+# Compile of UART_Fifo.vhd was successful.
+# Compile of UART_Synchronizer.vhd was successful.
+# Compile of UartDriver.vhd was successful.
+# Compile of ud_counter.vhd was successful.
+# Compile of XNORGate_NX1.vhd was successful.
+# 27 compiles, 2 failed with 6 errors. 
+# Compile of ANDGate_NX1.vhd was successful.
+# Compile of Comparator.vhd was successful.
+# Load canceled
+# Compile of TB_EFES_Fpga_Top.vhd was successful.
+# Compile of TB_EFES_Fpga_Top.vhd was successful.
+# Load canceled
+vsim +altera -do EFES_Fpga_Top_run_msim_rtl_vhdl.do -l msim_transcript -gui -t ns work.TB_EFES_Fpga_Top (behavior)
