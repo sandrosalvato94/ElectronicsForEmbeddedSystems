@@ -1,5 +1,5 @@
 Analysis & Synthesis report for EFES_Fpga_Top
-Wed Nov 06 20:24:09 2019
+Thu Nov 07 11:13:24 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -15,78 +15,86 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
   9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Parameter Settings for User Entity Instance: EightButtonDriver:Buttons_Driver|ORGate_NX1:OR8x1
- 11. Parameter Settings for User Entity Instance: EightButtonDriver:Buttons_Driver|NRegister:But_Reg
- 12. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver
- 13. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|XNORGate_NX1:Parity_XNOR
- 14. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|Clock_divider:CLK_DIV
- 15. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|Clock_divider:CLK_DIV|UD_COUNTER:UP_CNT
- 16. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|Clock_divider:CLK_DIV|HardwiredReg:HW_REG
- 17. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|Clock_divider:CLK_DIV|NComparatorWithEnable:CMP
- 18. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Synchronizer:SYNCH
- 19. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Synchronizer:SYNCH|SAT_Counter:SYNCH_CNT
- 20. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Synchronizer:SYNCH|SAT_Counter:SYNCH_CNT|UD_COUNTER:CNT
- 21. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Synchronizer:SYNCH|SAT_Counter:SYNCH_CNT|ANDGate_NX1:AND1
- 22. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Synchronizer:SYNCH|SAT_Counter:SYNCH_CNT|NORGate_NX1:NOR1
- 23. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Synchronizer:SYNCH|HardwiredReg:SYNCH_HW_REG
- 24. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Synchronizer:SYNCH|Comparator:SYNCH_CMP
- 25. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Synchronizer:SYNCH|Comparator:SYNCH_CMP|ORGate_NX1:OR_gt
- 26. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Synchronizer:SYNCH|Comparator:SYNCH_CMP|ORGate_NX1:OR_lt
- 27. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Fifo:FIFO
- 28. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:0:IF_MUX0:MUX0
- 29. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:1:IF_MUXi:MUXi
- 30. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:2:IF_MUXi:MUXi
- 31. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:3:IF_MUXi:MUXi
- 32. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:4:IF_MUXi:MUXi
- 33. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:5:IF_MUXi:MUXi
- 34. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:6:IF_MUXi:MUXi
- 35. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:7:IF_MUXi:MUXi
- 36. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:8:IF_MUXi:MUXi
- 37. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:9:IF_MUXi:MUXi
- 38. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:10:IF_MUXi:MUXi
- 39. Port Connectivity Checks: "UartDriverTX:UART_Driver|Mux_1Bit_2X1:MUX_out"
- 40. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:10:IF_MUXi:MUXi"
- 41. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:9:IF_MUXi:MUXi"
- 42. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:8:IF_MUXi:MUXi"
- 43. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:7:IF_MUXi:MUXi"
- 44. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:6:IF_MUXi:MUXi"
- 45. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:5:IF_MUXi:MUXi"
- 46. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:4:IF_MUXi:MUXi"
- 47. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:3:IF_MUXi:MUXi"
- 48. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:2:IF_MUXi:MUXi"
- 49. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:1:IF_MUXi:MUXi"
- 50. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:0:IF_MUX0:MUX0"
- 51. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|D_FF_rst:\FFcyc:10:FF_i"
- 52. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|D_FF_rst:\FFcyc:9:FF_i"
- 53. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|D_FF_rst:\FFcyc:8:FF_i"
- 54. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|D_FF_rst:\FFcyc:7:FF_i"
- 55. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|D_FF_rst:\FFcyc:6:FF_i"
- 56. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|D_FF_rst:\FFcyc:5:FF_i"
- 57. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|D_FF_rst:\FFcyc:4:FF_i"
- 58. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|D_FF_rst:\FFcyc:3:FF_i"
- 59. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|D_FF_rst:\FFcyc:2:FF_i"
- 60. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|D_FF_rst:\FFcyc:1:FF_i"
- 61. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|D_FF_rst:\FFcyc:0:FF_i"
- 62. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO"
- 63. Port Connectivity Checks: "UartDriverTX:UART_Driver|Reg1Bit:LoadReg2"
- 64. Port Connectivity Checks: "UartDriverTX:UART_Driver|Reg1Bit:LoadReg1"
- 65. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Synchronizer:SYNCH|Comparator:SYNCH_CMP|ORGate_NX1:OR_lt"
- 66. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Synchronizer:SYNCH|Comparator:SYNCH_CMP|ORGate_NX1:OR_gt"
- 67. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Synchronizer:SYNCH|Comparator:SYNCH_CMP"
- 68. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Synchronizer:SYNCH|SAT_Counter:SYNCH_CNT|NORGate_NX1:NOR1"
- 69. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Synchronizer:SYNCH|SAT_Counter:SYNCH_CNT|ANDGate_NX1:AND1"
- 70. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Synchronizer:SYNCH|SAT_Counter:SYNCH_CNT|UD_COUNTER:CNT|t_ff_rst0:\MAIN_GEN:7:LAST_FF:FF_N"
- 71. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Synchronizer:SYNCH|SAT_Counter:SYNCH_CNT"
- 72. Port Connectivity Checks: "UartDriverTX:UART_Driver|Clock_divider:CLK_DIV|UD_COUNTER:UP_CNT|t_ff_rst0:\MAIN_GEN:15:LAST_FF:FF_N"
- 73. Port Connectivity Checks: "UartDriverTX:UART_Driver|Clock_divider:CLK_DIV|UD_COUNTER:UP_CNT"
- 74. Port Connectivity Checks: "UartDriverTX:UART_Driver|Clock_divider:CLK_DIV|Reg1Bit:RST_REG"
- 75. Port Connectivity Checks: "UartDriverTX:UART_Driver|XNORGate_NX1:Parity_XNOR"
- 76. Port Connectivity Checks: "UartDriverTX:UART_Driver"
- 77. Port Connectivity Checks: "EightButtonDriver:Buttons_Driver|Reg1Bit:Eve_Reg"
- 78. Port Connectivity Checks: "EightButtonDriver:Buttons_Driver|NRegister:But_Reg"
- 79. Port Connectivity Checks: "EightButtonDriver:Buttons_Driver|ORGate_NX1:OR8x1"
- 80. Elapsed Time Per Partition
- 81. Analysis & Synthesis Messages
+ 10. Parameter Settings for User Entity Instance: Clock_divider:CLK_div_1ms
+ 11. Parameter Settings for User Entity Instance: Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT
+ 12. Parameter Settings for User Entity Instance: Clock_divider:CLK_div_1ms|HardwiredReg:HW_REG
+ 13. Parameter Settings for User Entity Instance: Clock_divider:CLK_div_1ms|NComparatorWithEnable:CMP
+ 14. Parameter Settings for User Entity Instance: NRegister:Stream_REG
+ 15. Parameter Settings for User Entity Instance: EightButtonDriver:Buttons_Driver|ORGate_NX1:OR8x1
+ 16. Parameter Settings for User Entity Instance: EightButtonDriver:Buttons_Driver|NRegister:But_Reg
+ 17. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver
+ 18. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|XNORGate_NX1:Parity_XNOR
+ 19. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|Clock_divider:CLK_DIV
+ 20. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|Clock_divider:CLK_DIV|UD_COUNTER:UP_CNT
+ 21. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|Clock_divider:CLK_DIV|HardwiredReg:HW_REG
+ 22. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|Clock_divider:CLK_DIV|NComparatorWithEnable:CMP
+ 23. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Synchronizer:SYNCH
+ 24. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Synchronizer:SYNCH|SAT_Counter:SYNCH_CNT
+ 25. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Synchronizer:SYNCH|SAT_Counter:SYNCH_CNT|UD_COUNTER:CNT
+ 26. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Synchronizer:SYNCH|SAT_Counter:SYNCH_CNT|ANDGate_NX1:AND1
+ 27. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Synchronizer:SYNCH|SAT_Counter:SYNCH_CNT|NORGate_NX1:NOR1
+ 28. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Synchronizer:SYNCH|HardwiredReg:SYNCH_HW_REG
+ 29. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Synchronizer:SYNCH|Comparator:SYNCH_CMP
+ 30. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Synchronizer:SYNCH|Comparator:SYNCH_CMP|ORGate_NX1:OR_gt
+ 31. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Synchronizer:SYNCH|Comparator:SYNCH_CMP|ORGate_NX1:OR_lt
+ 32. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Fifo:FIFO
+ 33. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:0:IF_MUX0:MUX0
+ 34. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:1:IF_MUXi:MUXi
+ 35. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:2:IF_MUXi:MUXi
+ 36. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:3:IF_MUXi:MUXi
+ 37. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:4:IF_MUXi:MUXi
+ 38. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:5:IF_MUXi:MUXi
+ 39. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:6:IF_MUXi:MUXi
+ 40. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:7:IF_MUXi:MUXi
+ 41. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:8:IF_MUXi:MUXi
+ 42. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:9:IF_MUXi:MUXi
+ 43. Parameter Settings for User Entity Instance: UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:10:IF_MUXi:MUXi
+ 44. Port Connectivity Checks: "UartDriverTX:UART_Driver|Mux_1Bit_2X1:MUX_out"
+ 45. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:10:IF_MUXi:MUXi"
+ 46. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:9:IF_MUXi:MUXi"
+ 47. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:8:IF_MUXi:MUXi"
+ 48. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:7:IF_MUXi:MUXi"
+ 49. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:6:IF_MUXi:MUXi"
+ 50. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:5:IF_MUXi:MUXi"
+ 51. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:4:IF_MUXi:MUXi"
+ 52. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:3:IF_MUXi:MUXi"
+ 53. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:2:IF_MUXi:MUXi"
+ 54. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:1:IF_MUXi:MUXi"
+ 55. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|Mux_Bit:\MUX_cyc:0:IF_MUX0:MUX0"
+ 56. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|D_FF_rst:\FFcyc:10:FF_i"
+ 57. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|D_FF_rst:\FFcyc:9:FF_i"
+ 58. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|D_FF_rst:\FFcyc:8:FF_i"
+ 59. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|D_FF_rst:\FFcyc:7:FF_i"
+ 60. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|D_FF_rst:\FFcyc:6:FF_i"
+ 61. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|D_FF_rst:\FFcyc:5:FF_i"
+ 62. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|D_FF_rst:\FFcyc:4:FF_i"
+ 63. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|D_FF_rst:\FFcyc:3:FF_i"
+ 64. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|D_FF_rst:\FFcyc:2:FF_i"
+ 65. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|D_FF_rst:\FFcyc:1:FF_i"
+ 66. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO|D_FF_rst:\FFcyc:0:FF_i"
+ 67. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Fifo:FIFO"
+ 68. Port Connectivity Checks: "UartDriverTX:UART_Driver|Reg1Bit:LoadReg2"
+ 69. Port Connectivity Checks: "UartDriverTX:UART_Driver|Reg1Bit:LoadReg1"
+ 70. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Synchronizer:SYNCH|Comparator:SYNCH_CMP|ORGate_NX1:OR_lt"
+ 71. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Synchronizer:SYNCH|Comparator:SYNCH_CMP|ORGate_NX1:OR_gt"
+ 72. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Synchronizer:SYNCH|Comparator:SYNCH_CMP"
+ 73. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Synchronizer:SYNCH|SAT_Counter:SYNCH_CNT|NORGate_NX1:NOR1"
+ 74. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Synchronizer:SYNCH|SAT_Counter:SYNCH_CNT|ANDGate_NX1:AND1"
+ 75. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Synchronizer:SYNCH|SAT_Counter:SYNCH_CNT|UD_COUNTER:CNT|t_ff_rst0:\MAIN_GEN:7:LAST_FF:FF_N"
+ 76. Port Connectivity Checks: "UartDriverTX:UART_Driver|UART_Synchronizer:SYNCH|SAT_Counter:SYNCH_CNT"
+ 77. Port Connectivity Checks: "UartDriverTX:UART_Driver|Clock_divider:CLK_DIV|UD_COUNTER:UP_CNT"
+ 78. Port Connectivity Checks: "UartDriverTX:UART_Driver|Clock_divider:CLK_DIV|Reg1Bit:RST_REG"
+ 79. Port Connectivity Checks: "UartDriverTX:UART_Driver|XNORGate_NX1:Parity_XNOR"
+ 80. Port Connectivity Checks: "UartDriverTX:UART_Driver"
+ 81. Port Connectivity Checks: "EightButtonDriver:Buttons_Driver|Reg1Bit:Eve_Reg"
+ 82. Port Connectivity Checks: "EightButtonDriver:Buttons_Driver|NRegister:But_Reg"
+ 83. Port Connectivity Checks: "EightButtonDriver:Buttons_Driver|ORGate_NX1:OR8x1"
+ 84. Port Connectivity Checks: "NRegister:Stream_REG"
+ 85. Port Connectivity Checks: "Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT|t_ff_rst0:\MAIN_GEN:15:LAST_FF:FF_N"
+ 86. Port Connectivity Checks: "Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT"
+ 87. Port Connectivity Checks: "Clock_divider:CLK_div_1ms|Reg1Bit:RST_REG"
+ 88. Elapsed Time Per Partition
+ 89. Analysis & Synthesis Messages
 
 
 
@@ -112,16 +120,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Nov 06 20:24:09 2019           ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 07 11:13:24 2019           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; EFES_Fpga_Top                                   ;
 ; Top-level Entity Name              ; EFES_Fpga_Top                                   ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 74                                              ;
-;     Total combinational functions  ; 72                                              ;
-;     Dedicated logic registers      ; 47                                              ;
-; Total registers                    ; 47                                              ;
-; Total pins                         ; 13                                              ;
+; Total logic elements               ; 109                                             ;
+;     Total combinational functions  ; 99                                              ;
+;     Dedicated logic registers      ; 72                                              ;
+; Total registers                    ; 72                                              ;
+; Total pins                         ; 14                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -264,28 +272,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+---------------+
 ; Resource                                    ; Usage         ;
 +---------------------------------------------+---------------+
-; Estimated Total logic elements              ; 74            ;
+; Estimated Total logic elements              ; 109           ;
 ;                                             ;               ;
-; Total combinational functions               ; 72            ;
+; Total combinational functions               ; 99            ;
 ; Logic element usage by number of LUT inputs ;               ;
-;     -- 4 input functions                    ; 39            ;
-;     -- 3 input functions                    ; 13            ;
-;     -- <=2 input functions                  ; 20            ;
+;     -- 4 input functions                    ; 53            ;
+;     -- 3 input functions                    ; 18            ;
+;     -- <=2 input functions                  ; 28            ;
 ;                                             ;               ;
 ; Logic elements by mode                      ;               ;
-;     -- normal mode                          ; 72            ;
+;     -- normal mode                          ; 99            ;
 ;     -- arithmetic mode                      ; 0             ;
 ;                                             ;               ;
-; Total registers                             ; 47            ;
-;     -- Dedicated logic registers            ; 47            ;
+; Total registers                             ; 72            ;
+;     -- Dedicated logic registers            ; 72            ;
 ;     -- I/O registers                        ; 0             ;
 ;                                             ;               ;
-; I/O pins                                    ; 13            ;
+; I/O pins                                    ; 14            ;
 ; Embedded Multiplier 9-bit elements          ; 0             ;
 ; Maximum fan-out node                        ; TOP_clk~input ;
-; Maximum fan-out                             ; 28            ;
-; Total fan-out                               ; 402           ;
-; Average fan-out                             ; 2.77          ;
+; Maximum fan-out                             ; 45            ;
+; Total fan-out                               ; 573           ;
+; Average fan-out                             ; 2.88          ;
 +---------------------------------------------+---------------+
 
 
@@ -294,11 +302,32 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                            ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                       ; Library Name ;
 +-------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |EFES_Fpga_Top                                        ; 72 (0)            ; 47 (0)       ; 0           ; 0            ; 0       ; 0         ; 13   ; 0            ; |EFES_Fpga_Top                                                                                                                            ; work         ;
-;    |EightButtonDriver:Buttons_Driver|                 ; 11 (0)            ; 9 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EFES_Fpga_Top|EightButtonDriver:Buttons_Driver                                                                                           ; work         ;
-;       |NRegister:But_Reg|                             ; 8 (8)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EFES_Fpga_Top|EightButtonDriver:Buttons_Driver|NRegister:But_Reg                                                                         ; work         ;
+; |EFES_Fpga_Top                                        ; 99 (0)            ; 72 (0)       ; 0           ; 0            ; 0       ; 0         ; 14   ; 0            ; |EFES_Fpga_Top                                                                                                                            ; work         ;
+;    |Clock_divider:CLK_div_1ms|                        ; 27 (1)            ; 17 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EFES_Fpga_Top|Clock_divider:CLK_div_1ms                                                                                                  ; work         ;
+;       |NComparatorWithEnable:CMP|                     ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EFES_Fpga_Top|Clock_divider:CLK_div_1ms|NComparatorWithEnable:CMP                                                                        ; work         ;
+;       |Reg1Bit:RST_REG|                               ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EFES_Fpga_Top|Clock_divider:CLK_div_1ms|Reg1Bit:RST_REG                                                                                  ; work         ;
+;       |UD_COUNTER:UP_CNT|                             ; 20 (4)            ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EFES_Fpga_Top|Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT                                                                                ; work         ;
+;          |t_ff_rst0:\MAIN_GEN:0:FIRST_FF:FF_0|        ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EFES_Fpga_Top|Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT|t_ff_rst0:\MAIN_GEN:0:FIRST_FF:FF_0                                            ; work         ;
+;          |t_ff_rst0:\MAIN_GEN:10:SECOND_FF:FF_i|      ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EFES_Fpga_Top|Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT|t_ff_rst0:\MAIN_GEN:10:SECOND_FF:FF_i                                          ; work         ;
+;          |t_ff_rst0:\MAIN_GEN:11:SECOND_FF:FF_i|      ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EFES_Fpga_Top|Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT|t_ff_rst0:\MAIN_GEN:11:SECOND_FF:FF_i                                          ; work         ;
+;          |t_ff_rst0:\MAIN_GEN:12:SECOND_FF:FF_i|      ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EFES_Fpga_Top|Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT|t_ff_rst0:\MAIN_GEN:12:SECOND_FF:FF_i                                          ; work         ;
+;          |t_ff_rst0:\MAIN_GEN:13:SECOND_FF:FF_i|      ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EFES_Fpga_Top|Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT|t_ff_rst0:\MAIN_GEN:13:SECOND_FF:FF_i                                          ; work         ;
+;          |t_ff_rst0:\MAIN_GEN:14:SECOND_FF:FF_i|      ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EFES_Fpga_Top|Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT|t_ff_rst0:\MAIN_GEN:14:SECOND_FF:FF_i                                          ; work         ;
+;          |t_ff_rst0:\MAIN_GEN:15:LAST_FF:FF_N|        ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EFES_Fpga_Top|Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT|t_ff_rst0:\MAIN_GEN:15:LAST_FF:FF_N                                            ; work         ;
+;          |t_ff_rst0:\MAIN_GEN:1:SECOND_FF:FF_i|       ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EFES_Fpga_Top|Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT|t_ff_rst0:\MAIN_GEN:1:SECOND_FF:FF_i                                           ; work         ;
+;          |t_ff_rst0:\MAIN_GEN:2:SECOND_FF:FF_i|       ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EFES_Fpga_Top|Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT|t_ff_rst0:\MAIN_GEN:2:SECOND_FF:FF_i                                           ; work         ;
+;          |t_ff_rst0:\MAIN_GEN:3:SECOND_FF:FF_i|       ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EFES_Fpga_Top|Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT|t_ff_rst0:\MAIN_GEN:3:SECOND_FF:FF_i                                           ; work         ;
+;          |t_ff_rst0:\MAIN_GEN:4:SECOND_FF:FF_i|       ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EFES_Fpga_Top|Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT|t_ff_rst0:\MAIN_GEN:4:SECOND_FF:FF_i                                           ; work         ;
+;          |t_ff_rst0:\MAIN_GEN:5:SECOND_FF:FF_i|       ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EFES_Fpga_Top|Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT|t_ff_rst0:\MAIN_GEN:5:SECOND_FF:FF_i                                           ; work         ;
+;          |t_ff_rst0:\MAIN_GEN:6:SECOND_FF:FF_i|       ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EFES_Fpga_Top|Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT|t_ff_rst0:\MAIN_GEN:6:SECOND_FF:FF_i                                           ; work         ;
+;          |t_ff_rst0:\MAIN_GEN:7:SECOND_FF:FF_i|       ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EFES_Fpga_Top|Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT|t_ff_rst0:\MAIN_GEN:7:SECOND_FF:FF_i                                           ; work         ;
+;          |t_ff_rst0:\MAIN_GEN:8:SECOND_FF:FF_i|       ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EFES_Fpga_Top|Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT|t_ff_rst0:\MAIN_GEN:8:SECOND_FF:FF_i                                           ; work         ;
+;          |t_ff_rst0:\MAIN_GEN:9:SECOND_FF:FF_i|       ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EFES_Fpga_Top|Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT|t_ff_rst0:\MAIN_GEN:9:SECOND_FF:FF_i                                           ; work         ;
+;    |EightButtonDriver:Buttons_Driver|                 ; 3 (0)             ; 9 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EFES_Fpga_Top|EightButtonDriver:Buttons_Driver                                                                                           ; work         ;
+;       |NRegister:But_Reg|                             ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EFES_Fpga_Top|EightButtonDriver:Buttons_Driver|NRegister:But_Reg                                                                         ; work         ;
 ;       |ORGate_NX1:OR8x1|                              ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EFES_Fpga_Top|EightButtonDriver:Buttons_Driver|ORGate_NX1:OR8x1                                                                          ; work         ;
 ;       |Reg1Bit:Eve_Reg|                               ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EFES_Fpga_Top|EightButtonDriver:Buttons_Driver|Reg1Bit:Eve_Reg                                                                           ; work         ;
+;    |NRegister:Stream_REG|                             ; 8 (8)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EFES_Fpga_Top|NRegister:Stream_REG                                                                                                       ; work         ;
 ;    |UartDriverTX:UART_Driver|                         ; 61 (0)            ; 38 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EFES_Fpga_Top|UartDriverTX:UART_Driver                                                                                                   ; work         ;
 ;       |Clock_divider:CLK_DIV|                         ; 27 (1)            ; 17 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EFES_Fpga_Top|UartDriverTX:UART_Driver|Clock_divider:CLK_DIV                                                                             ; work         ;
 ;          |NComparatorWithEnable:CMP|                  ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EFES_Fpga_Top|UartDriverTX:UART_Driver|Clock_divider:CLK_DIV|NComparatorWithEnable:CMP                                                   ; work         ;
@@ -368,12 +397,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 47    ;
+; Total registers                              ; 72    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 47    ;
+; Number of registers using Asynchronous Clear ; 72    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 20    ;
+; Number of registers using Clock Enable       ; 28    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -386,6 +415,57 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |EFES_Fpga_Top|UartDriverTX:UART_Driver|UART_Fifo:FIFO|D_FF_rst:\FFcyc:10:FF_i|Q ;
 ; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |EFES_Fpga_Top|UartDriverTX:UART_Driver|UART_Fifo:FIFO|D_FF_rst:\FFcyc:8:FF_i|Q  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Clock_divider:CLK_div_1ms ;
++----------------+--------+----------------------------------------------+
+; Parameter Name ; Value  ; Type                                         ;
++----------------+--------+----------------------------------------------+
+; clkdiv_divider ; 500000 ; Signed Integer                               ;
++----------------+--------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; udc_nbit       ; 16    ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Clock_divider:CLK_div_1ms|HardwiredReg:HW_REG ;
++----------------+--------+------------------------------------------------------------------+
+; Parameter Name ; Value  ; Type                                                             ;
++----------------+--------+------------------------------------------------------------------+
+; hw_reg_val     ; 500000 ; Signed Integer                                                   ;
+; hw_reg_nbit    ; 16     ; Signed Integer                                                   ;
++----------------+--------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Clock_divider:CLK_div_1ms|NComparatorWithEnable:CMP ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; nbit           ; 16    ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: NRegister:Stream_REG ;
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; n              ; 8     ; Signed Integer                           ;
++----------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +------------------------------------------------------------------------------------------------+
@@ -989,15 +1069,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------------+-------+----------+------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "UartDriverTX:UART_Driver|Clock_divider:CLK_DIV|UD_COUNTER:UP_CNT|t_ff_rst0:\MAIN_GEN:15:LAST_FF:FF_N" ;
-+--------+--------+----------+-----------------------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                                             ;
-+--------+--------+----------+-----------------------------------------------------------------------------------------------------+
-; tff_nq ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                 ;
-+--------+--------+----------+-----------------------------------------------------------------------------------------------------+
-
-
 +----------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "UartDriverTX:UART_Driver|Clock_divider:CLK_DIV|UD_COUNTER:UP_CNT" ;
 +--------+-------+----------+------------------------------------------------------------------+
@@ -1065,12 +1136,50 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+-----------------------------------------------------+
 
 
++--------------------------------------------------+
+; Port Connectivity Checks: "NRegister:Stream_REG" ;
++------+-------+----------+------------------------+
+; Port ; Type  ; Severity ; Details                ;
++------+-------+----------+------------------------+
+; load ; Input ; Info     ; Stuck at VCC           ;
++------+-------+----------+------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT|t_ff_rst0:\MAIN_GEN:15:LAST_FF:FF_N"      ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; tff_nq ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Port Connectivity Checks: "Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT" ;
++--------+-------+----------+---------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                     ;
++--------+-------+----------+---------------------------------------------+
+; udc_en ; Input ; Info     ; Stuck at VCC                                ;
+; udc_up ; Input ; Info     ; Stuck at VCC                                ;
++--------+-------+----------+---------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Port Connectivity Checks: "Clock_divider:CLK_div_1ms|Reg1Bit:RST_REG" ;
++--------+-------+----------+-------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                   ;
++--------+-------+----------+-------------------------------------------+
+; enable ; Input ; Info     ; Stuck at VCC                              ;
+; load   ; Input ; Info     ; Stuck at VCC                              ;
++--------+-------+----------+-------------------------------------------+
+
+
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -1080,7 +1189,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Nov 06 20:24:06 2019
+    Info: Processing started: Thu Nov 07 11:13:18 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off EFES_Fpga -c EFES_Fpga_Top
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file tb_efes_fpga_top.vhd
@@ -1165,21 +1274,23 @@ Warning (12162): EDA synthesis tool is specified as "Design Compiler", but Libra
 Warning (12163): EDA synthesis tool is specified as "Design Compiler", but VCC is not specified
 Warning (12164): EDA synthesis tool is specified as "Design Compiler", but GND is not specified
 Info (12127): Elaborating entity "EFES_Fpga_Top" for the top level hierarchy
+Info (12128): Elaborating entity "Clock_divider" for hierarchy "Clock_divider:CLK_div_1ms"
+Info (12128): Elaborating entity "Reg1Bit" for hierarchy "Clock_divider:CLK_div_1ms|Reg1Bit:RST_REG"
+Info (12128): Elaborating entity "UD_COUNTER" for hierarchy "Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT"
+Info (12128): Elaborating entity "t_ff_rst0" for hierarchy "Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT|t_ff_rst0:\MAIN_GEN:0:FIRST_FF:FF_0"
+Warning (10492): VHDL Process Statement warning at t_ff.vhd(23): signal "TFF_t" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "HardwiredReg" for hierarchy "Clock_divider:CLK_div_1ms|HardwiredReg:HW_REG"
+Info (12128): Elaborating entity "NComparatorWithEnable" for hierarchy "Clock_divider:CLK_div_1ms|NComparatorWithEnable:CMP"
+Info (12128): Elaborating entity "ComparatorWithEnable" for hierarchy "Clock_divider:CLK_div_1ms|NComparatorWithEnable:CMP|ComparatorWithEnable:\COMPcyc:0:CWE_i"
+Info (12128): Elaborating entity "NRegister" for hierarchy "NRegister:Stream_REG"
 Info (12128): Elaborating entity "EightButtonDriver" for hierarchy "EightButtonDriver:Buttons_Driver"
 Info (12128): Elaborating entity "ORGate_NX1" for hierarchy "EightButtonDriver:Buttons_Driver|ORGate_NX1:OR8x1"
-Info (12128): Elaborating entity "NRegister" for hierarchy "EightButtonDriver:Buttons_Driver|NRegister:But_Reg"
-Info (12128): Elaborating entity "Reg1Bit" for hierarchy "EightButtonDriver:Buttons_Driver|Reg1Bit:Eve_Reg"
 Info (12128): Elaborating entity "UartDriverTX" for hierarchy "UartDriverTX:UART_Driver"
 Warning (10540): VHDL Signal Declaration warning at UartDriver.vhd(137): used explicit default value for signal "s_zeros" because signal was never assigned a value
 Info (12128): Elaborating entity "XNORGate_NX1" for hierarchy "UartDriverTX:UART_Driver|XNORGate_NX1:Parity_XNOR"
 Info (12128): Elaborating entity "Mux_1Bit_2X1" for hierarchy "UartDriverTX:UART_Driver|Mux_1Bit_2X1:Parity_MUX"
 Info (12128): Elaborating entity "Clock_divider" for hierarchy "UartDriverTX:UART_Driver|Clock_divider:CLK_DIV"
-Info (12128): Elaborating entity "UD_COUNTER" for hierarchy "UartDriverTX:UART_Driver|Clock_divider:CLK_DIV|UD_COUNTER:UP_CNT"
-Info (12128): Elaborating entity "t_ff_rst0" for hierarchy "UartDriverTX:UART_Driver|Clock_divider:CLK_DIV|UD_COUNTER:UP_CNT|t_ff_rst0:\MAIN_GEN:0:FIRST_FF:FF_0"
-Warning (10492): VHDL Process Statement warning at t_ff.vhd(23): signal "TFF_t" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12128): Elaborating entity "HardwiredReg" for hierarchy "UartDriverTX:UART_Driver|Clock_divider:CLK_DIV|HardwiredReg:HW_REG"
-Info (12128): Elaborating entity "NComparatorWithEnable" for hierarchy "UartDriverTX:UART_Driver|Clock_divider:CLK_DIV|NComparatorWithEnable:CMP"
-Info (12128): Elaborating entity "ComparatorWithEnable" for hierarchy "UartDriverTX:UART_Driver|Clock_divider:CLK_DIV|NComparatorWithEnable:CMP|ComparatorWithEnable:\COMPcyc:0:CWE_i"
 Info (12128): Elaborating entity "UART_Synchronizer" for hierarchy "UartDriverTX:UART_Driver|UART_Synchronizer:SYNCH"
 Warning (10036): Verilog HDL or VHDL warning at UART_Synchronizer.vhd(88): object "s_not_connected" assigned a value but never read
 Info (12128): Elaborating entity "SAT_Counter" for hierarchy "UartDriverTX:UART_Driver|UART_Synchronizer:SYNCH|SAT_Counter:SYNCH_CNT"
@@ -1201,14 +1312,14 @@ Warning (12164): EDA synthesis tool is specified as "Design Compiler", but GND i
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 90 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 127 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
-    Info (21059): Implemented 2 output pins
-    Info (21061): Implemented 77 logic cells
+    Info (21059): Implemented 3 output pins
+    Info (21061): Implemented 113 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 13 warnings
     Info: Peak virtual memory: 4614 megabytes
-    Info: Processing ended: Wed Nov 06 20:24:09 2019
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Processing ended: Thu Nov 07 11:13:24 2019
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:06
 
 

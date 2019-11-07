@@ -1,19 +1,491 @@
 |EFES_Fpga_Top
-TOP_Buttons[0] => EightButtonDriver:Buttons_Driver.EBD_buttons[0]
-TOP_Buttons[1] => EightButtonDriver:Buttons_Driver.EBD_buttons[1]
-TOP_Buttons[2] => EightButtonDriver:Buttons_Driver.EBD_buttons[2]
-TOP_Buttons[3] => EightButtonDriver:Buttons_Driver.EBD_buttons[3]
-TOP_Buttons[4] => EightButtonDriver:Buttons_Driver.EBD_buttons[4]
-TOP_Buttons[5] => EightButtonDriver:Buttons_Driver.EBD_buttons[5]
-TOP_Buttons[6] => EightButtonDriver:Buttons_Driver.EBD_buttons[6]
-TOP_Buttons[7] => EightButtonDriver:Buttons_Driver.EBD_buttons[7]
+TOP_Buttons[0] => NRegister:Stream_REG.data_in[0]
+TOP_Buttons[1] => NRegister:Stream_REG.data_in[1]
+TOP_Buttons[2] => NRegister:Stream_REG.data_in[2]
+TOP_Buttons[3] => NRegister:Stream_REG.data_in[3]
+TOP_Buttons[4] => NRegister:Stream_REG.data_in[4]
+TOP_Buttons[5] => NRegister:Stream_REG.data_in[5]
+TOP_Buttons[6] => NRegister:Stream_REG.data_in[6]
+TOP_Buttons[7] => NRegister:Stream_REG.data_in[7]
+TOP_clk => Clock_divider:CLK_div_1ms.CLKDIV_clock
 TOP_clk => EightButtonDriver:Buttons_Driver.EBD_clock
 TOP_clk => UartDriverTX:UART_Driver.UART_clock
+TOP_reset => Clock_divider:CLK_div_1ms.CLKDIV_reset
+TOP_reset => NRegister:Stream_REG.reset
 TOP_reset => EightButtonDriver:Buttons_Driver.EBD_reset
 TOP_reset => UartDriverTX:UART_Driver.UART_reset
+TOP_enable => NRegister:Stream_REG.enable
 TOP_enable => UartDriverTX:UART_Driver.UART_enable
+TOP_event <= EightButtonDriver:Buttons_Driver.EBD_event
 TOP_uart_output <= UartDriverTX:UART_Driver.UART_out
 TOP_uart_busy <= UartDriverTX:UART_Driver.UART_busy
+
+
+|EFES_Fpga_Top|Clock_divider:CLK_div_1ms
+CLKDIV_clock => Reg1Bit:RST_REG.clk
+CLKDIV_clock => UD_COUNTER:UP_CNT.UDC_CLK
+CLKDIV_reset => s_reset_cnt.IN1
+CLKDIV_reset => Reg1Bit:RST_REG.reset
+CLKDIV_reset => NComparatorWithEnable:CMP.Enable
+CLKDIV_baudrate <= NComparatorWithEnable:CMP.ComparatorBit
+
+
+|EFES_Fpga_Top|Clock_divider:CLK_div_1ms|Reg1Bit:RST_REG
+clk => data_out~reg0.CLK
+reset => data_out~reg0.ACLR
+data_in => data_out~reg0.DATAIN
+enable => process_0.IN0
+load => process_0.IN1
+data_out <= data_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EFES_Fpga_Top|Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT
+UDC_EN => s_toggle[1].IN1
+UDC_EN => s_toggle[2].IN1
+UDC_EN => s_toggle[3].IN1
+UDC_EN => s_toggle[4].IN1
+UDC_EN => s_toggle[5].IN1
+UDC_EN => s_toggle[6].IN1
+UDC_EN => s_toggle[7].IN1
+UDC_EN => s_toggle[8].IN1
+UDC_EN => s_toggle[9].IN1
+UDC_EN => s_toggle[10].IN1
+UDC_EN => s_toggle[11].IN1
+UDC_EN => s_toggle[12].IN1
+UDC_EN => s_toggle[13].IN1
+UDC_EN => s_toggle[14].IN1
+UDC_EN => s_toggle[15].IN1
+UDC_EN => t_ff_rst0:MAIN_GEN:0:FIRST_FF:FF_0.TFF_t
+UDC_UP => s_en_inc[0].IN1
+UDC_UP => s_en_dec[0].IN1
+UDC_CLK => t_ff_rst0:MAIN_GEN:0:FIRST_FF:FF_0.TFF_clk
+UDC_CLK => t_ff_rst0:MAIN_GEN:1:SECOND_FF:FF_i.TFF_clk
+UDC_CLK => t_ff_rst0:MAIN_GEN:2:SECOND_FF:FF_i.TFF_clk
+UDC_CLK => t_ff_rst0:MAIN_GEN:3:SECOND_FF:FF_i.TFF_clk
+UDC_CLK => t_ff_rst0:MAIN_GEN:4:SECOND_FF:FF_i.TFF_clk
+UDC_CLK => t_ff_rst0:MAIN_GEN:5:SECOND_FF:FF_i.TFF_clk
+UDC_CLK => t_ff_rst0:MAIN_GEN:6:SECOND_FF:FF_i.TFF_clk
+UDC_CLK => t_ff_rst0:MAIN_GEN:7:SECOND_FF:FF_i.TFF_clk
+UDC_CLK => t_ff_rst0:MAIN_GEN:8:SECOND_FF:FF_i.TFF_clk
+UDC_CLK => t_ff_rst0:MAIN_GEN:9:SECOND_FF:FF_i.TFF_clk
+UDC_CLK => t_ff_rst0:MAIN_GEN:10:SECOND_FF:FF_i.TFF_clk
+UDC_CLK => t_ff_rst0:MAIN_GEN:11:SECOND_FF:FF_i.TFF_clk
+UDC_CLK => t_ff_rst0:MAIN_GEN:12:SECOND_FF:FF_i.TFF_clk
+UDC_CLK => t_ff_rst0:MAIN_GEN:13:SECOND_FF:FF_i.TFF_clk
+UDC_CLK => t_ff_rst0:MAIN_GEN:14:SECOND_FF:FF_i.TFF_clk
+UDC_CLK => t_ff_rst0:MAIN_GEN:15:LAST_FF:FF_N.TFF_clk
+UDC_RST => t_ff_rst0:MAIN_GEN:0:FIRST_FF:FF_0.TFF_rst
+UDC_RST => t_ff_rst0:MAIN_GEN:1:SECOND_FF:FF_i.TFF_rst
+UDC_RST => t_ff_rst0:MAIN_GEN:2:SECOND_FF:FF_i.TFF_rst
+UDC_RST => t_ff_rst0:MAIN_GEN:3:SECOND_FF:FF_i.TFF_rst
+UDC_RST => t_ff_rst0:MAIN_GEN:4:SECOND_FF:FF_i.TFF_rst
+UDC_RST => t_ff_rst0:MAIN_GEN:5:SECOND_FF:FF_i.TFF_rst
+UDC_RST => t_ff_rst0:MAIN_GEN:6:SECOND_FF:FF_i.TFF_rst
+UDC_RST => t_ff_rst0:MAIN_GEN:7:SECOND_FF:FF_i.TFF_rst
+UDC_RST => t_ff_rst0:MAIN_GEN:8:SECOND_FF:FF_i.TFF_rst
+UDC_RST => t_ff_rst0:MAIN_GEN:9:SECOND_FF:FF_i.TFF_rst
+UDC_RST => t_ff_rst0:MAIN_GEN:10:SECOND_FF:FF_i.TFF_rst
+UDC_RST => t_ff_rst0:MAIN_GEN:11:SECOND_FF:FF_i.TFF_rst
+UDC_RST => t_ff_rst0:MAIN_GEN:12:SECOND_FF:FF_i.TFF_rst
+UDC_RST => t_ff_rst0:MAIN_GEN:13:SECOND_FF:FF_i.TFF_rst
+UDC_RST => t_ff_rst0:MAIN_GEN:14:SECOND_FF:FF_i.TFF_rst
+UDC_RST => t_ff_rst0:MAIN_GEN:15:LAST_FF:FF_N.TFF_rst
+UDC_OUT[0] <= t_ff_rst0:MAIN_GEN:0:FIRST_FF:FF_0.TFF_q
+UDC_OUT[1] <= t_ff_rst0:MAIN_GEN:1:SECOND_FF:FF_i.TFF_q
+UDC_OUT[2] <= t_ff_rst0:MAIN_GEN:2:SECOND_FF:FF_i.TFF_q
+UDC_OUT[3] <= t_ff_rst0:MAIN_GEN:3:SECOND_FF:FF_i.TFF_q
+UDC_OUT[4] <= t_ff_rst0:MAIN_GEN:4:SECOND_FF:FF_i.TFF_q
+UDC_OUT[5] <= t_ff_rst0:MAIN_GEN:5:SECOND_FF:FF_i.TFF_q
+UDC_OUT[6] <= t_ff_rst0:MAIN_GEN:6:SECOND_FF:FF_i.TFF_q
+UDC_OUT[7] <= t_ff_rst0:MAIN_GEN:7:SECOND_FF:FF_i.TFF_q
+UDC_OUT[8] <= t_ff_rst0:MAIN_GEN:8:SECOND_FF:FF_i.TFF_q
+UDC_OUT[9] <= t_ff_rst0:MAIN_GEN:9:SECOND_FF:FF_i.TFF_q
+UDC_OUT[10] <= t_ff_rst0:MAIN_GEN:10:SECOND_FF:FF_i.TFF_q
+UDC_OUT[11] <= t_ff_rst0:MAIN_GEN:11:SECOND_FF:FF_i.TFF_q
+UDC_OUT[12] <= t_ff_rst0:MAIN_GEN:12:SECOND_FF:FF_i.TFF_q
+UDC_OUT[13] <= t_ff_rst0:MAIN_GEN:13:SECOND_FF:FF_i.TFF_q
+UDC_OUT[14] <= t_ff_rst0:MAIN_GEN:14:SECOND_FF:FF_i.TFF_q
+UDC_OUT[15] <= t_ff_rst0:MAIN_GEN:15:LAST_FF:FF_N.TFF_q
+
+
+|EFES_Fpga_Top|Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT|t_ff_rst0:\MAIN_GEN:0:FIRST_FF:FF_0
+TFF_clk => data.CLK
+TFF_rst => data.ACLR
+TFF_t => data.ENA
+TFF_q <= data.DB_MAX_OUTPUT_PORT_TYPE
+TFF_nq <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EFES_Fpga_Top|Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT|t_ff_rst0:\MAIN_GEN:1:SECOND_FF:FF_i
+TFF_clk => data.CLK
+TFF_rst => data.ACLR
+TFF_t => data.ENA
+TFF_q <= data.DB_MAX_OUTPUT_PORT_TYPE
+TFF_nq <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EFES_Fpga_Top|Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT|t_ff_rst0:\MAIN_GEN:2:SECOND_FF:FF_i
+TFF_clk => data.CLK
+TFF_rst => data.ACLR
+TFF_t => data.ENA
+TFF_q <= data.DB_MAX_OUTPUT_PORT_TYPE
+TFF_nq <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EFES_Fpga_Top|Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT|t_ff_rst0:\MAIN_GEN:3:SECOND_FF:FF_i
+TFF_clk => data.CLK
+TFF_rst => data.ACLR
+TFF_t => data.ENA
+TFF_q <= data.DB_MAX_OUTPUT_PORT_TYPE
+TFF_nq <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EFES_Fpga_Top|Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT|t_ff_rst0:\MAIN_GEN:4:SECOND_FF:FF_i
+TFF_clk => data.CLK
+TFF_rst => data.ACLR
+TFF_t => data.ENA
+TFF_q <= data.DB_MAX_OUTPUT_PORT_TYPE
+TFF_nq <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EFES_Fpga_Top|Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT|t_ff_rst0:\MAIN_GEN:5:SECOND_FF:FF_i
+TFF_clk => data.CLK
+TFF_rst => data.ACLR
+TFF_t => data.ENA
+TFF_q <= data.DB_MAX_OUTPUT_PORT_TYPE
+TFF_nq <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EFES_Fpga_Top|Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT|t_ff_rst0:\MAIN_GEN:6:SECOND_FF:FF_i
+TFF_clk => data.CLK
+TFF_rst => data.ACLR
+TFF_t => data.ENA
+TFF_q <= data.DB_MAX_OUTPUT_PORT_TYPE
+TFF_nq <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EFES_Fpga_Top|Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT|t_ff_rst0:\MAIN_GEN:7:SECOND_FF:FF_i
+TFF_clk => data.CLK
+TFF_rst => data.ACLR
+TFF_t => data.ENA
+TFF_q <= data.DB_MAX_OUTPUT_PORT_TYPE
+TFF_nq <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EFES_Fpga_Top|Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT|t_ff_rst0:\MAIN_GEN:8:SECOND_FF:FF_i
+TFF_clk => data.CLK
+TFF_rst => data.ACLR
+TFF_t => data.ENA
+TFF_q <= data.DB_MAX_OUTPUT_PORT_TYPE
+TFF_nq <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EFES_Fpga_Top|Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT|t_ff_rst0:\MAIN_GEN:9:SECOND_FF:FF_i
+TFF_clk => data.CLK
+TFF_rst => data.ACLR
+TFF_t => data.ENA
+TFF_q <= data.DB_MAX_OUTPUT_PORT_TYPE
+TFF_nq <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EFES_Fpga_Top|Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT|t_ff_rst0:\MAIN_GEN:10:SECOND_FF:FF_i
+TFF_clk => data.CLK
+TFF_rst => data.ACLR
+TFF_t => data.ENA
+TFF_q <= data.DB_MAX_OUTPUT_PORT_TYPE
+TFF_nq <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EFES_Fpga_Top|Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT|t_ff_rst0:\MAIN_GEN:11:SECOND_FF:FF_i
+TFF_clk => data.CLK
+TFF_rst => data.ACLR
+TFF_t => data.ENA
+TFF_q <= data.DB_MAX_OUTPUT_PORT_TYPE
+TFF_nq <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EFES_Fpga_Top|Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT|t_ff_rst0:\MAIN_GEN:12:SECOND_FF:FF_i
+TFF_clk => data.CLK
+TFF_rst => data.ACLR
+TFF_t => data.ENA
+TFF_q <= data.DB_MAX_OUTPUT_PORT_TYPE
+TFF_nq <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EFES_Fpga_Top|Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT|t_ff_rst0:\MAIN_GEN:13:SECOND_FF:FF_i
+TFF_clk => data.CLK
+TFF_rst => data.ACLR
+TFF_t => data.ENA
+TFF_q <= data.DB_MAX_OUTPUT_PORT_TYPE
+TFF_nq <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EFES_Fpga_Top|Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT|t_ff_rst0:\MAIN_GEN:14:SECOND_FF:FF_i
+TFF_clk => data.CLK
+TFF_rst => data.ACLR
+TFF_t => data.ENA
+TFF_q <= data.DB_MAX_OUTPUT_PORT_TYPE
+TFF_nq <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EFES_Fpga_Top|Clock_divider:CLK_div_1ms|UD_COUNTER:UP_CNT|t_ff_rst0:\MAIN_GEN:15:LAST_FF:FF_N
+TFF_clk => data.CLK
+TFF_rst => data.ACLR
+TFF_t => data.ENA
+TFF_q <= data.DB_MAX_OUTPUT_PORT_TYPE
+TFF_nq <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EFES_Fpga_Top|Clock_divider:CLK_div_1ms|HardwiredReg:HW_REG
+HW_REG_out[0] <= <GND>
+HW_REG_out[1] <= <GND>
+HW_REG_out[2] <= <GND>
+HW_REG_out[3] <= <GND>
+HW_REG_out[4] <= <GND>
+HW_REG_out[5] <= <VCC>
+HW_REG_out[6] <= <GND>
+HW_REG_out[7] <= <GND>
+HW_REG_out[8] <= <VCC>
+HW_REG_out[9] <= <GND>
+HW_REG_out[10] <= <GND>
+HW_REG_out[11] <= <GND>
+HW_REG_out[12] <= <GND>
+HW_REG_out[13] <= <VCC>
+HW_REG_out[14] <= <GND>
+HW_REG_out[15] <= <VCC>
+
+
+|EFES_Fpga_Top|Clock_divider:CLK_div_1ms|NComparatorWithEnable:CMP
+A[0] => ComparatorWithEnable:COMPcyc:0:CWE_i.a
+A[1] => ComparatorWithEnable:COMPcyc:1:CWE_i.a
+A[2] => ComparatorWithEnable:COMPcyc:2:CWE_i.a
+A[3] => ComparatorWithEnable:COMPcyc:3:CWE_i.a
+A[4] => ComparatorWithEnable:COMPcyc:4:CWE_i.a
+A[5] => ComparatorWithEnable:COMPcyc:5:CWE_i.a
+A[6] => ComparatorWithEnable:COMPcyc:6:CWE_i.a
+A[7] => ComparatorWithEnable:COMPcyc:7:CWE_i.a
+A[8] => ComparatorWithEnable:COMPcyc:8:CWE_i.a
+A[9] => ComparatorWithEnable:COMPcyc:9:CWE_i.a
+A[10] => ComparatorWithEnable:COMPcyc:10:CWE_i.a
+A[11] => ComparatorWithEnable:COMPcyc:11:CWE_i.a
+A[12] => ComparatorWithEnable:COMPcyc:12:CWE_i.a
+A[13] => ComparatorWithEnable:COMPcyc:13:CWE_i.a
+A[14] => ComparatorWithEnable:COMPcyc:14:CWE_i.a
+A[15] => ComparatorWithEnable:COMPcyc:15:CWE_i.a
+B[0] => ComparatorWithEnable:COMPcyc:0:CWE_i.b
+B[1] => ComparatorWithEnable:COMPcyc:1:CWE_i.b
+B[2] => ComparatorWithEnable:COMPcyc:2:CWE_i.b
+B[3] => ComparatorWithEnable:COMPcyc:3:CWE_i.b
+B[4] => ComparatorWithEnable:COMPcyc:4:CWE_i.b
+B[5] => ComparatorWithEnable:COMPcyc:5:CWE_i.b
+B[6] => ComparatorWithEnable:COMPcyc:6:CWE_i.b
+B[7] => ComparatorWithEnable:COMPcyc:7:CWE_i.b
+B[8] => ComparatorWithEnable:COMPcyc:8:CWE_i.b
+B[9] => ComparatorWithEnable:COMPcyc:9:CWE_i.b
+B[10] => ComparatorWithEnable:COMPcyc:10:CWE_i.b
+B[11] => ComparatorWithEnable:COMPcyc:11:CWE_i.b
+B[12] => ComparatorWithEnable:COMPcyc:12:CWE_i.b
+B[13] => ComparatorWithEnable:COMPcyc:13:CWE_i.b
+B[14] => ComparatorWithEnable:COMPcyc:14:CWE_i.b
+B[15] => ComparatorWithEnable:COMPcyc:15:CWE_i.b
+Enable => ComparatorWithEnable:COMPcyc:0:CWE_i.enable
+Enable => ComparatorWithEnable:COMPcyc:1:CWE_i.enable
+Enable => ComparatorWithEnable:COMPcyc:2:CWE_i.enable
+Enable => ComparatorWithEnable:COMPcyc:3:CWE_i.enable
+Enable => ComparatorWithEnable:COMPcyc:4:CWE_i.enable
+Enable => ComparatorWithEnable:COMPcyc:5:CWE_i.enable
+Enable => ComparatorWithEnable:COMPcyc:6:CWE_i.enable
+Enable => ComparatorWithEnable:COMPcyc:7:CWE_i.enable
+Enable => ComparatorWithEnable:COMPcyc:8:CWE_i.enable
+Enable => ComparatorWithEnable:COMPcyc:9:CWE_i.enable
+Enable => ComparatorWithEnable:COMPcyc:10:CWE_i.enable
+Enable => ComparatorWithEnable:COMPcyc:11:CWE_i.enable
+Enable => ComparatorWithEnable:COMPcyc:12:CWE_i.enable
+Enable => ComparatorWithEnable:COMPcyc:13:CWE_i.enable
+Enable => ComparatorWithEnable:COMPcyc:14:CWE_i.enable
+Enable => ComparatorWithEnable:COMPcyc:15:CWE_i.enable
+ComparatorBit <= matrix.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EFES_Fpga_Top|Clock_divider:CLK_div_1ms|NComparatorWithEnable:CMP|ComparatorWithEnable:\COMPcyc:0:CWE_i
+a => intA.IN0
+a => intB.IN0
+b => intA.IN1
+b => intB.IN1
+enable => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EFES_Fpga_Top|Clock_divider:CLK_div_1ms|NComparatorWithEnable:CMP|ComparatorWithEnable:\COMPcyc:1:CWE_i
+a => intA.IN0
+a => intB.IN0
+b => intA.IN1
+b => intB.IN1
+enable => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EFES_Fpga_Top|Clock_divider:CLK_div_1ms|NComparatorWithEnable:CMP|ComparatorWithEnable:\COMPcyc:2:CWE_i
+a => intA.IN0
+a => intB.IN0
+b => intA.IN1
+b => intB.IN1
+enable => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EFES_Fpga_Top|Clock_divider:CLK_div_1ms|NComparatorWithEnable:CMP|ComparatorWithEnable:\COMPcyc:3:CWE_i
+a => intA.IN0
+a => intB.IN0
+b => intA.IN1
+b => intB.IN1
+enable => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EFES_Fpga_Top|Clock_divider:CLK_div_1ms|NComparatorWithEnable:CMP|ComparatorWithEnable:\COMPcyc:4:CWE_i
+a => intA.IN0
+a => intB.IN0
+b => intA.IN1
+b => intB.IN1
+enable => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EFES_Fpga_Top|Clock_divider:CLK_div_1ms|NComparatorWithEnable:CMP|ComparatorWithEnable:\COMPcyc:5:CWE_i
+a => intA.IN0
+a => intB.IN0
+b => intA.IN1
+b => intB.IN1
+enable => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EFES_Fpga_Top|Clock_divider:CLK_div_1ms|NComparatorWithEnable:CMP|ComparatorWithEnable:\COMPcyc:6:CWE_i
+a => intA.IN0
+a => intB.IN0
+b => intA.IN1
+b => intB.IN1
+enable => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EFES_Fpga_Top|Clock_divider:CLK_div_1ms|NComparatorWithEnable:CMP|ComparatorWithEnable:\COMPcyc:7:CWE_i
+a => intA.IN0
+a => intB.IN0
+b => intA.IN1
+b => intB.IN1
+enable => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EFES_Fpga_Top|Clock_divider:CLK_div_1ms|NComparatorWithEnable:CMP|ComparatorWithEnable:\COMPcyc:8:CWE_i
+a => intA.IN0
+a => intB.IN0
+b => intA.IN1
+b => intB.IN1
+enable => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EFES_Fpga_Top|Clock_divider:CLK_div_1ms|NComparatorWithEnable:CMP|ComparatorWithEnable:\COMPcyc:9:CWE_i
+a => intA.IN0
+a => intB.IN0
+b => intA.IN1
+b => intB.IN1
+enable => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EFES_Fpga_Top|Clock_divider:CLK_div_1ms|NComparatorWithEnable:CMP|ComparatorWithEnable:\COMPcyc:10:CWE_i
+a => intA.IN0
+a => intB.IN0
+b => intA.IN1
+b => intB.IN1
+enable => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EFES_Fpga_Top|Clock_divider:CLK_div_1ms|NComparatorWithEnable:CMP|ComparatorWithEnable:\COMPcyc:11:CWE_i
+a => intA.IN0
+a => intB.IN0
+b => intA.IN1
+b => intB.IN1
+enable => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EFES_Fpga_Top|Clock_divider:CLK_div_1ms|NComparatorWithEnable:CMP|ComparatorWithEnable:\COMPcyc:12:CWE_i
+a => intA.IN0
+a => intB.IN0
+b => intA.IN1
+b => intB.IN1
+enable => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EFES_Fpga_Top|Clock_divider:CLK_div_1ms|NComparatorWithEnable:CMP|ComparatorWithEnable:\COMPcyc:13:CWE_i
+a => intA.IN0
+a => intB.IN0
+b => intA.IN1
+b => intB.IN1
+enable => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EFES_Fpga_Top|Clock_divider:CLK_div_1ms|NComparatorWithEnable:CMP|ComparatorWithEnable:\COMPcyc:14:CWE_i
+a => intA.IN0
+a => intB.IN0
+b => intA.IN1
+b => intB.IN1
+enable => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EFES_Fpga_Top|Clock_divider:CLK_div_1ms|NComparatorWithEnable:CMP|ComparatorWithEnable:\COMPcyc:15:CWE_i
+a => intA.IN0
+a => intB.IN0
+b => intA.IN1
+b => intB.IN1
+enable => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EFES_Fpga_Top|NRegister:Stream_REG
+clk => data_out[0]~reg0.CLK
+clk => data_out[1]~reg0.CLK
+clk => data_out[2]~reg0.CLK
+clk => data_out[3]~reg0.CLK
+clk => data_out[4]~reg0.CLK
+clk => data_out[5]~reg0.CLK
+clk => data_out[6]~reg0.CLK
+clk => data_out[7]~reg0.CLK
+reset => data_out[0]~reg0.ACLR
+reset => data_out[1]~reg0.ACLR
+reset => data_out[2]~reg0.ACLR
+reset => data_out[3]~reg0.ACLR
+reset => data_out[4]~reg0.ACLR
+reset => data_out[5]~reg0.ACLR
+reset => data_out[6]~reg0.ACLR
+reset => data_out[7]~reg0.ACLR
+data_in[0] => data_out[0]~reg0.DATAIN
+data_in[1] => data_out[1]~reg0.DATAIN
+data_in[2] => data_out[2]~reg0.DATAIN
+data_in[3] => data_out[3]~reg0.DATAIN
+data_in[4] => data_out[4]~reg0.DATAIN
+data_in[5] => data_out[5]~reg0.DATAIN
+data_in[6] => data_out[6]~reg0.DATAIN
+data_in[7] => data_out[7]~reg0.DATAIN
+enable => process_0.IN0
+load => process_0.IN1
+data_out[0] <= data_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[1] <= data_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= data_out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= data_out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= data_out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[7] <= data_out[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |EFES_Fpga_Top|EightButtonDriver:Buttons_Driver

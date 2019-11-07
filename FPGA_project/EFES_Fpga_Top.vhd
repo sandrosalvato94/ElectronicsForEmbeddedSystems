@@ -10,6 +10,7 @@ port(
 	TOP_enable			:  in  std_logic;
 	
 -- Output UART driver
+	TOP_event			:  out std_logic;
 	TOP_uart_output	:	out std_logic;
 	TOP_uart_busy		:	out std_logic
 --
@@ -74,12 +75,38 @@ architecture Structural  of EFES_Fpga_Top is
 	);
 	end component;
 	
+	component NRegister is
+	generic(N: integer:= 32);
+	port(
+		clk:	in  std_logic;
+		reset:	in  std_logic; --Active high
+		data_in:	in  std_logic_vector(N-1 downto 0);
+		enable:	in  std_logic;
+		load:	in  std_logic; --Load enable high
+		data_out: out std_logic_vector(N-1 downto 0));
+	end component;
+	
+	component Clock_divider is
+	generic(
+		CLKDIV_divider	: integer := 432
+	);
+	port(
+		CLKDIV_clock	:	in	 std_logic;
+		CLKDIV_reset	:  in  std_logic;
+		CLKDIV_baudrate:	out std_logic
+	);
+	end component;
+	
 	signal s_not_buttons			:	std_logic_vector(7 downto 0);
 	signal s_not_reset			:	std_logic;
 	signal s_event_Febd_Tuart	:	std_logic;
 	signal s_buttons_Febd_Tuart:	std_logic_vector(7 downto 0);
+	signal s_tmp					:  std_logic_vector(7 downto 0);
+	signal s_internal_1ms		:	std_logic;
 	
 begin
+	
+	
 	
 	s_not_buttons(0) <= NOT(TOP_Buttons(0));
 	s_not_buttons(1) <= NOT(TOP_Buttons(1));
@@ -92,14 +119,33 @@ begin
 	
 	s_not_reset <= NOT(TOP_reset);
 	
+	CLK_div_1ms	:	Clock_divider GENERIC MAP (CLKDIV_divider => 500000)
+										  PORT MAP (
+											CLKDIV_clock => TOP_clk,
+											CLKDIV_reset => s_not_reset,
+											CLKDIV_baudrate => s_internal_1ms
+										  );
+	
+	Stream_REG : NRegister GENERIC MAP (N => 8)
+								  PORT MAP (
+									clk 		=> s_internal_1ms,
+									reset 	=> s_not_reset,
+									data_in	=> s_not_buttons,
+									enable	=> TOP_enable,
+									load		=> '1',
+									data_out	=> s_tmp
+								  );
+	
 	Buttons_Driver : EightButtonDriver  PORT MAP (
-														EBD_buttons			=> s_not_buttons,
+														EBD_buttons			=> s_tmp,--s_not_buttons,
 														EBD_clock			=> TOP_clk,
 														EBD_reset			=> s_not_reset,
 														EBD_event			=> s_event_Febd_Tuart,
 														EBD_buttons_save 	=> s_buttons_Febd_Tuart
 													);
 	
+	TOP_event <= s_event_Febd_Tuart;
+
 	UART_Driver : UartDriverTX --GENERIC MAP left as default
 					  PORT MAP (
 						UART_clock 		=> TOP_clk,
@@ -112,4 +158,5 @@ begin
 						UART_busy		=> TOP_uart_busy,
 						UART_out			=> TOP_uart_output
 					  );
+	
 end Structural;
