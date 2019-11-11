@@ -22730,3 +22730,879 @@ However, this IP can be configured manually.
 2019-11-04 11:20:24,928 [INFO] BlockDiagram:1818 - stop enableDisableButtons
 2019-11-04 11:20:25,117 [INFO] BlockDiagram:1818 - stop enableDisableButtons
 2019-11-04 11:20:49,111 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-07 11:35:07,029 [INFO] Activator:176 - 
+
+
+2019-11-07 11:35:07,054 [INFO] Activator:177 - !SESSION log4j initialized
+2019-11-07 11:35:56,537 [INFO] ApplicationProperties:181 - Using Application install path: D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903
+2019-11-07 11:35:56,612 [INFO] DbMcusXml:68 - Set database path to: D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/mcu/
+2019-11-07 11:35:56,624 [INFO] DbBoardsPdsc:54 - Set plugin database path to: D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/boardmanager/
+2019-11-07 11:35:56,626 [INFO] DbMcus:264 - Set plugin images path to: D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/
+2019-11-07 11:35:56,626 [INFO] DbBoards:232 - Set plugin images path to: D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/
+2019-11-07 11:35:56,633 [INFO] APIGFXSelector:72 - Set database path to: D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/mcu/
+2019-11-07 11:35:56,705 [INFO] DbMcusAds:72 - Set database path to: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-07 11:35:56,705 [INFO] DbMcusDocs:92 - Set database path to: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-07 11:35:56,714 [INFO] DbMcusJson:59 - Set database path to: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-07 11:35:56,714 [INFO] DbBoardsDocs:84 - Set database path to: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-07 11:35:56,714 [INFO] DbBoardsJson:51 - Set database path to: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-07 11:35:56,763 [INFO] CrossReferenceDbSqlite:197 - Set database path to: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder//mcu/cs/
+2019-11-07 11:35:57,067 [INFO] RulesReader:52 - Compatibility file has been processed (156 Rules)
+2019-11-07 11:35:57,342 [INFO] MicroXplorer:521 - Detected Java Version = 1.8.0_202
+2019-11-07 11:35:57,342 [INFO] DbMcusXml:68 - Set database path to: D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/mcu/
+2019-11-07 11:35:57,343 [INFO] DbBoardsPdsc:54 - Set plugin database path to: D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/boardmanager/
+2019-11-07 11:35:57,345 [INFO] DbMcus:264 - Set plugin images path to: D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/
+2019-11-07 11:35:57,346 [INFO] DbBoards:232 - Set plugin images path to: D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/
+2019-11-07 11:35:57,346 [INFO] APIGFXSelector:72 - Set database path to: D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/mcu/
+2019-11-07 11:35:57,346 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder/ => C:\Users\Alessandro\.stmcufinder\plugins\mcufinder
+2019-11-07 11:35:57,348 [INFO] DbMcusAds:72 - Set database path to: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-07 11:35:57,348 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder/ => C:\Users\Alessandro\.stmcufinder\plugins\mcufinder
+2019-11-07 11:35:57,349 [INFO] DbMcusDocs:92 - Set database path to: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-07 11:35:57,349 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder/ => C:\Users\Alessandro\.stmcufinder\plugins\mcufinder
+2019-11-07 11:35:57,349 [INFO] DbMcusJson:59 - Set database path to: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-07 11:35:57,349 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder/ => C:\Users\Alessandro\.stmcufinder\plugins\mcufinder
+2019-11-07 11:35:57,349 [INFO] DbBoardsDocs:84 - Set database path to: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-07 11:35:57,349 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder/ => C:\Users\Alessandro\.stmcufinder\plugins\mcufinder
+2019-11-07 11:35:57,349 [INFO] DbBoardsJson:51 - Set database path to: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-07 11:35:57,349 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder/ => C:\Users\Alessandro\.stmcufinder\plugins\mcufinder
+2019-11-07 11:35:57,349 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder/ => C:\Users\Alessandro\.stmcufinder\plugins\mcufinder
+2019-11-07 11:35:57,349 [INFO] CrossReferenceDbSqlite:197 - Set database path to: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder//mcu/cs/
+2019-11-07 11:35:57,593 [INFO] MainPanel:211 - HeapMemory: 332398592
+2019-11-07 11:35:57,895 [INFO] DbMcusXml:68 - Set database path to: D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/mcu/
+2019-11-07 11:35:57,896 [INFO] DbBoardsPdsc:54 - Set plugin database path to: D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/boardmanager/
+2019-11-07 11:35:57,897 [INFO] DbMcus:264 - Set plugin images path to: D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/
+2019-11-07 11:35:57,897 [INFO] DbBoards:232 - Set plugin images path to: D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/
+2019-11-07 11:35:57,897 [INFO] APIGFXSelector:72 - Set database path to: D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/mcu/
+2019-11-07 11:35:57,897 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder/ => C:\Users\Alessandro\.stmcufinder\plugins\mcufinder
+2019-11-07 11:35:57,897 [INFO] DbMcusAds:72 - Set database path to: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-07 11:35:57,904 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder/ => C:\Users\Alessandro\.stmcufinder\plugins\mcufinder
+2019-11-07 11:35:57,904 [INFO] DbMcusDocs:92 - Set database path to: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-07 11:35:57,905 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder/ => C:\Users\Alessandro\.stmcufinder\plugins\mcufinder
+2019-11-07 11:35:57,905 [INFO] DbMcusJson:59 - Set database path to: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-07 11:35:57,905 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder/ => C:\Users\Alessandro\.stmcufinder\plugins\mcufinder
+2019-11-07 11:35:57,905 [INFO] DbBoardsDocs:84 - Set database path to: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-07 11:35:57,905 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder/ => C:\Users\Alessandro\.stmcufinder\plugins\mcufinder
+2019-11-07 11:35:57,905 [INFO] DbBoardsJson:51 - Set database path to: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-07 11:35:57,905 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder/ => C:\Users\Alessandro\.stmcufinder\plugins\mcufinder
+2019-11-07 11:35:57,905 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder/ => C:\Users\Alessandro\.stmcufinder\plugins\mcufinder
+2019-11-07 11:35:57,905 [INFO] CrossReferenceDbSqlite:197 - Set database path to: C:\Users\Alessandro\.stmcufinder\plugins\mcufinder//mcu/cs/
+2019-11-07 11:35:57,958 [INFO] ApplicationProperties:181 - Using Application install path: D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903
+2019-11-07 11:35:57,963 [INFO] PluginManage:178 - Search for loadable plugins [exclusion list=]
+2019-11-07 11:35:57,963 [INFO] PluginManage:292 - Check plugin analytics
+2019-11-07 11:35:57,996 [INFO] PluginManage:342 - Loaded plugin analytics (category:tool,tabindex:-1)
+2019-11-07 11:35:57,996 [INFO] PluginManage:292 - Check plugin clock
+2019-11-07 11:35:58,029 [INFO] PluginManage:342 - Loaded plugin clock (category:base,tabindex:2)
+2019-11-07 11:35:58,029 [INFO] PluginManage:292 - Check plugin ddr
+2019-11-07 11:35:58,049 [INFO] PluginManage:342 - Loaded plugin ddr (category:tool,tabindex:6)
+2019-11-07 11:35:58,049 [INFO] PluginManage:292 - Check plugin filemanager
+2019-11-07 11:35:58,317 [INFO] PluginManage:342 - Loaded plugin filemanager (category:base,tabindex:10)
+2019-11-07 11:35:58,328 [INFO] PluginManage:292 - Check plugin ipmanager
+2019-11-07 11:35:58,347 [INFO] PluginManage:342 - Loaded plugin ipmanager (category:base,tabindex:5)
+2019-11-07 11:35:58,347 [INFO] PluginManage:292 - Check plugin pinoutandconfiguration
+2019-11-07 11:35:58,364 [INFO] PluginManage:342 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2019-11-07 11:35:58,364 [INFO] PluginManage:292 - Check plugin pinoutconfig
+2019-11-07 11:35:58,448 [INFO] PluginManage:342 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2019-11-07 11:35:58,448 [INFO] PluginManage:292 - Check plugin power
+2019-11-07 11:35:58,497 [INFO] PluginManage:342 - Loaded plugin power (category:power,tabindex:4)
+2019-11-07 11:35:58,498 [INFO] PluginManage:292 - Check plugin projectmanager
+2019-11-07 11:35:58,534 [INFO] PluginManage:342 - Loaded plugin projectmanager (category:projectmanager,tabindex:3)
+2019-11-07 11:35:58,534 [INFO] PluginManage:292 - Check plugin thirdparty
+2019-11-07 11:35:58,634 [INFO] ThirdPartyDb:294 - Open Third Party DataBase File (C:/Users/Alessandro/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 44 ms. number of Sw pack : 14
+2019-11-07 11:35:58,697 [ERROR] BinarySerializedPackPreferences:182 - ClassNotFoundException [Ljava.lang.StackTraceElement;@35b70f9d
+2019-11-07 11:35:58,697 [INFO] PluginManage:342 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2019-11-07 11:35:58,697 [INFO] PluginManage:292 - Check plugin tools
+2019-11-07 11:35:58,716 [INFO] PluginManage:342 - Loaded plugin tools (category:base,tabindex:7)
+2019-11-07 11:35:58,716 [INFO] PluginManage:292 - Check plugin updater
+2019-11-07 11:35:58,748 [INFO] PluginManage:342 - Loaded plugin updater (category:base,tabindex:12)
+2019-11-07 11:35:58,748 [INFO] PluginManage:265 - PluginManage : Loaded plugins [12]
+2019-11-07 11:35:59,146 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-11-07 11:35:59,368 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:35:59,368 [INFO] PluginManager:200 - loadIPPluginJar : add adc
+2019-11-07 11:35:59,398 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:35:59,399 [INFO] PluginManager:200 - loadIPPluginJar : add aes
+2019-11-07 11:35:59,414 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:35:59,414 [INFO] PluginManager:200 - loadIPPluginJar : add can
+2019-11-07 11:35:59,421 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:35:59,421 [INFO] PluginManager:200 - loadIPPluginJar : add comp
+2019-11-07 11:35:59,431 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:35:59,431 [INFO] PluginManager:200 - loadIPPluginJar : add cryp
+2019-11-07 11:35:59,439 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:35:59,439 [INFO] PluginManager:200 - loadIPPluginJar : add dfsdm
+2019-11-07 11:35:59,449 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:35:59,449 [INFO] PluginManager:200 - loadIPPluginJar : add dma
+2019-11-07 11:35:59,449 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:35:59,449 [INFO] PluginManager:200 - loadIPPluginJar : add fatfs
+2019-11-07 11:35:59,465 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:35:59,465 [INFO] PluginManager:200 - loadIPPluginJar : add fmc
+2019-11-07 11:35:59,480 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:35:59,480 [INFO] PluginManager:200 - loadIPPluginJar : add freertos
+2019-11-07 11:35:59,502 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:35:59,503 [INFO] PluginManager:200 - loadIPPluginJar : add genericplugin
+2019-11-07 11:35:59,508 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:35:59,511 [INFO] PluginManager:200 - loadIPPluginJar : add gfxmmu
+2019-11-07 11:35:59,519 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:35:59,519 [INFO] PluginManager:200 - loadIPPluginJar : add gfxsimulator
+2019-11-07 11:35:59,530 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:35:59,530 [INFO] PluginManager:200 - loadIPPluginJar : add gic
+2019-11-07 11:35:59,544 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:35:59,545 [INFO] PluginManager:200 - loadIPPluginJar : add gpio
+2019-11-07 11:35:59,553 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:35:59,553 [INFO] PluginManager:200 - loadIPPluginJar : add hash
+2019-11-07 11:35:59,579 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:35:59,579 [INFO] PluginManager:200 - loadIPPluginJar : add i2c
+2019-11-07 11:35:59,589 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:35:59,589 [INFO] PluginManager:200 - loadIPPluginJar : add i2s
+2019-11-07 11:35:59,617 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:35:59,617 [INFO] PluginManager:200 - loadIPPluginJar : add ipddr
+2019-11-07 11:35:59,629 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:35:59,629 [INFO] PluginManager:200 - loadIPPluginJar : add ltdc
+2019-11-07 11:35:59,645 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:35:59,646 [INFO] PluginManager:200 - loadIPPluginJar : add mdma
+2019-11-07 11:35:59,662 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:35:59,663 [INFO] PluginManager:200 - loadIPPluginJar : add nvic
+2019-11-07 11:35:59,668 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:35:59,668 [INFO] PluginManager:200 - loadIPPluginJar : add opamp
+2019-11-07 11:35:59,679 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:35:59,680 [INFO] PluginManager:200 - loadIPPluginJar : add pdm2pcm
+2019-11-07 11:35:59,712 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:35:59,713 [INFO] PluginManager:200 - loadIPPluginJar : add plateformsettings
+2019-11-07 11:35:59,723 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:35:59,723 [INFO] PluginManager:200 - loadIPPluginJar : add quadspi
+2019-11-07 11:35:59,762 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:35:59,763 [INFO] PluginManager:200 - loadIPPluginJar : add resmgrutility
+2019-11-07 11:35:59,768 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:35:59,768 [INFO] PluginManager:200 - loadIPPluginJar : add sai
+2019-11-07 11:35:59,778 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:35:59,778 [INFO] PluginManager:200 - loadIPPluginJar : add spi
+2019-11-07 11:35:59,787 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:35:59,787 [INFO] PluginManager:200 - loadIPPluginJar : add stm32_wpan
+2019-11-07 11:35:59,798 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:35:59,799 [INFO] PluginManager:200 - loadIPPluginJar : add tim
+2019-11-07 11:35:59,803 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:35:59,803 [INFO] PluginManager:200 - loadIPPluginJar : add touchsensing
+2019-11-07 11:35:59,813 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:35:59,813 [INFO] PluginManager:200 - loadIPPluginJar : add tracer_emb
+2019-11-07 11:35:59,820 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:35:59,823 [INFO] PluginManager:200 - loadIPPluginJar : add ts
+2019-11-07 11:35:59,829 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:35:59,830 [INFO] PluginManager:200 - loadIPPluginJar : add tsc
+2019-11-07 11:35:59,834 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:35:59,834 [INFO] PluginManager:200 - loadIPPluginJar : add ucpd
+2019-11-07 11:35:59,840 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:35:59,844 [INFO] PluginManager:200 - loadIPPluginJar : add usart
+2019-11-07 11:36:00,757 [INFO] BoardConnectionPanel:217 - [DDR PANEL] osNameString: Windows
+2019-11-07 11:36:01,281 [FATAL] Updater:277 - Updater called before beeing initialized
+2019-11-07 11:36:01,674 [FATAL] Updater:277 - Updater called before beeing initialized
+2019-11-07 11:36:01,676 [ERROR] IntegrityCheckThread:230 - Cannot obtain thirdParties list 21
+2019-11-07 11:36:01,676 [ERROR] IntegrityCheckThread:99 - Unexpected exception IntegrityCheckThread Thread: Updater error
+2019-11-07 11:36:01,679 [INFO] ThirdPartyDb:264 - Close Third Party DataBase File (C:/Users/Alessandro/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml)
+2019-11-07 11:36:01,978 [FATAL] Updater:277 - Updater called before beeing initialized
+2019-11-07 11:36:01,987 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-11-07 11:36:01,992 [FATAL] Updater:277 - Updater called before beeing initialized
+2019-11-07 11:36:02,006 [INFO] MainDdrPanel:82 - [DDR PANEL] SETTER - Set cubeProgrammerPath to: D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_1.0.0.201904021149\tools\bin
+2019-11-07 11:36:02,030 [INFO] Updater:860 - Updater Version found : 5.3.0
+2019-11-07 11:36:02,066 [INFO] ApplicationProperties:181 - Using Application install path: D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903
+2019-11-07 11:36:03,171 [INFO] MainUpdater:2040 - connection check result : 10
+2019-11-07 11:36:03,176 [INFO] MainUpdater:229 - Updater Check For Update Now.
+2019-11-07 11:36:03,177 [INFO] MicroXplorer:401 - Change Database Version : DB.5.0.30
+2019-11-07 11:36:03,232 [INFO] CheckServerUpdateThread:121 - End of CheckServer Thread
+2019-11-07 11:36:03,393 [INFO] MainUpdater:2040 - connection check result : 10
+2019-11-07 11:36:03,397 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Successfull proxy connection.
+2019-11-07 11:36:03,579 [INFO] MicroXplorer:371 - Change Database Path : 
+2019-11-07 11:36:03,580 [INFO] MicroXplorer:401 - Change Database Version : DB.5.0.30
+2019-11-07 11:36:03,587 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-11-07 11:36:03,588 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 236730728 Bytes (332398592)
+2019-11-07 11:36:03,591 [INFO] MicroXplorer:371 - Change Database Path : 
+2019-11-07 11:36:03,591 [INFO] MicroXplorer:401 - Change Database Version : DB.5.0.30
+2019-11-07 11:36:03,591 [INFO] OpenFileManager:269 - Change cursor
+2019-11-07 11:36:08,798 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Instance) has Id (DCMI) currently not set
+2019-11-07 11:36:08,798 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Channel) has Id (DCMI) currently not set
+2019-11-07 11:36:08,798 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Direction) has Id (DCMI) currently not set
+2019-11-07 11:36:08,798 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphInc) has Id (DCMI) currently not set
+2019-11-07 11:36:08,798 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemInc) has Id (DCMI) currently not set
+2019-11-07 11:36:08,798 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphDataAlignment) has Id (DCMI) currently not set
+2019-11-07 11:36:08,798 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemDataAlignment) has Id (DCMI) currently not set
+2019-11-07 11:36:08,798 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Mode) has Id (DCMI) currently not set
+2019-11-07 11:36:08,798 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Priority) has Id (DCMI) currently not set
+2019-11-07 11:36:08,798 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (FIFOMode) has Id (DCMI) currently not set
+2019-11-07 11:36:08,798 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (FIFOThreshold) has Id (DCMI) currently not set
+2019-11-07 11:36:08,798 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (FIFOThreshold) has invalid value (null)
+2019-11-07 11:36:08,798 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemBurst) has Id (DCMI) currently not set
+2019-11-07 11:36:08,798 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemBurst) has invalid value (null)
+2019-11-07 11:36:08,798 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphBurst) has Id (DCMI) currently not set
+2019-11-07 11:36:08,798 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphBurst) has invalid value (null)
+2019-11-07 11:36:08,798 [WARN] IP:1918 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2019-11-07 11:36:08,798 [WARN] IP:1918 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2019-11-07 11:36:08,798 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2019-11-07 11:36:09,528 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 211540576 Bytes (332398592)
+2019-11-07 11:36:09,545 [INFO] ThirdPartyDb:294 - Open Third Party DataBase File (C:/Users/Alessandro/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 2 ms. number of Sw pack : 14
+2019-11-07 11:36:09,772 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 4.3.0
+2019-11-07 11:36:09,772 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 6.0.1
+2019-11-07 11:36:09,772 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 3.3.0
+2019-11-07 11:36:09,772 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.3.0
+2019-11-07 11:36:09,773 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 3.4.0
+2019-11-07 11:36:09,773 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 4.4.0
+2019-11-07 11:36:09,773 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 6.1.0
+2019-11-07 11:36:09,773 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.4.0
+2019-11-07 11:36:09,773 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 3.0.0
+2019-11-07 11:36:09,773 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 6.2.0
+2019-11-07 11:36:09,774 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 4.0.0
+2019-11-07 11:36:09,774 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 7.0.0
+2019-11-07 11:36:09,774 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 4.1.0
+2019-11-07 11:36:09,774 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.5.0
+2019-11-07 11:36:10,321 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-11-07 11:36:10,323 [INFO] PinOutPanel:1367 - setPackage(STM32F446ZETx,LQFP144)
+2019-11-07 11:36:11,236 [INFO] UtilMem:74 - Before build in PCC Used Memory: 289177928 Bytes (332398592)
+2019-11-07 11:36:11,782 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/Alessandro/.stm32cubemx/plugins/power
+2019-11-07 11:36:11,783 [INFO] UtilMem:74 - After build in PCC Used Memory: 219389112 Bytes (332398592)
+2019-11-07 11:36:11,792 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-07 11:36:11,792 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,795 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,795 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,796 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,796 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,796 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,796 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,796 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,796 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,797 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,808 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,808 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,809 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:36:11,823 [WARN] IP:1918 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2019-11-07 11:36:11,823 [WARN] IP:1918 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2019-11-07 11:36:11,830 [WARN] IP:1918 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2019-11-07 11:36:11,830 [WARN] IP:1918 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2019-11-07 11:36:11,838 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-07 11:36:11,854 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] toolchainItems.length=====1
+2019-11-07 11:36:11,860 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:36:11,862 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-07 11:36:11,986 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:36:11,988 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:36:11,988 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:36:11,992 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-07 11:36:11,995 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-07 11:36:11,996 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:36:12,016 [INFO] OpenFileManager:289 - Restore cursor
+2019-11-07 11:36:12,020 [INFO] DbMcusXml:106 - Load MCU database from D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/mcu/families.xml
+2019-11-07 11:36:12,027 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:36:12,027 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:36:12,027 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:36:12,033 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-07 11:36:12,034 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-07 11:36:12,036 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:36:12,242 [WARN] IP:1918 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2019-11-07 11:36:12,242 [WARN] IP:1918 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2019-11-07 11:36:12,242 [WARN] IP:1918 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2019-11-07 11:36:12,242 [WARN] IP:1918 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2019-11-07 11:36:12,242 [WARN] IP:1918 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2019-11-07 11:36:12,242 [WARN] IP:1918 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2019-11-07 11:36:12,250 [WARN] IP:1918 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2019-11-07 11:36:12,251 [WARN] IP:1918 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2019-11-07 11:36:12,293 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-07 11:36:12,327 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:36:12,327 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:36:12,332 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:36:12,332 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-07 11:36:12,332 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-07 11:36:12,343 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:36:12,502 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-07 11:36:13,185 [INFO] DbMcusJson:87 - JSON generation date=Mon Sep 23 11:35:45 CEST 2019 (1569231345)
+2019-11-07 11:36:14,855 [INFO] DbMcus:193 - Found 1496 MCUs (1455 are supported by CubeMX, 1455 are visible in CubeMX)
+2019-11-07 11:36:14,857 [INFO] ApiDb:158 - Load user favorites file C:\Users\Alessandro/.stm32cubemx/favorites.mcus.txt: 0 item(s)
+2019-11-07 11:36:14,857 [INFO] ApiDb:163 - User favorites MCUs=[]
+2019-11-07 11:36:14,858 [INFO] DbMcus:205 - Set 0 / 0 favorites MCUs
+2019-11-07 11:36:21,775 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-07 11:36:32,507 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:36:32,507 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:36:32,507 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:36:32,507 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-07 11:36:32,507 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-07 11:36:32,523 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:36:32,590 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-07 11:36:32,829 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-07 11:39:03,543 [INFO] NvicIntPanel:85 - NVIC parent = javax.swing.JTabbedPane[,0,43,482x240,layout=com.st.microxplorer.stobjectsui.STTabbedPaneUI$TabbedPaneLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=352,maximumSize=,minimumSize=,preferredSize=,haveRegistered=false,tabPlacement=TOP]
+2019-11-07 11:39:21,914 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-07 11:39:22,015 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:39:22,015 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:39:22,029 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:39:22,029 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-07 11:39:22,033 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-07 11:39:22,033 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:39:22,068 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-07 11:39:22,151 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-07 11:40:05,278 [INFO] NvicIntPanel:85 - NVIC parent = javax.swing.JTabbedPane[,0,43,482x240,layout=com.st.microxplorer.stobjectsui.STTabbedPaneUI$TabbedPaneLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=352,maximumSize=,minimumSize=,preferredSize=,haveRegistered=false,tabPlacement=TOP]
+2019-11-07 11:40:08,874 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 333286328 Bytes (531628032)
+2019-11-07 11:40:08,885 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:40:08,888 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:40:08,888 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:40:08,888 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-07 11:40:08,904 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-07 11:40:08,908 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:40:11,064 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 343187096 Bytes (531628032)
+2019-11-07 11:40:11,068 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:40:11,068 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:40:11,068 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:40:11,068 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-07 11:40:11,085 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-07 11:40:11,086 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:40:11,914 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: SYS
+2019-11-07 11:40:11,914 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: RCC
+2019-11-07 11:40:11,914 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: I2C
+2019-11-07 11:40:11,915 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: I2C
+2019-11-07 11:40:11,915 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: DCMI
+2019-11-07 11:40:11,916 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: NVIC
+2019-11-07 11:40:11,916 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: USART
+2019-11-07 11:40:11,916 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: DMA
+2019-11-07 11:40:11,916 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: TIM1_8
+2019-11-07 11:40:11,916 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: UART
+2019-11-07 11:40:11,918 [INFO] CodeGenerator:583 - code generatio: config db path: D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\
+2019-11-07 11:40:11,919 [WARN] IP:1918 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2019-11-07 11:40:11,919 [WARN] IP:1918 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2019-11-07 11:40:11,931 [WARN] IP:1918 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2019-11-07 11:40:11,931 [WARN] IP:1918 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2019-11-07 11:40:12,381 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\MXTmpFiles\license.tmp_save
+2019-11-07 11:40:13,050 [INFO] CodeEngine:208 - Generated code: C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\MXTmpFiles\license.tmp
+2019-11-07 11:40:13,277 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\MXTmpFiles\gpio.tmp_save
+2019-11-07 11:40:13,453 [INFO] CodeEngine:208 - Generated code: C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\MXTmpFiles\gpio.tmp
+2019-11-07 11:40:14,267 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-07 11:40:14,269 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for DCMI
+2019-11-07 11:40:14,272 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-07 11:40:14,275 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-07 11:40:14,277 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for DMA
+2019-11-07 11:40:14,280 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-07 11:40:14,319 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\MXTmpFiles\dma.tmp_save
+2019-11-07 11:40:14,553 [INFO] CodeEngine:208 - Generated code: C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\MXTmpFiles\dma.tmp
+2019-11-07 11:40:14,566 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\MXTmpFiles\dma_GV.tmp_save
+2019-11-07 11:40:14,684 [INFO] CodeEngine:208 - Generated code: C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\MXTmpFiles\dma_GV.tmp
+2019-11-07 11:40:14,688 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-07 11:40:14,688 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for I2C
+2019-11-07 11:40:14,688 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-07 11:40:14,688 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-07 11:40:14,695 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for SYS
+2019-11-07 11:40:14,698 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-07 11:40:14,700 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-07 11:40:14,700 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for TIM
+2019-11-07 11:40:14,700 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-07 11:40:14,700 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-07 11:40:14,700 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for USART
+2019-11-07 11:40:14,700 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-07 11:40:14,700 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2019-11-07 11:40:14,716 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-07 11:40:14,730 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\Src\stm32f4xx_it.c_save
+2019-11-07 11:40:14,993 [INFO] CodeEngine:208 - Generated code: C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\Src\stm32f4xx_it.c
+2019-11-07 11:40:15,009 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\Inc\stm32f4xx_it.h_save
+2019-11-07 11:40:15,179 [INFO] CodeEngine:208 - Generated code: C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\Inc\stm32f4xx_it.h
+2019-11-07 11:40:15,207 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\Src\stm32f4xx_hal_msp.c_save
+2019-11-07 11:40:15,622 [INFO] CodeEngine:208 - Generated code: C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\Src\stm32f4xx_hal_msp.c
+2019-11-07 11:40:15,636 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\MXTmpFiles\system.tmp_save
+2019-11-07 11:40:15,795 [INFO] CodeEngine:208 - Generated code: C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\MXTmpFiles\system.tmp
+2019-11-07 11:40:15,809 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\Inc\stm32f4xx_hal_conf.h_save
+2019-11-07 11:40:15,971 [INFO] CodeEngine:208 - Generated code: C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\Inc\stm32f4xx_hal_conf.h
+2019-11-07 11:40:16,034 [WARN] IPConfigManager:2562 - IP not found : TIM
+2019-11-07 11:40:16,034 [WARN] IPConfigManager:2562 - IP not found : gpio
+2019-11-07 11:40:16,042 [WARN] CodeGenerator:2617 - IP not found : TIM
+2019-11-07 11:40:16,043 [WARN] CodeGenerator:2617 - IP not found : gpio
+2019-11-07 11:40:16,055 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\Inc\main.h_save
+2019-11-07 11:40:16,276 [INFO] CodeEngine:208 - Generated code: C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\Inc\main.h
+2019-11-07 11:40:16,292 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\Src\main.c_save
+2019-11-07 11:40:16,667 [INFO] CodeEngine:208 - Generated code: C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\Src\main.c
+2019-11-07 11:40:17,819 [INFO] ProjectBuilder:1570 - Time for Copy HAL[1] : 247mS.
+2019-11-07 11:40:17,830 [INFO] ProjectBuilder:2138 - Project Generator version: 3.4.0
+2019-11-07 11:40:18,404 [INFO] ConfigFileManager:879 - The Die is : DIE421
+2019-11-07 11:40:18,416 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] configName ==Arm Cortex-M4
+2019-11-07 11:40:18,767 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] memory ==name="RAM" access="xrw" start="0x20000000" size="128"
+2019-11-07 11:40:18,769 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] memory ==name="FLASH" access="rx" start="0x8000000" size="512"
+2019-11-07 11:40:19,015 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] namefile= STM32CubeIDE
+2019-11-07 11:40:19,016 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============generate
+2019-11-07 11:40:29,021 [INFO] ProjectBuilder:2232 - Time for Generating toolchain IDE Files: 11191mS.
+2019-11-07 11:40:29,022 [INFO] ProjectBuilder:1461 - Time for Copy CMSIS : 1mS.
+2019-11-07 11:40:29,033 [INFO] ProjectBuilder:1461 - Time for Copy CMSIS : 0mS.
+2019-11-07 11:41:46,176 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-07 11:59:15,727 [INFO] MainUpdater:2040 - connection check result : 10
+2019-11-07 11:59:15,728 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Successfull proxy connection.
+2019-11-07 11:59:15,837 [INFO] MicroXplorer:371 - Change Database Path : 
+2019-11-07 11:59:15,838 [INFO] MicroXplorer:401 - Change Database Version : DB.5.0.30
+2019-11-07 11:59:15,843 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-11-07 11:59:15,850 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 509800896 Bytes (797966336)
+2019-11-07 11:59:15,852 [INFO] MicroXplorer:371 - Change Database Path : 
+2019-11-07 11:59:15,852 [INFO] MicroXplorer:401 - Change Database Version : DB.5.0.30
+2019-11-07 11:59:15,852 [INFO] OpenFileManager:269 - Change cursor
+2019-11-07 11:59:15,870 [INFO] RulesReader:52 - Compatibility file has been processed (156 Rules)
+2019-11-07 11:59:19,243 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Instance) has Id (DCMI) currently not set
+2019-11-07 11:59:19,243 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Channel) has Id (DCMI) currently not set
+2019-11-07 11:59:19,243 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Direction) has Id (DCMI) currently not set
+2019-11-07 11:59:19,243 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphInc) has Id (DCMI) currently not set
+2019-11-07 11:59:19,243 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemInc) has Id (DCMI) currently not set
+2019-11-07 11:59:19,243 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphDataAlignment) has Id (DCMI) currently not set
+2019-11-07 11:59:19,243 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemDataAlignment) has Id (DCMI) currently not set
+2019-11-07 11:59:19,243 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Mode) has Id (DCMI) currently not set
+2019-11-07 11:59:19,243 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Priority) has Id (DCMI) currently not set
+2019-11-07 11:59:19,243 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (FIFOMode) has Id (DCMI) currently not set
+2019-11-07 11:59:19,243 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (FIFOThreshold) has Id (DCMI) currently not set
+2019-11-07 11:59:19,243 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (FIFOThreshold) has invalid value (null)
+2019-11-07 11:59:19,243 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemBurst) has Id (DCMI) currently not set
+2019-11-07 11:59:19,243 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemBurst) has invalid value (null)
+2019-11-07 11:59:19,243 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphBurst) has Id (DCMI) currently not set
+2019-11-07 11:59:19,243 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphBurst) has invalid value (null)
+2019-11-07 11:59:19,243 [WARN] IP:1918 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2019-11-07 11:59:19,243 [WARN] IP:1918 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2019-11-07 11:59:19,243 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2019-11-07 11:59:19,831 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 533114632 Bytes (797966336)
+2019-11-07 11:59:19,871 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 4.3.0
+2019-11-07 11:59:19,871 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 6.0.1
+2019-11-07 11:59:19,871 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 3.3.0
+2019-11-07 11:59:19,871 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.3.0
+2019-11-07 11:59:19,871 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 3.4.0
+2019-11-07 11:59:19,871 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 4.4.0
+2019-11-07 11:59:19,871 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 6.1.0
+2019-11-07 11:59:19,871 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.4.0
+2019-11-07 11:59:19,871 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 3.0.0
+2019-11-07 11:59:19,871 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 6.2.0
+2019-11-07 11:59:19,871 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 4.0.0
+2019-11-07 11:59:19,871 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 7.0.0
+2019-11-07 11:59:19,871 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 4.1.0
+2019-11-07 11:59:19,871 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.5.0
+2019-11-07 11:59:20,089 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-11-07 11:59:20,089 [INFO] PinOutPanel:1367 - setPackage(STM32F446ZETx,LQFP144)
+2019-11-07 11:59:20,504 [INFO] UtilMem:74 - Before build in PCC Used Memory: 366858840 Bytes (797966336)
+2019-11-07 11:59:20,620 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/Alessandro/.stm32cubemx/plugins/power
+2019-11-07 11:59:20,620 [INFO] UtilMem:74 - After build in PCC Used Memory: 376298120 Bytes (797966336)
+2019-11-07 11:59:20,622 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,622 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,636 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,636 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 11:59:20,638 [WARN] IP:1918 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2019-11-07 11:59:20,638 [WARN] IP:1918 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2019-11-07 11:59:20,638 [WARN] IP:1918 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2019-11-07 11:59:20,638 [WARN] IP:1918 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2019-11-07 11:59:20,638 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-07 11:59:20,653 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:59:20,654 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:59:20,654 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:59:20,654 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-07 11:59:20,654 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-07 11:59:20,654 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:59:20,672 [INFO] OpenFileManager:289 - Restore cursor
+2019-11-07 11:59:20,672 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:59:20,688 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:59:20,689 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:59:20,689 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-07 11:59:20,689 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-07 11:59:20,689 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:59:20,739 [WARN] IP:1918 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2019-11-07 11:59:20,739 [WARN] IP:1918 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2019-11-07 11:59:20,739 [WARN] IP:1918 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2019-11-07 11:59:20,739 [WARN] IP:1918 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2019-11-07 11:59:20,754 [WARN] IP:1918 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2019-11-07 11:59:20,754 [WARN] IP:1918 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2019-11-07 11:59:20,755 [WARN] IP:1918 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2019-11-07 11:59:20,755 [WARN] IP:1918 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2019-11-07 11:59:20,789 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-07 11:59:20,789 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:59:20,789 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:59:20,803 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:59:20,806 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-07 11:59:20,807 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-07 11:59:20,807 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:59:20,829 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-07 11:59:26,497 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-07 11:59:26,574 [INFO] NvicIntPanel:85 - NVIC parent = javax.swing.JTabbedPane[,0,0,0x0,invalid,layout=com.st.microxplorer.stobjectsui.STTabbedPaneUI$TabbedPaneLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=352,maximumSize=,minimumSize=,preferredSize=,haveRegistered=false,tabPlacement=TOP]
+2019-11-07 11:59:33,377 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 548262488 Bytes (797966336)
+2019-11-07 11:59:33,380 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:59:33,381 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:59:33,384 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:59:33,386 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-07 11:59:33,388 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-07 11:59:33,389 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:59:35,139 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 559270496 Bytes (797966336)
+2019-11-07 11:59:35,143 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:59:35,144 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:59:35,144 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:59:35,144 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-07 11:59:35,144 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-07 11:59:35,150 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 11:59:35,296 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: SYS
+2019-11-07 11:59:35,296 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: RCC
+2019-11-07 11:59:35,296 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: I2C
+2019-11-07 11:59:35,296 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: I2C
+2019-11-07 11:59:35,296 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: DCMI
+2019-11-07 11:59:35,296 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: NVIC
+2019-11-07 11:59:35,296 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: USART
+2019-11-07 11:59:35,296 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: DMA
+2019-11-07 11:59:35,296 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: TIM1_8
+2019-11-07 11:59:35,296 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: UART
+2019-11-07 11:59:35,298 [INFO] CodeGenerator:583 - code generatio: config db path: D:\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\
+2019-11-07 11:59:35,302 [INFO] Argument:277 - Argument : hdmavalue: null
+2019-11-07 11:59:35,302 [INFO] Argument:279 - 	 sub Args: 
+2019-11-07 11:59:35,302 [INFO] Argument:277 - Argument : Instancevalue: DMA2_Stream1
+2019-11-07 11:59:35,302 [INFO] Argument:287 - Argument : Instancevalue: DMA2_Stream1
+2019-11-07 11:59:35,303 [INFO] Argument:277 - Argument : Initvalue: null
+2019-11-07 11:59:35,303 [INFO] Argument:279 - 	 sub Args: 
+2019-11-07 11:59:35,303 [INFO] Argument:277 - Argument : Channelvalue: DMA_CHANNEL_1
+2019-11-07 11:59:35,303 [INFO] Argument:287 - Argument : Channelvalue: DMA_CHANNEL_1
+2019-11-07 11:59:35,303 [INFO] Argument:277 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2019-11-07 11:59:35,303 [INFO] Argument:287 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2019-11-07 11:59:35,303 [INFO] Argument:277 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2019-11-07 11:59:35,303 [INFO] Argument:287 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2019-11-07 11:59:35,303 [INFO] Argument:277 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2019-11-07 11:59:35,303 [INFO] Argument:287 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2019-11-07 11:59:35,303 [INFO] Argument:277 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_WORD
+2019-11-07 11:59:35,303 [INFO] Argument:287 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_WORD
+2019-11-07 11:59:35,304 [INFO] Argument:277 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_WORD
+2019-11-07 11:59:35,304 [INFO] Argument:287 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_WORD
+2019-11-07 11:59:35,304 [INFO] Argument:277 - Argument : Modevalue: DMA_CIRCULAR
+2019-11-07 11:59:35,304 [INFO] Argument:287 - Argument : Modevalue: DMA_CIRCULAR
+2019-11-07 11:59:35,304 [INFO] Argument:277 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2019-11-07 11:59:35,304 [INFO] Argument:287 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2019-11-07 11:59:35,304 [INFO] Argument:277 - Argument : FIFOModevalue: DMA_FIFOMODE_ENABLE
+2019-11-07 11:59:35,304 [INFO] Argument:287 - Argument : FIFOModevalue: DMA_FIFOMODE_ENABLE
+2019-11-07 11:59:35,304 [INFO] Argument:277 - Argument : FIFOThresholdvalue: DMA_FIFO_THRESHOLD_FULL
+2019-11-07 11:59:35,304 [INFO] Argument:287 - Argument : FIFOThresholdvalue: DMA_FIFO_THRESHOLD_FULL
+2019-11-07 11:59:35,304 [INFO] Argument:277 - Argument : MemBurstvalue: DMA_MBURST_INC4
+2019-11-07 11:59:35,304 [INFO] Argument:287 - Argument : MemBurstvalue: DMA_MBURST_INC4
+2019-11-07 11:59:35,304 [INFO] Argument:277 - Argument : PeriphBurstvalue: DMA_PBURST_SINGLE
+2019-11-07 11:59:35,305 [INFO] Argument:287 - Argument : PeriphBurstvalue: DMA_PBURST_SINGLE
+2019-11-07 11:59:35,305 [INFO] Argument:277 - Argument : Lockvalue: null
+2019-11-07 11:59:35,305 [INFO] Argument:287 - Argument : Lockvalue: null
+2019-11-07 11:59:35,305 [INFO] Argument:277 - Argument : Statevalue: null
+2019-11-07 11:59:35,305 [INFO] Argument:287 - Argument : Statevalue: null
+2019-11-07 11:59:35,305 [INFO] Argument:277 - Argument : Parentvalue: null
+2019-11-07 11:59:35,305 [INFO] Argument:287 - Argument : Parentvalue: null
+2019-11-07 11:59:35,305 [INFO] Argument:277 - Argument : XferCpltCallbackvalue: null
+2019-11-07 11:59:35,305 [INFO] Argument:287 - Argument : XferCpltCallbackvalue: null
+2019-11-07 11:59:35,305 [INFO] Argument:277 - Argument : XferHalfCpltCallbackvalue: null
+2019-11-07 11:59:35,305 [INFO] Argument:287 - Argument : XferHalfCpltCallbackvalue: null
+2019-11-07 11:59:35,305 [INFO] Argument:277 - Argument : XferM1CpltCallbackvalue: null
+2019-11-07 11:59:35,305 [INFO] Argument:287 - Argument : XferM1CpltCallbackvalue: null
+2019-11-07 11:59:35,305 [INFO] Argument:277 - Argument : XferErrorCallbackvalue: null
+2019-11-07 11:59:35,305 [INFO] Argument:287 - Argument : XferErrorCallbackvalue: null
+2019-11-07 11:59:35,305 [INFO] Argument:277 - Argument : ErrorCodevalue: null
+2019-11-07 11:59:35,307 [INFO] Argument:287 - Argument : ErrorCodevalue: null
+2019-11-07 11:59:35,307 [WARN] IP:1918 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2019-11-07 11:59:35,307 [WARN] IP:1918 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2019-11-07 11:59:35,308 [WARN] IP:1918 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2019-11-07 11:59:35,308 [WARN] IP:1918 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2019-11-07 11:59:35,724 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\MXTmpFiles\license.tmp_save
+2019-11-07 11:59:35,844 [INFO] CodeEngine:208 - Generated code: C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\MXTmpFiles\license.tmp
+2019-11-07 11:59:35,907 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\MXTmpFiles\gpio.tmp_save
+2019-11-07 11:59:36,017 [INFO] CodeEngine:208 - Generated code: C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\MXTmpFiles\gpio.tmp
+2019-11-07 11:59:36,412 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-07 11:59:36,416 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for DCMI
+2019-11-07 11:59:36,417 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-07 11:59:36,420 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-07 11:59:36,424 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for DMA
+2019-11-07 11:59:36,426 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-07 11:59:36,450 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\MXTmpFiles\dma.tmp_save
+2019-11-07 11:59:36,605 [INFO] CodeEngine:208 - Generated code: C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\MXTmpFiles\dma.tmp
+2019-11-07 11:59:36,617 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\MXTmpFiles\dma_GV.tmp_save
+2019-11-07 11:59:36,798 [INFO] CodeEngine:208 - Generated code: C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\MXTmpFiles\dma_GV.tmp
+2019-11-07 11:59:36,802 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-07 11:59:36,805 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for I2C
+2019-11-07 11:59:36,806 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-07 11:59:36,809 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-07 11:59:36,810 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for SYS
+2019-11-07 11:59:36,812 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-07 11:59:36,815 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-07 11:59:36,818 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for TIM
+2019-11-07 11:59:36,819 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-07 11:59:36,821 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-07 11:59:36,823 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for USART
+2019-11-07 11:59:36,824 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-07 11:59:36,827 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2019-11-07 11:59:36,828 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-07 11:59:36,841 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\Src\stm32f4xx_it.c_save
+2019-11-07 11:59:37,033 [INFO] CodeEngine:208 - Generated code: C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\Src\stm32f4xx_it.c
+2019-11-07 11:59:37,045 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\Inc\stm32f4xx_it.h_save
+2019-11-07 11:59:37,202 [INFO] CodeEngine:208 - Generated code: C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\Inc\stm32f4xx_it.h
+2019-11-07 11:59:37,220 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\Src\stm32f4xx_hal_msp.c_save
+2019-11-07 11:59:37,473 [INFO] CodeEngine:208 - Generated code: C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\Src\stm32f4xx_hal_msp.c
+2019-11-07 11:59:37,483 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\MXTmpFiles\system.tmp_save
+2019-11-07 11:59:37,591 [INFO] CodeEngine:208 - Generated code: C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\MXTmpFiles\system.tmp
+2019-11-07 11:59:37,600 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\Inc\stm32f4xx_hal_conf.h_save
+2019-11-07 11:59:37,722 [INFO] CodeEngine:208 - Generated code: C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\Inc\stm32f4xx_hal_conf.h
+2019-11-07 11:59:37,734 [WARN] IPConfigManager:2562 - IP not found : TIM
+2019-11-07 11:59:37,734 [WARN] IPConfigManager:2562 - IP not found : gpio
+2019-11-07 11:59:37,734 [WARN] CodeGenerator:2617 - IP not found : TIM
+2019-11-07 11:59:37,734 [WARN] CodeGenerator:2617 - IP not found : gpio
+2019-11-07 11:59:37,742 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\Inc\main.h_save
+2019-11-07 11:59:37,834 [INFO] CodeEngine:208 - Generated code: C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\Inc\main.h
+2019-11-07 11:59:37,847 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\Src\main.c_save
+2019-11-07 11:59:38,193 [INFO] CodeEngine:208 - Generated code: C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\Src\main.c
+2019-11-07 11:59:39,089 [INFO] ProjectBuilder:1570 - Time for Copy HAL[1] : 221mS.
+2019-11-07 11:59:39,094 [INFO] ProjectBuilder:2138 - Project Generator version: 3.4.0
+2019-11-07 11:59:39,545 [INFO] ConfigFileManager:879 - The Die is : DIE421
+2019-11-07 11:59:39,560 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] configName ==Arm Cortex-M4
+2019-11-07 11:59:39,755 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] memory ==name="RAM" access="xrw" start="0x20000000" size="128"
+2019-11-07 11:59:39,758 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] memory ==name="FLASH" access="rx" start="0x8000000" size="512"
+2019-11-07 11:59:40,284 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] namefile= STM32CubeIDE
+2019-11-07 11:59:40,284 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============generate
+2019-11-07 11:59:43,165 [INFO] ProjectBuilder:2232 - Time for Generating toolchain IDE Files: 4071mS.
+2019-11-07 11:59:43,167 [INFO] ProjectBuilder:1461 - Time for Copy CMSIS : 1mS.
+2019-11-07 11:59:43,181 [INFO] ProjectBuilder:1461 - Time for Copy CMSIS : 1mS.
+2019-11-07 11:59:55,005 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-07 12:09:57,541 [INFO] MainUpdater:2040 - connection check result : 10
+2019-11-07 12:09:57,557 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Successfull proxy connection.
+2019-11-07 12:09:57,603 [INFO] MicroXplorer:371 - Change Database Path : 
+2019-11-07 12:09:57,603 [INFO] MicroXplorer:401 - Change Database Version : DB.5.0.30
+2019-11-07 12:09:57,603 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-11-07 12:09:57,619 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 538529896 Bytes (1002438656)
+2019-11-07 12:09:57,619 [INFO] MicroXplorer:371 - Change Database Path : 
+2019-11-07 12:09:57,619 [INFO] MicroXplorer:401 - Change Database Version : DB.5.0.30
+2019-11-07 12:09:57,619 [INFO] OpenFileManager:269 - Change cursor
+2019-11-07 12:09:57,619 [INFO] RulesReader:52 - Compatibility file has been processed (156 Rules)
+2019-11-07 12:09:59,318 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Instance) has Id (DCMI) currently not set
+2019-11-07 12:09:59,318 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Channel) has Id (DCMI) currently not set
+2019-11-07 12:09:59,318 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Direction) has Id (DCMI) currently not set
+2019-11-07 12:09:59,318 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphInc) has Id (DCMI) currently not set
+2019-11-07 12:09:59,318 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemInc) has Id (DCMI) currently not set
+2019-11-07 12:09:59,318 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphDataAlignment) has Id (DCMI) currently not set
+2019-11-07 12:09:59,318 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemDataAlignment) has Id (DCMI) currently not set
+2019-11-07 12:09:59,318 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Mode) has Id (DCMI) currently not set
+2019-11-07 12:09:59,318 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Priority) has Id (DCMI) currently not set
+2019-11-07 12:09:59,318 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (FIFOMode) has Id (DCMI) currently not set
+2019-11-07 12:09:59,318 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (FIFOThreshold) has Id (DCMI) currently not set
+2019-11-07 12:09:59,318 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (FIFOThreshold) has invalid value (null)
+2019-11-07 12:09:59,318 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemBurst) has Id (DCMI) currently not set
+2019-11-07 12:09:59,318 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemBurst) has invalid value (null)
+2019-11-07 12:09:59,318 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphBurst) has Id (DCMI) currently not set
+2019-11-07 12:09:59,318 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphBurst) has invalid value (null)
+2019-11-07 12:09:59,318 [WARN] IP:1918 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2019-11-07 12:09:59,318 [WARN] IP:1918 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2019-11-07 12:09:59,318 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2019-11-07 12:09:59,663 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 429042376 Bytes (1002438656)
+2019-11-07 12:09:59,679 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 4.3.0
+2019-11-07 12:09:59,679 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 6.0.1
+2019-11-07 12:09:59,679 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 3.3.0
+2019-11-07 12:09:59,679 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.3.0
+2019-11-07 12:09:59,679 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 3.4.0
+2019-11-07 12:09:59,679 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 4.4.0
+2019-11-07 12:09:59,679 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 6.1.0
+2019-11-07 12:09:59,679 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.4.0
+2019-11-07 12:09:59,679 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 3.0.0
+2019-11-07 12:09:59,679 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 6.2.0
+2019-11-07 12:09:59,679 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 4.0.0
+2019-11-07 12:09:59,679 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 7.0.0
+2019-11-07 12:09:59,679 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 4.1.0
+2019-11-07 12:09:59,679 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.5.0
+2019-11-07 12:09:59,788 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-11-07 12:09:59,805 [INFO] PinOutPanel:1367 - setPackage(STM32F446ZETx,LQFP144)
+2019-11-07 12:10:00,025 [INFO] UtilMem:74 - Before build in PCC Used Memory: 581029408 Bytes (1002438656)
+2019-11-07 12:10:00,094 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/Alessandro/.stm32cubemx/plugins/power
+2019-11-07 12:10:00,094 [INFO] UtilMem:74 - After build in PCC Used Memory: 590466592 Bytes (1002438656)
+2019-11-07 12:10:00,109 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-07 12:10:00,109 [WARN] IP:1918 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2019-11-07 12:10:00,109 [WARN] IP:1918 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2019-11-07 12:10:00,109 [WARN] IP:1918 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2019-11-07 12:10:00,109 [WARN] IP:1918 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2019-11-07 12:10:00,109 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-07 12:10:00,125 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 12:10:00,125 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 12:10:00,125 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 12:10:00,125 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-07 12:10:00,125 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-07 12:10:00,125 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 12:10:00,156 [INFO] OpenFileManager:289 - Restore cursor
+2019-11-07 12:10:00,156 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 12:10:00,156 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 12:10:00,156 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 12:10:00,156 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-07 12:10:00,156 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-07 12:10:00,156 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 12:10:00,219 [WARN] IP:1918 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2019-11-07 12:10:00,219 [WARN] IP:1918 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2019-11-07 12:10:00,219 [WARN] IP:1918 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2019-11-07 12:10:00,219 [WARN] IP:1918 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2019-11-07 12:10:00,219 [WARN] IP:1918 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2019-11-07 12:10:00,219 [WARN] IP:1918 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2019-11-07 12:10:00,219 [WARN] IP:1918 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2019-11-07 12:10:00,219 [WARN] IP:1918 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2019-11-07 12:10:00,250 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-07 12:10:00,266 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 12:10:00,266 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 12:10:00,266 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 12:10:00,266 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-07 12:10:00,266 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-07 12:10:00,266 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-07 12:10:00,281 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-07 12:10:04,345 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-07 12:10:09,698 [INFO] NvicIntPanel:85 - NVIC parent = javax.swing.JTabbedPane[,0,43,483x240,layout=com.st.microxplorer.stobjectsui.STTabbedPaneUI$TabbedPaneLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=352,maximumSize=,minimumSize=,preferredSize=,haveRegistered=false,tabPlacement=TOP]
+2019-11-07 12:10:39,780 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-07 12:22:21,317 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Exception in thread "SWV client thread" java.lang.NullPointerException
+2019-11-07 12:22:21,319 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVClient.getNextByte(SWVClient.java:280)
+2019-11-07 12:22:21,320 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVClient.run(SWVClient.java:323)

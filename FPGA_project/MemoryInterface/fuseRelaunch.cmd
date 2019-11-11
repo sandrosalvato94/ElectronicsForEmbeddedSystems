@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Alessandro/Desktop/EFES_Fpga/MemoryInterface/TB_MemoryInterface_isim_beh.exe" -prj "C:/Users/Alessandro/Desktop/EFES_Fpga/MemoryInterface/TB_MemoryInterface_beh.prj" "work.TB_MemoryInterface" 

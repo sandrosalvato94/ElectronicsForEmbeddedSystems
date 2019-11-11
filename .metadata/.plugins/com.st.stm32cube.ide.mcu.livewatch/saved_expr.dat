@@ -8,3 +8,4 @@ hdcmi
 hdma_dcmi
 lcdBuffer
 measure
+buffer_uart

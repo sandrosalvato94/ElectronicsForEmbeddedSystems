@@ -51,6 +51,7 @@ I2C_HandleTypeDef hi2c2;
 
 TIM_HandleTypeDef htim14;
 
+UART_HandleTypeDef huart4;
 UART_HandleTypeDef huart3;
 
 /* USER CODE BEGIN PV */
@@ -66,6 +67,7 @@ static void MX_DCMI_Init(void);
 static void MX_I2C2_Init(void);
 static void MX_USART3_UART_Init(void);
 static void MX_TIM14_Init(void);
+static void MX_UART4_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -73,6 +75,7 @@ static void MX_TIM14_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 uint8_t conf[2] = {0x12, 0x80};
+uint8_t buffer_uart;
 //uint32_t buff[38400];
 
 /* USER CODE END 0 */
@@ -115,8 +118,11 @@ int main(void)
   MX_I2C2_Init();
   MX_USART3_UART_Init();
   MX_TIM14_Init();
+  MX_UART4_Init();
   /* USER CODE BEGIN 2 */
   ADC_init(&hi2c1);
+
+
 
   ov7670_init(&hdcmi, &hdma_dcmi, &hi2c2);
   ov7670_config(0);
@@ -132,6 +138,8 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	HAL_UART_Receive_IT(&huart4, &buffer_uart, 1);
+
 
     measure = ADC_do_conversion();
     HAL_Delay(500);
@@ -147,19 +155,29 @@ int main(void)
     	HAL_TIM_PWM_Stop(&htim14, TIM_CHANNEL_1);
     }
 
-    HAL_DCMI_Start_DMA(&hdcmi, DCMI_MODE_SNAPSHOT, lcdBuffer, 19200);
+    if(buffer_uart == 1)
+    {
+    	HAL_DCMI_Start_DMA(&hdcmi, DCMI_MODE_SNAPSHOT, lcdBuffer, 19200);
+    	HAL_Delay(1000);
+    	ov7670_stopCap();
+    	for(i=0; i<19200; i++)
+    	{
+    		HAL_UART_Transmit(&huart3, &lcdBuffer[i], 4, 300);
+    	}
+    }
+   // HAL_DCMI_Start_DMA(&hdcmi, DCMI_MODE_SNAPSHOT, lcdBuffer, 19200);
 
-    HAL_Delay(1000);
+  //  HAL_Delay(1000);
 
 //    HAL_UART_Transmit(&huart3, &lcdBuffer[0], 19200*4, 300);
 //    HAL_UART_Transmit(&huart3, &lcdBuffer[10000], 9200, 300);
 
    // ov7670_stopCap();
 
-    for(i=0; i<19200; i++)
-    {
-    	HAL_UART_Transmit(&huart3, &lcdBuffer[i], 4, 300);
-    }
+//    for(i=0; i<19200; i++)
+//    {
+//    	HAL_UART_Transmit(&huart3, &lcdBuffer[i], 4, 300);
+//    }
 
   }
   /* USER CODE END 3 */
@@ -353,6 +371,39 @@ static void MX_TIM14_Init(void)
 
   /* USER CODE END TIM14_Init 2 */
   HAL_TIM_MspPostInit(&htim14);
+
+}
+
+/**
+  * @brief UART4 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_UART4_Init(void)
+{
+
+  /* USER CODE BEGIN UART4_Init 0 */
+
+  /* USER CODE END UART4_Init 0 */
+
+  /* USER CODE BEGIN UART4_Init 1 */
+
+  /* USER CODE END UART4_Init 1 */
+  huart4.Instance = UART4;
+  huart4.Init.BaudRate = 115200;
+  huart4.Init.WordLength = UART_WORDLENGTH_8B;
+  huart4.Init.StopBits = UART_STOPBITS_1;
+  huart4.Init.Parity = UART_PARITY_ODD;
+  huart4.Init.Mode = UART_MODE_RX;
+  huart4.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+  huart4.Init.OverSampling = UART_OVERSAMPLING_16;
+  if (HAL_HalfDuplex_Init(&huart4) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN UART4_Init 2 */
+
+  /* USER CODE END UART4_Init 2 */
 
 }
 

@@ -60,6 +60,8 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define DataFromFPGA_Pin GPIO_PIN_0
+#define DataFromFPGA_GPIO_Port GPIOA
 #define ResetCamera_Pin GPIO_PIN_0
 #define ResetCamera_GPIO_Port GPIOG
 #define Buck_Vin_Pin GPIO_PIN_1

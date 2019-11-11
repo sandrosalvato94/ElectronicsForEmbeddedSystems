@@ -1,0 +1,2 @@
+vhdl work "MemoryInterface.vhd"
+vhdl work "TB_MemoryInterface.vhd"
