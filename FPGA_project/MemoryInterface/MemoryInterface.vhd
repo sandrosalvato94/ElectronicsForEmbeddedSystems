@@ -64,25 +64,37 @@ architecture Behavioral of MemoryInterface is
 								 MEM_RESET_NOP0,
 								 MEM_RESET_NOP1,
 								 MEM_RESET_NOP2,
-								 MEM_RESET_NOP,
 								 MEM_RESET_PRECHARGE,
 								 MEM_RESET_AREFRESH,
 								 MEM_LOAD_MODE_REG,
 								 MEM_IDLE, 
+								 MEM_IDLE_NOP,
+								 MEM_PRECHARGE,
+								 MEM_REFRESH,
 								 MEM_RW_ACTIVATING, 
 								 MEM_RW_ACTIVATING_NOP1,
 								 MEM_RW_ACTIVATING_NOP2,
 								 MEM_READ, MEM_WRITE, 
 								 
-								 MEM_RD_WR_NOP1,
+								 MEM_RD_NOP1,
+								 MEM_RD_NOP2,
 								 
-								 MEM_READA, MEM_WRITEA, MEM_PRECHARGING, MEM_WT_RECOVERING, MEM_WT_RECOVERING_WITH_APRECHARGE, MEM_REFRESH, MEM_MRA);
+								 MEM_WR_NOP1,
+								 MEM_WR_NOP2,
+								 
+								 MEM_READA, MEM_WRITEA, MEM_PRECHARGING, MEM_WT_RECOVERING, MEM_WT_RECOVERING_WITH_APRECHARGE, MEM_MRA);
 	
 	signal prev_state, curr_state, next_state	:	mem_states;
 	
-	signal s_init_cyc	: std_logic_vector(3 downto 0);
-	signal s_zeros		: std_logic_vector(3 downto 0) := (others => '0');
-	signal s_conf_already_done	: std_logic := '0';
+	signal s_init_cyc						: std_logic_vector(3 downto 0);
+	signal s_zeros							: std_logic_vector(3 downto 0) := (others => '0');
+	signal s_conf_already_done			: std_logic := '0';
+	
+	signal s_internal_data				: std_logic_vector(7 downto 0);
+	signal s_internal_rd_wr				: std_logic;
+	signal s_internal_address			: std_logic_vector(14 downto 0);
+	
+	signal mem_location					: std_logic_vector(15 downto 0);
 	
 
 begin
@@ -97,8 +109,11 @@ begin
 	begin
 		if(MI_reset = '1') then
 			curr_state <= MEM_RESET;
-		else if (MI_clk = '1' and MI_clk'event and MI_enable = '1') then
-			curr_state <= next_state;
+			else if(MI_action = '1') then
+				curr_state <= MEM_RW_ACTIVATING;
+				else if (MI_clk = '1' and MI_clk'event and MI_enable = '1') then
+					curr_state <= next_state;
+				end if;
 			end if;
 		end if;
 	end process;
@@ -124,6 +139,10 @@ begin
 					MI_DQMH				<= '0';
 					s_init_cyc <= (others => '0');
 					s_conf_already_done <= '0';
+					s_internal_data <= (others => '0');
+					s_internal_rd_wr <= '0';
+					s_internal_address <= (others => '0');
+					mem_location	<= (others => '0');
 					next_state 			<= MEM_RESET_NOP0;
 					
 					
@@ -260,10 +279,60 @@ begin
 					MI_DQML				<= '0';
 					MI_DQMH				<= '0';
 					if(MI_reset = '0' and MI_enable = '1' and MI_action = '0') then -- IDLE NOP
-						next_state 			<= MEM_RESET_PRECHARGE; 
+						next_state 			<= MEM_PRECHARGE; 
 					elsif(MI_reset = '0' and MI_enable = '1' and MI_action = '1') then -- IDLE ROW ACTIVATING
 						next_state			<= MEM_RW_ACTIVATING;
 					end if;
+				
+				when MEM_PRECHARGE => 
+					MI_data				<= (others => 'Z');
+					MI_CS					<= '0'; -- active
+					MI_RAS				<= '0';
+					MI_CAS				<= '1';
+					MI_write_enable	<= '0';
+					MI_bank				<= (others => '0');
+					MI_address_10		<= '1';
+					MI_address_12_11	<= (others => '0');
+					MI_address_9_0 	<= (others => '0');
+					MI_clk_enable		<= '1'; -- active
+					MI_memory_clk		<= MI_clk;
+					MI_DQML				<= '0';
+					MI_DQMH				<= '0';
+					next_state 			<= MEM_REFRESH;
+				
+				when MEM_REFRESH => -- aka REF
+					MI_data				<= (others => 'Z');
+					MI_CS					<= '0'; -- active
+					MI_RAS				<= '0';
+					MI_CAS				<= '0';
+					MI_write_enable	<= '1';
+					MI_bank				<= (others => '0');
+					MI_address_10		<= '1';
+					MI_address_12_11	<= (others => '0');
+					MI_address_9_0 	<= (others => '0');
+					MI_clk_enable		<= '1'; -- active
+					MI_memory_clk		<= MI_clk;
+					MI_DQML				<= '0';
+					MI_DQMH				<= '0';
+					next_state <= MEM_IDLE_NOP;
+				
+				when MEM_IDLE_NOP =>
+					MI_data				<= (others => 'Z');
+					MI_CS					<= '0'; -- active
+					MI_RAS				<= '1';
+					MI_CAS				<= '1';
+					MI_write_enable	<= '1';
+					MI_bank				<= (others => '0');
+					MI_address_10		<= '0';
+					MI_address_12_11	<= (others => '0');
+					MI_address_9_0 	<= (others => '0');
+					MI_clk_enable		<= '1'; -- active
+					MI_memory_clk		<= MI_clk;
+					MI_DQML				<= '0';
+					MI_DQMH				<= '0';
+					next_state 			<= MEM_IDLE;
+
+				
 				
 				when MEM_RW_ACTIVATING => 
 					MI_data				<= (others => 'Z');
@@ -279,6 +348,9 @@ begin
 					MI_memory_clk		<= MI_clk;
 					MI_DQML				<= '0';
 					MI_DQMH				<= '0';
+					s_internal_data <= MI_buttons;
+					s_internal_rd_wr <= MI_RW;
+					s_internal_address <= MI_address;
 					next_state			<= MEM_RW_ACTIVATING_NOP1;
 				
 				when MEM_RW_ACTIVATING_NOP1 => 
@@ -312,9 +384,9 @@ begin
 					MI_DQML				<= '0';
 					MI_DQMH				<= '0';
 					
-					if(MI_reset = '0' and MI_reset = '1' and MI_RW = '0') then
+					if(MI_reset = '0' and MI_enable = '1' and s_internal_rd_wr = '0') then
 						next_state			<= MEM_READ;
-					elsif(MI_reset = '0' and MI_reset = '1' and MI_RW = '0') then
+					elsif(MI_reset = '0' and MI_enable = '1' and s_internal_rd_wr = '1') then
 						next_state			<= MEM_WRITE;
 					end if;
 					
@@ -325,49 +397,96 @@ begin
 					MI_RAS				<= '1';
 					MI_CAS				<= '0';
 					MI_write_enable	<= '1';
-					MI_bank				<= MI_address(14 downto 13); 	-- don't care
-					MI_address_10		<= MI_address(10); 				-- to be set to 1 for auto precharge
-					MI_address_12_11	<= MI_address(12 downto 11); 	-- don't care
-					MI_address_9_0 	<= MI_address(9 downto 0); 	-- don't care
+					MI_bank				<= s_internal_address(14 downto 13); 	-- don't care
+					MI_address_10		<= s_internal_address(10); 				-- to be set to 1 for auto precharge
+					MI_address_12_11	<= s_internal_address(12 downto 11); 	-- don't care
+					MI_address_9_0 	<= s_internal_address(9 downto 0); 	-- don't care
 					MI_clk_enable		<= '1'; -- active
 					MI_memory_clk		<= MI_clk;
 					MI_DQML				<= '0';
 					MI_DQMH				<= '0';
-					next_step			<= MEM_RD_WR_NOP1;
-					
-				when MEM_WRITE =>
+					next_state			<= MEM_RD_NOP1;
 				
-				when MEM_RD_WR_NOP1 =>
+				when MEM_RD_NOP1 =>
 					MI_data				<= (others => 'Z');
 					MI_CS					<= '0'; -- active
 					MI_RAS				<= '1';
 					MI_CAS				<= '1';
 					MI_write_enable	<= '1';
-					MI_bank				<= MI_address(14 downto 13); 	-- don't care
-					MI_address_10		<= MI_address(10); 				-- to be set to 1 for auto precharge
-					MI_address_12_11	<= MI_address(12 downto 11); 	-- don't care
-					MI_address_9_0 	<= MI_address(9 downto 0); 	-- don't care
+					MI_bank				<= s_internal_address(14 downto 13); 	-- don't care
+					MI_address_10		<= s_internal_address(10); 				-- to be set to 1 for auto precharge
+					MI_address_12_11	<= s_internal_address(12 downto 11); 	-- don't care
+					MI_address_9_0 	<= s_internal_address(9 downto 0); 	-- don't care
 					MI_clk_enable		<= '1'; -- active
 					MI_memory_clk		<= MI_clk;
 					MI_DQML				<= '0';
 					MI_DQMH				<= '0';
-					next_step			<= MEM_RD_WR_NOP2;
+					next_state			<= MEM_RD_NOP2;
 				
-				when MEM_RD_WR_NOP2 =>
-					--MI_data				<= (others => 'Z'); here data available from memory
+				when MEM_RD_NOP2 =>
+					MI_data				<= mem_location;
 					MI_CS					<= '0'; -- active
 					MI_RAS				<= '1';
 					MI_CAS				<= '1';
 					MI_write_enable	<= '1';
-					MI_bank				<= MI_address(14 downto 13); 	-- don't care
-					MI_address_10		<= MI_address(10); 				-- to be set to 1 for auto precharge
-					MI_address_12_11	<= MI_address(12 downto 11); 	-- don't care
-					MI_address_9_0 	<= MI_address(9 downto 0); 	-- don't care
+					MI_bank				<= s_internal_address(14 downto 13); 	-- don't care
+					MI_address_10		<= s_internal_address(10); 				-- to be set to 1 for auto precharge
+					MI_address_12_11	<= s_internal_address(12 downto 11); 	-- don't care
+					MI_address_9_0 	<= s_internal_address(9 downto 0); 	-- don't care
 					MI_clk_enable		<= '1'; -- active
 					MI_memory_clk		<= MI_clk;
 					MI_DQML				<= '0';
 					MI_DQMH				<= '0';
-					next_step			<= ;
+					next_state			<= MEM_IDLE;
+				
+				when MEM_WRITE =>
+					MI_data				<=  "00000000" & s_internal_data;
+					MI_CS					<= '0'; -- active
+					MI_RAS				<= '1';
+					MI_CAS				<= '0';
+					MI_write_enable	<= '0';
+					MI_bank				<= s_internal_address(14 downto 13); 	-- don't care
+					MI_address_10		<= s_internal_address(10); 				-- to be set to 1 for auto precharge
+					MI_address_12_11	<= s_internal_address(12 downto 11); 	-- don't care
+					MI_address_9_0 	<= s_internal_address(9 downto 0); 	-- don't care
+					MI_clk_enable		<= '1'; -- active
+					MI_memory_clk		<= MI_clk;
+					MI_DQML				<= '0';
+					MI_DQMH				<= '0';
+					next_state			<= MEM_WR_NOP1;
+				
+				when MEM_WR_NOP1 =>
+					--MI_data				<= "00000000" & s_internal_data;
+					MI_CS					<= '0'; -- active
+					MI_RAS				<= '1';
+					MI_CAS				<= '1';
+					MI_write_enable	<= '1';
+					MI_bank				<= s_internal_address(14 downto 13); 	-- don't care
+					MI_address_10		<= s_internal_address(10); 				-- to be set to 1 for auto precharge
+					MI_address_12_11	<= s_internal_address(12 downto 11); 	-- don't care
+					MI_address_9_0 	<= s_internal_address(9 downto 0); 	-- don't care
+					MI_clk_enable		<= '1'; -- active
+					MI_memory_clk		<= MI_clk;
+					MI_DQML				<= '0';
+					MI_DQMH				<= '0';
+					next_state			<= MEM_WR_NOP2;
+				
+				when MEM_WR_NOP2 =>
+					--MI_data				<= "00000000" & s_internal_data;
+					MI_CS					<= '0'; -- active
+					MI_RAS				<= '1';
+					MI_CAS				<= '1';
+					MI_write_enable	<= '1';
+					MI_bank				<= s_internal_address(14 downto 13); 	-- don't care
+					MI_address_10		<= s_internal_address(10); 				-- to be set to 1 for auto precharge
+					MI_address_12_11	<= s_internal_address(12 downto 11); 	-- don't care
+					MI_address_9_0 	<= s_internal_address(9 downto 0); 	-- don't care
+					MI_clk_enable		<= '1'; -- active
+					MI_memory_clk		<= MI_clk;
+					MI_DQML				<= '0';
+					MI_DQMH				<= '0';
+					mem_location		<= MI_data;
+					next_state			<= MEM_IDLE;
 				
 				when others =>
 					

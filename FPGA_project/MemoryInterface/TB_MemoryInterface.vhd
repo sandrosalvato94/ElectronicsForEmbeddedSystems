@@ -46,6 +46,7 @@ ARCHITECTURE behavior OF TB_MemoryInterface IS
          MI_reset : IN  std_logic;
          MI_enable : IN  std_logic;
          MI_RW : IN  std_logic;
+			MI_action			:  in  std_logic;
          MI_address : IN  std_logic_vector(14 downto 0);
          MI_address_9_0 : OUT  std_logic_vector(9 downto 0);
          MI_address_10 : OUT  std_logic;
@@ -71,6 +72,7 @@ ARCHITECTURE behavior OF TB_MemoryInterface IS
    signal MI_enable : std_logic := '0';
    signal MI_RW : std_logic := '0';
    signal MI_address : std_logic_vector(14 downto 0) := (others => '0');
+	signal MI_action : std_logic := '0';
 
 	--BiDirs
    signal MI_data : std_logic_vector(15 downto 0);
@@ -101,6 +103,7 @@ BEGIN
           MI_clk => MI_clk,
           MI_reset => MI_reset,
           MI_enable => MI_enable,
+			 MI_action => MI_action,
           MI_RW => MI_RW,
           MI_address => MI_address,
           MI_address_9_0 => MI_address_9_0,
@@ -141,7 +144,42 @@ BEGIN
 		MI_enable <= '1';
 	
 
-      wait for MI_clk_period*10;
+      wait for MI_clk_period*20;
+		
+		MI_action <= '1';
+		MI_RW <= '1';
+		MI_buttons <= (others => '1');
+		MI_address <= (10 => '1', 13 => '1', others => '0');
+		
+		wait for MI_clk_period*2;
+		
+		MI_action <= '0';
+		MI_RW <= '1';
+		MI_buttons <= (others => '1');
+		MI_address <= (10 => '1', 13 => '1', others => '0');
+		
+		wait for MI_clk_period*10;
+		
+		MI_action <= '0';
+		MI_RW <= '0';
+		MI_buttons <= (others => '0');
+		MI_address <= (10 => '1', 13 => '1', others => '0');
+		
+		wait for MI_clk_period*10;
+		
+		MI_action <= '1';
+		MI_RW <= '0';
+		MI_buttons <= (others => '1');
+		MI_address <= (10 => '1', 13 => '1', others => '0');
+		
+		wait for MI_clk_period;
+		
+		MI_action <= '0';
+		MI_RW <= '0';
+		MI_buttons <= (others => '0');
+		MI_address <= (10 => '1', 13 => '1', others => '0');
+		
+		wait for MI_clk_period*5;
 
       -- insert stimulus here 
 

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Alessandro/Desktop/EFES_Fpga/MemoryInterface/TB_MemoryInterface_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="tb_memoryinterface" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="21" />
+   <wvobject fp_name="/tb_memoryinterface/mi_buttons" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mi_buttons[7:0]</obj_property>
+      <obj_property name="ObjectShortName">mi_buttons[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_memoryinterface/mi_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mi_clk</obj_property>
+      <obj_property name="ObjectShortName">mi_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_memoryinterface/mi_reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mi_reset</obj_property>
+      <obj_property name="ObjectShortName">mi_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_memoryinterface/mi_enable" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mi_enable</obj_property>
+      <obj_property name="ObjectShortName">mi_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_memoryinterface/mi_rw" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mi_rw</obj_property>
+      <obj_property name="ObjectShortName">mi_rw</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_memoryinterface/mi_address" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mi_address[14:0]</obj_property>
+      <obj_property name="ObjectShortName">mi_address[14:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_memoryinterface/mi_action" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mi_action</obj_property>
+      <obj_property name="ObjectShortName">mi_action</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_memoryinterface/mi_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mi_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">mi_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_memoryinterface/mi_address_9_0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mi_address_9_0[9:0]</obj_property>
+      <obj_property name="ObjectShortName">mi_address_9_0[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_memoryinterface/mi_address_10" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mi_address_10</obj_property>
+      <obj_property name="ObjectShortName">mi_address_10</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_memoryinterface/mi_address_12_11" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mi_address_12_11[12:11]</obj_property>
+      <obj_property name="ObjectShortName">mi_address_12_11[12:11]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_memoryinterface/mi_bank" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mi_bank[1:0]</obj_property>
+      <obj_property name="ObjectShortName">mi_bank[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_memoryinterface/mi_cas" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mi_cas</obj_property>
+      <obj_property name="ObjectShortName">mi_cas</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_memoryinterface/mi_ras" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mi_ras</obj_property>
+      <obj_property name="ObjectShortName">mi_ras</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_memoryinterface/mi_cs" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mi_cs</obj_property>
+      <obj_property name="ObjectShortName">mi_cs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_memoryinterface/mi_write_enable" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mi_write_enable</obj_property>
+      <obj_property name="ObjectShortName">mi_write_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_memoryinterface/mi_clk_enable" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mi_clk_enable</obj_property>
+      <obj_property name="ObjectShortName">mi_clk_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_memoryinterface/mi_memory_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mi_memory_clk</obj_property>
+      <obj_property name="ObjectShortName">mi_memory_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_memoryinterface/mi_dqml" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mi_dqml</obj_property>
+      <obj_property name="ObjectShortName">mi_dqml</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_memoryinterface/mi_dqmh" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mi_dqmh</obj_property>
+      <obj_property name="ObjectShortName">mi_dqmh</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_memoryinterface/uut/curr_state" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">curr_state</obj_property>
+      <obj_property name="ObjectShortName">curr_state</obj_property>
+   </wvobject>
+</wave_config>
