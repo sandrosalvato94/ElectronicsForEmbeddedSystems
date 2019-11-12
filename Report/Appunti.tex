@@ -1,0 +1,76 @@
+\documentclass[a4paper,twoside]{article}
+\usepackage[hmarginratio=1:1,top=32mm,columnsep=20pt]{geometry} % custom page layout
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{lmodern}
+\usepackage{fixltx2e} % \textsubscript command
+\usepackage{soulutf8} % \ul command
+\usepackage{changepage} % indentation (in title page)
+\usepackage[font=it]{caption} % captions in italics
+\usepackage[font=it]{subcaption} % subcaptions in italics
+\usepackage{multicol}
+\usepackage{cancel} % \cancel command
+\usepackage{textcomp} % symbols
+\usepackage{amsmath, amssymb}
+\usepackage{amsthm}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{wrapfig}
+
+
+\usepackage{verbatim}
+\usepackage{listings}
+\lstset{language=vhdl,%
+	  keywordstyle=\color{Blue},
+      basicstyle=\small\ttfamily,
+      frame=TB,
+      commentstyle=\color{red},
+      showstringspaces=false
+}
+\usepackage[dvipsnames,usenames]{color}
+\usepackage{fancyhdr}
+
+%\usepackage{draftwatermark}
+%\SetWatermarkText{Doc interno}
+
+
+
+\pagestyle{fancy}
+%\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{ \thesection \space - \space #1}}
+\renewcommand{\subsectionmark}[1]{\markright{\thesubsection \space - \space #1}}
+\fancyhf{} \fancyhead[RO, LE]{\bfseries \thepage}
+ \fancyhead[RE, LO]{\includegraphics[scale=0.03]{Immagini/262}\bfseries}
+\fancyhead[CO, CE]{\bfseries\rightmark}
+%\fancyhead[CE]{\bfseries \leftmark}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\headheight}{0.5pt} \fancypagestyle{plain}{
+\fancyhead{}
+\renewcommand{\headrulewidth}{0pt}}
+
+\newtheorem{thm}{Teorema}[section] 
+\newtheorem{cor}[thm]{Corollario} 
+\newtheorem{lem}[thm]{Lemma} 
+\newtheorem{prop}[thm]{Proposizione} 
+\theoremstyle{definition} 
+\newtheorem{defn}{Definizione}[section]
+\theoremstyle{remark} 
+\newtheorem{oss}{Osservazione} 
+\frenchspacing
+\author{Alessandro Salvato}
+
+\newcommand{\paginavuota}{\newpage\null\thispagestyle{empty}\newpage\null}
+
+\begin{document}
+\bibliographystyle{unsrt}
+\input{titolo}
+\paginavuota
+
+\tableofcontents
+\newpage
+
+
+\end{document}
