@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.1)  12 NOV 2019 17:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.1)  13 NOV 2019 17:16
 entering extended mode
 **./Appunti.tex
 (Appunti.tex
@@ -1112,23 +1112,76 @@ Package Fancyhdr Warning: \headheight is too small (12.5pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[3] (Appunti.aux) ) 
+[3]
+\openout2 = `Capitoli/01.aux'.
+
+ (Capitoli/01.tex
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 4.
+
+("C:\Users\Alessandro\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\ts1lmr.fd"
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+<Immagini/01.jpg, id=17, 837.1275pt x 693.59125pt>
+File: Immagini/01.jpg Graphic file (type jpg)
+<use Immagini/01.jpg>
+Package pdftex.def Info: Immagini/01.jpg  used on input line 23.
+(pdftex.def)             Requested size: 418.56273pt x 346.79477pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--26
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+File: Immagini/262.png Graphic file (type png)
+<use Immagini/262.png>
+Package pdftex.def Info: Immagini/262.png  used on input line 27.
+(pdftex.def)             Requested size: 30.83386pt x 30.83386pt.
+ [4
+
+]
+<Immagini/02.jpg, id=24, 963.6pt x 1284.8pt>
+File: Immagini/02.jpg Graphic file (type jpg)
+<use Immagini/02.jpg>
+Package pdftex.def Info: Immagini/02.jpg  used on input line 32.
+(pdftex.def)             Requested size: 385.43317pt x 513.9109pt.
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+File: Immagini/262.png Graphic file (type png)
+<use Immagini/262.png>
+Package pdftex.def Info: Immagini/262.png  used on input line 75.
+(pdftex.def)             Requested size: 30.83386pt x 30.83386pt.
+ [5 <./Immagini/01.jpg>]
+File: Immagini/262.png Graphic file (type png)
+<use Immagini/262.png>
+Package pdftex.def Info: Immagini/262.png  used on input line 75.
+(pdftex.def)             Requested size: 30.83386pt x 30.83386pt.
+ [6 <./Immagini/02.jpg>] (Appunti.aux (Capitoli/01.aux))
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 7897 strings out of 493305
- 115483 string characters out of 3127628
- 360061 words of memory out of 3000000
- 11286 multiletter control sequences out of 15000+200000
- 37736 words of font info for 27 fonts, out of 3000000 for 9000
+ 7950 strings out of 493305
+ 117104 string characters out of 3127628
+ 364061 words of memory out of 3000000
+ 11325 multiletter control sequences out of 15000+200000
+ 42364 words of font info for 29 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,16n,43p,247b,337s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2.9/fonts
-/enc/dvips/lm/lm-ec.enc}<C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2.9/
-fonts/type1/public/lm/lmbx10.pfb><C:/Users/Alessandro/AppData/Local/Programs/Mi
-KTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Alessandro/AppData/Local/Pr
-ograms/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb>
-Output written on Appunti.pdf (3 pages, 306665 bytes).
+ 36i,16n,43p,633b,343s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-
+ec.enc}{C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/l
+m/lm-ts1.enc}<C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/lm/lmbx10.pfb><C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/lm/lmbx12.pfb><C:/Users/Alessandro/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/Alessandro/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Users/Alessandro/AppData/Loc
+al/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb>
+Output written on Appunti.pdf (6 pages, 713146 bytes).
 PDF statistics:
- 28 PDF objects out of 1000 (max. 8388607)
+ 50 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
