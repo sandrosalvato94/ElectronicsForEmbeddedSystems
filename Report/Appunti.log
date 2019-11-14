@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.1)  13 NOV 2019 17:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.1)  14 NOV 2019 15:44
 entering extended mode
 **./Appunti.tex
 (Appunti.tex
@@ -961,7 +961,7 @@ s
 \c@thm=\count128
 \c@defn=\count129
 \c@oss=\count130
- (Appunti.aux)
+ (Appunti.aux (Capitoli/01.aux) (Capitoli/02.aux))
 \openout1 = `Appunti.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
@@ -1121,67 +1121,155 @@ LaTeX Font Info:    Try loading font information for TS1+lmr on input line 4.
 ("C:\Users\Alessandro\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-<Immagini/01.jpg, id=17, 837.1275pt x 693.59125pt>
+<Immagini/03.png, id=17, 766.865pt x 379.4175pt>
+File: Immagini/03.png Graphic file (type png)
+<use Immagini/03.png>
+Package pdftex.def Info: Immagini/03.png  used on input line 19.
+(pdftex.def)             Requested size: 383.43156pt x 189.70828pt.
+<Immagini/01.jpg, id=18, 837.1275pt x 693.59125pt>
 File: Immagini/01.jpg Graphic file (type jpg)
 <use Immagini/01.jpg>
-Package pdftex.def Info: Immagini/01.jpg  used on input line 23.
+Package pdftex.def Info: Immagini/01.jpg  used on input line 25.
 (pdftex.def)             Requested size: 418.56273pt x 346.79477pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 11--26
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 File: Immagini/262.png Graphic file (type png)
 <use Immagini/262.png>
-Package pdftex.def Info: Immagini/262.png  used on input line 27.
+Package pdftex.def Info: Immagini/262.png  used on input line 29.
 (pdftex.def)             Requested size: 30.83386pt x 30.83386pt.
  [4
 
-]
-<Immagini/02.jpg, id=24, 963.6pt x 1284.8pt>
+ <./Immagini/03.png>]
+<Immagini/04.png, id=26, 9250.56pt x 1734.48pt>
+File: Immagini/04.png Graphic file (type png)
+<use Immagini/04.png>
+Package pdftex.def Info: Immagini/04.png  used on input line 32.
+(pdftex.def)             Requested size: 369.95938pt x 69.36739pt.
+<Immagini/05.jpg, id=27, 1284.8pt x 753.81625pt>
+File: Immagini/05.jpg Graphic file (type jpg)
+<use Immagini/05.jpg>
+Package pdftex.def Info: Immagini/05.jpg  used on input line 39.
+(pdftex.def)             Requested size: 128.48752pt x 75.38603pt.
+File: Immagini/262.png Graphic file (type png)
+<use Immagini/262.png>
+Package pdftex.def Info: Immagini/262.png  used on input line 44.
+(pdftex.def)             Requested size: 30.83386pt x 30.83386pt.
+ [5 <./Immagini/01.jpg> <./Immagini/04.png> <./Immagini/05.jpg>]
+<Immagini/02.jpg, id=32, 963.6pt x 1284.8pt>
 File: Immagini/02.jpg Graphic file (type jpg)
 <use Immagini/02.jpg>
-Package pdftex.def Info: Immagini/02.jpg  used on input line 32.
+Package pdftex.def Info: Immagini/02.jpg  used on input line 47.
 (pdftex.def)             Requested size: 385.43317pt x 513.9109pt.
 )
+File: Immagini/262.png Graphic file (type png)
+<use Immagini/262.png>
+Package pdftex.def Info: Immagini/262.png  used on input line 75.
+(pdftex.def)             Requested size: 30.83386pt x 30.83386pt.
+ [6 <./Immagini/02.jpg>]
+\openout2 = `Capitoli/02.aux'.
+
+ (Capitoli/02.tex
+<Immagini/06.png, id=36, 454.0965pt x 230.0595pt>
+File: Immagini/06.png Graphic file (type png)
+<use Immagini/06.png>
+Package pdftex.def Info: Immagini/06.png  used on input line 8.
+(pdftex.def)             Requested size: 317.86537pt x 161.04054pt.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 18.
+
+("C:\Users\Alessandro\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 18.
+ ("C:\Users\Alessandro\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omllmm.fd
+"
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 18.
+
+
+("C:\Users\Alessandro\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmsy.fd
+"
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 18.
+
+
+("C:\Users\Alessandro\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omxlmex.fd
+"
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 18.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 18.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 18.
+LaTeX Font Info:    Try loading font information for U+msa on input line 18.
+
+("C:\Users\Alessandro\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa
+.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 18.
+
+("C:\Users\Alessandro\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb
+.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
+[]\T1/lmr/m/n/10 Begin con-ver-sion (au-to-mat-i-cally
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--31
+
+ []
+
+<Immagini/07.png, id=37, 403.5075pt x 326.4195pt>
+File: Immagini/07.png Graphic file (type png)
+<use Immagini/07.png>
+Package pdftex.def Info: Immagini/07.png  used on input line 35.
+(pdftex.def)             Requested size: 403.50652pt x 326.41869pt.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: Immagini/262.png Graphic file (type png)
 <use Immagini/262.png>
-Package pdftex.def Info: Immagini/262.png  used on input line 75.
+Package pdftex.def Info: Immagini/262.png  used on input line 39.
 (pdftex.def)             Requested size: 30.83386pt x 30.83386pt.
- [5 <./Immagini/01.jpg>]
+ [7
+
+
+ <./Immagini/06.png>])
 File: Immagini/262.png Graphic file (type png)
 <use Immagini/262.png>
-Package pdftex.def Info: Immagini/262.png  used on input line 75.
+Package pdftex.def Info: Immagini/262.png  used on input line 76.
 (pdftex.def)             Requested size: 30.83386pt x 30.83386pt.
- [6 <./Immagini/02.jpg>] (Appunti.aux (Capitoli/01.aux))
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+ [8 <./Immagini/07.png>] (Appunti.aux (Capitoli/01.aux)
+(Capitoli/02.aux)) ) 
 Here is how much of TeX's memory you used:
- 7950 strings out of 493305
- 117104 string characters out of 3127628
- 364061 words of memory out of 3000000
- 11325 multiletter control sequences out of 15000+200000
- 42364 words of font info for 29 fonts, out of 3000000 for 9000
+ 8084 strings out of 493305
+ 120379 string characters out of 3127628
+ 365061 words of memory out of 3000000
+ 11412 multiletter control sequences out of 15000+200000
+ 54619 words of font info for 45 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,16n,43p,633b,343s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-
-ec.enc}{C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/l
-m/lm-ts1.enc}<C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
-/public/lm/lmbx10.pfb><C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/public/lm/lmbx12.pfb><C:/Users/Alessandro/AppData/Local/Programs/MiKT
-eX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/Alessandro/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Users/Alessandro/AppData/Loc
-al/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb>
-Output written on Appunti.pdf (6 pages, 713146 bytes).
+ 36i,17n,43p,648b,343s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2.9/font
+s/enc/dvips/lm/lm-mathit.enc}{C:/Users/Alessandro/AppData/Local/Programs/MiKTeX
+ 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/Alessandro/AppData/Local/Programs/M
+iKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/Alessandro/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/Alessandro/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Users/Alessandro/AppD
+ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Alessa
+ndro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Use
+rs/Alessandro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pf
+b><C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/
+lmr10.pfb><C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/lm/lmr12.pfb><C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/lm/lmri10.pfb><C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/lm/lmsy10.pfb>
+Output written on Appunti.pdf (8 pages, 1381649 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
+ 79 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

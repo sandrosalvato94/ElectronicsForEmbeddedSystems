@@ -6633,3 +6633,40 @@ org.eclipse.swt.SWTException: Widget is disposed
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+!SESSION 2019-11-14 12:17:47.090 -----------------------------------------------
+eclipse.buildId=Version 1.0.2
+java.version=1.8.0_202
+java.vendor=AdoptOpenJdk
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=it_IT
+Framework arguments:  C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\.cproject
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\MCU_Firmware\.cproject
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2019-11-14 12:18:00.533
+!MESSAGE Log4j initialized with config file C:\Users\Alessandro\Desktop\STM32Workspace\ElectronicsForEmbeddedSystems\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2019-11-14 12:18:03.049
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2019-11-14 12:18:03.049
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2019-11-14 12:18:03.078
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2019-11-14 12:18:03.078
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2019-11-14 12:18:03.081
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2019-11-14 12:18:03.081
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2019-11-14 12:18:03.081
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2019-11-14 12:18:03.085
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2019-11-14 12:18:10.638
+!MESSAGE Started RMI Server, listening on port 41337
