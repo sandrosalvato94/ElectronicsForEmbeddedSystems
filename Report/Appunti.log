@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.1)  14 NOV 2019 15:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.1)  16 NOV 2019 13:15
 entering extended mode
 **./Appunti.tex
 (Appunti.tex
@@ -961,7 +961,12 @@ s
 \c@thm=\count128
 \c@defn=\count129
 \c@oss=\count130
- (Appunti.aux (Capitoli/01.aux) (Capitoli/02.aux))
+ (Appunti.aux (Capitoli/01.aux) (Capitoli/02.aux) (Capitoli/03.aux)
+(Capitoli/04.aux
+
+LaTeX Warning: Label `12' multiply defined.
+
+))
 \openout1 = `Appunti.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
@@ -1238,38 +1243,162 @@ Package pdftex.def Info: Immagini/262.png  used on input line 39.
  [7
 
 
- <./Immagini/06.png>])
+ <./Immagini/06.png>]
+<Immagini/09.png, id=45, 410.7345pt x 237.2865pt>
+File: Immagini/09.png Graphic file (type png)
+<use Immagini/09.png>
+Package pdftex.def Info: Immagini/09.png  used on input line 54.
+(pdftex.def)             Requested size: 287.51218pt x 166.0994pt.
+)
 File: Immagini/262.png Graphic file (type png)
 <use Immagini/262.png>
 Package pdftex.def Info: Immagini/262.png  used on input line 76.
 (pdftex.def)             Requested size: 30.83386pt x 30.83386pt.
- [8 <./Immagini/07.png>] (Appunti.aux (Capitoli/01.aux)
-(Capitoli/02.aux)) ) 
+ [8 <./Immagini/07.png> <./Immagini/09.png>]
+\openout2 = `Capitoli/03.aux'.
+
+ (Capitoli/03.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--10
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--10
+
+ []
+
+<Immagini/08.png, id=51, 481.8pt x 250.536pt>
+File: Immagini/08.png Graphic file (type png)
+<use Immagini/08.png>
+Package pdftex.def Info: Immagini/08.png  used on input line 13.
+(pdftex.def)             Requested size: 433.61598pt x 225.4803pt.
+
+Overfull \hbox (15.3623pt too wide) in paragraph at lines 13--15
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--25
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--25
+
+ []
+
+File: Immagini/262.png Graphic file (type png)
+<use Immagini/262.png>
+Package pdftex.def Info: Immagini/262.png  used on input line 25.
+(pdftex.def)             Requested size: 30.83386pt x 30.83386pt.
+[9
+
+
+ <./Immagini/08.png>]
+<Immagini/10.png, id=56, 476.37975pt x 346.896pt>
+File: Immagini/10.png Graphic file (type png)
+<use Immagini/10.png>
+Package pdftex.def Info: Immagini/10.png  used on input line 43.
+(pdftex.def)             Requested size: 428.7378pt x 312.2035pt.
+
+Overfull \hbox (10.48412pt too wide) in paragraph at lines 43--45
+ [][] 
+ []
+
+<Immagini/11.jpg, id=57, 229.60782pt x 231.86626pt>
+File: Immagini/11.jpg Graphic file (type jpg)
+<use Immagini/11.jpg>
+Package pdftex.def Info: Immagini/11.jpg  used on input line 50.
+(pdftex.def)             Requested size: 229.60725pt x 231.86568pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+File: Immagini/262.png Graphic file (type png)
+<use Immagini/262.png>
+Package pdftex.def Info: Immagini/262.png  used on input line 54.
+(pdftex.def)             Requested size: 30.83386pt x 30.83386pt.
+ [10 <./Immagini/10.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
+[]\T1/lmr/m/n/10 RCC_MCO1 (25
+ []
+
+)
+File: Immagini/262.png Graphic file (type png)
+<use Immagini/262.png>
+Package pdftex.def Info: Immagini/262.png  used on input line 77.
+(pdftex.def)             Requested size: 30.83386pt x 30.83386pt.
+ [11 <./Immagini/11.jpg>]
+\openout2 = `Capitoli/04.aux'.
+
+ (Capitoli/04.tex
+<Immagini/13.png, id=65, 374.5995pt x 317.38576pt>
+File: Immagini/13.png Graphic file (type png)
+<use Immagini/13.png>
+Package pdftex.def Info: Immagini/13.png  used on input line 9.
+(pdftex.def)             Requested size: 374.59859pt x 317.38498pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+[]\T1/lmr/m/n/10 TIM14_CH1
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+File: Immagini/262.png Graphic file (type png)
+<use Immagini/262.png>
+Package pdftex.def Info: Immagini/262.png  used on input line 25.
+(pdftex.def)             Requested size: 30.83386pt x 30.83386pt.
+ [12
+
+
+ <./Immagini/13.png>]
+<Immagini/12.png, id=71, 516.12825pt x 256.5585pt>
+File: Immagini/12.png Graphic file (type png)
+<use Immagini/12.png>
+Package pdftex.def Info: Immagini/12.png  used on input line 30.
+(pdftex.def)             Requested size: 361.28731pt x 179.58972pt.
+<Immagini/14.png, id=72, 404.10976pt x 257.763pt>
+File: Immagini/14.png Graphic file (type png)
+<use Immagini/14.png>
+Package pdftex.def Info: Immagini/14.png  used on input line 37.
+(pdftex.def)             Requested size: 323.28824pt x 206.21068pt.
+)
+File: Immagini/262.png Graphic file (type png)
+<use Immagini/262.png>
+Package pdftex.def Info: Immagini/262.png  used on input line 78.
+(pdftex.def)             Requested size: 30.83386pt x 30.83386pt.
+ [13 <./Immagini/12.png> <./Immagini/14.png>] (Appunti.aux
+(Capitoli/01.aux) (Capitoli/02.aux) (Capitoli/03.aux) (Capitoli/04.aux))
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 8084 strings out of 493305
- 120379 string characters out of 3127628
+ 8139 strings out of 493305
+ 121686 string characters out of 3127628
  365061 words of memory out of 3000000
- 11412 multiletter control sequences out of 15000+200000
+ 11448 multiletter control sequences out of 15000+200000
  54619 words of font info for 45 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,17n,43p,648b,343s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2.9/font
-s/enc/dvips/lm/lm-mathit.enc}{C:/Users/Alessandro/AppData/Local/Programs/MiKTeX
- 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/Alessandro/AppData/Local/Programs/M
-iKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/Alessandro/AppData/Local/P
-rograms/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/Alessandro/AppData/Lo
-cal/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Users/Alessandro/AppD
-ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Alessa
-ndro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Use
-rs/Alessandro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pf
-b><C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/
-lmr10.pfb><C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/lm/lmr12.pfb><C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/lm/lmri10.pfb><C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2
-.9/fonts/type1/public/lm/lmsy10.pfb>
-Output written on Appunti.pdf (8 pages, 1381649 bytes).
+ 36i,17n,43p,800b,345s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-
+mathit.enc}{C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvi
+ps/lm/lm-rm.enc}{C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2.9/fonts/en
+c/dvips/lm/lm-mathsy.enc}{C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2.9
+/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/Alessandro/AppData/Local/Programs/MiKTe
+X 2.9/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Users/Alessandro/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Alessandro/AppData/Local
+/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Alessandro/AppD
+ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Alessa
+ndro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi7.pfb><C:/User
+s/Alessandro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb>
+<C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lm
+r12.pfb><C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/lm/lmri10.pfb><C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+ype1/public/lm/lmsy10.pfb>
+Output written on Appunti.pdf (13 pages, 2334533 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
+ 112 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 
