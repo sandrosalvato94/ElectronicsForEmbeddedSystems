@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.1)  16 NOV 2019 13:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.1)  17 NOV 2019 21:51
 entering extended mode
 **./Appunti.tex
 (Appunti.tex
@@ -966,7 +966,7 @@ s
 
 LaTeX Warning: Label `12' multiply defined.
 
-))
+) (Capitoli/05.aux))
 \openout1 = `Appunti.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
@@ -1367,20 +1367,130 @@ File: Immagini/262.png Graphic file (type png)
 <use Immagini/262.png>
 Package pdftex.def Info: Immagini/262.png  used on input line 78.
 (pdftex.def)             Requested size: 30.83386pt x 30.83386pt.
- [13 <./Immagini/12.png> <./Immagini/14.png>] (Appunti.aux
-(Capitoli/01.aux) (Capitoli/02.aux) (Capitoli/03.aux) (Capitoli/04.aux))
+ [13 <./Immagini/12.png> <./Immagini/14.png>]
+\openout2 = `Capitoli/05.aux'.
+
+ (Capitoli/05.tex
+<Immagini/15.png, id=79, 937.101pt x 221.02576pt>
+File: Immagini/15.png Graphic file (type png)
+<use Immagini/15.png>
+Package pdftex.def Info: Immagini/15.png  used on input line 11.
+(pdftex.def)             Requested size: 468.54935pt x 110.5126pt.
+
+Overfull \hbox (50.29567pt too wide) in paragraph at lines 11--13
+ [][] 
+ []
+
+<Immagini/17.png, id=80, 740.7675pt x 196.93575pt>
+File: Immagini/17.png Graphic file (type png)
+<use Immagini/17.png>
+Package pdftex.def Info: Immagini/17.png  used on input line 23.
+(pdftex.def)             Requested size: 444.46393pt x 118.16234pt.
+
+Overfull \hbox (26.21025pt too wide) in paragraph at lines 23--25
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--26
+
+ []
+
+<Immagini/16.png, id=81, 413.1435pt x 264.38776pt>
+File: Immagini/16.png Graphic file (type png)
+<use Immagini/16.png>
+Package pdftex.def Info: Immagini/16.png  used on input line 29.
+(pdftex.def)             Requested size: 413.14247pt x 264.3871pt.
+File: Immagini/262.png Graphic file (type png)
+<use Immagini/262.png>
+Package pdftex.def Info: Immagini/262.png  used on input line 33.
+(pdftex.def)             Requested size: 30.83386pt x 30.83386pt.
+[14
+
+
+ <./Immagini/15.png> <./Immagini/17.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 34--38
+
+ []
+
+<Immagini/18.png, id=85, 548.0475pt x 186.6975pt>
+File: Immagini/18.png Graphic file (type png)
+<use Immagini/18.png>
+Package pdftex.def Info: Immagini/18.png  used on input line 41.
+(pdftex.def)             Requested size: 438.4386pt x 149.35818pt.
+
+Overfull \hbox (20.18492pt too wide) in paragraph at lines 41--43
+ [][] 
+ []
+
+
+Underfull \hbox (badness 1533) in paragraph at lines 63--64
+[]\T1/lmr/m/n/10 C3 (GPIO_01), not used,
+ []
+
+
+Underfull \hbox (badness 1430) in paragraph at lines 64--65
+[]\T1/lmr/m/n/10 A3 (GPIO_03), not used,
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+File: Immagini/262.png Graphic file (type png)
+<use Immagini/262.png>
+Package pdftex.def Info: Immagini/262.png  used on input line 69.
+(pdftex.def)             Requested size: 30.83386pt x 30.83386pt.
+ [15 <./Immagini/16.png> <./Immagini/18.png>]
+<Immagini/19.png, id=90, 509.5035pt x 334.851pt>
+File: Immagini/19.png Graphic file (type png)
+<use Immagini/19.png>
+Package pdftex.def Info: Immagini/19.png  used on input line 72.
+(pdftex.def)             Requested size: 407.60335pt x 267.88115pt.
+)
+File: Immagini/262.png Graphic file (type png)
+<use Immagini/262.png>
+Package pdftex.def Info: Immagini/262.png  used on input line 79.
+(pdftex.def)             Requested size: 30.83386pt x 30.83386pt.
+ [16 <./Immagini/19.png>]
+\openout2 = `Capitoli/06.aux'.
+
+ (Capitoli/06.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--6
+
+ []
+
+<Immagini/20.png, id=94, 628.749pt x 169.8345pt>
+File: Immagini/20.png Graphic file (type png)
+<use Immagini/20.png>
+Package pdftex.def Info: Immagini/20.png  used on input line 9.
+(pdftex.def)             Requested size: 502.99988pt x 135.86777pt.
+
+Overfull \hbox (84.7462pt too wide) in paragraph at lines 9--11
+ [][] 
+ []
+
+)
+File: Immagini/262.png Graphic file (type png)
+<use Immagini/262.png>
+Package pdftex.def Info: Immagini/262.png  used on input line 80.
+(pdftex.def)             Requested size: 30.83386pt x 30.83386pt.
+ [17
+
+
+ <./Immagini/20.png>] (Appunti.aux (Capitoli/01.aux) (Capitoli/02.aux)
+(Capitoli/03.aux) (Capitoli/04.aux) (Capitoli/05.aux) (Capitoli/06.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 8139 strings out of 493305
- 121686 string characters out of 3127628
- 365061 words of memory out of 3000000
- 11448 multiletter control sequences out of 15000+200000
+ 8185 strings out of 493305
+ 122782 string characters out of 3127628
+ 367061 words of memory out of 3000000
+ 11479 multiletter control sequences out of 15000+200000
  54619 words of font info for 45 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,17n,43p,800b,345s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,17n,43p,1385b,345s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-
 mathit.enc}{C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvi
 ps/lm/lm-rm.enc}{C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2.9/fonts/en
@@ -1396,9 +1506,9 @@ s/Alessandro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb>
 r12.pfb><C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
 ic/lm/lmri10.pfb><C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2.9/fonts/t
 ype1/public/lm/lmsy10.pfb>
-Output written on Appunti.pdf (13 pages, 2334533 bytes).
+Output written on Appunti.pdf (17 pages, 2893621 bytes).
 PDF statistics:
- 112 PDF objects out of 1000 (max. 8388607)
+ 131 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 106 words of extra memory for PDF output out of 10000 (max. 10000000)
 

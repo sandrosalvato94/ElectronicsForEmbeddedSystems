@@ -3,3 +3,5 @@
 \contentsline {section}{\numberline {2}Analog to digital conversion}{7}
 \contentsline {section}{\numberline {3}Peripheral programming}{9}
 \contentsline {section}{\numberline {4}Power management}{12}
+\contentsline {section}{\numberline {5}Programmable logic device}{14}
+\contentsline {section}{\numberline {6}Interconnection protocol}{17}
