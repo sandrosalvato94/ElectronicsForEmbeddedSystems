@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/Alessandro/Desktop/EFES_Fpga/MemoryInterface/TB_MemoryInterface.vhd";
+static const char *ng0 = "C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/MemoryInterface/TB_MemoryInterface.vhd";
 
 
 

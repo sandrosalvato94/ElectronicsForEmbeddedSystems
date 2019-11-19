@@ -3,7 +3,7 @@ Any commercial camera integrates a flash light, which is turned on in leakage of
 \begin{equation*}
 V_{out} = \dfrac{T_{on}V_{in}}{T_{on}+T_{off}} = \delta V_{in}
 \end{equation*}
-Another, maybe the most important, feature of a switching regulator is the duty cycle used to drive the NPN transistor's base terminal. First of all I adopted a reasonable period $T = T_{on} + T_{off}$. One of the timer on microcontroller is involved in generating the square wave. It's connected to the Advanced Peripheral Bus (APB) which is synchronized with a clock of 16 Mhz. The timer prescaler has been choosen at 160, so each tick is sensed each 10 $\mu s$. Selecting a period of 100 ticks, the overall period $T$ gets $1 ms$, making any consideration about duty cycle easier. However setting duty cycle isn't so simple, something cannot be taken out from a simple equation.
+Another, maybe the most important, feature of a switching regulator is the duty cycle used to drive the NPN transistor's base terminal. First of all I adopted a reasonable period $T = T_{on} + T_{off}$. One of the timers on microcontroller is involved in generating the square wave. It's connected to the Advanced Peripheral Bus (APB) which is synchronized with a clock of 16 Mhz. The timer prescaler has been choosen at 160, so each tick is sensed each 10 $\mu s$. Selecting a period of 100 ticks, the overall period $T$ gets $1 ms$, making any consideration about duty cycle easier. However setting duty cycle isn't so simple, something cannot be taken out from a simple equation.
 \begin{figure}[H]
 \centering
 \includegraphics{Immagini/13}

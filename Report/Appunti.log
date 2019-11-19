@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.1)  17 NOV 2019 21:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.1)  18 NOV 2019 17:15
 entering extended mode
 **./Appunti.tex
 (Appunti.tex
@@ -966,7 +966,15 @@ s
 
 LaTeX Warning: Label `12' multiply defined.
 
-) (Capitoli/05.aux))
+) (Capitoli/05.aux) (Capitoli/06.aux) (Capitoli/07.aux
+
+LaTeX Warning: Label `26' multiply defined.
+
+) (Capitoli/08.aux
+
+LaTeX Warning: Label `04' multiply defined.
+
+))
 \openout1 = `Appunti.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
@@ -1469,33 +1477,263 @@ Overfull \hbox (84.7462pt too wide) in paragraph at lines 9--11
  [][] 
  []
 
-)
+
+Overfull \hbox (3.8288pt too wide) in paragraph at lines 14--18
+[]\T1/lmr/m/n/10 I think that a cou-ple of words should be spent on the shift r
+eg-is-ter, which is named UART_Fifo.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--18
+
+ []
+
+<Immagini/23.png, id=95, 645.612pt x 309.5565pt>
+File: Immagini/23.png Graphic file (type png)
+<use Immagini/23.png>
+Package pdftex.def Info: Immagini/23.png  used on input line 21.
+(pdftex.def)             Requested size: 451.92532pt x 216.68806pt.
+
+Overfull \hbox (33.67165pt too wide) in paragraph at lines 21--23
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 File: Immagini/262.png Graphic file (type png)
 <use Immagini/262.png>
-Package pdftex.def Info: Immagini/262.png  used on input line 80.
+Package pdftex.def Info: Immagini/262.png  used on input line 25.
 (pdftex.def)             Requested size: 30.83386pt x 30.83386pt.
  [17
 
 
- <./Immagini/20.png>] (Appunti.aux (Capitoli/01.aux) (Capitoli/02.aux)
-(Capitoli/03.aux) (Capitoli/04.aux) (Capitoli/05.aux) (Capitoli/06.aux))
+ <./Immagini/20.png>]
+<Immagini/21.png, id=99, 445.665pt x 163.20975pt>
+File: Immagini/21.png Graphic file (type png)
+<use Immagini/21.png>
+Package pdftex.def Info: Immagini/21.png  used on input line 28.
+(pdftex.def)             Requested size: 401.09479pt x 146.8874pt.
+<Immagini/22.png, id=100, 1140.05925pt x 174.6525pt>
+File: Immagini/22.png Graphic file (type png)
+<use Immagini/22.png>
+Package pdftex.def Info: Immagini/22.png  used on input line 35.
+(pdftex.def)             Requested size: 456.01563pt x 69.85976pt.
+
+Overfull \hbox (37.76195pt too wide) in paragraph at lines 35--37
+ [][] 
+ []
+
+<Immagini/24.png, id=101, 325.81725pt x 961.191pt>
+File: Immagini/24.png Graphic file (type png)
+<use Immagini/24.png>
+Package pdftex.def Info: Immagini/24.png  used on input line 42.
+(pdftex.def)             Requested size: 228.07051pt x 672.82912pt.
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+File: Immagini/262.png Graphic file (type png)
+<use Immagini/262.png>
+Package pdftex.def Info: Immagini/262.png  used on input line 80.
+(pdftex.def)             Requested size: 30.83386pt x 30.83386pt.
+ [18 <./Immagini/23.png> <./Immagini/21.png> <./Immagini/22.png>]
+Overfull \vbox (42.23773pt too high) has occurred while \output is active []
+
+File: Immagini/262.png Graphic file (type png)
+<use Immagini/262.png>
+Package pdftex.def Info: Immagini/262.png  used on input line 80.
+(pdftex.def)             Requested size: 30.83386pt x 30.83386pt.
+
+[19 <./Immagini/24.png>]
+\openout2 = `Capitoli/07.aux'.
+
+ (Capitoli/07.tex
+<Immagini/25.png, id=110, 638.385pt x 282.45525pt>
+File: Immagini/25.png Graphic file (type png)
+<use Immagini/25.png>
+Package pdftex.def Info: Immagini/25.png  used on input line 11.
+(pdftex.def)             Requested size: 446.86644pt x 197.71732pt.
+
+Overfull \hbox (28.61276pt too wide) in paragraph at lines 11--13
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--14
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--20
+
+ []
+
+File: Immagini/262.png Graphic file (type png)
+<use Immagini/262.png>
+Package pdftex.def Info: Immagini/262.png  used on input line 20.
+(pdftex.def)             Requested size: 30.83386pt x 30.83386pt.
+[20
+
+
+ <./Immagini/25.png>]
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 23.
+
+("C:\Users\Alessandro\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Overfull \hbox (80.71019pt too wide) in paragraph at lines 30--31
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+<Immagini/27.png, id=114, 316.7835pt x 417.9615pt>
+File: Immagini/27.png Graphic file (type png)
+<use Immagini/27.png>
+Package pdftex.def Info: Immagini/27.png  used on input line 55.
+(pdftex.def)             Requested size: 190.07155pt x 250.77882pt.
+<Immagini/26.png, id=115, 779.91376pt x 1125.20375pt>
+File: Immagini/26.png Graphic file (type png)
+<use Immagini/26.png>
+Package pdftex.def Info: Immagini/26.png  used on input line 62.
+(pdftex.def)             Requested size: 467.95187pt x 675.12747pt.
+
+Overfull \hbox (49.6982pt too wide) in paragraph at lines 62--64
+ [][] 
+ []
+
+
+Underfull \vbox (badness 1484) has occurred while \output is active []
+
+File: Immagini/262.png Graphic file (type png)
+<use Immagini/262.png>
+Package pdftex.def Info: Immagini/262.png  used on input line 66.
+(pdftex.def)             Requested size: 30.83386pt x 30.83386pt.
+ [21 <./Immagini/27.png>]
+Overfull \vbox (56.53609pt too high) has occurred while \output is active []
+
+File: Immagini/262.png Graphic file (type png)
+<use Immagini/262.png>
+Package pdftex.def Info: Immagini/262.png  used on input line 66.
+(pdftex.def)             Requested size: 30.83386pt x 30.83386pt.
+
+[22 <./Immagini/26.png>]
+<Immagini/34.png, id=124, 426.393pt x 567.3195pt>
+File: Immagini/34.png Graphic file (type png)
+<use Immagini/34.png>
+Package pdftex.def Info: Immagini/34.png  used on input line 69.
+(pdftex.def)             Requested size: 469.03374pt x 624.05338pt.
+
+Overfull \hbox (50.78006pt too wide) in paragraph at lines 69--71
+ [][] 
+ []
+
+
+Overfull \vbox (5.46199pt too high) has occurred while \output is active []
+
+File: Immagini/262.png Graphic file (type png)
+<use Immagini/262.png>
+Package pdftex.def Info: Immagini/262.png  used on input line 73.
+(pdftex.def)             Requested size: 30.83386pt x 30.83386pt.
+
+[23 <./Immagini/34.png>]
+<Immagini/29.png, id=128, 343.88475pt x 286.671pt>
+File: Immagini/29.png Graphic file (type png)
+<use Immagini/29.png>
+Package pdftex.def Info: Immagini/29.png  used on input line 78.
+(pdftex.def)             Requested size: 343.88391pt x 286.67029pt.
+<Immagini/28.png, id=129, 846.7635pt x 303.534pt>
+File: Immagini/28.png Graphic file (type png)
+<use Immagini/28.png>
+Package pdftex.def Info: Immagini/28.png  used on input line 85.
+(pdftex.def)             Requested size: 423.3807pt x 151.76662pt.
+
+Overfull \hbox (5.12703pt too wide) in paragraph at lines 85--87
+ [][] 
+ []
+
+File: Immagini/262.png Graphic file (type png)
+<use Immagini/262.png>
+Package pdftex.def Info: Immagini/262.png  used on input line 89.
+(pdftex.def)             Requested size: 30.83386pt x 30.83386pt.
+[24 <./Immagini/29.png> <./Immagini/28.png>]
+<Immagini/31.png, id=133, 428.19975pt x 253.54726pt>
+File: Immagini/31.png Graphic file (type png)
+<use Immagini/31.png>
+Package pdftex.def Info: Immagini/31.png  used on input line 94.
+(pdftex.def)             Requested size: 385.3762pt x 228.1904pt.
+<Immagini/30.png, id=134, 808.2195pt x 268.6035pt>
+File: Immagini/30.png Graphic file (type png)
+<use Immagini/30.png>
+Package pdftex.def Info: Immagini/30.png  used on input line 101.
+(pdftex.def)             Requested size: 404.10876pt x 134.30142pt.
+File: Immagini/262.png Graphic file (type png)
+<use Immagini/262.png>
+Package pdftex.def Info: Immagini/262.png  used on input line 106.
+(pdftex.def)             Requested size: 30.83386pt x 30.83386pt.
+ [25 <./Immagini/31.png> <./Immagini/30.png>]
+<Immagini/33.png, id=139, 431.81325pt x 208.98074pt>
+File: Immagini/33.png Graphic file (type png)
+<use Immagini/33.png>
+Package pdftex.def Info: Immagini/33.png  used on input line 112.
+(pdftex.def)             Requested size: 388.62831pt x 188.08092pt.
+<Immagini/32.png, id=140, 786.5385pt x 243.91125pt>
+File: Immagini/32.png Graphic file (type png)
+<use Immagini/32.png>
+Package pdftex.def Info: Immagini/32.png  used on input line 119.
+(pdftex.def)             Requested size: 393.2683pt x 121.95532pt.
+<Immagini/35.png, id=141, 464.33475pt x 235.47975pt>
+File: Immagini/35.png Graphic file (type png)
+<use Immagini/35.png>
+Package pdftex.def Info: Immagini/35.png  used on input line 126.
+(pdftex.def)             Requested size: 371.46829pt x 188.38405pt.
+)
+File: Immagini/262.png Graphic file (type png)
+<use Immagini/262.png>
+Package pdftex.def Info: Immagini/262.png  used on input line 81.
+(pdftex.def)             Requested size: 30.83386pt x 30.83386pt.
+ [26 <./Immagini/33.png> <./Immagini/32.png> <./Immagini/35.png>]
+\openout2 = `Capitoli/08.aux'.
+
+
+(Capitoli/08.tex
+<Immagini/test99.png, id=145, 486.618pt x 385.44pt>
+File: Immagini/test99.png Graphic file (type png)
+<use Immagini/test99.png>
+Package pdftex.def Info: Immagini/test99.png  used on input line 13.
+(pdftex.def)             Requested size: 437.95215pt x 346.89279pt.
+
+Overfull \hbox (19.69847pt too wide) in paragraph at lines 13--15
+ [][] 
+ []
+
+)
+File: Immagini/262.png Graphic file (type png)
+<use Immagini/262.png>
+Package pdftex.def Info: Immagini/262.png  used on input line 82.
+(pdftex.def)             Requested size: 30.83386pt x 30.83386pt.
+ [27
+
+
+ <./Immagini/test99.png>] (Appunti.aux (Capitoli/01.aux) (Capitoli/02.aux) (Cap
+itoli/03.aux) (Capitoli/04.aux) (Capitoli/05.aux) (Capitoli/06.aux)
+(Capitoli/07.aux) (Capitoli/08.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 8185 strings out of 493305
- 122782 string characters out of 3127628
- 367061 words of memory out of 3000000
- 11479 multiletter control sequences out of 15000+200000
- 54619 words of font info for 45 fonts, out of 3000000 for 9000
+ 8726 strings out of 493305
+ 129095 string characters out of 3127628
+ 380061 words of memory out of 3000000
+ 11985 multiletter control sequences out of 15000+200000
+ 57935 words of font info for 47 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,17n,43p,1385b,345s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,17n,44p,1385b,1223s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-
-mathit.enc}{C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvi
-ps/lm/lm-rm.enc}{C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2.9/fonts/en
-c/dvips/lm/lm-mathsy.enc}{C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2.9
-/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/Alessandro/AppData/Local/Programs/MiKTe
+ec.enc}{C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/l
+m/lm-mathit.enc}{C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2.9/fonts/en
+c/dvips/lm/lm-rm.enc}{C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/Alessandro/AppData/Local/Programs/MiKTe
 X 2.9/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Users/Alessandro/AppData/Local/Programs
 /MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Alessandro/AppData/Local
 /Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Alessandro/AppD
@@ -1505,10 +1743,11 @@ s/Alessandro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb>
 <C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lm
 r12.pfb><C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
 ic/lm/lmri10.pfb><C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2.9/fonts/t
-ype1/public/lm/lmsy10.pfb>
-Output written on Appunti.pdf (17 pages, 2893621 bytes).
+ype1/public/lm/lmsy10.pfb><C:/Users/Alessandro/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/lm/lmtt9.pfb>
+Output written on Appunti.pdf (27 pages, 4234136 bytes).
 PDF statistics:
- 131 PDF objects out of 1000 (max. 8388607)
+ 185 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 106 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 186 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -52,7 +52,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1573572085" xil_pn:in_ck="-8024328109873880631" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1573572085">
+    <transform xil_pn:end_ts="1574082611" xil_pn:in_ck="-8024328109873880631" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1574082611">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="MemoryInterface.vhd"/>
@@ -70,15 +70,17 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1573572085" xil_pn:in_ck="-8024328109873880631" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1573572085">
+    <transform xil_pn:end_ts="1574082611" xil_pn:in_ck="-8024328109873880631" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1574082611">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="MemoryInterface.vhd"/>
       <outfile xil_pn:name="TB_MemoryInterface.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1573572088" xil_pn:in_ck="-8024328109873880631" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="4462266466335953132" xil_pn:start_ts="1573572085">
+    <transform xil_pn:end_ts="1574082616" xil_pn:in_ck="-8024328109873880631" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="4462266466335953132" xil_pn:start_ts="1574082611">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="TB_MemoryInterface_beh.prj"/>
       <outfile xil_pn:name="TB_MemoryInterface_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -86,9 +88,11 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1573572088" xil_pn:in_ck="-5568666751546781970" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-5879195831053697895" xil_pn:start_ts="1573572088">
+    <transform xil_pn:end_ts="1574082616" xil_pn:in_ck="-5568666751546781970" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-5879195831053697895" xil_pn:start_ts="1574082616">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="TB_MemoryInterface_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
@@ -121,12 +125,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1573570123" xil_pn:in_ck="4265012701390175514" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-6129737910726999892" xil_pn:start_ts="1573570116">
+    <transform xil_pn:end_ts="1574076015" xil_pn:in_ck="4265012701390175514" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-6129737910726999892" xil_pn:start_ts="1574075997">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="MemoryInterface.lso"/>
       <outfile xil_pn:name="MemoryInterface.ngc"/>
       <outfile xil_pn:name="MemoryInterface.ngr"/>

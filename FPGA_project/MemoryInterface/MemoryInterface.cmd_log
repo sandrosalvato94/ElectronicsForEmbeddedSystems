@@ -33,3 +33,4 @@ xst -intstyle ise -ifn "C:/Users/Alessandro/Desktop/EFES_Fpga/MemoryInterface/Me
 xst -intstyle ise -ifn "C:/Users/Alessandro/Desktop/EFES_Fpga/MemoryInterface/MemoryInterface.xst" -ofn "C:/Users/Alessandro/Desktop/EFES_Fpga/MemoryInterface/MemoryInterface.syr" 
 xst -intstyle ise -ifn "C:/Users/Alessandro/Desktop/EFES_Fpga/MemoryInterface/MemoryInterface.xst" -ofn "C:/Users/Alessandro/Desktop/EFES_Fpga/MemoryInterface/MemoryInterface.syr" 
 xst -intstyle ise -ifn "C:/Users/Alessandro/Desktop/EFES_Fpga/MemoryInterface/MemoryInterface.xst" -ofn "C:/Users/Alessandro/Desktop/EFES_Fpga/MemoryInterface/MemoryInterface.syr" 
+xst -intstyle ise -ifn "C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/MemoryInterface/MemoryInterface.xst" -ofn "C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/MemoryInterface/MemoryInterface.syr" 

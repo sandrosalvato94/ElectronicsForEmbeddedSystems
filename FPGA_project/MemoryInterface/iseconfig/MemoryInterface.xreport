@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2019-11-12T16:15:55</DateModified>
+  <DateModified>2019-11-18T13:02:56</DateModified>
   <ModuleName>MemoryInterface</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/Alessandro/Desktop/EFES_Fpga/MemoryInterface/iseconfig/MemoryInterface.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Alessandro/Desktop/EFES_Fpga/MemoryInterface\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/MemoryInterface/iseconfig/MemoryInterface.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/MemoryInterface\</ImplementationReportsDirectory>
   <DateInitialized>2019-11-07T12:53:17</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

@@ -157,6 +157,7 @@ int main(void)
 
     if(buffer_uart == 1)
     {
+    	buffer_uart = 0;
     	HAL_DCMI_Start_DMA(&hdcmi, DCMI_MODE_SNAPSHOT, lcdBuffer, 19200);
     	HAL_Delay(1000);
     	ov7670_stopCap();
@@ -164,6 +165,7 @@ int main(void)
     	{
     		HAL_UART_Transmit(&huart3, &lcdBuffer[i], 4, 300);
     	}
+
     }
    // HAL_DCMI_Start_DMA(&hdcmi, DCMI_MODE_SNAPSHOT, lcdBuffer, 19200);
 

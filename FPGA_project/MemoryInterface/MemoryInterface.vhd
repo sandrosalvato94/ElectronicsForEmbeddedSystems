@@ -59,7 +59,6 @@ end MemoryInterface;
 
 architecture Behavioral of MemoryInterface is
 
-	type mem_command	is	(CMD_DESL, CMD_NOP, CMD_BST, CMD_READ, CMD_READA, CMD_WRITE, CMD_WRITEA, CMD_ACT, CMP_PRE, CMP_PALL, CMD_REF, CMD_SELF, CMD_MRS);
 	type mem_states	is	(MEM_RESET,
 								 MEM_RESET_NOP0,
 								 MEM_RESET_NOP1,
@@ -80,11 +79,9 @@ architecture Behavioral of MemoryInterface is
 								 MEM_RD_NOP2,
 								 
 								 MEM_WR_NOP1,
-								 MEM_WR_NOP2,
-								 
-								 MEM_READA, MEM_WRITEA, MEM_PRECHARGING, MEM_WT_RECOVERING, MEM_WT_RECOVERING_WITH_APRECHARGE, MEM_MRA);
+								 MEM_WR_NOP2);
 	
-	signal prev_state, curr_state, next_state	:	mem_states;
+	signal curr_state, next_state	:	mem_states;
 	
 	signal s_init_cyc						: std_logic_vector(3 downto 0);
 	signal s_zeros							: std_logic_vector(3 downto 0) := (others => '0');

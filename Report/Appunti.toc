@@ -5,3 +5,5 @@
 \contentsline {section}{\numberline {4}Power management}{12}
 \contentsline {section}{\numberline {5}Programmable logic device}{14}
 \contentsline {section}{\numberline {6}Interconnection protocol}{17}
+\contentsline {section}{\numberline {7}Memory management}{20}
+\contentsline {section}{\numberline {8}Conclusion}{27}

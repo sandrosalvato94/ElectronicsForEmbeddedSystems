@@ -10,3 +10,36 @@ The clock divider generates a train of pulses at 115200 Hz. I talked about clock
 \label{20}
 \caption{UART synchronizer architecture}
 \end{figure}
+
+I think that a couple of words should be spent on the shift register, which is named UART\_Fifo. It is a common shift register parallel input serial output. However, it is between two frequency domains, the 50 Mhz and the 115Khz. The coming data is loaded with former domain, shifting has performed at the latter. The clock signal going in input to each flip flop is the result of an OR between the 115Khz clock and the load command travelling at 50Mhz. Then, a few combinational logic drives multiplexers in order to perform operations of KEEPING, SHIFTING and LOADING.
+\newline
+\newline
+To prove the correct behaviour of my UART module, before I plotted the output signal onto the oscilloscope, then I used a software serial terminal like Hterm using the same settings I listed above; the picture shows one of eight buttons forming the keyboard pushed one at a time.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=.7]{Immagini/23}
+\label{23}
+\caption{UART Fifo architecture: combinational logic to drive multiplexers and FF clock}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=.9]{Immagini/21}
+\label{21}
+\caption{UART output on oscilloscope (10 $\mu s$/div)}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=.4]{Immagini/22}
+\label{22}
+\caption{UART output on HTerm (serial terminal)}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=.7]{Immagini/24}
+\label{24}
+\caption{UART module architecture}
+\end{figure}

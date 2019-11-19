@@ -24829,3 +24829,19 @@ However, this IP can be configured manually.
 2019-11-16 11:50:31,437 [INFO] ApiDb:163 - User favorites MCUs=[]
 2019-11-16 11:50:31,437 [INFO] DbMcus:205 - Set 0 / 0 favorites MCUs
 2019-11-16 12:54:46,863 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-18 16:22:34,882 [INFO] Activator:176 - 
+
+
+2019-11-18 16:22:34,913 [INFO] Activator:177 - !SESSION log4j initialized
+2019-11-18 16:27:05,955 [INFO] Activator:176 - 
+
+
+2019-11-18 16:27:05,955 [INFO] Activator:177 - !SESSION log4j initialized
+2019-11-18 16:30:11,099 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Exception in thread "SWV client thread" java.lang.NullPointerException
+2019-11-18 16:30:11,102 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVClient.getNextByte(SWVClient.java:280)
+2019-11-18 16:30:11,108 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVClient.createInstrumentationPacket(SWVClient.java:646)
+2019-11-18 16:30:11,108 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVClient.run(SWVClient.java:410)
+2019-11-18 16:32:57,646 [INFO] Activator:176 - 
+
+
+2019-11-18 16:32:57,662 [INFO] Activator:177 - !SESSION log4j initialized

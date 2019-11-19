@@ -1,21 +1,22 @@
-Running: D:\XilinxISE\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Alessandro/Desktop/EFES_Fpga/MemoryInterface/TB_MemoryInterface_isim_beh.exe -prj C:/Users/Alessandro/Desktop/EFES_Fpga/MemoryInterface/TB_MemoryInterface_beh.prj work.TB_MemoryInterface 
+Running: D:\XilinxISE\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/MemoryInterface/TB_MemoryInterface_isim_beh.exe -prj C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/MemoryInterface/TB_MemoryInterface_beh.prj work.TB_MemoryInterface 
 ISim P.20131013 (signature 0x8ef4fb42)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
-Parsing VHDL file "C:/Users/Alessandro/Desktop/EFES_Fpga/MemoryInterface/MemoryInterface.vhd" into library work
-Parsing VHDL file "C:/Users/Alessandro/Desktop/EFES_Fpga/MemoryInterface/TB_MemoryInterface.vhd" into library work
+Parsing VHDL file "C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/MemoryInterface/MemoryInterface.vhd" into library work
+Parsing VHDL file "C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/MemoryInterface/TB_MemoryInterface.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 160812 KB
-Fuse CPU Usage: 187 ms
+Fuse Memory Usage: 160364 KB
+Fuse CPU Usage: 265 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
 Compiling architecture behavioral of entity MemoryInterface [memoryinterface_default]
 Compiling architecture behavior of entity tb_memoryinterface
 Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
 Compiled 6 VHDL Units
-Built simulation executable C:/Users/Alessandro/Desktop/EFES_Fpga/MemoryInterface/TB_MemoryInterface_isim_beh.exe
-Fuse Memory Usage: 177232 KB
-Fuse CPU Usage: 311 ms
+Built simulation executable C:/Users/Alessandro/Desktop/STM32Workspace/ElectronicsForEmbeddedSystems/FPGA_project/MemoryInterface/TB_MemoryInterface_isim_beh.exe
+Fuse Memory Usage: 176784 KB
+Fuse CPU Usage: 389 ms
